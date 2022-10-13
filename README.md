@@ -1,2 +1,2 @@
 # tech
-tech.arunkumarn.in website for personal reference.
+[tech.arunkumarn.in](http://techpy.arunkumarn.in/) website for personal reference.

@@ -4,6 +4,9 @@ theme:
   name: material
   logo: assets/image/favicon.png
   favicon: assets/image/favicon.png
+  icon:
+    admonition:
+      note: material/note-edit
   palette:
     # Palette toggle for light mode
     - scheme: default
@@ -27,3 +30,26 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.expand
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - tech:
+      - Tailwindcss:
+          - index: tailwindcss/index.md
+          - forms: tailwindcss/forms.md
+
+copyright: Copyright &copy; 2022 Arun kumar N
+extra:
+  generator: false
