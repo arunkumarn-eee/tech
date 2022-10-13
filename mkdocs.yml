@@ -1,0 +1,29 @@
+site_name: Tech
+
+theme:
+  name: material
+  logo: assets/image/favicon.png
+  favicon: assets/image/favicon.png
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: amber
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Ubuntu
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
