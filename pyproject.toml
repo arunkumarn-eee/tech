@@ -1,0 +1,18 @@
+[project]
+name = "tech"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Aavishkarah", email = "aavishkarah@proton.me" }
+]
+dependencies = [
+    "mkdocs-material>=9.6.11",
+    "mkdocs-blogging-plugin>=2.2.11",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[tool.rye]
+managed = true
+virtual = true
+dev-dependencies = []

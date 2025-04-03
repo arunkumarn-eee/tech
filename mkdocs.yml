@@ -1,0 +1,114 @@
+site_name: Tech Aavishkarah
+site_url: https://tech.arunkumarn.in
+
+nav:
+    - Home: index.md
+    - Python:
+          - course: python/syllabus.md
+    - Project: projects.md
+    - Extra:
+          - tags: tags.md
+    - Blog: blogs.md
+theme:
+    name: material
+    logo: assets/image/favicon.png
+    favicon: assets/image/favicon.png
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.top
+        - content.code.copy
+        - content.footnote.tooltips
+    palette:
+        # Palette toggle for automatic mode
+        - media: "(prefers-color-scheme)"
+          primary: black
+          accent: amber
+          toggle:
+              icon: material/brightness-auto
+              name: Switch to light mode
+
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: indigo
+          accent: deep orange
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
+
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          primary: black
+          accent: amber
+          scheme: slate
+          toggle:
+              icon: material/brightness-4
+              name: Switch to system preference
+
+plugins:
+    - blogging:
+          dirs:
+              - blog
+          features:
+              tags:
+                  index_page: tags.md
+                  insert: top
+          size: 5
+          theme:
+              name: card
+
+          categories:
+              - name: python
+                dirs:
+                    - python
+              - name: projects
+                dirs:
+                    - projects
+                size: 5
+
+markdown_extensions:
+    - attr_list
+    - footnotes
+    - pymdownx.emoji:
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - admonition
+    - pymdownx.details
+    - pymdownx.highlight:
+          anchor_linenums: true
+          line_spans: __span
+          pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+          alternate_style: true
+    - def_list
+    - pymdownx.tasklist:
+          custom_checkbox: true
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.tilde
+
+copyright: Copyright &copy; 2025 Arun Kumar N
+
+extra:
+    generator: false
+    social:
+        - icon: fontawesome/brands/youtube
+          link: https://www.youtube.com/@aavishkarah?sub_confirmation=1
+          name: Aavishkarah on youtube
+        - icon: fontawesome/brands/instagram
+          link: https://instagram.com/aavishkarah
+          name: Aavishkarah on Instagram
+        - icon: fontawesome/brands/facebook
+          link: https://facebook.com/people/Aavishkarah/61573021117727
+          name: Aavishkarah on Facebook
+        - icon: fontawesome/brands/whatsapp
+          link: https://whatsapp.com/channel/0029Vb5ddY75a24ASH3a4535
+          name: Aavishkarah on WhatsApp
+        - icon: fontawesome/brands/github
+          link: https://github.com/aavishkarah
+          name: Aavishkarah on Github
