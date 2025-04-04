@@ -1,5 +1,5 @@
 site_name: Tech Aavishkarah
-site_url: https://tech-18g.pages.dev
+site_url: https://tech.arunkumarn.in
 
 nav:
     - Home: index.md
@@ -8,11 +8,12 @@ nav:
     - Project: projects.md
     - Extra:
           - tags: tags.md
-    - Blog: blogs.md
+    - Blog: blogs.md 
 theme:
     name: material
     logo: assets/image/favicon.png
     favicon: assets/image/favicon.png
+    custom_dir: templates/
     features:
         - navigation.tabs
         - navigation.tabs.sticky

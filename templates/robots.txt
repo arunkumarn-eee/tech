@@ -1,0 +1,8 @@
+User-agent: *
+
+Allow: /
+Disallow: /fine_update/
+Disallow: /user/
+
+
+Sitemap: https://tech.arunkumarn.in/sitemap.xml
