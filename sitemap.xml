@@ -1,27 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" arun="test" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://tech-18g.pages.dev/</loc>
-         <lastmod>2025-04-03</lastmod>
+         <loc>https://tech.arunkumarn.in/</loc>
+          <lastmod></lastmod>   
     </url>
     <url>
-         <loc>https://tech-18g.pages.dev/blogs/</loc>
-         <lastmod>2025-04-03</lastmod>
+         <loc>https://tech.arunkumarn.in/tags/</loc>
+          <lastmod></lastmod>   
     </url>
     <url>
-         <loc>https://tech-18g.pages.dev/projects/</loc>
-         <lastmod>2025-04-03</lastmod>
+         <loc>https://tech.arunkumarn.in/python/installation/</loc>
+          <lastmod></lastmod>   
     </url>
     <url>
-         <loc>https://tech-18g.pages.dev/tags/</loc>
-         <lastmod>2025-04-03</lastmod>
+         <loc>https://tech.arunkumarn.in/python/syllabus/</loc>
+          <lastmod>2025-04-06</lastmod>   
     </url>
     <url>
-         <loc>https://tech-18g.pages.dev/python/installation/</loc>
-         <lastmod>2025-04-03</lastmod>
-    </url>
-    <url>
-         <loc>https://tech-18g.pages.dev/python/syllabus/</loc>
-         <lastmod>2025-04-03</lastmod>
+         <loc>https://tech.arunkumarn.in/python/builtin_methods/</loc>
+          <lastmod>2025-02-26</lastmod>   
     </url>
 </urlset>
