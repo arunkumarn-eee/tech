@@ -5,10 +5,12 @@ nav:
     - Home: index.md
     - Python:
           - course: python/syllabus.md
-    - Project: projects.md
+          - Built-ins: python/builtin_methods/index.md
     - Extra:
           - tags: tags.md
-    - Blog: blogs.md 
+
+
+
 theme:
     name: material
     logo: assets/image/favicon.png
@@ -51,6 +53,7 @@ plugins:
     - blogging:
           dirs:
               - blog
+          template: blogoverride/blog-custom.html
           features:
               tags:
                   index_page: tags.md
@@ -60,13 +63,15 @@ plugins:
               name: card
 
           categories:
-              - name: python
-                dirs:
-                    - python
+              # - name: python
+              #   dirs:
+              #       - python
+              #   template: blogoverride/blog-custom.html
               - name: projects
                 dirs:
                     - projects
                 size: 5
+                template: blogoverride/blog-custom.html
 
 markdown_extensions:
     - attr_list

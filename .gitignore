@@ -5,7 +5,14 @@ build/
 dist/
 wheels/
 *.egg-info
-site/
+
 
 # venv
 .venv
+
+
+# user defined
+
+backup_mkdocs.yml
+site/
+tempfiles/

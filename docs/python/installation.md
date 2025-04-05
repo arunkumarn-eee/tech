@@ -1,7 +1,10 @@
 ---
 title: Installation.
 description: Step by step document showing the installation of python in windows & Linux.
-author: Arun kumar N
+authors: 
+    name: Arun kumar N
+    avathar: https://skilldisk.com
+    description: Creator
 date: 2025-02-26 10:20:00
 time: 10:20:00 am
 tags:
