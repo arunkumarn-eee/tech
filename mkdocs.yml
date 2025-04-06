@@ -101,6 +101,9 @@ markdown_extensions:
 copyright: Copyright &copy; 2025 Arun Kumar N
 
 extra:
+    analytics:
+        provider: google
+        property: G-MLSHZKZLZ8
     generator: false
     social:
         - icon: fontawesome/brands/youtube
