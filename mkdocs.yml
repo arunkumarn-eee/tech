@@ -1,5 +1,6 @@
 site_name: Tech Aavishkarah
 site_url: https://tech.arunkumarn.in
+site_author: Arun kumar N
 
 nav:
     - Home: index.md

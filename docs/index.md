@@ -1,7 +1,7 @@
 ---
 hide:
-  - navigation
-  - toc
+    - navigation
+    - toc
 ---
 
 # Welcome to Aavishkarah 🔥🎉 – Your Hub for All Things Tech

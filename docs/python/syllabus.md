@@ -1,6 +1,6 @@
 ---
-title: Syllabus
-description: Python course syllabus.
+title: Python Course Syllabus
+description: Python syllabus from the resource in aavishkarah platform
 authors:
   -
     name: Arun kumar N

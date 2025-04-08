@@ -1,5 +1,5 @@
 ---
-title: Installation.
+title: Python Installation.
 description: Step by step document showing the installation of python in windows & Linux.
 authors:
   -
@@ -8,6 +8,7 @@ authors:
     description: Creator
 update_date : 2025-04-06
 published_date : 2025-04-06
+banner_image : assets/image/favicon.png
 tags:
   - python course
 hide:
