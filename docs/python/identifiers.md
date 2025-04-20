@@ -27,16 +27,16 @@ Identifier is a user-defined name given to a variable, function, class, module, 
 - It should not contain any special character other than an underscore ( _ ).
 
 
-| Variables	| ✅ / ❌	| Reason |
-|--|--|--|
-|city |	✅	| Variable names can be in lower case and uppercase |
-| for | ❌	| Reserved key words |
-| break	| ❌	| Reserved key words |
-| _sum|	✅|	Variable names can begin with _ or a letter|
-| user name| 	❌| White space characters are not allowed in the naming of a variable|
-| user_name| 	✅ |	Variable names can begin with _ or a letter|
-| 2name	| ❌	| Variable names cannot start with a number|
-| name2| ✅	| Variable names can begin with _ or a letter|
+| Variables | ✅ / ❌ | Reason                                                             |
+| --------- | ----- | ------------------------------------------------------------------ |
+| city      | ✅     | Variable names can be in lower case and uppercase                  |
+| for       | ❌     | Reserved key words                                                 |
+| break     | ❌     | Reserved key words                                                 |
+| _sum      | ✅     | Variable names can begin with _ or a letter                        |
+| user name | ❌     | White space characters are not allowed in the naming of a variable |
+| user_name | ✅     | Variable names can begin with _ or a letter                        |
+| 2name     | ❌     | Variable names cannot start with a number                          |
+| name2     | ✅     | Variable names can begin with _ or a letter                        |
 
 ## Python Keywords 
 Keywords in Python are reserved words that can not be used as a variable name, function name, or any other identifier.

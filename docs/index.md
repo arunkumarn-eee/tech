@@ -22,22 +22,51 @@ We’re more than just a site — we’re building a community. If you have idea
 
 ### Groups & Channels
 
-- Instagram :simple-instagram: 
+<div class="grid cards" markdown>
+- :simple-instagram: Instagram  
+    
+    ---
+
     - [Aavishkarah](https://instagram.com/aavishkarah)
     - [Python](https://instagram.com/python.sd)
-- Facebook :simple-facebook: 
+
+- :simple-facebook: Facebook  
+    
+    ---
+
     - [Aavishkarah](https://facebook.com/people/Aavishkarah/61573021117727)
     - [Skill Disk](https://www.facebook.com/skilldisk)
-- WhatsApp :simple-whatsapp: 
+
+- :simple-whatsapp: WhatsApp  
+
+    ---
+
     - [Aavishkarah](https://whatsapp.com/channel/0029Vb5ddY75a24ASH3a4535)
-- Telegram :simple-telegram: 
+    - [Skill Disk](https://web.whatsapp.com/send?phone=+917829006066&text=Hi, I would like to get more information about:)
+  
+
+- :simple-telegram: Telegram
+
+    ---
+
     - [Python Learning](https://t.me/SDpython)
+    - [Skill Disk](https://t.me/skilldisk)
+</div>
 
 ### Resources
 
-- Github :simple-github: 
+<div class="grid cards" markdown>
+- :simple-github: Github  
+    
+    ---
+
     - [Aavishkarah](https://github.com/aavishkarah)
     - [Skill Disk](https://github.com/skilldisk)
-- Website :material-earth: 
+
+- :material-earth: Website  
+
+    ---
+
     - [Tech Aavishkarah](https://tech.arunkumarn.in)
     - [Skill Disk](https://skilldisk.com) 
+</div>

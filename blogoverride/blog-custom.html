@@ -5,25 +5,6 @@
 <a href="{{ url }}">
     <div class="blog-override-post">
         <h2 class="blog-post-title">{{ title }}</h2>
-        {% if pg.meta.authors %}
-
-        {% for author in pg.meta.authors %}
-            <div class="md-profile md-post__profile">
-            <span class="md-author md-author--long">
-                <img src="{{ author.avatar }}" alt="{{ author.name }}">
-            </span>
-            <span class="md-profile__description">
-                <strong>
-                {% if author.url %}
-                    <a href="{{ author.url }}">{{ author.name }}</a>
-                {% else %}
-                    {{ author.name }}
-                {% endif %}
-                </strong>
-            </span>
-            </div>
-        {% endfor %}
-        {% endif %}
 
         {% if show_tags and "tags" in pg.meta %}
             {% call render_tags(pg.meta["tags"], index_url) %}

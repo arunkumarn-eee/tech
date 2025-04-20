@@ -7,6 +7,8 @@ nav:
     - Python:
           - course: python/syllabus.md
           - Built-ins: python/builtin_methods/index.md
+    - Blog: 
+        - Python: blogs/python.md
     - Extra:
           - tags: tags.md
 
@@ -23,6 +25,7 @@ theme:
         - navigation.top
         - content.code.copy
         - content.footnote.tooltips
+        - content.tabs.link
     palette:
         # Palette toggle for automatic mode
         - media: "(prefers-color-scheme)"
@@ -64,10 +67,10 @@ plugins:
               name: card
 
           categories:
-              # - name: python
-              #   dirs:
-              #       - python
-              #   template: blogoverride/blog-custom.html
+              - name: python
+                dirs:
+                    - blogs/python
+                template: blogoverride/blog-custom.html
               - name: projects
                 dirs:
                     - projects
@@ -75,7 +78,9 @@ plugins:
                 template: blogoverride/blog-custom.html
 
 markdown_extensions:
+    - abbr
     - attr_list
+    - md_in_html
     - footnotes
     - pymdownx.emoji:
           emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -98,6 +103,7 @@ markdown_extensions:
     - pymdownx.keys
     - pymdownx.mark
     - pymdownx.tilde
+    - pymdownx.blocks.caption
 
 copyright: Copyright &copy; 2025 Arun Kumar N
 
@@ -125,3 +131,7 @@ extra:
         - icon: fontawesome/brands/telegram
           link: https://t.me/SDpython
           name: Python on Telegram
+
+
+extra_css:
+  - stylesheets/extra.css
