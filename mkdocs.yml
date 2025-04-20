@@ -92,8 +92,14 @@ markdown_extensions:
           line_spans: __span
           pygments_lang_class: true
     - pymdownx.inlinehilite
-    - pymdownx.snippets
-    - pymdownx.superfences
+    - pymdownx.snippets:
+        auto_append:
+          - includes/abbreviations.md
+    - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
     - pymdownx.tabbed:
           alternate_style: true
     - def_list
@@ -108,9 +114,9 @@ markdown_extensions:
 copyright: Copyright &copy; 2025 Arun Kumar N
 
 extra:
-    analytics:
-        provider: google
-        property: G-MLSHZKZLZ8
+    # analytics:
+    #     provider: google
+    #     property: G-MLSHZKZLZ8
     generator: false
     social:
         - icon: fontawesome/brands/youtube
@@ -135,3 +141,7 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+
+
+watch:
+  - includes
