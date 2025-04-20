@@ -14,6 +14,10 @@ hide:
   - navigation
 ---
 
+???+ Abstract "Table of Contents"
+
+    [TOC]
+
 ## Identifiers
 
 Identifier is a user-defined name given to a variable, function, class, module, etc. The identifier is a combination of character digits and an underscore. They are case-sensitive i.e., ‘num’ and ‘Num’ and ‘NUM’ are three different identifiers in python. It is a good programming practice to give meaningful names to identifiers to make the code understandable.

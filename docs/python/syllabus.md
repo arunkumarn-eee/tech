@@ -23,7 +23,7 @@ tags:
 ## Identifiers, Data types & Operators.
 
 - [x] [Identifiers, keywords, variables.](./identifiers.md)
-- [ ] Data types.
+- [x] [Data types.](./data_types.md)
 - [ ] Operators.
 - [ ] Type conversion.
 
