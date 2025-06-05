@@ -9,6 +9,10 @@
           <lastmod></lastmod>   
     </url>
     <url>
+         <loc>https://tech.arunkumarn.in/projects/</loc>
+          <lastmod></lastmod>   
+    </url>
+    <url>
          <loc>https://tech.arunkumarn.in/tags/</loc>
           <lastmod></lastmod>   
     </url>
@@ -17,11 +21,19 @@
           <lastmod></lastmod>   
     </url>
     <url>
-         <loc>https://tech.arunkumarn.in/blogs/python/Beyond-input-Modern-Python-Techniques-for-Bulletproof-User-input-Validation/</loc>
+         <loc>https://tech.arunkumarn.in/blogs/raspberry-pi-pico/</loc>
           <lastmod></lastmod>   
     </url>
     <url>
+         <loc>https://tech.arunkumarn.in/blogs/python/Beyond-input-Modern-Python-Techniques-for-Bulletproof-User-input-Validation/</loc>
+          <lastmod>2025-06-05</lastmod>   
+    </url>
+    <url>
          <loc>https://tech.arunkumarn.in/blogs/python/Beyond-print-Modern-Python-Text-Display-Techniques-You-Need-to-Know/</loc>
+          <lastmod></lastmod>   
+    </url>
+    <url>
+         <loc>https://tech.arunkumarn.in/blogs/python/Born-from-Python%3A-The-Rise-of-MicroPython-in-Embedded-Systems/</loc>
           <lastmod></lastmod>   
     </url>
     <url>

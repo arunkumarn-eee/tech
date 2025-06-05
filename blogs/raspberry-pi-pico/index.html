@@ -6,28 +6,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     
-        <meta name="description" content="Python course syllabus.">
-    
     
         <meta name="author" content="Arun kumar N">
     
     
-        <link rel="canonical" href="https://tech.arunkumarn.in/draft/aws_server/">
+        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/">
     
     
+        <link rel="prev" href="../python/">
+    
+    
+        <link rel="next" href="../../projects/">
     
     
     <link rel="icon" href="../../assets/image/favicon.png">
 
     <meta property="og:type" content="website" />
     
-        <meta property="og:title" content="Host Django Application in AWS EC2 Machine using Gunicorn + Nginx + SSL" />
     
     
-        <meta property="og:description" content="Python course syllabus." />
-    
-    
-        <meta property="og:url" content="https://tech.arunkumarn.in/draft/aws_server/">
+        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/">
     
     <meta property="og:site_name" content="Tech Aavishkarah" />
     
@@ -35,10 +33,6 @@
 
     <meta name="twitter:card" content="summary" />
     
-        <meta name="twitter:description" content="Python course syllabus." />
-    
-    
-        <meta name="twitter:title"  content="Host Django Application in AWS EC2 Machine using Gunicorn + Nginx + SSL" />
     
     
     <meta name="twitter:site" content="@arunkumarn_eee" />
@@ -47,7 +41,7 @@
 
     
       
-        <title>Host Django Application in AWS EC2 Machine using Gunicorn + Nginx + SSL - Tech Aavishkarah</title>
+        <title>Raspberry Pi Pico - Tech Aavishkarah</title>
       
     
     
@@ -111,7 +105,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#update-system" class="md-skip">
+        <a href="#raspberry-pi-pico" class="md-skip">
           Skip to content
         </a>
       
@@ -146,7 +140,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Host Django Application in AWS EC2 Machine using Gunicorn + Nginx + SSL
+              Raspberry Pi Pico
             
           </span>
         </div>
@@ -246,11 +240,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../blogs/python/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../python/" class="md-tabs__link">
           
   
   
@@ -318,9 +314,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -461,24 +455,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -491,7 +490,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -505,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blogs/python/" class="md-nav__link">
+      <a href="../python/" class="md-nav__link">
         
   
   
@@ -525,10 +524,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../blogs/raspberry-pi-pico/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -539,6 +547,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -652,8 +661,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -663,41 +670,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#update-system" class="md-nav__link">
-    <span class="md-ellipsis">
-      Update System
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installing-applications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installing applications
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-the-postgresql-database-and-user" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating the PostgreSQL Database and User
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -710,24 +684,164 @@
               <article class="md-content__inner md-typeset">
                 
                   
-  
 
 
 
+<h1 id="raspberry-pi-pico">Raspberry Pi Pico</h1>
+<p>Raspberry Pi Pico is a low cost modern micro-controller development board.</p>
+<ol>
+<li>Raspberry Pi Pico</li>
+<li>Raspberry Pi Pico W</li>
+<li>Raspberry Pi Pico - 2</li>
+<li>Raspberry Pi Pico W - 2 </li>
+</ol>
+<p>
 
-  <h1>Host Django Application in AWS EC2 Machine using Gunicorn + Nginx + SSL</h1>
 
-<div class="md-typeset">
-    <div class="blogging-tags-grid">
-
-        <a href="https://tech.arunkumarn.in/tags#python course" class="blogging-tag"><code>#python course</code></a>
-
-    </div>
-
-
-</div>
 
 <style>
+    .md-typeset .blog-post:first-of-type h3 {
+        margin-top: 0;
+    }
+
+    .md-typeset .blog-post-title {
+        margin-bottom: 0;
+    }
+
+    .md-typeset .blog-post-extra {
+        color: var(--md-default-fg-color--light);
+    }
+
+    .md-typeset .blog-center {
+        text-align: center;
+    }
+
+    .md-typeset .blog-pagination {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .md-typeset .blog-pagination a {
+        color: var(--md-typeset-color);
+        float: left;
+        padding: .25em 1em;
+        text-decoration: none;
+        border-radius: 1em;
+        margin-left: .25em;
+        margin-right: .25em;
+        transition: all .15s ease-in-out;
+    }
+
+    .md-typeset .blog-pagination a.active {
+        background-color: var(--md-typeset-a-color);
+        color: white;
+        font-weight: bold;
+    }
+
+    .md-typeset .blog-pagination a:hover:not(.active) {
+        background-color: #dddddda1;
+    }
+
+    .md-typeset .blog-hidden {
+        display: none;
+    }
+</style>
+
+<style>
+    .blog-override-post {
+        padding: 30px 60px 30px 0;
+        margin-top: 10px;
+        border: 1px solid transparent;
+        cursor: default;
+        border-bottom: 1px solid var(--md-typeset-a-color);
+    }
+
+    .blog-override-post .blog-post-title {
+        color: var(--md-typeset-a-color);
+        margin-top: 0;
+    }
+
+    .blog-post-description {
+        color: var(--md-typeset-color);
+    }
+
+    .blog-override-post:first-of-type {
+        margin-top: 0;
+    }
+
+    .blog-override-post:hover {
+        border: 1px solid #e8e8e877;
+        box-shadow: 3px 4px 10px #e8e8e8;
+    }
+
+    .blog-override-post,
+    .blog-override-post>* {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .blog-override-post:hover>* {
+        transform: translateX(30px);
+    }
+
+    .blog-post-description,
+    .blog-post-extra {
+        opacity: 0.8;
+    }
+
+    .blog-override-post:hover .blog-post-description,
+    .blog-override-post:hover .blog-post-extra {
+        opacity: 1;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .blog-override-post,
+        .blog-override-post>* {
+            transition: none;
+        }
+
+        .blog-override-post:hover>* {
+            transform: none;
+        }
+
+        .blog-override-post {
+            padding: 30px 0 30px 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        .blog-override-post:hover {
+            border: none;
+            box-shadow: none;
+        }
+
+        .blog-post-description,
+        .blog-post-extra,
+        .blog-override-post:hover .blog-post-description,
+        .blog-override-post:hover .blog-post-extra {
+            opacity: 1;
+        }
+    }
+</style>
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
     .md-typeset .blogging-tags-grid {
         display: flex;
         flex-direction: row;
@@ -747,55 +861,50 @@
         border-radius: 5px;
     }
 </style>
-<h2 id="update-system">Update System</h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
-</span></code></pre></div>
-<h2 id="installing-applications">Installing applications</h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>postgresql<span class="w"> </span>postgresql-contrib<span class="w"> </span>nginx<span class="w"> </span>curl
-</span></code></pre></div>
-<h2 id="creating-the-postgresql-database-and-user">Creating the PostgreSQL Database and User</h2>
-<hr />
-<ul>
-<li>🆔 id_button                                              </li>
-<li>🚦 vertical_traffic_light                               </li>
-<li>🉐 ideograph_advantage                                    </li>
-<li>📼 vhs                                                  </li>
-<li>👿 imp                                                    </li>
-<li>📳 vibration_mode                                       </li>
-<li>📥 inbox_tray                                             </li>
-<li>✌ victory_hand                                          </li>
-<li>📨 incoming_envelope                                      </li>
-<li>✌🏿 victory_hand_dark_skin_tone                           </li>
-<li>☝ index_pointing_up                                       </li>
-<li>✌🏻 victory_hand_light_skin_tone                          </li>
-<li>☝🏿 index_pointing_up_dark_skin_tone                        </li>
-<li>✌🏾 victory_hand_medium-dark_skin_tone                    </li>
-<li>☝🏻 index_pointing_up_light_skin_tone                       </li>
-<li>✌🏼 victory_hand_medium-light_skin_tone                   </li>
-<li>☝🏾 index_pointing_up_medium-dark_skin_tone                 </li>
-<li>✌🏽 victory_hand_medium_skin_tone                         </li>
-<li>☝🏼 index_pointing_up_medium-light_skin_tone                </li>
-<li>📹 video_camera                                         </li>
-<li>☝🏽 index_pointing_up_medium_skin_tone                      </li>
-<li>🎮 video_game                                           </li>
-<li>🇮🇳 india    </li>
-</ul>
+
+    
 
 
 
 
 
 
+<div class = "md-typeset">
+    <div class="pages">
+        
+            
+            <div class="page" id="page1">
 
-  
-  
+                
+            </div>
+        
+    </div>
+
+    <div class="blog-center blog-hidden">
+        <div class="blog-pagination " id="blog-pagination">
+            
+                
+                    
+                
+                <a class="page-number" href="">1</a>
+            
+        </div>
+        
+            <div>Total <b>0</b> posts.</div>
+        
+    </div>
+</div></p>
+
+
+
+
+
+
 
 
 
   
 
-
-  
 
 
 
@@ -901,4 +1010,63 @@
       
     
   </body>
-</html>
+</html><script>var currentPage = 0
+const lastComponent = window.location.href.split("/").slice(-1).pop()
+
+if (lastComponent && lastComponent.slice(0, 7) == "#blog-p") {
+  const page = parseInt(lastComponent.slice(7))
+  if (page) {
+    currentPage = page - 1
+  }
+}
+
+function scrollToTop() {
+  setTimeout(function () {
+    window.scrollTo(0, 0);
+  }, 100);
+}
+
+const onButtonClick = (ele) => {
+  var current = pagination.getElementsByClassName("active");
+  if (current.length) {
+    current[0].className = current[0].className.replace(
+      " active", ""
+    );
+  }
+  ele.className += " active";
+
+  // Togglg visibility of pages
+  const destPage = parseInt(ele.textContent)
+  var pages = document.getElementsByClassName("page")
+  if (destPage && pages.length) {
+    for (var j = 0; j < pages.length; j++) {
+      const pageId = parseInt(pages[j].id.replace("page", ""))
+      if (pageId != destPage) {
+        // This is not the destination page
+        if (!pages[j].className.includes("blog-hidden")) {
+          pages[j].className += " blog-hidden"
+        }
+      } else {
+        // This is the destination page
+        pages[j].className = pages[j].className.replace(" blog-hidden", "")
+      }
+    }
+    scrollToTop();
+  }
+};
+
+var pagination = document.getElementById("blog-pagination");
+if (pagination) {
+  var links = pagination.getElementsByClassName("page-number");
+  if (links.length) {
+    for (var i = 0; i < links.length; i++) {
+      // Toggle pagination highlight
+      links[i].addEventListener("click", function () {
+        onButtonClick(this);
+      });
+    }
+    links[currentPage].className += " active"
+    onButtonClick(links[currentPage]);
+  }
+}
+</script>
