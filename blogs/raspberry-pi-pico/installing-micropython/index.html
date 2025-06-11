@@ -6,47 +6,61 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     
+        <meta name="description" content="Tiny board, big potential—code with MicroPython on your Raspberry Pi Pico & Pico W.">
+    
     
         <meta name="author" content="Arun kumar N">
     
     
-        <link rel="canonical" href="https://tech.arunkumarn.in/tags/">
-    
-    
-        <link rel="prev" href="../projects/">
+        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/installing-micropython/">
     
     
     
-    <link rel="icon" href="../assets/image/favicon.png">
+    
+    <link rel="icon" href="../../../assets/image/favicon.png">
 
     <meta property="og:type" content="website" />
     
+        <meta property="og:title" content="Installing MicroPython on Raspberry Pi Pico & Pico W : Turn Your Pico into a Python Powerhouse" />
     
     
-        <meta property="og:url" content="https://tech.arunkumarn.in/tags/">
+        <meta property="og:description" content="Tiny board, big potential—code with MicroPython on your Raspberry Pi Pico & Pico W." />
+    
+    
+        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/installing-micropython/">
     
     <meta property="og:site_name" content="Tech Aavishkarah" />
+    
+        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/micro-python-on-raspberry-pi-pico.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
     
 
 
     <meta name="twitter:card" content="summary" />
     
+        <meta name="twitter:description" content="Tiny board, big potential—code with MicroPython on your Raspberry Pi Pico & Pico W." />
+    
+    
+        <meta name="twitter:title"  content="Installing MicroPython on Raspberry Pi Pico & Pico W : Turn Your Pico into a Python Powerhouse" />
     
     
     <meta name="twitter:site" content="@arunkumarn_eee" />
+    
+        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/micro-python-on-raspberry-pi-pico.png" />
     
     <meta name="twitter:creator" content="@arunkumarn_eee" />
 
     
       
-        <title>tags - Tech Aavishkarah</title>
+        <title>Installing MicroPython on Raspberry Pi Pico & Pico W : Turn Your Pico into a Python Powerhouse - Tech Aavishkarah</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -65,9 +79,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -103,7 +117,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tags" class="md-skip">
+        <a href="#micropython-firmware-download-links" class="md-skip">
           Skip to content
         </a>
       
@@ -119,9 +133,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Tech Aavishkarah" class="md-header__button md-logo" aria-label="Tech Aavishkarah" data-md-component="logo">
+    <a href="../../.." title="Tech Aavishkarah" class="md-header__button md-logo" aria-label="Tech Aavishkarah" data-md-component="logo">
       
-  <img src="../assets/image/favicon.png" alt="logo">
+  <img src="../../../assets/image/favicon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -138,7 +152,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              tags
+              Installing MicroPython on Raspberry Pi Pico & Pico W : Turn Your Pico into a Python Powerhouse
             
           </span>
         </div>
@@ -201,7 +215,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -222,7 +236,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../python/syllabus/" class="md-tabs__link">
+        <a href="../../../python/syllabus/" class="md-tabs__link">
           
   
   
@@ -242,7 +256,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../blogs/python/" class="md-tabs__link">
+        <a href="../../python/" class="md-tabs__link">
           
   
   
@@ -260,7 +274,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../projects/" class="md-tabs__link">
+      <a href="../../../projects/" class="md-tabs__link">
         
   
   
@@ -277,13 +291,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../tags/" class="md-tabs__link">
           
   
   
@@ -312,7 +324,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -323,9 +337,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Tech Aavishkarah" class="md-nav__button md-logo" aria-label="Tech Aavishkarah" data-md-component="logo">
+    <a href="../../.." title="Tech Aavishkarah" class="md-nav__button md-logo" aria-label="Tech Aavishkarah" data-md-component="logo">
       
-  <img src="../assets/image/favicon.png" alt="logo">
+  <img src="../../../assets/image/favicon.png" alt="logo">
 
     </a>
     Tech Aavishkarah
@@ -340,7 +354,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -403,7 +417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/syllabus/" class="md-nav__link">
+      <a href="../../../python/syllabus/" class="md-nav__link">
         
   
   
@@ -426,7 +440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/builtin_methods/" class="md-nav__link">
+      <a href="../../../python/builtin_methods/" class="md-nav__link">
         
   
   
@@ -497,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../blogs/python/" class="md-nav__link">
+      <a href="../../python/" class="md-nav__link">
         
   
   
@@ -520,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../blogs/raspberry-pi-pico/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -550,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/" class="md-nav__link">
+      <a href="../../../projects/" class="md-nav__link">
         
   
   
@@ -569,29 +583,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -604,7 +613,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Extra
@@ -615,19 +624,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../tags/" class="md-nav__link">
         
   
   
@@ -638,7 +638,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -659,6 +658,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -668,8 +669,41 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#micropython-firmware-download-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroPython firmware Download links
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drag-drop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drag &amp; Drop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-thonny-python-ide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Thonny Python IDE
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -682,252 +716,106 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="tags">Tags</h1>
-<p>
 
-<div class="blogging-tags-grid">
-        
-        <a href="https://tech.arunkumarn.in/tags#rich" class="blogging-tag"><code>#rich</code></a>
-        
-        <a href="https://tech.arunkumarn.in/tags#input" class="blogging-tag"><code>#input</code></a>
-        
-        <a href="https://tech.arunkumarn.in/tags#print" class="blogging-tag"><code>#print</code></a>
-        
-        <a href="https://tech.arunkumarn.in/tags#micropython" class="blogging-tag"><code>#micropython</code></a>
-        
-        <a href="https://tech.arunkumarn.in/tags#Jupyter Notebook" class="blogging-tag"><code>#Jupyter Notebook</code></a>
-        
+  <h1>Installing MicroPython on Raspberry Pi Pico & Pico W : Turn Your Pico into a Python Powerhouse</h1>
+
+<div class="md-typeset">
+    <div class="blogging-tags-grid">
+
         <a href="https://tech.arunkumarn.in/tags#raspberry pi pico" class="blogging-tag"><code>#raspberry pi pico</code></a>
-        
+
         <a href="https://tech.arunkumarn.in/tags#raspberry pi pico w" class="blogging-tag"><code>#raspberry pi pico w</code></a>
-        
+
         <a href="https://tech.arunkumarn.in/tags#micro python" class="blogging-tag"><code>#micro python</code></a>
-        
-        <a href="https://tech.arunkumarn.in/tags#python course" class="blogging-tag"><code>#python course</code></a>
-        
-        <a href="https://tech.arunkumarn.in/tags#python" class="blogging-tag"><code>#python</code></a>
-        
+
     </div>
-    
 
 
+</div>
 
+<style>
+    .md-typeset .blogging-tags-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 5px;
+    }
 
-<h3 id="rich">#rich</h3>
-    
-        
-            
-            
-        
-        <li>
-            <a href="https://tech.arunkumarn.in/blogs/python/Beyond-input-Modern-Python-Techniques-for-Bulletproof-User-input-Validation/">Beyond input(): Modern Python Techniques for Bulletproof User Input Validation</a>
-            &nbsp;&nbsp;
-            <span style="color: var(--md-default-fg-color--light)">
-                30/05/25, 3:44 pm
-            </span>
-        </li>
-    
-        
-            
-            
-        
-        <li>
-            <a href="https://tech.arunkumarn.in/blogs/python/Beyond-print-Modern-Python-Text-Display-Techniques-You-Need-to-Know/">Beyond print( ): Modern Python Text Display Techniques You Need to Know</a>
-            &nbsp;&nbsp;
-            <span style="color: var(--md-default-fg-color--light)">
-                27/05/25, 8:08 pm
-            </span>
-        </li>
-    
+    .md-typeset .blogging-tag {
+        color: var(--md-typeset-color);
+        background-color: var(--md-typeset-code-color);
+        white-space: nowrap;
+        display: block;
+    }
 
-<h3 id="input">#input</h3>
-    
-        
-            
-            
-        
-        <li>
-            <a href="https://tech.arunkumarn.in/blogs/python/Beyond-input-Modern-Python-Techniques-for-Bulletproof-User-input-Validation/">Beyond input(): Modern Python Techniques for Bulletproof User Input Validation</a>
-            &nbsp;&nbsp;
-            <span style="color: var(--md-default-fg-color--light)">
-                30/05/25, 3:44 pm
-            </span>
-        </li>
-    
-
-<h3 id="print">#print</h3>
-    
-        
-            
-            
-        
-        <li>
-            <a href="https://tech.arunkumarn.in/blogs/python/Beyond-print-Modern-Python-Text-Display-Techniques-You-Need-to-Know/">Beyond print( ): Modern Python Text Display Techniques You Need to Know</a>
-            &nbsp;&nbsp;
-            <span style="color: var(--md-default-fg-color--light)">
-                27/05/25, 8:08 pm
-            </span>
-        </li>
-    
-
-<h3 id="micropython">#micropython</h3>
-    
-        
-            
-            
-        
-        <li>
-            <a href="https://tech.arunkumarn.in/blogs/python/Born-from-Python%3A-The-Rise-of-MicroPython-in-Embedded-Systems/">Born from Python: The Rise of MicroPython in Embedded Systems</a>
-            &nbsp;&nbsp;
-            <span style="color: var(--md-default-fg-color--light)">
-                05/06/25, 9:35 pm
-            </span>
-        </li>
-    
-
-<h3 id="Jupyter Notebook">#Jupyter Notebook</h3>
-    
-        
-            
-            
-        
-        <li>
-            <a href="https://tech.arunkumarn.in/blogs/python/Convert_Jupyter_Notebooks_into_Interactive_Slides/">Present Your Python: Convert Jupyter Notebooks into Interactive Slides</a>
-            &nbsp;&nbsp;
-            <span style="color: var(--md-default-fg-color--light)">
-                20/04/25, 11:02 am
-            </span>
-        </li>
-    
-
-<h3 id="raspberry pi pico">#raspberry pi pico</h3>
-    
-        
-            
-            
-        
-        <li>
-            <a href="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/installing-micropython/">Installing MicroPython on Raspberry Pi Pico &amp; Pico W : Turn Your Pico into a Python Powerhouse</a>
-            &nbsp;&nbsp;
-            <span style="color: var(--md-default-fg-color--light)">
-                11/06/25, 8:52 pm
-            </span>
-        </li>
-    
-
-<h3 id="raspberry pi pico w">#raspberry pi pico w</h3>
-    
-        
-            
-            
-        
-        <li>
-            <a href="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/installing-micropython/">Installing MicroPython on Raspberry Pi Pico &amp; Pico W : Turn Your Pico into a Python Powerhouse</a>
-            &nbsp;&nbsp;
-            <span style="color: var(--md-default-fg-color--light)">
-                11/06/25, 8:52 pm
-            </span>
-        </li>
-    
-
-<h3 id="micro python">#micro python</h3>
-    
-        
-            
-            
-        
-        <li>
-            <a href="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/installing-micropython/">Installing MicroPython on Raspberry Pi Pico &amp; Pico W : Turn Your Pico into a Python Powerhouse</a>
-            &nbsp;&nbsp;
-            <span style="color: var(--md-default-fg-color--light)">
-                11/06/25, 8:52 pm
-            </span>
-        </li>
-    
-
-<h3 id="python course">#python course</h3>
-    
-        
-            
-            
-        
-        <li>
-            <a href="https://tech.arunkumarn.in/draft/aws_server/">Host Django Application in AWS EC2 Machine using Gunicorn + Nginx + SSL</a>
-            &nbsp;&nbsp;
-            <span style="color: var(--md-default-fg-color--light)">
-                11/06/25, 8:53 pm
-            </span>
-        </li>
-    
-        
-            
-            
-        
-        <li>
-            <a href="https://tech.arunkumarn.in/python/operators/">Operators</a>
-            &nbsp;&nbsp;
-            <span style="color: var(--md-default-fg-color--light)">
-                25/04/25, 1:32 pm
-            </span>
-        </li>
-    
-        
-            
-            
-        
-        <li>
-            <a href="https://tech.arunkumarn.in/python/data_types/">Built-in Data Types</a>
-            &nbsp;&nbsp;
-            <span style="color: var(--md-default-fg-color--light)">
-                20/04/25, 6:37 pm
-            </span>
-        </li>
-    
-        
-            
-            
-        
-        <li>
-            <a href="https://tech.arunkumarn.in/python/identifiers/">Identifiers</a>
-            &nbsp;&nbsp;
-            <span style="color: var(--md-default-fg-color--light)">
-                06/04/25, 6:51 pm
-            </span>
-        </li>
-    
-        
-            
-            
-        
-        <li>
-            <a href="https://tech.arunkumarn.in/python/installation/">Python Installation.</a>
-            &nbsp;&nbsp;
-            <span style="color: var(--md-default-fg-color--light)">
-                03/04/25, 8:54 pm
-            </span>
-        </li>
-    
-
-<h3 id="python">#python</h3>
-    
-        
-            
-            
-        
-        <li>
-            <a href="https://tech.arunkumarn.in/python/syllabus/">course</a>
-            &nbsp;&nbsp;
-            <span style="color: var(--md-default-fg-color--light)">
-                03/04/25, 8:54 pm
-            </span>
-        </li>
-    
-</p>
-
-
+    .md-typeset .blogging-tag code {
+        border-radius: 5px;
+    }
+</style>
+<p><img alt="micropython" src="images/micro-python-on-raspberry-pi-pico-blog.png" /></p>
+<details class="abstract" open="open">
+<summary>Table of Contents</summary>
+<div class="toc">
+<ul>
+<li><a href="#micropython-firmware-download-links">MicroPython firmware Download links</a></li>
+<li><a href="#drag-drop">Drag &amp; Drop</a></li>
+<li><a href="#using-thonny-python-ide">Using Thonny Python IDE</a></li>
+</ul>
+</div>
+</details>
+<h2 id="micropython-firmware-download-links">MicroPython firmware Download links</h2>
+<ul>
+<li><a href="https://micropython.org/download/rp2-pico/rp2-pico-latest.uf2">Raspberry Pi Pico <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h12c1.11 0 2-.89 2-2V8zm-2 17-4-4h2.5v-3h3v3H16zm1-10V3.5L18.5 9z"/></svg></span> </a></li>
+<li><a href="https://micropython.org/download/rp2-pico-w/rp2-pico-w-latest.uf2">Raspberry Pi Pico W <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h12c1.11 0 2-.89 2-2V8zm-2 17-4-4h2.5v-3h3v3H16zm1-10V3.5L18.5 9z"/></svg></span></a></li>
+<li><a href="https://micropython.org/download/RPI_PICO2/RPI_PICO2-latest.uf2">Raspberry Pi Pico 2 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h12c1.11 0 2-.89 2-2V8zm-2 17-4-4h2.5v-3h3v3H16zm1-10V3.5L18.5 9z"/></svg></span></a></li>
+<li><a href="https://downloads.raspberrypi.com/micropython/mp_firmware_unofficial_latest.uf2">Raspbeery Pi Pico 2 W <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h12c1.11 0 2-.89 2-2V8zm-2 17-4-4h2.5v-3h3v3H16zm1-10V3.5L18.5 9z"/></svg></span></a></li>
+</ul>
+<h2 id="drag-drop">Drag &amp; Drop</h2>
+<ol>
+<li>Download the respective <strong>UF2</strong> micropython firmware file for the board. (for this article, pico w board is selected)
+<img alt="download uf2" src="images/download_uf2.png" /></li>
+<li>Connect Pico board to computer via <abbr title="Universal Serial Bus">USB</abbr>, press and hold the <code>boot-select</code> button.</li>
+<li>Release the boot-select button after pico appears as a storage device.
+<img alt="pico_storage" src="images/pico_storage.png" /></li>
+<li>Copy and paste (drag &amp; drop) the downloaded <strong>UF2</strong> file on to the device.
+<img alt="alt text" src="images/drag_drop.png" /></li>
+<li>Pico board reboots, once the file transfer is completed.</li>
+<li>Now your board is ready to start coding in micro python.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Troubleshooting</p>
+<ul>
+<li>Check the Micro <abbr title="Universal Serial Bus">USB</abbr> cable used supports data transfer.</li>
+</ul>
+</div>
+<h2 id="using-thonny-python-ide">Using Thonny Python IDE</h2>
+<p>1) Open the Thonny application</p>
+<figure>
+<p><img alt="Thonny Editor" src="images/thonny_editor.png" /></p>
+<figcaption>
+<p>Thonny editor</p>
+</figcaption>
+</figure>
+<p>2) Connect Pico board to the computer via <abbr title="Universal Serial Bus">USB</abbr>.</p>
+<p>3) Choose the Interpreter from <code>Tools</code> &gt; <code>Options</code> &gt; <code>Interpreter</code></p>
+<p><img alt="Editor Options" src="images/editor_options.png" /></p>
+<p>4) Select the firmware you want to install.</p>
+<p><img alt="choose firmware" src="images/firmware.png" /></p>
+<p>5) Choose <code>detect port automatically</code> option or the <abbr title="Universal Serial Bus">USB</abbr> port, pico is connected.</p>
+<p><img alt="auto detect board" src="images/detect_auto.png" /></p>
+<p>6) Click on <code>install or update firmware</code> option.</p>
+<p><img alt="install_update" src="images/install_update.png" /></p>
+<p>7) Check the target device location option and device model details.</p>
+<p>8) Click on <code>Install</code> button. </p>
+<p><img alt="install_button" src="images/install_button.png" /></p>
+<p>9) Once done installing firmware close the option menu and select the device model from the right bottom corner.</p>
+<p>10) After successfully selecting the device, you will be greeted with the MicroPython Interpreter.  </p>
+<p><img alt="interpreter" src="images/interpreter.png" /></p>
 
 
 
@@ -936,7 +824,14 @@
 
 
   
+  
 
+
+
+  
+
+
+  
 
 
 
@@ -1035,10 +930,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "content.code.copy", "content.footnote.tooltips", "content.tabs.link"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "content.code.copy", "content.footnote.tooltips", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
