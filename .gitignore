@@ -16,3 +16,5 @@ wheels/
 backup_mkdocs.yml
 site/
 tempfiles/
+
+topics.md
