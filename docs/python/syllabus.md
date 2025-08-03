@@ -24,7 +24,7 @@ tags:
 
 - [x] [Identifiers, keywords, variables.](./identifiers.md)
 - [x] [Data types.](./data_types.md)
-- [ ] Operators.
+- [x] [Operators.](./operators.md)
 - [ ] Type conversion.
 
 ## Methods on data types
@@ -75,5 +75,3 @@ tags:
     - Pillow for images
     - JSON for json
     - PDF, excel etc
-
-## OOP's

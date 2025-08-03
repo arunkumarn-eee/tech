@@ -6,7 +6,7 @@ authors:
     name: Arun kumar N
     avatar: ../assets/image/favicon.png
     description: Creator
-update_date : 2025-04-06
+update_date : 2025-05-02
 published_date : 2025-04-06
 tags:
   - python course
@@ -141,4 +141,31 @@ x, y, z = 2, 5, 6
 # x = 2
 # y = 5
 # z = 6
+```
+
+
+## Comments
+
+A comment is a text that describes what the program or a particular part of the program is trying to do and is ignored by the Python interpreter.
+
+### Single line Comment
+
+In Python, use the hash (#) symbol to start writing a comment. 
+
+```python title="example"
+>>> # This is Single line comment.
+>>>
+>>> a = 5  # a is assigned with a value of 5
+>>> # you can add comments after expression also.
+```
+
+### Multiline Comment
+
+Use the hash (#) symbol at the beginning of each line.
+
+```python title="example"
+# This is Single line comment
+# Adding hash (#) again to the next line makes it Multiline comment. 
+# comment line 3
+# comment line 4
 ```

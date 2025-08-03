@@ -99,14 +99,14 @@ Create a directory for the project, open terminal or command prompt from the par
 === "rye"
     ```bash
 
-    rye add notebook==6.2 setuptools rise==7.1
+    rye add notebook==6.2 setuptools rise==5.7.1
 
     ```
 
 === "uv"
     ```bash
 
-    uv add notebook==6.2 setuptools rise==7.1
+    uv add notebook==6.2 setuptools rise==5.7.1
 
     ```
 
@@ -114,7 +114,7 @@ Create a directory for the project, open terminal or command prompt from the par
     ```bash
 
     # installing libraries
-    (.venv)$ python -m pip install notebook==6.2 rise==7.1
+    (.venv)$ python -m pip install notebook==6.2 rise==5.7.1
 
     ```
 
@@ -124,7 +124,7 @@ Create a directory for the project, open terminal or command prompt from the par
 
 
     # installing libraries
-    (.venv)C:\> python -m pip install notebook==6.2 rise==7.1
+    (.venv)C:\> python -m pip install notebook==6.2 rise==5.7.1
 
     ```
 

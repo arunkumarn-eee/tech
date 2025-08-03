@@ -21,6 +21,12 @@ hide:
 
 ---
 
+## Installing Python on Mobile Phone.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9QQbWqBJjC0?si=cn0Wvhw4VV1Y2IJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
 ## Guide to install `rye` on Windows
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xJdIKQ84s8E?si=kfBl13_RuuXc3RV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -3,145 +3,160 @@ site_url: https://tech.arunkumarn.in
 site_author: Arun kumar N
 
 nav:
-    - Home: index.md
-    - Python:
-          - course: python/syllabus.md
-          - Built-ins: python/builtin_methods/index.md
-    - Blog: 
-        - Python: blogs/python.md
-    - Extra:
-          - tags: tags.md
-
-
+  - Home: index.md
+  - Python:
+      - course: python/syllabus.md
+      - Built-ins: python/builtin_methods/index.md
+  - Blog:
+      - Python: blogs/python.md
+      - Raspberry Pi Pico: blogs/raspberry-pi-pico.md
+  - Projects: projects.md
+  - STEM : stem.md
+  - Extra:
+      - tags: tags.md
 
 theme:
-    name: material
-    logo: assets/image/favicon.png
-    favicon: assets/image/favicon.png
-    custom_dir: templates/
-    features:
-        - navigation.tabs
-        - navigation.tabs.sticky
-        - navigation.top
-        - content.code.copy
-        - content.footnote.tooltips
-        - content.tabs.link
-    palette:
-        # Palette toggle for automatic mode
-        - media: "(prefers-color-scheme)"
-          primary: black
-          accent: amber
-          toggle:
-              icon: material/brightness-auto
-              name: Switch to light mode
+  name: material
+  logo: assets/image/favicon.png
+  favicon: assets/image/favicon.png
+  custom_dir: templates/
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - content.code.copy
+    - content.footnote.tooltips
+    - content.tabs.link
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
 
-        # Palette toggle for light mode
-        - media: "(prefers-color-scheme: light)"
-          scheme: default
-          primary: indigo
-          accent: deep orange
-          toggle:
-              icon: material/brightness-7
-              name: Switch to dark mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
 
-        # Palette toggle for dark mode
-        - media: "(prefers-color-scheme: dark)"
-          primary: black
-          accent: amber
-          scheme: slate
-          toggle:
-              icon: material/brightness-4
-              name: Switch to system preference
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: black
+      accent: amber
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
 
 plugins:
-    - blogging:
-          dirs:
-              - blog
-          template: blogoverride/blog-custom.html
-          features:
-              tags:
-                  index_page: tags.md
-                  insert: top
-          size: 5
-          theme:
-              name: card
+  - blogging:
+      locale: IN
+      dirs:
+        - blog
+      template: blogoverride/blog-custom.html
+      features:
+        tags:
+          index_page: tags.md
+          insert: top
+      size: 5
+      theme:
+        name: card
 
-          categories:
-              - name: python
-                dirs:
-                    - blogs/python
-                template: blogoverride/blog-custom.html
-              - name: projects
-                dirs:
-                    - projects
-                size: 5
-                template: blogoverride/blog-custom.html
+      categories:
+        - name: python
+          dirs:
+            - blogs/python
+          template: blogoverride/blog-custom.html
+        - name: raspberry-pi-pico
+          dirs:
+            - blogs/raspberry-pi-pico
+          template: blogoverride/blog-custom.html
+          size: 5
+          sort:
+            from: new
+            by: revision
+        - name: projects
+          dirs:
+            - projects
+          size: 5
+          template: blogoverride/blog-custom.html
+        - name: stem
+          dirs:
+            - stem
+          template: blogoverride/blog-custom.html
 
 markdown_extensions:
-    - abbr
-    - attr_list
-    - md_in_html
-    - footnotes
-    - pymdownx.emoji:
-          emoji_index: !!python/name:material.extensions.emoji.twemoji
-          emoji_generator: !!python/name:material.extensions.emoji.to_svg
-    - admonition
-    - pymdownx.details
-    - pymdownx.highlight:
-          anchor_linenums: true
-          line_spans: __span
-          pygments_lang_class: true
-    - pymdownx.inlinehilite
-    - pymdownx.snippets:
-        auto_append:
-          - includes/abbreviations.md
-    - pymdownx.superfences:
-        custom_fences:
-          - name: mermaid
-            class: mermaid
-            format: !!python/name:pymdownx.superfences.fence_code_format
-    - pymdownx.tabbed:
-          alternate_style: true
-    - def_list
-    - pymdownx.tasklist:
-          custom_checkbox: true
-    - pymdownx.caret
-    - pymdownx.keys
-    - pymdownx.mark
-    - pymdownx.tilde
-    - pymdownx.blocks.caption
+  - abbr
+  - attr_list
+  - md_in_html
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.blocks.caption
 
 copyright: Copyright &copy; 2025 Arun Kumar N
 
 extra:
-    # analytics:
-    #     provider: google
-    #     property: G-MLSHZKZLZ8
-    generator: false
-    social:
-        - icon: fontawesome/brands/youtube
-          link: https://www.youtube.com/@aavishkarah?sub_confirmation=1
-          name: Aavishkarah on youtube
-        - icon: fontawesome/brands/instagram
-          link: https://instagram.com/aavishkarah
-          name: Aavishkarah on Instagram
-        - icon: fontawesome/brands/facebook
-          link: https://facebook.com/people/Aavishkarah/61573021117727
-          name: Aavishkarah on Facebook
-        - icon: fontawesome/brands/whatsapp
-          link: https://whatsapp.com/channel/0029Vb5ddY75a24ASH3a4535
-          name: Aavishkarah on WhatsApp
-        - icon: fontawesome/brands/github
-          link: https://github.com/aavishkarah
-          name: Aavishkarah on Github
-        - icon: fontawesome/brands/telegram
-          link: https://t.me/SDpython
-          name: Python on Telegram
-
+  # analytics:
+  #   provider: google
+  #   property: G-MLSHZKZLZ8
+  generator: false
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@aavishkarah?sub_confirmation=1
+      name: Aavishkarah on youtube
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/aavishkarah
+      name: Aavishkarah on Instagram
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/people/Aavishkarah/61573021117727
+      name: Aavishkarah on Facebook
+    - icon: fontawesome/brands/whatsapp
+      link: https://whatsapp.com/channel/0029Vb5ddY75a24ASH3a4535
+      name: Aavishkarah on WhatsApp
+    - icon: fontawesome/brands/github
+      link: https://github.com/aavishkarah
+      name: Aavishkarah on Github
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/SDpython
+      name: Python on Telegram
 
 extra_css:
   - stylesheets/extra.css
-
 
 watch:
   - includes

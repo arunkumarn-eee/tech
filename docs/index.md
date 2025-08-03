@@ -10,14 +10,14 @@ In a world that’s constantly evolving through technology, staying informed and
 
 We believe that knowledge grows best when shared. Tech can sometimes seem like an exclusive club with a steep learning curve — but it doesn’t have to be. This website was born out of a passion for demystifying the technical world and making it approachable to beginners, while still offering depth and insight for seasoned professionals.
 
-Here, you’ll find a blend of practical guides, personal notes, code snippets, and real-world applications — all tailored to help you learn, build, and stay ahead of the curve. Whether you're trying to get your first [Python :simple-python:](./python/syllabus.md) script running, configure a Raspberry Pi :simple-raspberrypi:, secure your home network, or contribute to open-source projects on Linux :simple-linux:, we’ve got you covered.
+Here, you’ll find a blend of practical guides, personal notes, code snippets, and real-world applications — all tailored to help you learn, build, and stay ahead of the curve. Whether you're trying to get your first [Python :simple-python:](./python/syllabus.md) script running, configure a Raspberry Pi :simple-raspberrypi: or [Raspberry Pi Pico :simple-raspberrypi:](./blogs/raspberry-pi-pico.md){.md-color-red-link} secure your home network, or contribute to open-source projects on Linux :simple-linux:, we’ve got you covered.
 
 ## Get Involved
 
 We’re more than just a site — we’re building a community. If you have ideas, feedback, or resources to share, we’d love to hear from you. You can connect with us through our social media platform:
 
 ### YouTube :simple-youtube:
-- Tech Related: [Aavishkarah ](https://www.youtube.com/@aavishkarah?sub_confirmation=1)
+- Tech Related: [Aavishkarah ](https://www.youtube.com/@aavishkarah?sub_confirmation=1){.md-color-green-link}
 - Hardware (Microcontrollers, Raspberry Pi etc..) : Coming soon..
 
 ### Groups & Channels
