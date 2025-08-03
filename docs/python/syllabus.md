@@ -75,3 +75,5 @@ tags:
     - Pillow for images
     - JSON for json
     - PDF, excel etc
+
+## OOP's
