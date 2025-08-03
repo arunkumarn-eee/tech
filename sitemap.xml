@@ -13,6 +13,10 @@
           <lastmod></lastmod>   
     </url>
     <url>
+         <loc>https://tech.arunkumarn.in/stem/</loc>
+          <lastmod></lastmod>   
+    </url>
+    <url>
          <loc>https://tech.arunkumarn.in/tags/</loc>
           <lastmod></lastmod>   
     </url>
@@ -33,15 +37,19 @@
           <lastmod></lastmod>   
     </url>
     <url>
-         <loc>https://tech.arunkumarn.in/blogs/python/Born-from-Python%3A-The-Rise-of-MicroPython-in-Embedded-Systems/</loc>
-          <lastmod></lastmod>   
-    </url>
-    <url>
          <loc>https://tech.arunkumarn.in/blogs/python/Convert_Jupyter_Notebooks_into_Interactive_Slides/</loc>
           <lastmod></lastmod>   
     </url>
     <url>
          <loc>https://tech.arunkumarn.in/blogs/python/Pandas-Made-Simple-Analyze-Real-World-Data-Like-a-Pro/</loc>
+          <lastmod></lastmod>   
+    </url>
+    <url>
+         <loc>https://tech.arunkumarn.in/blogs/python/pixel-perfection-a-creative-dive-into-python-image-processing/</loc>
+          <lastmod></lastmod>   
+    </url>
+    <url>
+         <loc>https://tech.arunkumarn.in/blogs/raspberry-pi-pico/blink-an-led-on-raspberry-pi-pico-using-micropython/</loc>
           <lastmod></lastmod>   
     </url>
     <url>

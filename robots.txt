@@ -1,7 +1,7 @@
 User-agent: *
 
 Allow: /
-Disallow: /draft/
+Disallow: /fine_update/
 Disallow: /user/
 
 
