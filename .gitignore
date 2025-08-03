@@ -12,9 +12,9 @@ wheels/
 
 
 # user defined
-
 backup_mkdocs.yml
 site/
 tempfiles/
 
 topics.md
+ideas.md
