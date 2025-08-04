@@ -40,7 +40,7 @@ In this article we go through.
 - Simulation using wokwi.
 - Hardware demo.
 
-## :star: Pre-Request
+## :compass: Pre-Request
 
 - OS : Windows / Linux / Mac / Chrome
 - Thonny IDE.
@@ -59,6 +59,12 @@ In this article we go through.
 | Raspberry Pi Pico 2 | [link](#) |
 | Micro USB Cable | [link](#) |
 
+!!! tip "Don't own a hardware :cry:"
+
+    No worries,
+
+    Still you can learn using simulation.
+    check out simulation part :smiley:.
 
 ### Connection Table
 
@@ -68,7 +74,7 @@ Built-in led of Raspberry Pi Pico is internally connected to GPIO 25.
 | :--: | :--: | :-- | 
 | Built-in LED | 25 | Internally Connected |
 
-## :star: Code
+## :open_file_folder: Code
 
 
 ```python linenums="1"
@@ -125,17 +131,19 @@ while True:
 ```
 
 - Continuous loop is achieved using `while True:`
-- `led.on()` sets the value of GPIO 25 to `HIGH` or `1`. This makes the LED to turn ON. (line number 8)
+- `led.on()` sets the value of GPIO 25 to `HIGH` or `1`, which in turn  turns ON the LED. (line number 8)
 - Delay of `1` second is achieved through `time.sleep(1)` method. (line number 9 & 11) 
-- `led.off()` sets the value of GPIO 25 to `LOW` or `0`. This makes the LED to turn OFF. (line number 10)
+- `led.off()` sets the value of GPIO 25 to `LOW` or `0`, which in turn  turns OFF the LED. (line number 10)
 
 
 !!! tip "Try It"
     - Change the value in the sleep method and observe the change in the on and off time.
         - `time.sleep(2)`, `time.sleep(4)` , etc
-    - Don't own a hardware :cry:. No worries, check out simulation part :smiley:.
+    - Use `time.sleep_ms()` method to set the values in terms of milli seconds.
+        - `time.sleep_ms(1000)` : 1000 ms or 1 s
+        - `time.sleep_ms(500)`  : 500 ms or 0.5 s
 
-## :star: Simulation
+## :material-chart-bubble:{style="color:#ffaa00"} Simulation
 
 <iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/438357372184564737" frameborder="2px" width="100%" height="700px"></iframe>
 
@@ -145,7 +153,7 @@ Above code turns ON LED for 1 second and OFF for 1 second. Similar to a square w
 
 ---
 
-## Extras
+## :material-web-plus: Extras
 
 ### Components details
 
