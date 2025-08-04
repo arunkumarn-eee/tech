@@ -736,15 +736,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#circuit-diagram" class="md-nav__link">
-    <span class="md-ellipsis">
-      Circuit Diagram
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#hardware-required" class="md-nav__link">
     <span class="md-ellipsis">
       Hardware Required
@@ -752,30 +743,6 @@
   </a>
   
     <nav class="md-nav" aria-label="Hardware Required">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#components-detail" class="md-nav__link">
-    <span class="md-ellipsis">
-      Components detail
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connection-diagram" class="md-nav__link">
-    <span class="md-ellipsis">
-      Connection Diagram
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Connection Diagram">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -801,15 +768,6 @@
   
     <nav class="md-nav" aria-label="Code">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#libraries-used" class="md-nav__link">
-    <span class="md-ellipsis">
-      Libraries Used
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#code-explanation" class="md-nav__link">
@@ -844,11 +802,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
+  <a href="#extras" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusion
+      Extras
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Extras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#components-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components details
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules-libraries-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modules / Libraries Used
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -915,53 +897,184 @@
 <ul>
 <li><a href="#abstract">Abstract</a></li>
 <li><a href="#pre-request">Pre-Request</a></li>
-<li><a href="#circuit-diagram">Circuit Diagram</a></li>
 <li><a href="#hardware-required">Hardware Required</a><ul>
-<li><a href="#components-detail">Components detail</a></li>
-</ul>
-</li>
-<li><a href="#connection-diagram">Connection Diagram</a><ul>
 <li><a href="#connection-table">Connection Table</a></li>
 </ul>
 </li>
 <li><a href="#code">Code</a><ul>
-<li><a href="#libraries-used">Libraries Used</a></li>
 <li><a href="#code-explanation">Code Explanation</a></li>
 </ul>
 </li>
 <li><a href="#simulation">Simulation</a></li>
 <li><a href="#result">Result</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#extras">Extras</a><ul>
+<li><a href="#components-details">Components details</a></li>
+<li><a href="#modules-libraries-used">Modules / Libraries Used</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </details>
 <h2 id="abstract">Abstract</h2>
-<h2 id="pre-request">Pre-Request</h2>
-<h2 id="circuit-diagram">Circuit Diagram</h2>
+<p>Raspberry Pi Pico is a modern development board with Cortex-M0+, Dual core microcontroller supporting micro-python. Know the <a href="../pico2-pico2-w-key-features-pin-config/" target="_blank">key features</a> and <a href="../pico-vs-pico2/" target="_blank">comparison with Pico 2 version</a>. </p>
+<p>In this article we go through.</p>
+<ul>
+<li>Accessing the built-in led of the Raspberry Pi Pico board.</li>
+<li>Turning <code>on</code> and <code>off</code> built-in led using micro python.</li>
+<li>Simulation using wokwi.</li>
+<li>Hardware demo.</li>
+</ul>
+<h2 id="pre-request"><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2b50.svg" title=":star:" /> Pre-Request</h2>
+<ul>
+<li>OS : Windows / Linux / Mac / Chrome</li>
+<li>Thonny IDE.</li>
+<li>MicroPython firmware in Raspberry Pi Pico / Pico 2. <ul>
+<li>For step by step procedure Click <a href="../installing-micropython/" target="_blank">here</a> . </li>
+</ul>
+</li>
+</ul>
 <h2 id="hardware-required">Hardware Required</h2>
-<h3 id="components-detail">Components detail</h3>
-<h2 id="connection-diagram">Connection Diagram</h2>
+<ul>
+<li>Raspberry Pi Pico / Pico 2. </li>
+<li>Micro USB Cable.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Components</th>
+<th>Purchase Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raspberry Pi Pico</td>
+<td><a href="#">link</a></td>
+</tr>
+<tr>
+<td>Raspberry Pi Pico 2</td>
+<td><a href="#">link</a></td>
+</tr>
+<tr>
+<td>Micro USB Cable</td>
+<td><a href="#">link</a></td>
+</tr>
+</tbody>
+</table>
 <h3 id="connection-table">Connection Table</h3>
-<h2 id="code">Code</h2>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">utime</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Built-in LED is connected to GPIO 25</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">utime</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">utime</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="libraries-used">Libraries Used</h3>
+<p>Built-in led of Raspberry Pi Pico is internally connected to GPIO 25.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Particular</th>
+<th style="text-align: center;">GPIO</th>
+<th style="text-align: left;">Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Built-in LED</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: left;">Internally Connected</td>
+</tr>
+</tbody>
+</table>
+<h2 id="code"><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2b50.svg" title=":star:" /> Code</h2>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Built-in LED is connected to GPIO 25</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>    <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>    <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
 <h3 id="code-explanation">Code Explanation</h3>
-<h2 id="simulation">Simulation</h2>
-<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/434985121708836865" frameborder="2px" width="100%" height="700px"></iframe>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Imports</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>Importing <code>Pin</code> class from machine module to control the GPIO pins.</li>
+<li><code>time</code> module for creating delay between <code>on</code> and <code>off</code> state.</li>
+</ul>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Accessing built-in led of Raspberry Pi Pico / Pico 2 board.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="c1"># Built-in LED is connected to GPIO 25</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>GPIO pin 25 is configured as <code>OUTPUT</code> pin (Line number 5) and assigned to a variable <code>led</code></li>
+</ul>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Blinking LED</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a>    <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a>    <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>Continuous loop is achieved using <code>while True:</code></li>
+<li><code>led.on()</code> sets the value of GPIO 25 to <code>HIGH</code> or <code>1</code>. This makes the LED to turn ON. (line number 8)</li>
+<li>Delay of <code>1</code> second is achieved through <code>time.sleep(1)</code> method. (line number 9 &amp; 11) </li>
+<li><code>led.off()</code> sets the value of GPIO 25 to <code>LOW</code> or <code>0</code>. This makes the LED to turn OFF. (line number 10)</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Try It</p>
+<ul>
+<li>Change the value in the sleep method and observe the change in the on and off time.<ul>
+<li><code>time.sleep(2)</code>, <code>time.sleep(4)</code> , etc</li>
+</ul>
+</li>
+<li>Don't own a hardware <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f622.svg" title=":cry:" />. No worries, check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:" />.</li>
+</ul>
+</div>
+<h2 id="simulation"><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2b50.svg" title=":star:" /> Simulation</h2>
+<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/438357372184564737" frameborder="2px" width="100%" height="700px"></iframe>
 
 <h2 id="result">Result</h2>
-<h2 id="conclusion">Conclusion</h2>
+<p>Above code turns ON LED for 1 second and OFF for 1 second. Similar to a square wave of <code>0.5 Hz</code> output connected to an LED.</p>
+<hr />
+<h2 id="extras">Extras</h2>
+<h3 id="components-details">Components details</h3>
+<ul>
+<li>Raspberry Pi Pico / Pico 2 : <a href="../pico2-pico2-w-key-features-pin-config/" target="_blank">Pin Diagram</a></li>
+<li>Raspberry Pi Pico <a href="files/pico-datasheet.pdf" target="_blank">Data Sheet</a></li>
+</ul>
+<h3 id="modules-libraries-used">Modules / Libraries Used</h3>
+<ul>
+<li>
+<p><em>machine</em></p>
+<ul>
+<li><code>machine</code> module contains specific attributes and methods related to hardware on a particular board. Here class <code>Pin</code> is imported to control the Input Output pins. </li>
+<li><a href="https://docs.micropython.org/en/latest/library/machine.html" target="_blank">More Details</a> </li>
+</ul>
+</li>
+<li>
+<p><em>time</em></p>
+<ul>
+<li><code>time</code> module provides functions related to date &amp; time, measuring time intervals and generating delays.</li>
+<li><a href="https://docs.micropython.org/en/latest/library/time.html" target="_blank">More Details</a> </li>
+</ul>
+</li>
+</ul>
 
 
 
