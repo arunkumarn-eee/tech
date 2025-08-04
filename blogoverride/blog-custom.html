@@ -2,6 +2,7 @@
 
 
 {% macro render_blog(title, description, time, url, pg) -%}
+{% if not pg.meta.draft %}
 <a href="{{ url }}">
     <div class="blog-override-post">
         <h2 class="blog-post-title">{{ title }}</h2>
@@ -21,6 +22,7 @@
         </div>
     </div>
 </a>
+{% endif %}
 {{ caller() }}
 {%- endmacro %}
 

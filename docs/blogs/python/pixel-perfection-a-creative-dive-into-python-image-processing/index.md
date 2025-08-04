@@ -15,7 +15,7 @@ tags:
   - pillow-python
 hide:
   - navigation
-draft: false
+draft: true
 ---
 
 ![Pillow Python](../../../assets/blogs/python/image_pillow_python.png)
