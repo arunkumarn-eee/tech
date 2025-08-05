@@ -12,7 +12,7 @@ published_date : 2025-08-04
 banner_image : assets/blogs/raspberrypipico/pico-led-blinking.png
 tags:
   - raspberry pi pico
-  - raspberry pi pico w
+  - raspberry pi pico 2
   - micro python
   - guide
 hide:
@@ -151,7 +151,7 @@ while True:
 
 !!! danger "Not able to view the simulation"
     - :fontawesome-solid-laptop: Desktop or Laptop : Reload this page ( ++ctrl+r++ )
-    - :fontawesome-solid-mobile: Mobile : Use Landscape Mode
+    - :fontawesome-solid-mobile: Mobile : Use Landscape Mode and reload the page
 
 
 <iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/438357372184564737" frameborder="2px" width="100%" height="700px"></iframe>
