@@ -1089,11 +1089,11 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <li>This increased the brightness of LED gradually from OFF state to ON state.</li>
 </ul>
 <p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Decreasing the LED brightness</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-11">11</a></span>
-<span class="normal"><a href="#__codelineno-5-12">12</a></span>
-<span class="normal"><a href="#__codelineno-5-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11"></a>    <span class="c1"># Decreasing the duty cyle value from 0% to 100%</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">65535</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13"></a>        <span class="n">led</span><span class="o">.</span><span class="n">duty_u16</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-17">17</a></span>
+<span class="normal"><a href="#__codelineno-5-18">18</a></span>
+<span class="normal"><a href="#__codelineno-5-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17"></a>    <span class="c1"># Decreasing the duty cyle value from 100% to 0%</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">65535</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19"></a>        <span class="n">led</span><span class="o">.</span><span class="n">duty_u16</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <ul>
 <li><code>range(65535, -1, -1)</code> is set to generate sequence of number from 65535 to 0, to reduce the brightness of led from 100% to 0% or ON state to OFF state gradually.</li>
