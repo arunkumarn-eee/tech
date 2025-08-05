@@ -42,11 +42,15 @@
     </url>
     <url>
          <loc>https://tech.arunkumarn.in/blogs/raspberry-pi-pico/blink-an-led-on-raspberry-pi-pico-using-micropython/</loc>
-          <lastmod>2025-08-04</lastmod>   
+          <lastmod>2025-08-05</lastmod>   
     </url>
     <url>
          <loc>https://tech.arunkumarn.in/blogs/raspberry-pi-pico/installing-micropython/</loc>
           <lastmod>2025-06-11</lastmod>   
+    </url>
+    <url>
+         <loc>https://tech.arunkumarn.in/blogs/raspberry-pi-pico/interfacing-led-to-raspberry-pi-pico-and-controlling-it-using-micropython/</loc>
+          <lastmod>2025-08-05</lastmod>   
     </url>
     <url>
          <loc>https://tech.arunkumarn.in/blogs/raspberry-pi-pico/pico-vs-pico2/</loc>

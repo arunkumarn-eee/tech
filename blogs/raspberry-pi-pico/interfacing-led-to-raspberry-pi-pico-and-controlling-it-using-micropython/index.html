@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     
-        <meta name="description" content="Beginner-friendly guide to LED blinking with Raspberry Pi Pico, MicroPython, and online simulations.">
+        <meta name="description" content="Learn how to connect and control an external LED with the Raspberry Pi Pico using MicroPython through a simple, step-by-step hardware and simulation tutorial.">
     
     
         <meta name="author" content="Arun kumar N">
     
     
-        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/blink-an-led-on-raspberry-pi-pico-using-micropython/">
+        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/interfacing-led-to-raspberry-pi-pico-and-controlling-it-using-micropython/">
     
     
     
@@ -21,17 +21,17 @@
 
     <meta property="og:type" content="website" />
     
-        <meta property="og:title" content="Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide" />
+        <meta property="og:title" content="Interfacing LED to Raspberry Pi Pico and controlling it Using MicroPython" />
     
     
-        <meta property="og:description" content="Beginner-friendly guide to LED blinking with Raspberry Pi Pico, MicroPython, and online simulations." />
+        <meta property="og:description" content="Learn how to connect and control an external LED with the Raspberry Pi Pico using MicroPython through a simple, step-by-step hardware and simulation tutorial." />
     
     
-        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/blink-an-led-on-raspberry-pi-pico-using-micropython/">
+        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/interfacing-led-to-raspberry-pi-pico-and-controlling-it-using-micropython/">
     
     <meta property="og:site_name" content="Tech Aavishkarah" />
     
-        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/pico-led-blinking.png" />
+        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/pico-led-interface.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
     
@@ -39,21 +39,21 @@
 
     <meta name="twitter:card" content="summary" />
     
-        <meta name="twitter:description" content="Beginner-friendly guide to LED blinking with Raspberry Pi Pico, MicroPython, and online simulations." />
+        <meta name="twitter:description" content="Learn how to connect and control an external LED with the Raspberry Pi Pico using MicroPython through a simple, step-by-step hardware and simulation tutorial." />
     
     
-        <meta name="twitter:title"  content="Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide" />
+        <meta name="twitter:title"  content="Interfacing LED to Raspberry Pi Pico and controlling it Using MicroPython" />
     
     
     <meta name="twitter:site" content="@arunkumarn_eee" />
     
-        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/pico-led-blinking.png" />
+        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/pico-led-interface.png" />
     
     <meta name="twitter:creator" content="@arunkumarn_eee" />
 
     
       
-        <title>Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide - Tech Aavishkarah</title>
+        <title>Interfacing LED to Raspberry Pi Pico and controlling it Using MicroPython - Tech Aavishkarah</title>
       
     
     
@@ -152,7 +152,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide
+              Interfacing LED to Raspberry Pi Pico and controlling it Using MicroPython
             
           </span>
         </div>
@@ -793,15 +793,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#result" class="md-nav__link">
-    <span class="md-ellipsis">
-      Result
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#extras" class="md-nav__link">
     <span class="md-ellipsis">
       Extras
@@ -852,7 +843,7 @@
 
 
 
-  <h1>Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide</h1>
+  <h1>Interfacing LED to Raspberry Pi Pico and controlling it Using MicroPython</h1>
 
 <div class="md-typeset">
     <div class="blogging-tags-grid">
@@ -860,6 +851,10 @@
         <a href="https://tech.arunkumarn.in/tags#raspberry pi pico" class="blogging-tag"><code>#raspberry pi pico</code></a>
 
         <a href="https://tech.arunkumarn.in/tags#raspberry pi pico 2" class="blogging-tag"><code>#raspberry pi pico 2</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#raspberry pi pico w" class="blogging-tag"><code>#raspberry pi pico w</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#raspberry pi pico 2W" class="blogging-tag"><code>#raspberry pi pico 2W</code></a>
 
         <a href="https://tech.arunkumarn.in/tags#micro python" class="blogging-tag"><code>#micro python</code></a>
 
@@ -890,7 +885,7 @@
         border-radius: 5px;
     }
 </style>
-<p><img alt="blink led" src="../../../assets/blogs/raspberrypipico/pico-led-blinking.png" /></p>
+<p><img alt="blink led" src="../../../assets/blogs/raspberrypipico/pico-led-interface.png" /></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
@@ -906,7 +901,6 @@
 </ul>
 </li>
 <li><a href="#simulation">Simulation</a></li>
-<li><a href="#result">Result</a></li>
 <li><a href="#extras">Extras</a><ul>
 <li><a href="#components-details">Components details</a></li>
 <li><a href="#modules-libraries-used">Modules / Libraries Used</a></li>
@@ -916,27 +910,25 @@
 </div>
 </details>
 <h2 id="abstract">Abstract</h2>
-<p>Raspberry Pi Pico is a modern development board with Cortex-M0+, Dual core microcontroller supporting micro-python. Know the <a href="../pico2-pico2-w-key-features-pin-config/" target="_blank">key features</a> and <a href="../pico-vs-pico2/" target="_blank">comparison with Pico 2 version</a>. </p>
-<p>In this article we go through.</p>
-<ul>
-<li>Accessing the built-in led of the Raspberry Pi Pico board.</li>
-<li>Turning <code>on</code> and <code>off</code> built-in led using micro python.</li>
-<li>Simulation using wokwi.</li>
-<li>Hardware demo.</li>
-</ul>
+<p>In this article, a comprehensive step-by-step guide to interface an external LED with Raspberry Pi Pico board using MicroPython. Raspberry Pi Pico has 4 different variants (Pico, Pico 2, Pico W, Pico 2W) supporting micro-python. This articles lays the foundation for more advanced embedded system and IoT projects.</p>
 <h2 id="pre-request"><img alt="🧭" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9ed.svg" title=":compass:" /> Pre-Request</h2>
 <ul>
 <li>OS : Windows / Linux / Mac / Chrome</li>
 <li>Thonny IDE.</li>
-<li>MicroPython firmware in Raspberry Pi Pico / Pico 2. <ul>
+<li>MicroPython firmware in Raspberry Pi Pico / Pico 2 / Pico W / Pico 2W. <ul>
 <li>For step by step procedure Click <a href="../installing-micropython/" target="_blank">here</a> . </li>
 </ul>
 </li>
 </ul>
 <h2 id="hardware-required">Hardware Required</h2>
 <ul>
-<li>Raspberry Pi Pico / Pico 2. </li>
+<li>Raspberry Pi Pico / Pico 2 / Pico W / Pico 2W. </li>
+<li>LED.</li>
+<li>Resistors.</li>
+<li>BreadBoard.</li>
 <li>Micro USB Cable.</li>
+<li>Connecting wires.</li>
+<li>5V DC power supply (Optional)</li>
 </ul>
 <table>
 <thead>
@@ -955,7 +947,31 @@
 <td><a href="#">link</a></td>
 </tr>
 <tr>
+<td>Raspberry Pi Pico W</td>
+<td><a href="#">link</a></td>
+</tr>
+<tr>
+<td>Raspberry Pi Pico 2W</td>
+<td><a href="#">link</a></td>
+</tr>
+<tr>
+<td>LED</td>
+<td><a href="#">link</a></td>
+</tr>
+<tr>
+<td>BreadBoard</td>
+<td><a href="#">link</a></td>
+</tr>
+<tr>
+<td>Connecting Wires</td>
+<td><a href="#">link</a></td>
+</tr>
+<tr>
 <td>Micro USB Cable</td>
+<td><a href="#">link</a></td>
+</tr>
+<tr>
+<td>5V DC Adaptor</td>
 <td><a href="#">link</a></td>
 </tr>
 </tbody>
@@ -963,28 +979,45 @@
 <div class="admonition tip">
 <p class="admonition-title">Don't own a hardware <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f622.svg" title=":cry:" /></p>
 <p>No worries,</p>
-<p>Still you can learn using simulation.
+<p>Stil you can learn using simulation.
 check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:" />.</p>
 </div>
 <h3 id="connection-table">Connection Table</h3>
-<p>Built-in led of Raspberry Pi Pico is internally connected to GPIO 25.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">Particular</th>
+<th style="text-align: left;">Particular</th>
 <th style="text-align: center;">GPIO</th>
 <th style="text-align: left;">Remarks</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Built-in LED</td>
-<td style="text-align: center;">25</td>
-<td style="text-align: left;">Internally Connected</td>
+<td style="text-align: left;">LED 1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">LED-1 Cathode to GPIO 3 (Pin 5) : Low Logic</td>
+</tr>
+<tr>
+<td style="text-align: left;">LED 2</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: left;">LED-2 Anode to GPIO 12 (Pin 16) : High Logic</td>
 </tr>
 </tbody>
 </table>
-<p><img alt="Built-in LED" src="images/Built_in_LED_pico.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li>LED-1 : Low Logic LED  : ON for GPIO set to 0 : OFF for GPIO set to 1</li>
+<li>LED-2 : HIGH Logic LED : ON for GPIO set to 1 : OFF for GPIO set to 0</li>
+<li>Best practice is to connect LED in low logic. </li>
+</ul>
+</div>
+<figure>
+<p><img alt="Circuit Diagram" src="images/led_ckt.png" /></p>
+<figcaption>
+<p>fig-Connection Diagram</p>
+</figcaption>
+</figure>
 <h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4c2.svg" title=":open_file_folder:" /> Code</h2>
 <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
@@ -996,17 +1029,39 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
 <span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Built-in LED is connected to GPIO 25</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>    <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>    <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># LED 1 connected to GPIO 3</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="n">led_1</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="c1"># LED 2 connected to GPIO 12</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="n">led_2</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>  <span class="c1"># Turning ON LED</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>  <span class="n">led_1</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> 
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>  <span class="n">led_2</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> 
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a>  <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a>  <span class="c1"># Turning OFF LED</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a>  <span class="n">led_1</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> 
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a>  <span class="n">led_2</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> 
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a>  <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <h3 id="code-explanation">Code Explanation</h3>
 <p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Imports</p>
@@ -1018,43 +1073,62 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <li>Importing <code>Pin</code> class from machine module to control the GPIO pins.</li>
 <li><code>time</code> module for creating delay between <code>on</code> and <code>off</code> state.</li>
 </ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Accessing built-in led of Raspberry Pi Pico / Pico 2 board.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="c1"># Built-in LED is connected to GPIO 25</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Accessing LED's.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span>
+<span class="normal"><a href="#__codelineno-2-7">7</a></span>
+<span class="normal"><a href="#__codelineno-2-8">8</a></span>
+<span class="normal"><a href="#__codelineno-2-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="c1"># LED 1 connected to GPIO 3</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="n">led_1</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="c1"># LED 2 connected to GPIO 12</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="n">led_2</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <ul>
-<li>GPIO pin 25 is configured as <code>OUTPUT</code> pin (Line number 5) and assigned to a variable <code>led</code></li>
+<li>GPIO pin 3 is configured as <code>OUTPUT</code> pin (Line number 6) and assigned to a variable <code>led_1</code></li>
+<li>GPIO pin 12 is configured as <code>OUTPUT</code> pin (Line number 9) and assigned to a variable <code>led_2</code></li>
 </ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Blinking LED</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-3-10">10</a></span>
-<span class="normal"><a href="#__codelineno-3-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a>    <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a>    <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Controlling LED</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span>
+<span class="normal"><a href="#__codelineno-3-20">20</a></span>
+<span class="normal"><a href="#__codelineno-3-21">21</a></span>
+<span class="normal"><a href="#__codelineno-3-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12"></a>  <span class="c1"># Turning ON LED</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13"></a>  <span class="n">led_1</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> 
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a>  <span class="n">led_2</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> 
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15"></a>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16"></a>  <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17"></a>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18"></a>  <span class="c1"># Turning OFF LED</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19"></a>  <span class="n">led_1</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> 
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20"></a>  <span class="n">led_2</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> 
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21"></a>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22"></a>  <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <ul>
-<li>Continuous loop is achieved using <code>while True:</code></li>
-<li><code>led.on()</code> sets the value of GPIO 25 to <code>HIGH</code> or <code>1</code>, which in turn  turns ON the LED. (line number 8)</li>
-<li>Delay of <code>1</code> second is achieved through <code>time.sleep(1)</code> method. (line number 9 &amp; 11) </li>
-<li><code>led.off()</code> sets the value of GPIO 25 to <code>LOW</code> or <code>0</code>, which in turn  turns OFF the LED. (line number 10)</li>
+<li>Continuous loop for blinking led is achieved using <code>while True:</code></li>
+<li><code>led_1.value(0)</code> sets the value of GPIO 3 to <code>LOW</code> or <code>0</code>, it turns ON the LED-1. (line number 13)</li>
+<li><code>led_2.value(1)</code> sets the value of GPIO 12 to <code>HIGH</code> or <code>1</code>, it turns ON the LED-2. (line number 14)</li>
+<li>Delay is achieved through <code>time.sleep_ms()</code> method. (line number 16 &amp; 22) </li>
+<li><code>led_1.value(1)</code> sets the value of GPIO 3 to <code>HIGH</code> or <code>1</code>, it turns OFF the LED-1. (line number 19)</li>
+<li><code>led_2.value(1)</code> sets the value of GPIO 12 to <code>LOW</code> or <code>0</code>, it turns OFF the LED-2. (line number 20)</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Try It</p>
 <ul>
-<li>Change the value in the sleep method and observe the change in the on and off time.<ul>
-<li><code>time.sleep(2)</code>, <code>time.sleep(4)</code> , etc</li>
+<li>Change the value in the <code>sleep_ms</code> method and observe the change in the on and off time.<ul>
+<li><code>time.sleep_ms(2000)</code>, <code>time.sleep_ms(750)</code> , etc</li>
 </ul>
 </li>
-<li>Use <code>time.sleep_ms()</code> method to set the values in terms of milli seconds.<ul>
-<li><code>time.sleep_ms(1000)</code> : 1000 ms or 1 s</li>
-<li><code>time.sleep_ms(500)</code>  : 500 ms or 0.5 s</li>
-</ul>
-</li>
+<li>Use <code>led_1.on()</code> and <code>led_1.off()</code> method instead of <code>led_1.value</code> function, and observe the changes.</li>
 </ul>
 </div>
 <hr />
@@ -1066,16 +1140,17 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16s7.2-16 16-16"/></svg></span> Mobile : Use Landscape Mode and reload the page</li>
 </ul>
 </div>
-<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/438357372184564737" frameborder="2px" width="100%" height="700px"></iframe>
+<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/438363172466307073" frameborder="2px" width="100%" height="700px"></iframe>
 
-<h2 id="result">Result</h2>
-<p>Above code turns ON LED for 1 second and OFF for 1 second. Similar to a square wave of <code>0.5 Hz</code> output connected to an LED.</p>
 <hr />
 <h2 id="extras"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2 0 .37-.03.73-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85-.32.63-.67 1.24-1.07 1.81-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56M23 18v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"/></svg></span> Extras</h2>
 <h3 id="components-details">Components details</h3>
 <ul>
 <li>Raspberry Pi Pico / Pico 2 : <a href="../pico2-pico2-w-key-features-pin-config/" target="_blank">Pin Diagram</a></li>
-<li>Raspberry Pi Pico <a href="files/pico-datasheet.pdf" target="_blank">Data Sheet</a></li>
+<li>Raspberry Pi Pico : <a href="https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf" target="_blank">Data Sheet</a></li>
+<li>Raspberry Pi Pico 2 : <a href="https://datasheets.raspberrypi.com/pico/pico-2-datasheet.pdf" target="_blank">Data Sheet</a></li>
+<li>Raspberry Pi Pico W : <a href="https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf" target="_blank">Data Sheet</a></li>
+<li>Raspberry Pi Pico 2 W : <a href="https://datasheets.raspberrypi.com/picow/pico-2-w-datasheet.pdf" target="_blank">Data Sheet</a></li>
 </ul>
 <h3 id="modules-libraries-used">Modules / Libraries Used</h3>
 <ul>
