@@ -11,6 +11,7 @@
             {% call render_tags(pg.meta["tags"], index_url) %}
             {% endcall %}
         {% endif %}
+        <img src="../../{{pg.meta.banner_image}}" alt="">
         <p class="blog-post-description">{{ description }}</p>
         <div class="blog-post-extra">
             <p>

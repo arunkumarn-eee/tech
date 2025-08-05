@@ -6,7 +6,7 @@ authors:
     name: Arun kumar N
     avatar: ../../assets/image/favicon.png
     description: Creator
-# update_date : 2025-06-05
+update_date : 2025-08-05
 published_date : 2025-08-04
 # prefer light image
 banner_image : assets/blogs/raspberrypipico/pico-led-blinking.png
@@ -73,6 +73,8 @@ Built-in led of Raspberry Pi Pico is internally connected to GPIO 25.
 | Particular | GPIO | Remarks | 
 | :--: | :--: | :-- | 
 | Built-in LED | 25 | Internally Connected |
+
+![Built-in LED](./images/Built_in_LED_pico.png)
 
 ## :open_file_folder: Code
 
@@ -143,9 +145,17 @@ while True:
         - `time.sleep_ms(1000)` : 1000 ms or 1 s
         - `time.sleep_ms(500)`  : 500 ms or 0.5 s
 
+---
+
 ## :material-chart-bubble:{style="color:#ffaa00"} Simulation
 
+!!! danger "Not able to view the simulation"
+    - :fontawesome-solid-laptop: Desktop or Laptop : Reload this page ( ++ctrl+r++ )
+    - :fontawesome-solid-mobile: Mobile : Use Landscape Mode
+
+
 <iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/438357372184564737" frameborder="2px" width="100%" height="700px"></iframe>
+
 
 ## Result
 
