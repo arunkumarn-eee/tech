@@ -70,7 +70,7 @@ draft: false
 
     No worries,
 
-    Stil you can learn using simulation.
+    Still you can learn using simulation.
     check out simulation part :smiley:.
 
 ### Connection Table
