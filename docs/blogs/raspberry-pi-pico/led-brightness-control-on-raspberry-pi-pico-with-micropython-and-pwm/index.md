@@ -167,8 +167,8 @@ while True:
 
 :point_right: Decreasing the LED brightness
 
-```py linenums="11"
-    # Decreasing the duty cyle value from 0% to 100%
+```py linenums="17"
+    # Decreasing the duty cyle value from 100% to 0%
     for i in range(65535, -1, -1):
         led.duty_u16(i)
 
