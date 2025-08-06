@@ -14,7 +14,7 @@ tags:
   - pandas
 hide:
   - navigation
-draft: true
+draft: false
 ---
 
 
@@ -312,7 +312,7 @@ kanban
     $ conda install pandas[excel]
     ```
 
-#### HTML file
+#### HTML & XML file
 
 === "rye"
     ```bash
@@ -337,6 +337,9 @@ kanban
 
 ---
 
+#### SQL databases
+
+To access data from database files, it necessary to install optional dependencies along with pandas.
 
 ```mermaid
 kanban
@@ -353,5 +356,226 @@ kanban
     [SQLAlchemy]@{assigned: 'sql-other'}
     [adbc-driver-sqlite]@{assigned: 'sql-other'}
 ```
+
+=== "rye"
+    ```bash
+    $ rye add pandas[postgresql, mysql, sql-other]
+    ```
+
+=== "uv"
+    ```bash
+    $ uv pip install pandas[postgresql, mysql, sql-other]
+
+    ```
+
+=== "pip"
+    ```bash
+    $ pip install pandas[postgresql, mysql, sql-other]
+    ```
+
+=== "conda :simple-anaconda:"
+    ```ps
+    $ conda install pandas[postgresql, mysql, sql-other]
+    ```
+
+---
+
+
+
+!!! info
+    All optional dependencies can be installed with
+    
+    === "rye"
+        ```bash
+        $ rye add pandas[all]
+        ```
+
+    === "uv"
+        ```bash
+        $ uv pip install pandas[all]
+
+        ```
+
+    === "pip"
+        ```bash
+        $ pip install pandas[all]
+        ```
+
+    === "conda :simple-anaconda:"
+        ```ps
+        $ conda install pandas[all]
+        ```
+    
+    ---
+    
+    - Pandas is part of major Python distributions like Anaconda, ActiveState Python, WinPython etc.
+    - Install from GitHub repository. [Pandas : Click here](https://github.com/pandas-dev/pandas)
+    - For detailed information on Pandas installation, check out the [official link](https://pandas.pydata.org/docs/getting_started/install.html)
+
+
+---
+
+## Data Structure
+
+
+1. Series
+2. DataFrame
+
+### Creating Pandas DataStructure
+
+Pandas data structure comprises of rows and columns. Column represents the series data and Rows are represented by Index.
+
+- A single column data structure is known as **Series**.
+- Multi-column data structure is known as **DataFrame**.
+
+![df](./images/df.png)
+
+Pandas DataFrame can be created using python objects, flat files, databases, API requests etc. In this article will go through python objects and CSV file with some examples. The complete list of supported sources can be [found here](https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html){target="_blank"}. 
+
+### Series
+
+- Creating Series using python objects.
+  - list.
+  - tuple.
+  - dictionary.
+
+#### Using Python **List**
+
+```python
+
+import pandas as pd
+
+even = [2, 4, 6, 8, 10, 12]
+
+series_data = pd.Series(even)
+print(series_data)
+
+```
+
+OUTPUT: ![output](./images/output_1.png)
+
+From the output we can draw out.
+
+- Index of the series data is same as the index of the list data.
+- `dtype` indicates the data type of the series.
+
+We can name the series or column.
+```python
+series_data.name = "even"
+print(series_data.info)
+```
+
+OUTPUT: ![output](./images/output_2.png)
+
+#### Using Python **Dictionary**
+
+```python
+import pandas as pd
+
+student = {'name':"Kishore", 
+            'age':20, 
+            'place':"Bengaluru", 
+            'email':"kishore@email.com",}
+student_data = pd.Series(student)
+print(student_data)
+```
+OUTPUT: ![output](./images/output_3.png)
+
+- Index of the series data is same as the key of the dictionary data.
+- `dtype` indicates the data type of the series.
+
+### DataFrame
+
+Similar to pandas Series, DataFrame can be created using python objects.
+
+#### Using Python **List**
+
+```python
+import pandas as pd
+
+students = [
+    ['Kishore', 'Bengaluru'], # use list or tuple
+    ['Vikram',  'Hyderabad'],
+    ['Vinay',  'Chennai'],
+    ['Adithya',  'Mumbai'],
+    ['Kumar',  'Kochi'],
+]
+
+students_df = pd.DataFrame(students)
+print(students_df)
+```
+
+OUTPUT: ![output](./images/output_4.png)
+
+- `0,1,2,3,4` indicates the `index`
+- `0` and `1` column indicates the Series. 
+- More than one Series data makes it a DataFrame.
+
+
+#### Using Python **Dictionary**
+
+```python
+import pandas as pd
+
+students = {
+    "name": ['Kishore', 'Vikram', 'Vinay', 'Adithya', 'Kumar'],
+    "place": ['Bengaluru', 'Hyderabad', 'Chennai', 'Mumbai', 'Kochi']
+}
+
+students_df = pd.DataFrame(students)
+print(students_df)
+```
+
+OUTPUT: ![output](./images/output_5.png)
+
+- `0,1,2,3,4` indicates the `index`
+- `name` and `place` column indicates the Series. 
+- More than one Series data makes it a DataFrame.
+
+## Reading the files
+
+For this article, will use the `Major Commercial Crops of India` downloaded from the [RBI Database](https://data.rbi.org.in/#/dbie/home){target="_blank"}
+
+To follow along with this article download the [crop data](./attachments/clean_data_crop.csv){target="_blank"}.
+
+[CSV Crop Data :material-file-download:](./attachments/clean_data_crop.csv){.md-button .md-button--primary}
+
+
+!!! tip "Launch in Binder |  No configuration or downloads required"
+    No need to worry about configuring your system with libraries and data.
+
+    You can run it online using binder. 
+    
+    [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/skilldisk/Python-Pandas-for-Real-World-Data-Data-Wrangling-Made-Easy/main?urlpath=%2Fdoc%2Ftree%2Fjune_22.ipynb)
+
+### CSV files
+
+```python
+import pandas as pd
+
+crop_info = pd.read_csv('./data/clean_data_crop.csv')
+
+print(crop_info)
+```
+
+OUTPUT: ![output](./images/output_6.png)
+
+
+### Excel files
+
+### JSON files
+
+## Inspecting
+
+
+
+## Extracting Subsets
+
+
+## Summary Statics
+
+
+## Data Cleaning
+
 
 
