@@ -30,6 +30,16 @@ Pandas for Data Analysis
 
 ## Why Pandas ?
 
+If you work with data in Python, chances are you’ve heard of Pandas, the powerful library that makes data analysis easy. Whether you're a data scientist, analyst, or just getting started, Pandas is a must-know tool.
+
+In present world, python is a go to programming language for Data Science, AI & ML. For those technologies, Data's are like oxygen. Without data, we will not be able to think of those technologies.
+
+Data's are scattered in different formats and types. Handling those with a single tool is what pandas tries to achieve.
+
+- Easy and efficient data handling.
+- Works with different file formats like CSV, JSON, EXCEl, SQL DataBase etc.
+- Integrates easily with other tools like Matplotlib, Scikit, Numpy etc.
+- Beginner friendly.
 
 ## Time line
 
