@@ -7,7 +7,7 @@ authors:
     avatar: ../../assets/image/favicon.png
     description: Creator
 # update_date : 2025-04-09
-published_date : 2025-06-20
+published_date : 2025-08-08
 # prefer light image
 banner_image : assets/blogs/python/Pandas_python_made_simple_dark.png
 tags:
