@@ -434,6 +434,20 @@ Pandas DataFrame can be created using python objects, flat files, databases, API
 
 ### Series
 
+```python
+
+pd.Series(
+    data=None,
+    index=None,
+    dtype: 'Dtype | None' = None,
+    name=None,
+    copy: 'bool | None' = None,
+    fastpath: 'bool | lib.NoDefault' = <no_default>,
+) 
+```
+
+`pd.Series` creates one-dimensional ndarray with axis labels including time series.
+
 - Creating Series using python objects.
   - list.
   - tuple.
@@ -483,10 +497,22 @@ OUTPUT: ![output](./images/output_3.png)
 
 - Index of the series data is same as the key of the dictionary data.
 - `dtype` indicates the data type of the series.
+- The object supports both integer and label based indexing
 
 ### DataFrame
 
-Similar to pandas Series, DataFrame can be created using python objects.
+```python
+pd.DataFrame(
+    data=None,
+    index: 'Axes | None' = None,
+    columns: 'Axes | None' = None,
+    dtype: 'Dtype | None' = None,
+    copy: 'bool | None' = None,
+)
+
+```
+
+DataFrame is a two-dimensional, size-mutable, tabular data. Similar to pandas Series, DataFrame can be created using python objects.
 
 #### Using Python **List**
 
@@ -531,8 +557,11 @@ OUTPUT: ![output](./images/output_5.png)
 - `0,1,2,3,4` indicates the `index`
 - `name` and `place` column indicates the Series. 
 - More than one Series data makes it a DataFrame.
+- Data structure also contains labelled axes (rows and columns)
 
-## Reading the files
+---
+
+## Reading CSV files
 
 For this article, will use the `Major Commercial Crops of India` downloaded from the [RBI Database](https://data.rbi.org.in/#/dbie/home){target="_blank"}
 
@@ -548,7 +577,8 @@ To follow along with this article download the [crop data](./attachments/clean_d
     
     [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/skilldisk/Python-Pandas-for-Real-World-Data-Data-Wrangling-Made-Easy/main?urlpath=%2Fdoc%2Ftree%2Fjune_22.ipynb)
 
-### CSV files
+
+`pd.read_csv()` method is used to read Comma-Separated Values (CSV) file into DataFrame. Reading CSV files doesn't require optional dependencies to be installed (`openpyxl` required to work with `xlsx` files).
 
 ```python
 import pandas as pd
@@ -561,21 +591,243 @@ print(crop_info)
 OUTPUT: ![output](./images/output_6.png)
 
 
-### Excel files
+!!! info
+    Working with other file formats like Excel, JSON, DataBase etc will be updated shortly in a new blog, link for the same will be listed over in this section.
 
-### JSON files
+---
 
 ## Inspecting
 
+:point_right: Number of rows and columns
+
+```python
+crop_info.shape
+```
+
+OUTPUT: ![output](./images/output_7.png)
+
+---
+
+:point_right: Column names
+
+```python
+crop_info.columns
+```
+
+OUTPUT: ![output](./images/output_8.png)
+
+---
+
+:point_right: Data Types
+
+```python
+crop_info.dtypes
+```
+OUTPUT: ![output](./images/output_9.png)
+
+---
+
+:point_right: Data overview can be seen with `head()` and `tail()` method.
+
+```python
+crop_info.head()
+```
+
+OUTPUT: ![output](./images/output_10.png)
+
+
+```python
+crop_info.tail()
+```
+
+OUTPUT: ![output](./images/output_11.png)
+
+- `head()` method outputs top 5 rows content
+- `tail()` method outputs last 5 row content
+
+---
+
+:point_right: Information on DataFrames.
+
+```python
+crop_info.info()
+```
+
+OUTPUT: ![output](./images/output_12.png)
 
 
 ## Extracting Subsets
 
+  
+:point_right: Selecting a particular Column.
 
-## Summary Statics
+- Particular column can be selected using `.` notation or using index method `[Series Name | Column Name]`.
+
+```python
+crop_info.State
+# or
+# crop_info['State']
+
+```
+
+OUTPUT: ![output](./images/output_13.png)
+
+---
+
+:point_right: Multiple Column Selection.
+
+- Multiple Column can be selected, by passing it as a list of column or series names
+
+```python
+crop_info[['State','Year', 'Rice']]
+
+```
+
+OUTPUT: ![output](./images/output_14.png)
+
+---
+  
+:point_right: Selecting Row Data's.
+
+```python
+crop_info[11:21]
+
+```
+
+OUTPUT: ![output](./images/output_15.png)
+
+---
+  
+:point_right: Indexing.
+
+- `iloc[]` by their position
+- `loc[]` by their name
+
+
+Accessing rows using index number
+```python
+crop_info.iloc[10:21]
+
+```
+
+OUTPUT: ![output](./images/output_16.png)
+
+Accessing rows and columns using index number
+
+- `pd.df[row_slicing , column_slicing ]`
+```python
+crop_info.iloc[30:35, 0:4]
+
+```
+
+OUTPUT: ![output](./images/output_17.png)
+
+
+Accessing rows and columns using index names.
+```python
+crop_info.iloc[30:35, 'State':'Wheat']
+
+```
+
+OUTPUT: ![output](./images/output_18.png)
+
+## Filtering
+
+Data can be filtered based on true condition Using *Boolean Mask*. Boolean mask are created using a comparator operators, and using that mask, we can filter out the required data.
+
+:point_right: Boolean Mask using comparison operator.
+```python
+crop_info['State'] == 'Karnataka'
+
+```
+
+OUTPUT: ![output](./images/output_19.png)
+
+---
+
+:point_right: Using Boolean Mask filtering data that contains values "Karnataka".
+```python
+crop_info[crop_info['State'] == 'Karnataka'] 
+
+```
+
+OUTPUT: ![output](./images/output_20.png)
+![output](./images/output_21.png)
+![output](./images/output_22.png)
+
+---
+
+:point_right: Using Boolean Mask filtering data with rice value greater than 15000 and column data is limited to State, Year, Rice.
+
+```python
+crop_info[crop_info['Rice']>15000][['State', 'Year', 'Rice']]
+
+```
+
+OUTPUT: ![output](./images/output_23.png)
+
+
+## Summary Statistics
+
+:point_right: value_counts()
+
+```python
+crop_info.State.value_counts()
+
+```
+
+OUTPUT: ![output](./images/output_24.png)
+
+---
+
+:point_right: unique()
+
+```python
+crop_info.State.unique()
+
+```
+
+OUTPUT: ![output](./images/output_25.png)
+
+---
+
+:point_right: nunique()
+
+```python
+crop_info.State.nunique()
+
+```
+
+OUTPUT: ![output](./images/output_26.png)
+
+---
+
+:point_right: describe()
+
+```python
+crop_info.State.describe()
+
+```
+
+OUTPUT: ![output](./images/output_27.png)
+
+
+
+```python
+crop_info.State.describe(include='all')
+
+```
+
+OUTPUT: ![output](./images/output_28.png)
+
+---
 
 
 ## Data Cleaning
 
+:star: Will be Updated Shortly :star:
 
 
+## Plotting
+
+:star: Will be Updated Shortly :star:
