@@ -76,6 +76,9 @@ plugins:
           dirs:
             - blogs/python
           template: blogoverride/blog-custom.html
+          sort:
+            from: new
+            by: revision
         - name: raspberry-pi-pico
           dirs:
             - blogs/raspberry-pi-pico
