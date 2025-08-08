@@ -6,7 +6,7 @@ authors:
     name: Arun kumar N
     avatar: ../../assets/image/favicon.png
     description: Creator
-# update_date : 2025-08-05
+update_date : 2025-08-08
 published_date : 2025-08-05
 # prefer light image
 banner_image : assets/blogs/raspberrypipico/16x2-lcd-display.png
@@ -76,17 +76,32 @@ draft: false
 
 ### Connection Table
 
+16x2 LCD can be connected in _4 wire_ and _8 wire_ mode. In this article 4 wire mode is demonstrated, as 8 wire mode is rarely used now a days. 
+
+!!! info
+    With I2C LCD interface, we can interface 16x2 LCD display in 2 wire mode. [click here](#){target="_blank"} to know [how to interface 16x2 LCD display in serial mode using 2 wire system.](#){target="_blank"}
+
 
 | 16x2 LCD | GPIO | Remarks | 
 | :-- | :--: | :-- | 
+| V<sub>SS</sub>  (1) | GND | Ground |
+| V<sub>CC</sub>  (2) | +5 V | +5V of Board or External 5V DC Supply | 
+| V<sub>EE</sub> (3) | -- | POT variable terminal as shown in circuit | 
 | RS (4)  | 15 | Register Select Pin  |
-| RW (5) | Ground | Read / Write Pin |
+| RW (5) | GND | Read / Write Pin |
 | E (6)  | 14 | Enable Pin  |
-| D0 to D3  | -- | No connection  |
-| D4  | 13 | Data line 4  |
-| D5  | 12 | Data line 5  |
-| D6  | 11 | Data line 6  |
-| D7  | 10 | Data line 7  |
+| D0 to D3  | -- | No connection (∵ 4 wire mode)  |
+| D4 (11) | 13 | Data line 4  |
+| D5 (12) | 12 | Data line 5  |
+| D6 (13) | 11 | Data line 6  |
+| D7 (14) | 10 | Data line 7  |
+| A (15) | -- | +5V of Board or External 5V DC Supply   |
+| K (16) | -- | Ground through Resistor  |
+
+!!! Note
+    - To control the backlight led programmatically. LCD Pin A(15) can be connected to GPIO.
+    - V<sub>CC</sub> (2) can be connected to external +5 V DC supply or to the VBUS pin number 40 of Raspberry Pi Pico Board.
+    - While using External 5 V supply for 16x2 LCD, make sure ground pin of External Supply and Pico board is connected. 
 
 
 ![Circuit Diagram](./images/16x-2_lcd_pico.png)
@@ -246,10 +261,73 @@ from lcd_api import LCD_16x2_parallel
 - `lcd_api` module for interacting with 16x2 lcd display hardware.
 
 
+:point_right: Instance of LCD display object.
+
+```py linenums="5"
+
+# LCD_16x2_parallel(rs, e, d4, d5, d6, d7)
+lcd = LCD_16x2_parallel(15, 14, 13, 12, 11, 10)
+
+```
+
+- Creating the instance of LCD_16x2_parallel object.
+- Depending upon your connection, change the GPIO pin numbers.
+    - (rs, e, d4, d5, d6, d7)
+    - As per the above connection table `LCD_16x2_parallel(15, 14, 13, 12, 11, 10)`
+
+
+:point_right: Displaying the content
+
+```py linenums="8"
+
+# Set cursor to Row 1, Column 1
+lcd.returnHome()
+lcd.display("  Aavishkarah   ")
+utime.sleep_ms(2000)
+
+```
+
+- `lcd.returnHome()` method sets the display cursor to Row 1 and Column 1
+- The content to be displayed is passed to `lcd.display()` method.
+    - :warning: Make sure, the content is less than or equal to 16 Characters.
+- A delay of 2 seconds is given, so that the user can view the content before new content is displayed.
+
+
+
+:point_right: Shifting the cursors and typewriting effect.
+
+```py linenums="13"
+
+# Move to LCD (2, 0) position 
+# Row 2 and Column 1 
+lcd.setCursor(2,0)
+lcd.display("---Simulation---" , 100)
+utime.sleep_ms(2000)
+
+
+# Clear the Screen
+lcd.clearScreen()
+```
+
+- Each row can display 16 characters.
+- To continue the display content, we need to set the cursor to Row 2, Column 1
+- Setting of cursor to Row 2 and Column 1 is achieved by `lcd.setCursor(2,0)` method.
+- As discussed in the previous code section, display method takes the data to be displayed on the LCD screen.
+- To have a **Typewriting** effect, 2nd argument of delay in milli seconds can be passed.
+    - In line 16, a delay of 100 ms is passed.
+    - This adds a delay of 100 ms delay between the display of the letters.
+- Clearing1 the screen to display the new data is achieved by `lcd.clearScreen()` method. 
+    - Using `clearScreen` method also brings the cursor to the starting position (Row 1 and Column 1)
+
+
+
+
+
 
 
 !!! tip "Try It"
-    - Alter the `display` method text to your required information and observe the output. 
+    - Alter the output content on the display by passing your data argument to the `display` method.
+    - Observe the typing effect in the content display by altering the **delay** value of `display(<data>, <delay>)` method.
 
 ---
 
@@ -278,10 +356,9 @@ from lcd_api import LCD_16x2_parallel
 
 ### Modules / Libraries Used
 
-- *machine*
-    - `machine` module contains specific attributes and methods related to hardware on a particular board. Here class `PWM` is imported to configure the GPIO pins as Pulse Width Modulator. 
-    - [More Details](https://docs.micropython.org/en/latest/library/machine.html){target="_blank"} 
-
 - *time*
     - `time` module provides functions related to date & time, measuring time intervals and generating delays.
     - [More Details](https://docs.micropython.org/en/latest/library/time.html){target="_blank"} 
+- *lcd_api*
+    - To interact with 16x2 LCD display.
+    - It is a third part library or user defined library. 
