@@ -988,6 +988,11 @@
 check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:" />.</p>
 </div>
 <h3 id="connection-table">Connection Table</h3>
+<p>16x2 LCD can be connected in <em>4 wire</em> and <em>8 wire</em> mode. In this article 4 wire mode is demonstrated, as 8 wire mode is rarely used now a days. </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>With I2C LCD interface, we can interface 16x2 LCD display in 2 wire mode. <a href="#" target="_blank">click here</a> to know <a href="#" target="_blank">how to interface 16x2 LCD display in serial mode using 2 wire system.</a></p>
+</div>
 <table>
 <thead>
 <tr>
@@ -998,13 +1003,28 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;">V<sub>SS</sub>  (1)</td>
+<td style="text-align: center;">GND</td>
+<td style="text-align: left;">Ground</td>
+</tr>
+<tr>
+<td style="text-align: left;">V<sub>CC</sub>  (2)</td>
+<td style="text-align: center;">+5 V</td>
+<td style="text-align: left;">+5V of Board or External 5V DC Supply</td>
+</tr>
+<tr>
+<td style="text-align: left;">V<sub>EE</sub> (3)</td>
+<td style="text-align: center;">--</td>
+<td style="text-align: left;">POT variable terminal as shown in circuit</td>
+</tr>
+<tr>
 <td style="text-align: left;">RS (4)</td>
 <td style="text-align: center;">15</td>
 <td style="text-align: left;">Register Select Pin</td>
 </tr>
 <tr>
 <td style="text-align: left;">RW (5)</td>
-<td style="text-align: center;">Ground</td>
+<td style="text-align: center;">GND</td>
 <td style="text-align: left;">Read / Write Pin</td>
 </tr>
 <tr>
@@ -1015,30 +1035,48 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <tr>
 <td style="text-align: left;">D0 to D3</td>
 <td style="text-align: center;">--</td>
-<td style="text-align: left;">No connection</td>
+<td style="text-align: left;">No connection (∵ 4 wire mode)</td>
 </tr>
 <tr>
-<td style="text-align: left;">D4</td>
+<td style="text-align: left;">D4 (11)</td>
 <td style="text-align: center;">13</td>
 <td style="text-align: left;">Data line 4</td>
 </tr>
 <tr>
-<td style="text-align: left;">D5</td>
+<td style="text-align: left;">D5 (12)</td>
 <td style="text-align: center;">12</td>
 <td style="text-align: left;">Data line 5</td>
 </tr>
 <tr>
-<td style="text-align: left;">D6</td>
+<td style="text-align: left;">D6 (13)</td>
 <td style="text-align: center;">11</td>
 <td style="text-align: left;">Data line 6</td>
 </tr>
 <tr>
-<td style="text-align: left;">D7</td>
+<td style="text-align: left;">D7 (14)</td>
 <td style="text-align: center;">10</td>
 <td style="text-align: left;">Data line 7</td>
 </tr>
+<tr>
+<td style="text-align: left;">A (15)</td>
+<td style="text-align: center;">--</td>
+<td style="text-align: left;">+5V of Board or External 5V DC Supply</td>
+</tr>
+<tr>
+<td style="text-align: left;">K (16)</td>
+<td style="text-align: center;">--</td>
+<td style="text-align: left;">Ground through Resistor</td>
+</tr>
 </tbody>
 </table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>To control the backlight led programmatically. LCD Pin A(15) can be connected to GPIO.</li>
+<li>V<sub>CC</sub> (2) can be connected to external +5 V DC supply or to the VBUS pin number 40 of Raspberry Pi Pico Board.</li>
+<li>While using External 5 V supply for 16x2 LCD, make sure ground pin of External Supply and Pico board is connected. </li>
+</ul>
+</div>
 <figure>
 <p><img alt="Circuit Diagram" src="images/16x-2_lcd_pico.png" /></p>
 <figcaption>
@@ -1308,10 +1346,75 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <li><code>time</code> module for creating delay.</li>
 <li><code>lcd_api</code> module for interacting with 16x2 lcd display hardware.</li>
 </ul>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Instance of LCD display object.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="c1"># LCD_16x2_parallel(rs, e, d4, d5, d6, d7)</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="n">lcd</span> <span class="o">=</span> <span class="n">LCD_16x2_parallel</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>Creating the instance of LCD_16x2_parallel object.</li>
+<li>Depending upon your connection, change the GPIO pin numbers.<ul>
+<li>(rs, e, d4, d5, d6, d7)</li>
+<li>As per the above connection table <code>LCD_16x2_parallel(15, 14, 13, 12, 11, 10)</code></li>
+</ul>
+</li>
+</ul>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Displaying the content</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="c1"># Set cursor to Row 1, Column 1</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="n">lcd</span><span class="o">.</span><span class="n">returnHome</span><span class="p">()</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="n">lcd</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">&quot;  Aavishkarah   &quot;</span><span class="p">)</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li><code>lcd.returnHome()</code> method sets the display cursor to Row 1 and Column 1</li>
+<li>The content to be displayed is passed to <code>lcd.display()</code> method.<ul>
+<li><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Make sure, the content is less than or equal to 16 Characters.</li>
+</ul>
+</li>
+<li>A delay of 2 seconds is given, so that the user can view the content before new content is displayed.</li>
+</ul>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Shifting the cursors and typewriting effect.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-13">13</a></span>
+<span class="normal"><a href="#__codelineno-5-14">14</a></span>
+<span class="normal"><a href="#__codelineno-5-15">15</a></span>
+<span class="normal"><a href="#__codelineno-5-16">16</a></span>
+<span class="normal"><a href="#__codelineno-5-17">17</a></span>
+<span class="normal"><a href="#__codelineno-5-18">18</a></span>
+<span class="normal"><a href="#__codelineno-5-19">19</a></span>
+<span class="normal"><a href="#__codelineno-5-20">20</a></span>
+<span class="normal"><a href="#__codelineno-5-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="c1"># Move to LCD (2, 0) position </span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="c1"># Row 2 and Column 1 </span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="n">lcd</span><span class="o">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16"></a><span class="n">lcd</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">&quot;---Simulation---&quot;</span> <span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17"></a><span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18"></a>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19"></a>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20"></a><span class="c1"># Clear the Screen</span>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21"></a><span class="n">lcd</span><span class="o">.</span><span class="n">clearScreen</span><span class="p">()</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>Each row can display 16 characters.</li>
+<li>To continue the display content, we need to set the cursor to Row 2, Column 1</li>
+<li>Setting of cursor to Row 2 and Column 1 is achieved by <code>lcd.setCursor(2,0)</code> method.</li>
+<li>As discussed in the previous code section, display method takes the data to be displayed on the LCD screen.</li>
+<li>To have a <strong>Typewriting</strong> effect, 2nd argument of delay in milli seconds can be passed.<ul>
+<li>In line 16, a delay of 100 ms is passed.</li>
+<li>This adds a delay of 100 ms delay between the display of the letters.</li>
+</ul>
+</li>
+<li>Clearing1 the screen to display the new data is achieved by <code>lcd.clearScreen()</code> method. <ul>
+<li>Using <code>clearScreen</code> method also brings the cursor to the starting position (Row 1 and Column 1)</li>
+</ul>
+</li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Try It</p>
 <ul>
-<li>Alter the <code>display</code> method text to your required information and observe the output. </li>
+<li>Alter the output content on the display by passing your data argument to the <code>display</code> method.</li>
+<li>Observe the typing effect in the content display by altering the <strong>delay</strong> value of <code>display(&lt;data&gt;, &lt;delay&gt;)</code> method.</li>
 </ul>
 </div>
 <hr />
@@ -1337,18 +1440,14 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 </ul>
 <h3 id="modules-libraries-used">Modules / Libraries Used</h3>
 <ul>
-<li>
-<p><em>machine</em></p>
-<ul>
-<li><code>machine</code> module contains specific attributes and methods related to hardware on a particular board. Here class <code>PWM</code> is imported to configure the GPIO pins as Pulse Width Modulator. </li>
-<li><a href="https://docs.micropython.org/en/latest/library/machine.html" target="_blank">More Details</a> </li>
-</ul>
-</li>
-<li>
-<p><em>time</em></p>
-<ul>
+<li><em>time</em><ul>
 <li><code>time</code> module provides functions related to date &amp; time, measuring time intervals and generating delays.</li>
 <li><a href="https://docs.micropython.org/en/latest/library/time.html" target="_blank">More Details</a> </li>
+</ul>
+</li>
+<li><em>lcd_api</em><ul>
+<li>To interact with 16x2 LCD display.</li>
+<li>It is a third part library or user defined library. </li>
 </ul>
 </li>
 </ul>
