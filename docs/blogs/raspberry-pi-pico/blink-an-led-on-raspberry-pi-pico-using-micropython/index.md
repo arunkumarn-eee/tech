@@ -55,9 +55,9 @@ In this article we go through.
 
 | Components | Purchase Link |
 | -- | -- |
-| Raspberry Pi Pico | [link](#) |
+| Raspberry Pi Pico | [Purchase Link](https://amzn.to/3JNpv7v) |
 | Raspberry Pi Pico 2 | [link](#) |
-| Micro USB Cable | [link](#) |
+| Micro USB Cable | [Purchase Link](https://amzn.to/4gfMgNa) |
 
 !!! tip "Don't own a hardware :cry:"
 

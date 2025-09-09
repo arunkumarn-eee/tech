@@ -55,15 +55,15 @@ draft: false
 
 | Components | Purchase Link |
 | -- | -- |
-| Raspberry Pi Pico | [link](#) |
+| Raspberry Pi Pico | [link](https://amzn.to/3JNpv7v) |
 | Raspberry Pi Pico 2 | [link](#) |
-| Raspberry Pi Pico W | [link](#) |
+| Raspberry Pi Pico W | [link](https://amzn.to/3KeWamg) |
 | Raspberry Pi Pico 2W | [link](#) |
-| LED | [link](#) |
-| BreadBoard | [link](#) |
-| Connecting Wires | [link](#) |
-| Micro USB Cable | [link](#) |
-| 5V DC Adaptor | [link](#) |
+| LED | [link](https://amzn.to/3IaSVf2) |
+| BreadBoard | [large](https://amzn.to/4pgNX1c) : [small](https://amzn.to/47SMzvB)|
+| Connecting Wires | [link](https://amzn.to/4pepr0H) |
+| Micro USB Cable | [link](https://amzn.to/4gfMgNa) |
+| 5V DC Adaptor | [link](https://amzn.to/4m82t8D) |
 
 !!! tip "Don't own a hardware :cry:"
 
