@@ -33,7 +33,7 @@ draft: false
 
 ## Abstract
 
- In this article, a comprehensive step-by-step guide to control the brightness of an LED using PWM (Pulse Width Modulation) with Raspberry Pi Pico board using MicroPython. Raspberry Pi Pico has 4 different variants (Pico, Pico 2, Pico W, Pico 2W) supporting micro-python. This articles lays the foundation for more advanced embedded system and IoT projects.
+ In this article, a comprehensive step-by-step guide to interface 16x2 LCD display with Raspberry Pi Pico board using MicroPython. Raspberry Pi Pico has 4 different variants (Pico, Pico 2, Pico W, Pico 2W) supporting micro-python. This articles lays the foundation for more advanced embedded system and IoT projects.
 
 ## :compass: Pre-Request
 
