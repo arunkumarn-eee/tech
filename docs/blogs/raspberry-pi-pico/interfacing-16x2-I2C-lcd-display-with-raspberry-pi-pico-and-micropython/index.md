@@ -1,5 +1,5 @@
 ---
-title: 'how to interface 16x2 LCD display in serial mode using 2 wire system.'
+title: 'How to interface 16x2 LCD display in serial mode using 2 wire system.'
 description: Learn how to connect a 16x2 I2C LCD display to a Raspberry Pi Pico using simple MicroPython code. This easy guide shows you how to set it up and display messages step by step.
 authors:
   -
