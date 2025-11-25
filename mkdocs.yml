@@ -10,6 +10,7 @@ nav:
   - Blog:
       - Python: blogs/python.md
       - Raspberry Pi Pico: blogs/raspberry-pi-pico.md
+      - Arduino Nano: blogs/arduino-nano.md
   - Projects: projects.md
   - STEM : stem.md
   - Extra:
@@ -87,6 +88,14 @@ plugins:
           sort:
             from: new
             by: revision
+        - name: arduino-nano
+          dirs:
+            - blogs/arduino-nano
+          template: blogoverride/blog-custom.html
+          size: 5
+          sort:
+            from: new
+            by: revision
         - name: projects
           dirs:
             - projects
@@ -134,9 +143,9 @@ markdown_extensions:
 copyright: Copyright &copy; 2025 Arun Kumar N
 
 extra:
-  # analytics:
-  #   provider: google
-  #   property: G-MLSHZKZLZ8
+  analytics:
+    provider: google
+    property: G-MLSHZKZLZ8
   generator: false
   social:
     - icon: fontawesome/brands/youtube
