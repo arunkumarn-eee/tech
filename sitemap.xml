@@ -21,12 +21,20 @@
           <lastmod></lastmod>   
     </url>
     <url>
+         <loc>https://tech.arunkumarn.in/blogs/arduino-nano/</loc>
+          <lastmod></lastmod>   
+    </url>
+    <url>
          <loc>https://tech.arunkumarn.in/blogs/python/</loc>
           <lastmod></lastmod>   
     </url>
     <url>
          <loc>https://tech.arunkumarn.in/blogs/raspberry-pi-pico/</loc>
           <lastmod></lastmod>   
+    </url>
+    <url>
+         <loc>https://tech.arunkumarn.in/blogs/arduino-nano/blink-an-led-on-raspberry-pi-pico-using-micropython/</loc>
+          <lastmod>2025-11-25</lastmod>   
     </url>
     <url>
          <loc>https://tech.arunkumarn.in/blogs/python/Beyond-input-Modern-Python-Techniques-for-Bulletproof-User-input-Validation/</loc>
