@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     
-        <meta name="description" content="To be updated with present technology, it important to know improvements in IoT based Microcontrollers.">
+        <meta name="description" content="Learn how to connect and control an external LED with the Arduino UNO through a simple, step-by-step hardware and simulation tutorial.">
     
     
         <meta name="author" content="Arun kumar N">
     
     
-        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/pico-w-vs-pico2-w/">
+        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/arduino-uno/interfacing-led-to-arduino-uno/">
     
     
     
@@ -21,17 +21,17 @@
 
     <meta property="og:type" content="website" />
     
-        <meta property="og:title" content="Next-Gen IoT Microcontroller: A Side-by-Side Comparison of Raspberry Pi Pico W and Pico 2 W" />
+        <meta property="og:title" content="Interfacing LED to Arduino UNO and controlling it Using arduino code" />
     
     
-        <meta property="og:description" content="To be updated with present technology, it important to know improvements in IoT based Microcontrollers." />
+        <meta property="og:description" content="Learn how to connect and control an external LED with the Arduino UNO through a simple, step-by-step hardware and simulation tutorial." />
     
     
-        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/pico-w-vs-pico2-w/">
+        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/arduino-uno/interfacing-led-to-arduino-uno/">
     
     <meta property="og:site_name" content="Tech Aavishkarah" />
     
-        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/pico1-w-vs-pico2-w.png" />
+        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-uno/arduino-led-interface.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
     
@@ -39,21 +39,21 @@
 
     <meta name="twitter:card" content="summary" />
     
-        <meta name="twitter:description" content="To be updated with present technology, it important to know improvements in IoT based Microcontrollers." />
+        <meta name="twitter:description" content="Learn how to connect and control an external LED with the Arduino UNO through a simple, step-by-step hardware and simulation tutorial." />
     
     
-        <meta name="twitter:title"  content="Next-Gen IoT Microcontroller: A Side-by-Side Comparison of Raspberry Pi Pico W and Pico 2 W" />
+        <meta name="twitter:title"  content="Interfacing LED to Arduino UNO and controlling it Using arduino code" />
     
     
     <meta name="twitter:site" content="@arunkumarn_eee" />
     
-        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/pico1-w-vs-pico2-w.png" />
+        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-uno/arduino-led-interface.png" />
     
     <meta name="twitter:creator" content="@arunkumarn_eee" />
 
     
       
-        <title>Next-Gen IoT Microcontroller: A Side-by-Side Comparison of Raspberry Pi Pico W and Pico 2 W - Tech Aavishkarah</title>
+        <title>Interfacing LED to Arduino UNO and controlling it Using arduino code - Tech Aavishkarah</title>
       
     
     
@@ -117,7 +117,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#comparison-table" class="md-skip">
+        <a href="#abstract" class="md-skip">
           Skip to content
         </a>
       
@@ -152,7 +152,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Next-Gen IoT Microcontroller: A Side-by-Side Comparison of Raspberry Pi Pico W and Pico 2 W
+              Interfacing LED to Arduino UNO and controlling it Using arduino code
             
           </span>
         </div>
@@ -553,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../raspberry-pi-pico/" class="md-nav__link">
         
   
   
@@ -599,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../arduino-uno/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -747,7 +747,7 @@
               
                 
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -764,11 +764,110 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#comparison-table" class="md-nav__link">
+  <a href="#abstract" class="md-nav__link">
     <span class="md-ellipsis">
-      Comparison Table
+      Abstract
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-Request
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware Required
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware Required">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection Table
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-explanation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Explanation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simulation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#components-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components details
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules-libraries-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modules / Libraries Used
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -790,14 +889,20 @@
 
 
 
-  <h1>Next-Gen IoT Microcontroller: A Side-by-Side Comparison of Raspberry Pi Pico W and Pico 2 W</h1>
+  <h1>Interfacing LED to Arduino UNO and controlling it Using arduino code</h1>
 
 <div class="md-typeset">
     <div class="blogging-tags-grid">
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry pi pico w" class="blogging-tag"><code>#raspberry pi pico w</code></a>
+        <a href="https://tech.arunkumarn.in/tags#arduino uno" class="blogging-tag"><code>#arduino uno</code></a>
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry pi pico 2 w" class="blogging-tag"><code>#raspberry pi pico 2 w</code></a>
+        <a href="https://tech.arunkumarn.in/tags#arduino" class="blogging-tag"><code>#arduino</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#cpp" class="blogging-tag"><code>#cpp</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#c" class="blogging-tag"><code>#c</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#guide" class="blogging-tag"><code>#guide</code></a>
 
     </div>
 
@@ -824,172 +929,254 @@
         border-radius: 5px;
     }
 </style>
-<p><img alt="pico_1-vs-pico_2" src="../../../assets/blogs/raspberrypipico/pico1-w-vs-pico2-w.png" /></p>
-<p>Pico 2 W is the latest, low cost IoT featured microcontroller available in market. with feature rich Upgrades from Cortex-M0+ processor to Cortex-M33 processor with higher SRAM capabilities and more. Let us do a point by point comparison in table format.</p>
+<p><img alt="blink led" src="../../../assets/blogs/arduino-uno/arduino-led-interface.png" /></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
 <ul>
-<li><a href="#comparison-table">Comparison Table</a></li>
+<li><a href="#abstract">Abstract</a></li>
+<li><a href="#pre-request">Pre-Request</a></li>
+<li><a href="#hardware-required">Hardware Required</a><ul>
+<li><a href="#connection-table">Connection Table</a></li>
+</ul>
+</li>
+<li><a href="#code">Code</a><ul>
+<li><a href="#code-explanation">Code Explanation</a></li>
+</ul>
+</li>
+<li><a href="#simulation">Simulation</a></li>
+<li><a href="#extras">Extras</a><ul>
+<li><a href="#components-details">Components details</a></li>
+<li><a href="#modules-libraries-used">Modules / Libraries Used</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </details>
-<h2 id="comparison-table">Comparison Table</h2>
+<h2 id="abstract">Abstract</h2>
+<p>In this article, a comprehensive step-by-step guide to interface an external LED with Arduino UNO board using arduino code. This articles lays the foundation for more advanced embedded system and IoT projects.</p>
+<h2 id="pre-request"><img alt="🧭" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9ed.svg" title=":compass:" /> Pre-Request</h2>
+<ul>
+<li>OS : Windows / Linux / Mac / Chrome</li>
+<li>Arduino IDE </li>
+</ul>
+<h2 id="hardware-required">Hardware Required</h2>
+<ul>
+<li>Arduino UNO. </li>
+<li>LED.</li>
+<li>Resistors.</li>
+<li>BreadBoard.</li>
+<li>Mini USB Cable.</li>
+<li>Connecting wires.</li>
+<li>5V DC power supply (Optional)</li>
+</ul>
 <table>
 <thead>
 <tr>
-<th>Feature</th>
-<th>Pico W</th>
-<th>Pico 2 W</th>
+<th>Components</th>
+<th>Purchase Link</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Processor</td>
-<td>Cortex-M0+</td>
-<td>Cortex M33</td>
+<td>Arduino UNO</td>
+<td><a href="#">link</a></td>
 </tr>
 <tr>
-<td>Controller</td>
-<td>RP2040</td>
-<td>RP2350</td>
+<td>LED</td>
+<td><a href="https://amzn.to/3IaSVf2">link</a></td>
 </tr>
 <tr>
-<td>RISC-V Cores</td>
-<td>None</td>
-<td>Hazard3</td>
+<td>BreadBoard</td>
+<td><a href="https://amzn.to/4pgNX1c">large</a> : <a href="https://amzn.to/47SMzvB">small</a></td>
 </tr>
 <tr>
-<td>Frequency</td>
-<td>133 MHz</td>
-<td>150 MHz</td>
+<td>Connecting Wires</td>
+<td><a href="https://amzn.to/4pepr0H">link</a></td>
 </tr>
 <tr>
-<td>SRAM</td>
-<td>264 kB (6 banks)</td>
-<td>520 kB (10 banks)</td>
+<td>Mini USB Cable</td>
+<td><a href="#">link</a></td>
 </tr>
 <tr>
-<td>WiFi</td>
-<td>802.11n, 2.4 GHz</td>
-<td>802.11n, 2.4 GHz</td>
+<td>5V DC Adaptor</td>
+<td><a href="https://amzn.to/4m82t8D">link</a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Don't own a hardware <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f622.svg" title=":cry:" /></p>
+<p>No worries,</p>
+<p>Still you can learn using simulation.
+check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:" />.</p>
+</div>
+<h3 id="connection-table">Connection Table</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Particular</th>
+<th style="text-align: center;">GPIO</th>
+<th style="text-align: left;">Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">LED 1</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">LED-1 Anode to GPIO 8  : High Logic</td>
 </tr>
 <tr>
-<td>WiFi Security</td>
-<td>WPA3</td>
-<td>WPA3</td>
-</tr>
-<tr>
-<td>WiFi Soft Access Points</td>
-<td>4 clients</td>
-<td>4 clients</td>
-</tr>
-<tr>
-<td>Bluetooth</td>
-<td>5.2</td>
-<td>5.2</td>
-</tr>
-<tr>
-<td>BLE support</td>
-<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /></td>
-<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /></td>
-</tr>
-<tr>
-<td>Bluetooth Classic</td>
-<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /></td>
-<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /></td>
-</tr>
-<tr>
-<td>One Time Programmable Storage</td>
-<td>--</td>
-<td>8kB</td>
-</tr>
-<tr>
-<td>On-Board Flash</td>
-<td>2 MB</td>
-<td>4 MB</td>
-</tr>
-<tr>
-<td>USB</td>
-<td>1.1</td>
-<td>1.1</td>
-</tr>
-<tr>
-<td>GPIO</td>
-<td>30</td>
-<td>30</td>
-</tr>
-<tr>
-<td>Analogue Input</td>
-<td>3(4)</td>
-<td>3(4)</td>
-</tr>
-<tr>
-<td>ADC Resolution</td>
-<td>12 bit, 500 ksps</td>
-<td>12 bit, 500 ksps</td>
-</tr>
-<tr>
-<td>PWM</td>
-<td>16</td>
-<td>24</td>
-</tr>
-<tr>
-<td>UART</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
-<td>SPI</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
-<td>I2C</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
-<td>PIO state machines</td>
-<td>8</td>
-<td>12</td>
-</tr>
-<tr>
-<td>HSTX (high-speed transmit periphera)</td>
-<td>--</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Temperature Sensor (in-built)</td>
-<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /></td>
-<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /></td>
-</tr>
-<tr>
-<td>Serial Wire Debug (SWD)</td>
-<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /></td>
-<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /></td>
-</tr>
-<tr>
-<td>Languages</td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.592 9.196s-.354-3.298-3.627-3.39c-3.274-.09-4.955 2.474-4.955 6.14s1.858 6.597 5.045 6.597c3.184 0 3.538-3.665 3.538-3.665l6.104.365s.36 3.31-2.196 5.836c-2.552 2.524-5.69 2.937-7.876 2.92-2.19-.016-5.226.035-8.16-2.97-2.938-3.01-3.436-5.93-3.436-8.8s.556-6.67 4.047-9.55C7.444.72 9.849 0 12.254 0c10.042 0 10.717 9.26 10.717 9.26z"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91s.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69s.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91M12 19.11c-3.92 0-7.109-3.19-7.109-7.11s3.19-7.11 7.11-7.11a7.13 7.13 0 0 1 6.156 3.553l-3.076 1.78a3.57 3.57 0 0 0-3.08-1.78A3.56 3.56 0 0 0 8.444 12 3.56 3.56 0 0 0 12 15.555a3.57 3.57 0 0 0 3.08-1.778l3.078 1.78A7.14 7.14 0 0 1 12 19.11m7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h11.509v18.737h.982V0H24v24h-5.263V5.263h-.983V24H6.246V5.263l-.983.035V24H0zm22.246 19.509h-1.404v2.386h1.404z"/></svg></span></td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.592 9.196s-.354-3.298-3.627-3.39c-3.274-.09-4.955 2.474-4.955 6.14s1.858 6.597 5.045 6.597c3.184 0 3.538-3.665 3.538-3.665l6.104.365s.36 3.31-2.196 5.836c-2.552 2.524-5.69 2.937-7.876 2.92-2.19-.016-5.226.035-8.16-2.97-2.938-3.01-3.436-5.93-3.436-8.8s.556-6.67 4.047-9.55C7.444.72 9.849 0 12.254 0c10.042 0 10.717 9.26 10.717 9.26z"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91s.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69s.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91M12 19.11c-3.92 0-7.109-3.19-7.109-7.11s3.19-7.11 7.11-7.11a7.13 7.13 0 0 1 6.156 3.553l-3.076 1.78a3.57 3.57 0 0 0-3.08-1.78A3.56 3.56 0 0 0 8.444 12 3.56 3.56 0 0 0 12 15.555a3.57 3.57 0 0 0 3.08-1.778l3.078 1.78A7.14 7.14 0 0 1 12 19.11m7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h11.509v18.737h.982V0H24v24h-5.263V5.263h-.983V24H6.246V5.263l-.983.035V24H0zm22.246 19.509h-1.404v2.386h1.404z"/></svg></span></td>
+<td style="text-align: left;">LED 2</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">LED-2 Cathode to GPIO 4  : Low Logic</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition info">
-<p class="admonition-title">languages</p>
+<p class="admonition-title">Info</p>
 <ul>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.592 9.196s-.354-3.298-3.627-3.39c-3.274-.09-4.955 2.474-4.955 6.14s1.858 6.597 5.045 6.597c3.184 0 3.538-3.665 3.538-3.665l6.104.365s.36 3.31-2.196 5.836c-2.552 2.524-5.69 2.937-7.876 2.92-2.19-.016-5.226.035-8.16-2.97-2.938-3.01-3.436-5.93-3.436-8.8s.556-6.67 4.047-9.55C7.444.72 9.849 0 12.254 0c10.042 0 10.717 9.26 10.717 9.26z"/></svg></span> C Programming</li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91s.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69s.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91M12 19.11c-3.92 0-7.109-3.19-7.109-7.11s3.19-7.11 7.11-7.11a7.13 7.13 0 0 1 6.156 3.553l-3.076 1.78a3.57 3.57 0 0 0-3.08-1.78A3.56 3.56 0 0 0 8.444 12 3.56 3.56 0 0 0 12 15.555a3.57 3.57 0 0 0 3.08-1.778l3.078 1.78A7.14 7.14 0 0 1 12 19.11m7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z"/></svg></span> C++</li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h11.509v18.737h.982V0H24v24h-5.263V5.263h-.983V24H6.246V5.263l-.983.035V24H0zm22.246 19.509h-1.404v2.386h1.404z"/></svg></span> MicroPython</li>
+<li>LED-1 : HIGH Logic LED : ON for GPIO set to 1 : OFF for GPIO set to 0</li>
+<li>LED-2 : Low Logic LED  : ON for GPIO set to 0 : OFF for GPIO set to 1</li>
+<li>Best practice is to connect LED in low logic. </li>
 </ul>
 </div>
+<figure>
+<p><img alt="Circuit Diagram" src="images/led_ckt.png" /></p>
+<figcaption>
+<p>fig-Connection Diagram</p>
+</figcaption>
+</figure>
+<h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4c2.svg" title=":open_file_folder:" /> Code</h2>
+<div class="language-arduino highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">#define LED_1 8</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="cp">#define LED_2 4</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kr">void</span><span class="w"> </span><span class="nb">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">  </span><span class="c1">// Initialize LED as output PIN</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">  </span><span class="nf">pinMode</span><span class="p">(</span><span class="n">LED_1</span><span class="p">,</span><span class="w"> </span><span class="kr">OUTPUT</span><span class="p">);</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">  </span><span class="nf">pinMode</span><span class="p">(</span><span class="n">LED_2</span><span class="p">,</span><span class="w"> </span><span class="kr">OUTPUT</span><span class="p">);</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="p">}</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="kr">void</span><span class="w"> </span><span class="nb">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">  </span><span class="c1">// Turning ON External LED</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="n">LED_1</span><span class="p">,</span><span class="w"> </span><span class="kr">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// HIGH Logic</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="n">LED_2</span><span class="p">,</span><span class="w"> </span><span class="kr">LOW</span><span class="p">);</span><span class="w"> </span><span class="c1">// LOW Logic</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">  </span><span class="nf">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">  </span><span class="c1">// Turning OFF External LED</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="n">LED_1</span><span class="p">,</span><span class="w"> </span><span class="kr">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// HIGH Logic</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="n">LED_2</span><span class="p">,</span><span class="w"> </span><span class="kr">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// LOW Logic</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">  </span><span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<h3 id="code-explanation">Code Explanation</h3>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Accessing LED's.</p>
+<div class="language-arduino highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span>
+<span class="normal"><a href="#__codelineno-1-8">8</a></span>
+<span class="normal"><a href="#__codelineno-1-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">#define LED_1 8</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="cp">#define LED_2 4</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="kr">void</span><span class="w"> </span><span class="nb">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">  </span><span class="c1">// Initialize LED as output PIN</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">  </span><span class="nf">pinMode</span><span class="p">(</span><span class="n">LED_1</span><span class="p">,</span><span class="w"> </span><span class="kr">OUTPUT</span><span class="p">);</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">  </span><span class="nf">pinMode</span><span class="p">(</span><span class="n">LED_2</span><span class="p">,</span><span class="w"> </span><span class="kr">OUTPUT</span><span class="p">);</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>Define LED_1 to GPIO 8 &amp; LED_2 to GPIO 4.</li>
+<li>GPIO pin 8 is configured as <code>OUTPUT</code> pin (Line number 6)</li>
+<li>GPIO pin 4 is configured as <code>OUTPUT</code> pin (Line number 7)</li>
+</ul>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Controlling LED</p>
+<div class="language-arduino highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span>
+<span class="normal"><a href="#__codelineno-2-19">19</a></span>
+<span class="normal"><a href="#__codelineno-2-20">20</a></span>
+<span class="normal"><a href="#__codelineno-2-21">21</a></span>
+<span class="normal"><a href="#__codelineno-2-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="kr">void</span><span class="w"> </span><span class="nb">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">  </span><span class="c1">// Turning ON External LED</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="n">LED_1</span><span class="p">,</span><span class="w"> </span><span class="kr">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// HIGH Logic</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="n">LED_2</span><span class="p">,</span><span class="w"> </span><span class="kr">LOW</span><span class="p">);</span><span class="w"> </span><span class="c1">// LOW Logic</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="w">  </span><span class="nf">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16"></a>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="w">  </span><span class="c1">// Turning OFF External LED</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="n">LED_1</span><span class="p">,</span><span class="w"> </span><span class="kr">LOW</span><span class="p">);</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="n">LED_2</span><span class="p">,</span><span class="w"> </span><span class="kr">HIGH</span><span class="p">);</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="w">  </span><span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21"></a>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>Continuous loop for blinking led is achieved using <code>loop</code> method.</li>
+<li><code>digitalWrite(LED_1, HIGH)</code> sets the value of GPIO 8 to <code>HIGH</code> or <code>1</code>, it turns ON the LED-1. (line number 13)</li>
+<li><code>digitalWrite(LED_2, LOW)</code> sets the value of GPIO 4 to <code>LOW</code> or <code>0</code>, it turns ON the LED-2. (line number 14)</li>
+<li>Delay is achieved through <code>delay(ms_value);</code> method. (line number 15 &amp; 20) </li>
+<li><code>digitalWrite(LED_1, LOW)</code> sets the value of GPIO 8 to <code>LOW</code> or <code>0</code>, it turns OFF the LED-1. (line number 18)</li>
+<li><code>digitalWrite(LED_2, HIGH)</code> sets the value of GPIO 4 to <code>HIGH</code> or <code>1</code>, it turns OFF the LED-2. (line number 19)</li>
+</ul>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Initially Pico W firmware was not supporting Bluetooth functionality.</p>
-<p>Bluetooth support was added to the Pico W board with the version <code>1.5.1 C SDK</code> and <code>version v1.21.0 MicroPython</code></p>
-<p><a href="../installing-micropython/">Check here to integrate micropython for pico boards</a></p>
+<p class="admonition-title">Try It</p>
+<ul>
+<li>Change the value in the <code>delay</code> method and observe the change in the on and off time.<ul>
+<li><code>delay(2000)</code>, <code>delay(750)</code> , etc</li>
+</ul>
+</li>
+</ul>
 </div>
+<hr />
+<h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"/></svg></span> Simulation</h2>
+<div class="admonition danger">
+<p class="admonition-title">Not able to view the simulation</p>
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M128 32c-35.3 0-64 28.7-64 64v256h64V96h384v256h64V96c0-35.3-28.7-64-64-64zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480h486.4c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2z"/></svg></span> Desktop or Laptop : Reload this page ( <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span> )</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16s7.2-16 16-16"/></svg></span> Mobile : Use Landscape Mode and reload the page</li>
+</ul>
+</div>
+<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/448742646520474625" frameborder="2px" width="100%" height="700px"></iframe>
+
+<hr />
+<h2 id="extras"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2 0 .37-.03.73-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85-.32.63-.67 1.24-1.07 1.81-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56M23 18v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"/></svg></span> Extras</h2>
+<h3 id="components-details">Components details</h3>
+<ul>
+<li>Arduino UNO <a href="../blink-an-led-on-arduino-uno/files/uno-datasheet.pdf" target="_blank">Data Sheet</a></li>
+</ul>
+<h3 id="modules-libraries-used">Modules / Libraries Used</h3>
+<p>NIL</p>
 
 
 

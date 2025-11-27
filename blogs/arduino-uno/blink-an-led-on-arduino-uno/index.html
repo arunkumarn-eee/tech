@@ -6,55 +6,61 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     
-        <meta name="description" content="Python course syllabus.">
+        <meta name="description" content="Beginner-friendly guide to LED blinking with Arduino UNO, C/C++, and online simulations.">
     
     
         <meta name="author" content="Arun kumar N">
     
     
-        <link rel="canonical" href="https://tech.arunkumarn.in/python/identifiers/">
+        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/arduino-uno/blink-an-led-on-arduino-uno/">
     
     
     
     
-    <link rel="icon" href="../../assets/image/favicon.png">
+    <link rel="icon" href="../../../assets/image/favicon.png">
 
     <meta property="og:type" content="website" />
     
-        <meta property="og:title" content="Identifiers" />
+        <meta property="og:title" content="Blink an LED on Arduino Uno Using C/Cpp (Hardware & Simulation) : Step-by-Step Guide" />
     
     
-        <meta property="og:description" content="Python course syllabus." />
+        <meta property="og:description" content="Beginner-friendly guide to LED blinking with Arduino UNO, C/C++, and online simulations." />
     
     
-        <meta property="og:url" content="https://tech.arunkumarn.in/python/identifiers/">
+        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/arduino-uno/blink-an-led-on-arduino-uno/">
     
     <meta property="og:site_name" content="Tech Aavishkarah" />
+    
+        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-uno/blink_led_uno.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
     
 
 
     <meta name="twitter:card" content="summary" />
     
-        <meta name="twitter:description" content="Python course syllabus." />
+        <meta name="twitter:description" content="Beginner-friendly guide to LED blinking with Arduino UNO, C/C++, and online simulations." />
     
     
-        <meta name="twitter:title"  content="Identifiers" />
+        <meta name="twitter:title"  content="Blink an LED on Arduino Uno Using C/Cpp (Hardware & Simulation) : Step-by-Step Guide" />
     
     
     <meta name="twitter:site" content="@arunkumarn_eee" />
+    
+        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-uno/blink_led_uno.png" />
     
     <meta name="twitter:creator" content="@arunkumarn_eee" />
 
     
       
-        <title>Identifiers - Tech Aavishkarah</title>
+        <title>Blink an LED on Arduino Uno Using C/Cpp (Hardware & Simulation) : Step-by-Step Guide - Tech Aavishkarah</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -73,9 +79,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -111,7 +117,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#identifiers" class="md-skip">
+        <a href="#abstract" class="md-skip">
           Skip to content
         </a>
       
@@ -127,9 +133,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Tech Aavishkarah" class="md-header__button md-logo" aria-label="Tech Aavishkarah" data-md-component="logo">
+    <a href="../../.." title="Tech Aavishkarah" class="md-header__button md-logo" aria-label="Tech Aavishkarah" data-md-component="logo">
       
-  <img src="../../assets/image/favicon.png" alt="logo">
+  <img src="../../../assets/image/favicon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -146,7 +152,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Identifiers
+              Blink an LED on Arduino Uno Using C/Cpp (Hardware & Simulation) : Step-by-Step Guide
             
           </span>
         </div>
@@ -209,7 +215,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -230,7 +236,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../syllabus/" class="md-tabs__link">
+        <a href="../../../python/syllabus/" class="md-tabs__link">
           
   
   
@@ -250,7 +256,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../blogs/python/" class="md-tabs__link">
+        <a href="../../python/" class="md-tabs__link">
           
   
   
@@ -268,7 +274,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../projects/" class="md-tabs__link">
+      <a href="../../../projects/" class="md-tabs__link">
         
   
   
@@ -287,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../stem/" class="md-tabs__link">
+      <a href="../../../stem/" class="md-tabs__link">
         
   
   
@@ -308,7 +314,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../tags/" class="md-tabs__link">
+        <a href="../../../tags/" class="md-tabs__link">
           
   
   
@@ -350,9 +356,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Tech Aavishkarah" class="md-nav__button md-logo" aria-label="Tech Aavishkarah" data-md-component="logo">
+    <a href="../../.." title="Tech Aavishkarah" class="md-nav__button md-logo" aria-label="Tech Aavishkarah" data-md-component="logo">
       
-  <img src="../../assets/image/favicon.png" alt="logo">
+  <img src="../../../assets/image/favicon.png" alt="logo">
 
     </a>
     Tech Aavishkarah
@@ -367,7 +373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -430,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../syllabus/" class="md-nav__link">
+      <a href="../../../python/syllabus/" class="md-nav__link">
         
   
   
@@ -453,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../builtin_methods/" class="md-nav__link">
+      <a href="../../../python/builtin_methods/" class="md-nav__link">
         
   
   
@@ -524,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blogs/python/" class="md-nav__link">
+      <a href="../../python/" class="md-nav__link">
         
   
   
@@ -547,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blogs/raspberry-pi-pico/" class="md-nav__link">
+      <a href="../../raspberry-pi-pico/" class="md-nav__link">
         
   
   
@@ -570,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blogs/arduino-nano/" class="md-nav__link">
+      <a href="../../arduino-nano/" class="md-nav__link">
         
   
   
@@ -593,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blogs/arduino-uno/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -623,7 +629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/" class="md-nav__link">
+      <a href="../../../projects/" class="md-nav__link">
         
   
   
@@ -645,7 +651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../stem/" class="md-nav__link">
+      <a href="../../../stem/" class="md-nav__link">
         
   
   
@@ -708,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tags/" class="md-nav__link">
+      <a href="../../../tags/" class="md-nav__link">
         
   
   
@@ -741,7 +747,7 @@
               
                 
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -758,28 +764,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#identifiers" class="md-nav__link">
+  <a href="#abstract" class="md-nav__link">
     <span class="md-ellipsis">
-      Identifiers
+      Abstract
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#python-keywords" class="md-nav__link">
+  <a href="#pre-request" class="md-nav__link">
     <span class="md-ellipsis">
-      Python Keywords
+      Pre-Request
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Python Keywords">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware Required
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware Required">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#keywords-can-be-categorized" class="md-nav__link">
+  <a href="#connection-table" class="md-nav__link">
     <span class="md-ellipsis">
-      Keywords can be categorized
+      Connection Table
     </span>
   </a>
   
@@ -791,19 +806,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#variables" class="md-nav__link">
+  <a href="#code" class="md-nav__link">
     <span class="md-ellipsis">
-      Variables
+      Code
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Variables">
+    <nav class="md-nav" aria-label="Code">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#creating-variable" class="md-nav__link">
+  <a href="#code-explanation" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating Variable
+      Code Explanation
     </span>
   </a>
   
@@ -815,28 +830,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#comments" class="md-nav__link">
+  <a href="#simulation" class="md-nav__link">
     <span class="md-ellipsis">
-      Comments
+      Simulation
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Comments">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result" class="md-nav__link">
+    <span class="md-ellipsis">
+      Result
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extras">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#single-line-comment" class="md-nav__link">
+  <a href="#components-details" class="md-nav__link">
     <span class="md-ellipsis">
-      Single line Comment
+      Components details
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#multiline-comment" class="md-nav__link">
+  <a href="#modules-libraries-used" class="md-nav__link">
     <span class="md-ellipsis">
-      Multiline Comment
+      Modules / Libraries Used
     </span>
   </a>
   
@@ -865,12 +898,20 @@
 
 
 
-  <h1>Identifiers</h1>
+  <h1>Blink an LED on Arduino Uno Using C/Cpp (Hardware & Simulation) : Step-by-Step Guide</h1>
 
 <div class="md-typeset">
     <div class="blogging-tags-grid">
 
-        <a href="https://tech.arunkumarn.in/tags#python course" class="blogging-tag"><code>#python course</code></a>
+        <a href="https://tech.arunkumarn.in/tags#arduino uno" class="blogging-tag"><code>#arduino uno</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#arduino" class="blogging-tag"><code>#arduino</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#cpp" class="blogging-tag"><code>#cpp</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#c" class="blogging-tag"><code>#c</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#guide" class="blogging-tag"><code>#guide</code></a>
 
     </div>
 
@@ -897,181 +938,213 @@
         border-radius: 5px;
     }
 </style>
+<p><img alt="blink led" src="../../../assets/blogs/arduino-uno/blink_led_uno.png" /></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
 <ul>
-<li><a href="#identifiers">Identifiers</a></li>
-<li><a href="#python-keywords">Python Keywords</a><ul>
-<li><a href="#keywords-can-be-categorized">Keywords can be categorized</a></li>
+<li><a href="#abstract">Abstract</a></li>
+<li><a href="#pre-request">Pre-Request</a></li>
+<li><a href="#hardware-required">Hardware Required</a><ul>
+<li><a href="#connection-table">Connection Table</a></li>
 </ul>
 </li>
-<li><a href="#variables">Variables</a><ul>
-<li><a href="#creating-variable">Creating Variable</a></li>
+<li><a href="#code">Code</a><ul>
+<li><a href="#code-explanation">Code Explanation</a></li>
 </ul>
 </li>
-<li><a href="#comments">Comments</a><ul>
-<li><a href="#single-line-comment">Single line Comment</a></li>
-<li><a href="#multiline-comment">Multiline Comment</a></li>
+<li><a href="#simulation">Simulation</a></li>
+<li><a href="#result">Result</a></li>
+<li><a href="#extras">Extras</a><ul>
+<li><a href="#components-details">Components details</a></li>
+<li><a href="#modules-libraries-used">Modules / Libraries Used</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </details>
-<h2 id="identifiers">Identifiers</h2>
-<p>Identifier is a user-defined name given to a variable, function, class, module, etc. The identifier is a combination of character digits and an underscore. They are case-sensitive i.e., ‘num’ and ‘Num’ and ‘NUM’ are three different identifiers in python. It is a good programming practice to give meaningful names to identifiers to make the code understandable.</p>
-<p><strong>Rules for Naming Python Identifiers</strong></p>
+<h2 id="abstract">Abstract</h2>
+<p>Arduino UNO Development board is equipped with ATmega328p chip, which has 32K bytes of Flash program memory, 2k bytes of SRAM and 1K bytes of EEPROM. UNO board supports Embedded System C, Cpp and arduino code.  </p>
+<p>In this article we go through.</p>
 <ul>
-<li>It cannot be a reserved python keyword.</li>
-<li>It should not contain white space.</li>
-<li>It can be a combination of A-Z, a-z, 0-9, or underscore.</li>
-<li>It should start with an alphabet character or an underscore ( _ ).</li>
-<li>It should not contain any special character other than an underscore ( _ ).</li>
+<li>Accessing the built-in led (13) of the Arduino UNO board.</li>
+<li>Turning <code>on</code> and <code>off</code> built-in led using arduino code.</li>
+<li>Simulation using wokwi.</li>
+<li>Hardware demo.</li>
+</ul>
+<h2 id="pre-request"><img alt="🧭" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9ed.svg" title=":compass:" /> Pre-Request</h2>
+<ul>
+<li>OS : Windows / Linux / Mac / Chrome</li>
+<li>Arduino IDE. </li>
+</ul>
+<h2 id="hardware-required">Hardware Required</h2>
+<ul>
+<li>Arduino UNO </li>
+<li>Micro USB Cable.</li>
 </ul>
 <table>
 <thead>
 <tr>
-<th>Variables</th>
-<th>✅ / ❌</th>
-<th>Reason</th>
+<th>Components</th>
+<th>Purchase Link</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>city</td>
-<td>✅</td>
-<td>Variable names can be in lower case and uppercase</td>
+<td>Arduino UNO</td>
+<td><a href="#">Purchase Link</a></td>
 </tr>
 <tr>
-<td>for</td>
-<td>❌</td>
-<td>Reserved key words</td>
-</tr>
-<tr>
-<td>break</td>
-<td>❌</td>
-<td>Reserved key words</td>
-</tr>
-<tr>
-<td>_sum</td>
-<td>✅</td>
-<td>Variable names can begin with _ or a letter</td>
-</tr>
-<tr>
-<td>user name</td>
-<td>❌</td>
-<td>White space characters are not allowed in the naming of a variable</td>
-</tr>
-<tr>
-<td>user_name</td>
-<td>✅</td>
-<td>Variable names can begin with _ or a letter</td>
-</tr>
-<tr>
-<td>2name</td>
-<td>❌</td>
-<td>Variable names cannot start with a number</td>
-</tr>
-<tr>
-<td>name2</td>
-<td>✅</td>
-<td>Variable names can begin with _ or a letter</td>
+<td>Mini B USB Cable</td>
+<td><a href="#">Purchase Link</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="python-keywords">Python Keywords</h2>
-<p>Keywords in Python are reserved words that can not be used as a variable name, function name, or any other identifier.</p>
-<p>Python keywords are the fundamental building blocks of any Python program. Understanding their proper use is key to improving your skills and knowledge of Python.</p>
-<div class="language-python highlight"><span class="filename">list of keywords</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">help</span><span class="p">(</span><span class="s2">&quot;keywords&quot;</span><span class="p">)</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">Here</span> <span class="ow">is</span> <span class="n">a</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">the</span> <span class="n">Python</span> <span class="n">keywords</span><span class="o">.</span>  <span class="n">Enter</span> <span class="nb">any</span> <span class="n">keyword</span> <span class="n">to</span> <span class="n">get</span> <span class="n">more</span> <span class="n">help</span><span class="o">.</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kc">False</span>               <span class="k">class</span><span class="w">               </span><span class="nc">from</span>                <span class="ow">or</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kc">None</span>                <span class="k">continue</span>            <span class="k">global</span>              <span class="k">pass</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="kc">True</span>                <span class="k">def</span><span class="w">                 </span><span class="nf">if</span>                  <span class="k">raise</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="ow">and</span>                 <span class="k">del</span>                 <span class="kn">import</span><span class="w">              </span><span class="nn">return</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">as</span><span class="w">                  </span><span class="nn">elif</span>                <span class="ow">in</span>                  <span class="k">try</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="k">assert</span>              <span class="k">else</span>                <span class="ow">is</span>                  <span class="k">while</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="k">async</span>               <span class="k">except</span>              <span class="k">lambda</span>              <span class="k">with</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="k">await</span>               <span class="k">finally</span>             <span class="k">nonlocal</span>            <span class="k">yield</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="k">break</span>               <span class="k">for</span>                 <span class="ow">not</span>
-</span></code></pre></div>
-<p>To know more information about keywords we can use <code>help()</code> again by passing in the specific keyword that you need more information about. You can do this, for example,</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&gt;&gt;&gt; help(&quot;if&quot;)
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>The &quot;if&quot; statement
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>******************
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>The &quot;if&quot; statement is used for conditional execution:
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>   if_stmt ::= &quot;if&quot; assignment_expression &quot;:&quot; suite
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>               (&quot;elif&quot; assignment_expression &quot;:&quot; suite)*
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>               [&quot;else&quot; &quot;:&quot; suite]
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>It selects exactly one of the suites by evaluating the expressions one
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>by one until one is found to be true (see section Boolean operations
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>for the definition of true and false); then that suite is executed
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>(and no other part of the &quot;if&quot; statement is executed or evaluated).
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>If all expressions are false, the suite of the &quot;else&quot; clause, if
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>present, is executed.
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>Related help topics: TRUTHVALUE
-</span></code></pre></div>
-<h3 id="keywords-can-be-categorized">Keywords can be categorized</h3>
+<div class="admonition tip">
+<p class="admonition-title">Don't own a hardware <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f622.svg" title=":cry:" /></p>
+<p>No worries,</p>
+<p>Still you can learn using simulation.
+check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:" />.</p>
+</div>
+<h3 id="connection-table">Connection Table</h3>
+<p>Built-in led of Arduino UNO is internally connected to GPIO 13.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Particular</th>
+<th style="text-align: center;">GPIO</th>
+<th style="text-align: left;">Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Built-in LED</td>
+<td style="text-align: center;">13</td>
+<td style="text-align: left;">Internally Connected</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Built-in LED" src="images/Built_in_LED_uno.png" /></p>
+<h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4c2.svg" title=":open_file_folder:" /> Code</h2>
+<div class="language-arduino highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kr">void</span><span class="w"> </span><span class="nb">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span><span class="c1">// Initializing built-in LED as OUTPUT pin</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">  </span><span class="nf">pinMode</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="kr">OUTPUT</span><span class="p">);</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="c1">// pinMode(13, OUTPUT);</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="p">}</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="kr">void</span><span class="w"> </span><span class="nb">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">  </span><span class="c1">// Turning ON built-in LED</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="kr">HIGH</span><span class="p">);</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">  </span><span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">  </span><span class="c1">// Turning OFF built-in LED</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="kr">LOW</span><span class="p">);</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">  </span><span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<h3 id="code-explanation">Code Explanation</h3>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Accessing built-in led of Arduino UNO board.</p>
+<div class="language-arduino highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kr">void</span><span class="w"> </span><span class="nb">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="c1">// Initializing built-in LED as OUTPUT pin</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="nf">pinMode</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="kr">OUTPUT</span><span class="p">);</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="c1">// pinMode(13, OUTPUT);</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
 <ul>
-<li>Value Keywords: True, False, None</li>
-<li>Operator Keywords: and, or, not, in, is</li>
-<li>Control Flow Keywords: if, elif, else</li>
-<li>Iteration Keywords: for, while, break, continue, else</li>
-<li>Structure Keywords: def, class, with, as, pass, lambda</li>
-<li>Returning Keywords: return, yield</li>
-<li>Import Keywords: import, from, as</li>
-<li>Exception-Handling Keywords: try, except, raise, finally, else, assert</li>
-<li>Asynchronous Programming Keywords: async, await</li>
-<li>Variable Handling Keywords: del, global, nonlocal.</li>
+<li>LED_BUILTIN (GPIO pin 13) is configured as <code>OUTPUT</code> pin (Line number 3) </li>
+<li>You can alternatively use GPIO 13 in place of LED_BUILTIN.</li>
 </ul>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Blinking LED</p>
+<div class="language-arduino highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="kr">void</span><span class="w"> </span><span class="nb">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">  </span><span class="c1">// Turning ON built-in LED</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="kr">HIGH</span><span class="p">);</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">  </span><span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="w">  </span><span class="c1">// Turning OFF built-in LED</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="kr">LOW</span><span class="p">);</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="w">  </span><span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17"></a>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>Continuous loop is achieved using <code>loop</code> method.</li>
+<li><code>digitalWrite</code> is used to change the state of GPIO pin.</li>
+<li><code>digitalWrite(LED_BUILTIN, HIGH);</code> sets the value of GPIO 13 to <code>HIGH</code> or <code>1</code>, which in turn  turns ON the LED. (line number 11)</li>
+<li>Delay of <code>1</code> second is achieved through <code>delay(1000);</code> method. (line number 12 &amp; 16) </li>
+<li><code>digitalWrite(LED_BUILTIN, LOW);</code> sets the value of GPIO 13 to <code>LOW</code> or <code>0</code>, which in turn  turns OFF the LED. (line number 15)</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Try It</p>
+<ul>
+<li>Change the value in the sleep method and observe the change in the on and off time.<ul>
+<li><code>delay(2000)</code>, <code>delay(4000)</code> , etc</li>
+</ul>
+</li>
+<li>the values in terms of milli seconds.<ul>
+<li><code>delay(1000)</code> : 1000 ms or 1 s</li>
+<li><code>delay(500)</code>  : 500 ms or 0.5 s</li>
+</ul>
+</li>
+</ul>
+</div>
 <hr />
-<h2 id="variables">Variables</h2>
-<p>A variable is a named area of the computers’ memory that can be used to hold data.</p>
+<h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"/></svg></span> Simulation</h2>
+<div class="admonition danger">
+<p class="admonition-title">Not able to view the simulation</p>
 <ul>
-<li>A variable name can only contain alpha-numeric characters and underscores (A-Z, a-z, 0-9, and _ )</li>
-<li>Variable should not start with a number.</li>
-<li>Python Keywords are not allowed as variable names.</li>
-<li>Variable names are case-sensitive.</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M128 32c-35.3 0-64 28.7-64 64v256h64V96h384v256h64V96c0-35.3-28.7-64-64-64zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480h486.4c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2z"/></svg></span> Desktop or Laptop : Reload this page ( <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span> )</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16s7.2-16 16-16"/></svg></span> Mobile : Use Landscape Mode and reload the page</li>
 </ul>
-<h3 id="creating-variable">Creating Variable</h3>
-<p>In Python, variables are created when we assign a value to it. we can assign values to the variable using  assignment operator <code>=</code>.</p>
-<div class="language-python highlight"><span class="filename">syntax</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Aavishkarah&quot;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">connect</span> <span class="o">=</span> <span class="kc">True</span>
-</span></code></pre></div>
-<p><strong>Multiple assignment</strong></p>
-<p>A single value can be assigned to several variables simultaneously. </p>
-<div class="language-python highlight"><span class="filename">example</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">b</span> <span class="o">=</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">1</span>
-</span></code></pre></div>
-<p>Python allows you to assign different values to multiple variables in one line:</p>
-<div class="language-python highlight"><span class="filename">example</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span> 
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># Same as</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># x = 2</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1"># y = 5</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1"># z = 6</span>
-</span></code></pre></div>
-<h2 id="comments">Comments</h2>
-<p>A comment is a text that describes what the program or a particular part of the program is trying to do and is ignored by the Python interpreter.</p>
-<h3 id="single-line-comment">Single line Comment</h3>
-<p>In Python, use the hash (#) symbol to start writing a comment. </p>
-<div class="language-python highlight"><span class="filename">example</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="c1"># This is Single line comment.</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="o">&gt;&gt;&gt;</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>  <span class="c1"># a is assigned with a value of 5</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="c1"># you can add comments after expression also.</span>
-</span></code></pre></div>
-<h3 id="multiline-comment">Multiline Comment</h3>
-<p>Use the hash (#) symbol at the beginning of each line.</p>
-<div class="language-python highlight"><span class="filename">example</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># This is Single line comment</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c1"># Adding hash (#) again to the next line makes it Multiline comment. </span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1"># comment line 3</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># comment line 4</span>
-</span></code></pre></div>
+</div>
+<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/448742558030058497" frameborder="2px" width="100%" height="700px"></iframe>
+
+<h2 id="result">Result</h2>
+<p>Above code turns ON LED for 1 second and OFF for 1 second. Similar to a square wave of <code>0.5 Hz</code> output connected to an LED.</p>
+<hr />
+<h2 id="extras"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2 0 .37-.03.73-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85-.32.63-.67 1.24-1.07 1.81-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56M23 18v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"/></svg></span> Extras</h2>
+<h3 id="components-details">Components details</h3>
+<ul>
+<li>Arduino UNO <a href="files/uno-datasheet.pdf" target="_blank">Data Sheet</a></li>
+</ul>
+<h3 id="modules-libraries-used">Modules / Libraries Used</h3>
+<p>-Nil-</p>
 
 
 
@@ -1186,10 +1259,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "content.code.copy", "content.footnote.tooltips", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "content.code.copy", "content.footnote.tooltips", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

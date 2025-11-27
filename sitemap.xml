@@ -25,6 +25,10 @@
           <lastmod></lastmod>   
     </url>
     <url>
+         <loc>https://tech.arunkumarn.in/blogs/arduino-uno/</loc>
+          <lastmod></lastmod>   
+    </url>
+    <url>
          <loc>https://tech.arunkumarn.in/blogs/python/</loc>
           <lastmod></lastmod>   
     </url>
@@ -39,6 +43,14 @@
     <url>
          <loc>https://tech.arunkumarn.in/blogs/arduino-nano/interfacing-led-to-arduino-nano/</loc>
           <lastmod>2025-11-25</lastmod>   
+    </url>
+    <url>
+         <loc>https://tech.arunkumarn.in/blogs/arduino-uno/blink-an-led-on-arduino-uno/</loc>
+          <lastmod>2025-11-27</lastmod>   
+    </url>
+    <url>
+         <loc>https://tech.arunkumarn.in/blogs/arduino-uno/interfacing-led-to-arduino-uno/</loc>
+          <lastmod>2025-11-27</lastmod>   
     </url>
     <url>
          <loc>https://tech.arunkumarn.in/blogs/python/Beyond-input-Modern-Python-Techniques-for-Bulletproof-User-input-Validation/</loc>
