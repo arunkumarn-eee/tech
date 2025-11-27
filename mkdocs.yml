@@ -11,6 +11,7 @@ nav:
       - Python: blogs/python.md
       - Raspberry Pi Pico: blogs/raspberry-pi-pico.md
       - Arduino Nano: blogs/arduino-nano.md
+      - Arduino UNO: blogs/arduino-uno.md
   - Projects: projects.md
   - STEM : stem.md
   - Extra:
@@ -91,6 +92,14 @@ plugins:
         - name: arduino-nano
           dirs:
             - blogs/arduino-nano
+          template: blogoverride/blog-custom.html
+          size: 5
+          sort:
+            from: new
+            by: revision
+        - name: arduino-uno
+          dirs:
+            - blogs/arduino-uno
           template: blogoverride/blog-custom.html
           size: 5
           sort:
