@@ -1,3 +1,62 @@
-# Blogs
+# Blogs 
 
-{{ blog_content }}
+<div class="grid cards" markdown>
+- [:simple-python: Python](./blogs/python.md){style="color:#ffaa00"} 
+- [:simple-raspberrypi: Raspberry Pi Pico](./blogs/raspberry-pi-pico.md){style="color:#aa0000"}  
+- [:simple-arduino: Arduino Nano](./blogs/arduino-nano.md){style="color:#22aa00"}  
+- [:simple-arduino: Arduino Uno](./blogs/arduino-uno.md){style="color:#22aa00"}  
+
+</div>
+
+<div class="grid cards" markdown>
+- [:simple-python: Python](./blogs/python.md){style="color:#ffaa00"} 
+    
+    ---
+    - Pandas Made Simple: Analyze Real-World Data Like a Pro[:material-link-variant: link](./blogs/python/Pandas-Made-Simple-Analyze-Real-World-Data-Like-a-Pro/index.md)
+    - Beyond input(): Modern Python Techniques for Bulletproof User Input Validation[:material-link-variant: link](./blogs/python/Beyond-input-Modern-Python-Techniques-for-Bulletproof-User-input-Validation/index.md)
+    - Beyond print( ): Modern Python Text Display Techniques You Need to Know[:material-link-variant: link](./blogs/python/Beyond-print-Modern-Python-Text-Display-Techniques-You-Need-to-Know/index.md)
+    - Present Your Python: Convert Jupyter Notebooks into Interactive Slides[:material-link-variant: link](./blogs/python/Convert_Jupyter_Notebooks_into_Interactive_Slides/index.md)
+
+</div>
+
+
+<div class="grid cards" markdown>
+- [:simple-raspberrypi: Raspberry Pi Pico](./blogs/raspberry-pi-pico.md){style="color:#aa0000"} 
+    
+    ---
+    - Beginner’s Guide to Programming NeoPixel RGB LEDs with Pico & MicroPython [:material-link-variant: link](./blogs/raspberry-pi-pico/beginner-guide-to-programming-neopixel-rgb-leds-with-pico-and-micropython/index.md)
+    - Getting Started: Reading Analog Values from a Potentiometer with Raspberry Pi Pico & MicroPython[:material-link-variant: link](./blogs/raspberry-pi-pico/getting-started-reading-analog-values-from-a-potentiometer-with-raspberry-pi-pico-micropython/index.md)
+    - Getting Started with DHT11/22 on Raspberry Pi Pico using MicroPython [:material-link-variant: link](./blogs/raspberry-pi-pico/getting-started-with-dht11-22-on-raspberry-pi-pico-using-micropython/index.md)
+    - How to interface 16x2 LCD display in serial mode using 2 wire system. [:material-link-variant: link](./blogs/raspberry-pi-pico/interfacing-16x2-I2C-lcd-display-with-raspberry-pi-pico-and-micropython/index.md)
+    - Interfacing 16x2 LCD display with Raspberry Pi Pico & MicroPython [:material-link-variant: link](./blogs/raspberry-pi-pico/interfacing-16x2-lcd-display-with-raspberry-pi-pico-and-micropython/index.md)
+    
+    - Interfacing LED to Raspberry Pi Pico and controlling it Using MicroPython [:material-link-variant: link](./blogs/raspberry-pi-pico/interfacing-led-to-raspberry-pi-pico-and-controlling-it-using-micropython/index.md)
+    - LED Brightness Control on Raspberry Pi Pico with MicroPython & PWM [:material-link-variant: link](./blogs/raspberry-pi-pico/led-brightness-control-on-raspberry-pi-pico-with-micropython-and-pwm/index.md)
+    - Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide [:material-link-variant: link](./blogs/raspberry-pi-pico/blink-an-led-on-raspberry-pi-pico-using-micropython/index.md)
+    - Next-Gen Pico: A Side-by-Side Comparison of Raspberry Pi Pico and Pico 2 [:material-link-variant: link](./blogs/raspberry-pi-pico/pico-vs-pico2/index.md)
+    - Next-Gen IoT Microcontroller: A Side-by-Side Comparison of Raspberry Pi Pico W and Pico 2 W [:material-link-variant: link](./blogs/raspberry-pi-pico/pico-w-vs-pico2-w/index.md)
+    - Raspberry Pi Pico 2 Series: Your Ultimate Pinout & Feature Guide[:material-link-variant: link](./blogs/raspberry-pi-pico/pico2-pico2-w-key-features-pin-config/index.md)
+
+</div>
+
+<div class="grid cards" markdown>
+- [:simple-arduino: Arduino Nano](./blogs/arduino-nano.md){style="color:#22aa00"} 
+    
+    ---
+    - LED Brightness Control on Arduino Nano using PWM [:material-link-variant: link](./blogs/arduino-nano/led-brightness-control-on-arduino-nano-using-pwm/index.md)
+    - Interfacing LED to Arduino Nano and controlling it Using arduino code [:material-link-variant: link](./blogs/arduino-nano/interfacing-led-to-arduino-nano/index.md)
+    - Blink an LED on Arduino Nano Using C/Cpp (Hardware & Simulation) : Step-by-Step Guide [:material-link-variant: link](./blogs/arduino-nano/blink-an-led-on-arduino-nano/index.md)
+    
+
+</div>
+
+
+<div class="grid cards" markdown>
+- [:simple-arduino: Arduino Uno](./blogs/arduino-uno.md){style="color:#22aa00"} 
+    
+    ---
+    - LED Brightness Control on Arduino Uno using PWM [:material-link-variant: link](./blogs/arduino-uno/led-brightness-control-on-arduino-uno-using-pwm/index.md)
+    - Interfacing LED to Arduino Uno and controlling it Using arduino code [:material-link-variant: link](./blogs/arduino-uno/interfacing-led-to-arduino-uno/index.md)
+    - Blink an LED on Arduino Uno Using C/Cpp (Hardware & Simulation) : Step-by-Step Guide [:material-link-variant: link](./blogs/arduino-uno/blink-an-led-on-arduino-uno/index.md)
+    
+</div>

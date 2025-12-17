@@ -1,5 +1,13 @@
-![stem](./assets/image/stem.png)
+<!-- ![stem](./assets/image/stem.png) -->
 
-# Science Technology Engineering Maths 
+# Science Technology Engineering Arts Maths 
 
-{{ blog_content stem}}
+<div class="grid cards" markdown>
+- :material-led-on: Circuit Ranger 
+      
+    ---
+    ![Circuit Ranger](../assets/stem/Circuit_Ranger_Scout.png)
+
+    - [Coming Soon..](#)
+
+</div>

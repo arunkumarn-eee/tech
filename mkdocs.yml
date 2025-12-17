@@ -8,12 +8,15 @@ nav:
       - course: python/syllabus.md
       - Built-ins: python/builtin_methods/index.md
   - Blog:
+      - Topics : blogs.md
       - Python: blogs/python.md
       - Raspberry Pi Pico: blogs/raspberry-pi-pico.md
       - Arduino Nano: blogs/arduino-nano.md
       - Arduino UNO: blogs/arduino-uno.md
   - Projects: projects.md
-  - STEM : stem.md
+  - STEAM :
+      - List : stem.md
+      - Circuit Ranger: stem/circuit_ranger.md
   - Extra:
       - tags: tags.md
 
@@ -110,9 +113,9 @@ plugins:
             - projects
           size: 5
           template: blogoverride/blog-custom.html
-        - name: stem
+        - name: circuit-ranger
           dirs:
-            - stem
+            - stem/circuit_ranger
           template: blogoverride/blog-custom.html
 
 markdown_extensions:
