@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     
-        <meta name="description" content="Beginner-friendly guide to LED blinking with Arduino Nano, C/C++, and online simulations.">
+        <meta name="description" content="Learn how to connect a 16x2 LCD display to a Arduino Uno using simple Arduino code. This easy guide shows you how to set it up and display messages step by step.">
     
     
         <meta name="author" content="Arun kumar N">
     
     
-        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/arduino-nano/blink-an-led-on-arduino-nano/">
+        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/arduino-uno/interfacing-16x2-lcd-display-with-arduino-uno/">
     
     
     
@@ -21,17 +21,17 @@
 
     <meta property="og:type" content="website" />
     
-        <meta property="og:title" content="Blink an LED on Arduino Nano Using C/Cpp (Hardware & Simulation) : Step-by-Step Guide" />
+        <meta property="og:title" content="Interfacing 16x2 LCD display with Arduino Uno" />
     
     
-        <meta property="og:description" content="Beginner-friendly guide to LED blinking with Arduino Nano, C/C++, and online simulations." />
+        <meta property="og:description" content="Learn how to connect a 16x2 LCD display to a Arduino Uno using simple Arduino code. This easy guide shows you how to set it up and display messages step by step." />
     
     
-        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/arduino-nano/blink-an-led-on-arduino-nano/">
+        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/arduino-uno/interfacing-16x2-lcd-display-with-arduino-uno/">
     
     <meta property="og:site_name" content="Tech Aavishkarah" />
     
-        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-nano/blink_led_nano.png" />
+        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-uno/16x2-lcd-display.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
     
@@ -39,21 +39,21 @@
 
     <meta name="twitter:card" content="summary" />
     
-        <meta name="twitter:description" content="Beginner-friendly guide to LED blinking with Arduino Nano, C/C++, and online simulations." />
+        <meta name="twitter:description" content="Learn how to connect a 16x2 LCD display to a Arduino Uno using simple Arduino code. This easy guide shows you how to set it up and display messages step by step." />
     
     
-        <meta name="twitter:title"  content="Blink an LED on Arduino Nano Using C/Cpp (Hardware & Simulation) : Step-by-Step Guide" />
+        <meta name="twitter:title"  content="Interfacing 16x2 LCD display with Arduino Uno" />
     
     
     <meta name="twitter:site" content="@arunkumarn_eee" />
     
-        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-nano/blink_led_nano.png" />
+        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-uno/16x2-lcd-display.png" />
     
     <meta name="twitter:creator" content="@arunkumarn_eee" />
 
     
       
-        <title>Blink an LED on Arduino Nano Using C/Cpp (Hardware & Simulation) : Step-by-Step Guide - Tech Aavishkarah</title>
+        <title>Interfacing 16x2 LCD display with Arduino Uno - Tech Aavishkarah</title>
       
     
     
@@ -142,7 +142,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Blink an LED on Arduino Nano Using C/Cpp (Hardware & Simulation) : Step-by-Step Guide
+              Interfacing 16x2 LCD display with Arduino Uno
             
           </span>
         </div>
@@ -590,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../arduino-nano/" class="md-nav__link">
         
   
   
@@ -613,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../arduino-uno/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -925,15 +925,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#result" class="md-nav__link">
-    <span class="md-ellipsis">
-      Result
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#extras" class="md-nav__link">
     <span class="md-ellipsis">
       Extras
@@ -984,12 +975,12 @@
 
 
 
-  <h1>Blink an LED on Arduino Nano Using C/Cpp (Hardware & Simulation) : Step-by-Step Guide</h1>
+  <h1>Interfacing 16x2 LCD display with Arduino Uno</h1>
 
 <div class="md-typeset">
     <div class="blogging-tags-grid">
 
-        <a href="https://tech.arunkumarn.in/tags#arduino nano" class="blogging-tag"><code>#arduino nano</code></a>
+        <a href="https://tech.arunkumarn.in/tags#arduino uno" class="blogging-tag"><code>#arduino uno</code></a>
 
         <a href="https://tech.arunkumarn.in/tags#arduino" class="blogging-tag"><code>#arduino</code></a>
 
@@ -998,6 +989,8 @@
         <a href="https://tech.arunkumarn.in/tags#c" class="blogging-tag"><code>#c</code></a>
 
         <a href="https://tech.arunkumarn.in/tags#guide" class="blogging-tag"><code>#guide</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#16x2 LCD" class="blogging-tag"><code>#16x2 LCD</code></a>
 
     </div>
 
@@ -1024,7 +1017,7 @@
         border-radius: 5px;
     }
 </style>
-<p><img alt="blink led" src="../../../assets/blogs/arduino-nano/blink_led_nano.png" /></p>
+<p><img alt="16x2 lcd" src="../../../assets/blogs/arduino-uno/16x2-lcd-display.png" /></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
@@ -1040,7 +1033,6 @@
 </ul>
 </li>
 <li><a href="#simulation">Simulation</a></li>
-<li><a href="#result">Result</a></li>
 <li><a href="#extras">Extras</a><ul>
 <li><a href="#components-details">Components details</a></li>
 <li><a href="#modules-libraries-used">Modules / Libraries Used</a></li>
@@ -1050,18 +1042,11 @@
 </div>
 </details>
 <h2 id="abstract">Abstract</h2>
-<p>Arduino Nano Development board is equipped with ATmega328p chip, which has 32K bytes of Flash program memory, 2k bytes of SRAM and 1K bytes of EEPROM. Nano board supports Embedded System C, Cpp and arduino code.  </p>
-<p>In this article we go through.</p>
-<ul>
-<li>Accessing the built-in led (13) of the Arduino Nano board.</li>
-<li>Turning <code>on</code> and <code>off</code> built-in led using arduino code.</li>
-<li>Simulation using wokwi.</li>
-<li>Hardware demo.</li>
-</ul>
+<p>In this article, you’ll learn a detailed, step-by-step method to interface a 16×2 LCD character display with the Arduino Uno using the Arduino IDE. By the end, you’ll be able to display text on the LCD — a fundamental building block for many microcontroller projects like menus, status readouts, timers, and sensors display.</p>
 <h2 id="pre-request"><img alt="🧭" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9ed.svg" title=":compass:" /> Pre-Request</h2>
 <ul>
 <li>OS : Windows / Linux / Mac / Chrome</li>
-<li>Arduino IDE. </li>
+<li>Arduino IDE </li>
 </ul>
 <h2 id="hardware-required">Hardware Required</h2>
 <!-- Advertisement -->
@@ -1107,8 +1092,14 @@
 </div>
 
 <ul>
-<li>Arduino Nano </li>
-<li>Micro USB Cable.</li>
+<li>Arduino Uno. </li>
+<li>16x2 LCD display.</li>
+<li>Resistors.</li>
+<li>Potentiometer (10 kΩ)</li>
+<li>BreadBoard.</li>
+<li>Mini USB Cable.</li>
+<li>Connecting wires.</li>
+<li>5V DC power supply (Optional)</li>
 </ul>
 <table>
 <thead>
@@ -1119,12 +1110,32 @@
 </thead>
 <tbody>
 <tr>
-<td>Arduino Nano</td>
-<td><a href="#">Purchase Link</a></td>
+<td>Arduino Uno</td>
+<td><a href="#">link</a></td>
 </tr>
 <tr>
-<td>Mini B USB Cable</td>
-<td><a href="#">Purchase Link</a></td>
+<td>16x2 LCD</td>
+<td><a href="https://amzn.to/4m6ZgpI">link</a></td>
+</tr>
+<tr>
+<td>Mini USB Cable</td>
+<td><a href="#">link</a></td>
+</tr>
+<tr>
+<td>Potentiometer (POT)</td>
+<td><a href="https://amzn.to/4mb6VDH">link</a></td>
+</tr>
+<tr>
+<td>BreadBoard</td>
+<td><a href="https://amzn.to/4pgNX1c">large</a> : <a href="https://amzn.to/47SMzvB">small</a></td>
+</tr>
+<tr>
+<td>Connecting Wires</td>
+<td><a href="https://amzn.to/4pepr0H">link</a></td>
+</tr>
+<tr>
+<td>5V DC Adaptor</td>
+<td><a href="https://amzn.to/4m82t8D">link</a></td>
 </tr>
 </tbody>
 </table>
@@ -1134,36 +1145,121 @@
 <p>💡Still you can learn using simulation. check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:" />.</p>
 <p>💡Power your mission with reliable Arduino Kits. <a href="https://www.skilldisk.com/category/arduino" target="_blank">Explore <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"/></svg></span> Hardware →</a></p>
 </div>
+<!-- Advertisement -->
 <div class="grid cards">
 <ul>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/nano-craft-spark-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_spark_ads.png" /></a></p>
+<p><a href="https://www.skilldisk.com/product-page/uno-edge-spark-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_spark_ads.png" /></a></p>
 </li>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/nano-craft-explorer-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_explorer_ads.png" /></a></p>
+<p><a href="https://www.skilldisk.com/product-page/uno-edge-explorer-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_explorer_ads.png" /></a></p>
 </li>
 </ul>
 </div>
 <h3 id="connection-table">Connection Table</h3>
-<p>Built-in led of Arduino Nano is internally connected to GPIO 13.</p>
+<p>16x2 LCD can be connected in <em>4 wire</em> and <em>8 wire</em> mode. In this article 4 wire mode is demonstrated, as 8 wire mode is rarely used now a days. </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>With I2C LCD interface, we can interface 16x2 LCD display in 2 wire mode. <a href="#" target="_blank">click here</a> to know <a href="#" target="_blank">how to interface 16x2 LCD display in serial mode using 2 wire system.</a></p>
+</div>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">Particular</th>
-<th style="text-align: center;">GPIO</th>
-<th style="text-align: left;">Remarks</th>
+<th>LCD Pin</th>
+<th>LCD Function</th>
+<th>Arduino Uno Pin</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Built-in LED</td>
-<td style="text-align: center;">13</td>
-<td style="text-align: left;">Internally Connected</td>
+<td>Pin 1</td>
+<td>VSS (GND)</td>
+<td>GND</td>
+<td>Ground</td>
+</tr>
+<tr>
+<td>Pin 2</td>
+<td>VDD (+5 V)</td>
+<td>+5 V</td>
+<td>Power</td>
+</tr>
+<tr>
+<td>Pin 3</td>
+<td>V0 (Contrast)</td>
+<td>Pot middle pin</td>
+<td>Adjust contrast</td>
+</tr>
+<tr>
+<td>Pin 4</td>
+<td>RS (Register Select)</td>
+<td><strong>D6</strong></td>
+<td>Defined above</td>
+</tr>
+<tr>
+<td>Pin 5</td>
+<td>RW (Read/Write)</td>
+<td>GND</td>
+<td>Always write</td>
+</tr>
+<tr>
+<td>Pin 6</td>
+<td>Enable (E)</td>
+<td><strong>D5</strong></td>
+<td>Defined above</td>
+</tr>
+<tr>
+<td>Pin 11</td>
+<td>D4</td>
+<td><strong>D4</strong></td>
+<td>Defined above</td>
+</tr>
+<tr>
+<td>Pin 12</td>
+<td>D5</td>
+<td><strong>D3</strong></td>
+<td>Defined above</td>
+</tr>
+<tr>
+<td>Pin 13</td>
+<td>D6</td>
+<td><strong>D2</strong></td>
+<td>Defined above</td>
+</tr>
+<tr>
+<td>Pin 14</td>
+<td>D7</td>
+<td><strong>D1</strong></td>
+<td>Defined above</td>
+</tr>
+<tr>
+<td>Pin 15</td>
+<td>LED + (Backlight)</td>
+<td>+5 V via 220 Ω</td>
+<td>Backlight (optional resistor)</td>
+</tr>
+<tr>
+<td>Pin 16</td>
+<td>LED – (Backlight)</td>
+<td>GND</td>
+<td>Backlight</td>
 </tr>
 </tbody>
 </table>
-<p><img alt="Built-in LED" src="images/Built_in_LED_nano.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>💡 Potentiometer between LCD V0 and GND/VDD lets you adjust contrast so text is visible </p>
+</div>
+<figure>
+<p><img alt="Circuit Diagram" src="images/16x2_arduino_uno_ckt.png" /></p>
+<figcaption>
+<p>fig-Connection Diagram</p>
+</figcaption>
+</figure>
 <h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4c2.svg" title=":open_file_folder:" /> Code</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">main.py</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="language-arduino highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -1181,85 +1277,143 @@
 <span class="normal"><a href="#__codelineno-0-15">15</a></span>
 <span class="normal"><a href="#__codelineno-0-16">16</a></span>
 <span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kr">void</span><span class="w"> </span><span class="nb">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span><span class="c1">// Initializing built-in LED as OUTPUT pin</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">  </span><span class="nf">pinMode</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="kr">OUTPUT</span><span class="p">);</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="c1">// pinMode(13, OUTPUT);</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="p">}</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="kr">void</span><span class="w"> </span><span class="nb">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">  </span><span class="c1">// Turning ON built-in LED</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="kr">HIGH</span><span class="p">);</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">  </span><span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">  </span><span class="c1">// Turning OFF built-in LED</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="kr">LOW</span><span class="p">);</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">  </span><span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="p">}</span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span>
+<span class="normal"><a href="#__codelineno-0-25">25</a></span>
+<span class="normal"><a href="#__codelineno-0-26">26</a></span>
+<span class="normal"><a href="#__codelineno-0-27">27</a></span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span>
+<span class="normal"><a href="#__codelineno-0-29">29</a></span>
+<span class="normal"><a href="#__codelineno-0-30">30</a></span>
+<span class="normal"><a href="#__codelineno-0-31">31</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;LiquidCrystal.h&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1">//  Pin Definitions</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="cp"># define RS 6</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="cp"># define E 5</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="cp"># define D7 1</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="cp"># define D6 2</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="cp"># define D5 3</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="cp"># define D4 4</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="c1">// Initialize the LCD with the pins:</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="c1">// LiquidCrystal(rs, en, d4, d5, d6, d7)</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="nf">LiquidCrystal</span><span class="w"> </span><span class="nf">lcd</span><span class="p">(</span><span class="n">RS</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">,</span><span class="w"> </span><span class="n">D4</span><span class="p">,</span><span class="w"> </span><span class="n">D5</span><span class="p">,</span><span class="w"> </span><span class="n">D6</span><span class="p">,</span><span class="w"> </span><span class="n">D7</span><span class="p">);</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="kr">void</span><span class="w"> </span><span class="nb">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="nf">begin</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w">  </span><span class="c1">// Set the LCD size to 16 columns and 2 rows</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">&quot;Welcome to&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Print first line</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="nf">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w">  </span><span class="c1">// Move cursor to second line</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">&quot;Aavishkarah&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Print Second line</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">    </span><span class="nf">delay</span><span class="p">(</span><span class="mi">3000</span><span class="p">);</span><span class="w"> </span><span class="c1">// Delay of 3 sec</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="p">}</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="kr">void</span><span class="w"> </span><span class="nb">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">    </span><span class="c1">// Print 0 to 9 with a delay of 1.5 sec for an infinite loop    </span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kr">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="w">        </span><span class="n">lcd</span><span class="p">.</span><span class="nf">clear</span><span class="p">();</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="w">        </span><span class="n">lcd</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="w">        </span><span class="nf">delay</span><span class="p">(</span><span class="mi">1500</span><span class="p">);</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
 <h3 id="code-explanation">Code Explanation</h3>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Accessing built-in led of Arduino Nano board.</p>
-<div class="language-arduino highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span>
-<span class="normal"><a href="#__codelineno-1-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kr">void</span><span class="w"> </span><span class="nb">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="c1">// Initializing built-in LED as OUTPUT pin</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="nf">pinMode</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="kr">OUTPUT</span><span class="p">);</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="c1">// pinMode(13, OUTPUT);</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="p">}</span>
+<p>Let’s break down the Arduino sketch <strong>line by line</strong> to clearly understand how the 16×2 LCD works with the Arduino Uno.</p>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Imports</p>
+<div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;LiquidCrystal.h&gt;</span>
 </span></code></pre></div></td></tr></table></div>
 <ul>
-<li>LED_BUILTIN (GPIO pin 13) is configured as <code>OUTPUT</code> pin (Line number 3) </li>
-<li>You can alternatively use GPIO 13 in place of LED_BUILTIN.</li>
+<li>This line includes the <strong>LiquidCrystal library</strong>.</li>
+<li>It provides ready-to-use functions to control 16×2 LCD displays such as <code>print()</code>, <code>clear()</code>, <code>setCursor()</code> etc.,</li>
 </ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Blinking LED</p>
-<div class="language-arduino highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-2-10">10</a></span>
-<span class="normal"><a href="#__codelineno-2-11">11</a></span>
-<span class="normal"><a href="#__codelineno-2-12">12</a></span>
-<span class="normal"><a href="#__codelineno-2-13">13</a></span>
-<span class="normal"><a href="#__codelineno-2-14">14</a></span>
-<span class="normal"><a href="#__codelineno-2-15">15</a></span>
-<span class="normal"><a href="#__codelineno-2-16">16</a></span>
-<span class="normal"><a href="#__codelineno-2-17">17</a></span>
-<span class="normal"><a href="#__codelineno-2-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="kr">void</span><span class="w"> </span><span class="nb">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">  </span><span class="c1">// Turning ON built-in LED</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="kr">HIGH</span><span class="p">);</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">  </span><span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="w">  </span><span class="c1">// Turning OFF built-in LED</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="w">  </span><span class="nf">digitalWrite</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="kr">LOW</span><span class="p">);</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="w">  </span><span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17"></a>
-</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="p">}</span>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Define LCD Pin Connections</p>
+<div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span>
+<span class="normal"><a href="#__codelineno-2-7">7</a></span>
+<span class="normal"><a href="#__codelineno-2-8">8</a></span>
+<span class="normal"><a href="#__codelineno-2-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="c1">//  Pin Definitions</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="cp"># define RS 6</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="cp"># define E 5</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="cp"># define D7 1</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="cp"># define D6 2</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="cp"># define D5 3</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="cp"># define D4 4</span>
 </span></code></pre></div></td></tr></table></div>
 <ul>
-<li>Continuous loop is achieved using <code>loop</code> method.</li>
-<li><code>digitalWrite</code> is used to change the state of GPIO pin.</li>
-<li><code>digitalWrite(LED_BUILTIN, HIGH);</code> sets the value of GPIO 13 to <code>HIGH</code> or <code>1</code>, which in turn  turns ON the LED. (line number 11)</li>
-<li>Delay of <code>1</code> second is achieved through <code>delay(1000);</code> method. (line number 12 &amp; 16) </li>
-<li><code>digitalWrite(LED_BUILTIN, LOW);</code> sets the value of GPIO 13 to <code>LOW</code> or <code>0</code>, which in turn  turns OFF the LED. (line number 15)</li>
+<li>These <code>#define</code> statements assign <strong>Arduino Uno pins</strong> to the LCD control and data pins.</li>
+<li><strong>RS (Register Select)</strong> chooses between command mode and data mode.</li>
+<li><strong>E (Enable)</strong> triggers data transfer.</li>
+<li><strong>D4–D7</strong> are data lines used in <strong>4-bit mode</strong>, reducing the number of pins required.</li>
+</ul>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Create the LCD Object</p>
+<div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="c1">// Initialize the LCD with the pins:</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="c1">// LiquidCrystal(rs, en, d4, d5, d6, d7)</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="n">LiquidCrystal</span><span class="w"> </span><span class="nf">lcd</span><span class="p">(</span><span class="n">RS</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">,</span><span class="w"> </span><span class="n">D4</span><span class="p">,</span><span class="w"> </span><span class="n">D5</span><span class="p">,</span><span class="w"> </span><span class="n">D6</span><span class="p">,</span><span class="w"> </span><span class="n">D7</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>This creates an LCD object named <code>lcd</code>.</li>
+<li>The pin order must be:
+  <strong>RS, Enable, D4, D5, D6, D7</strong></li>
+<li>From this point onward, all LCD operations are performed using the <code>lcd</code> object.</li>
+</ul>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Initialize the LCD in <code>setup()</code></p>
+<div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17"></a><span class="w">  </span><span class="n">lcd</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li><code>lcd.begin(16, 2)</code> initializes the LCD with <strong>16 columns and 2 rows</strong>.</li>
+<li>This must be called before sending any data to the LCD.</li>
+</ul>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Display Static Text</p>
+<div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-18">18</a></span>
+<span class="normal"><a href="#__codelineno-5-19">19</a></span>
+<span class="normal"><a href="#__codelineno-5-20">20</a></span>
+<span class="normal"><a href="#__codelineno-5-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18"></a><span class="w">  </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Welcome to&quot;</span><span class="p">);</span>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19"></a><span class="w">  </span><span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20"></a><span class="w">  </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Aavishkarah&quot;</span><span class="p">);</span>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">3000</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li><code>lcd.print("Welcome to")</code> prints text on the <strong>first line</strong>.</li>
+<li><code>lcd.setCursor(0, 1)</code> moves the cursor to <strong>column 0, row 1</strong> (second line).</li>
+<li><code>lcd.print("Aavishkarah")</code> displays text on the second line.</li>
+<li><code>delay(3000)</code> pauses execution for <strong>3 seconds</strong>.</li>
+<li>This allows the welcome message to stay visible before moving to the loop section.</li>
+</ul>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Display Numbers 0 to 9 Repeatedly</p>
+<div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-26">26</a></span>
+<span class="normal"><a href="#__codelineno-6-27">27</a></span>
+<span class="normal"><a href="#__codelineno-6-28">28</a></span>
+<span class="normal"><a href="#__codelineno-6-29">29</a></span>
+<span class="normal"><a href="#__codelineno-6-30">30</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-26"><a id="__codelineno-6-26" name="__codelineno-6-26"></a><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span id="__span-6-27"><a id="__codelineno-6-27" name="__codelineno-6-27"></a><span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+</span><span id="__span-6-28"><a id="__codelineno-6-28" name="__codelineno-6-28"></a><span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</span><span id="__span-6-29"><a id="__codelineno-6-29" name="__codelineno-6-29"></a><span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1500</span><span class="p">);</span>
+</span><span id="__span-6-30"><a id="__codelineno-6-30" name="__codelineno-6-30"></a><span class="w">  </span><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>The <code>loop()</code> function runs <strong>continuously</strong> after <code>setup()</code> completes.</li>
+<li>The <code>for</code> loop counts from <strong>0 to 9</strong>.</li>
+<li><code>lcd.clear()</code> clears the LCD before printing the next number.</li>
+<li><code>lcd.print(i)</code> displays the current number.</li>
+<li><code>delay(1500)</code> holds each number on the display for <strong>1.5 seconds</strong>.</li>
+<li>After reaching 9, the loop restarts, creating an <strong>infinite display cycle</strong>.</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Try It</p>
 <ul>
-<li>Change the value in the sleep method and observe the change in the on and off time.<ul>
-<li><code>delay(2000)</code>, <code>delay(4000)</code> , etc</li>
-</ul>
-</li>
-<li>the values in terms of milli seconds.<ul>
-<li><code>delay(1000)</code> : 1000 ms or 1 s</li>
-<li><code>delay(500)</code>  : 500 ms or 0.5 s</li>
-</ul>
-</li>
+<li>Alter the output content on the display by passing your data argument to the <code>lcd.print()</code> method.</li>
 </ul>
 </div>
 <hr />
@@ -1271,7 +1425,7 @@
 <li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16s7.2-16 16-16"/></svg></span> Mobile : Use Landscape Mode and reload the page</li>
 </ul>
 </div>
-<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/448605654738044929" frameborder="2px" width="100%" height="700px"></iframe>
+<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/450676824589150209" frameborder="2px" width="100%" height="700px"></iframe>
 
 <!-- Advertisement -->
 <div style="
@@ -1318,23 +1472,29 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/nano-craft-spark-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_spark_ads.png" /></a></p>
+<p><a href="https://www.skilldisk.com/product-page/uno-edge-spark-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_spark_ads.png" /></a></p>
 </li>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/nano-craft-explorer-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_explorer_ads.png" /></a></p>
+<p><a href="https://www.skilldisk.com/product-page/uno-edge-explorer-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_explorer_ads.png" /></a></p>
 </li>
 </ul>
 </div>
-<h2 id="result">Result</h2>
-<p>Above code turns ON LED for 1 second and OFF for 1 second. Similar to a square wave of <code>0.5 Hz</code> output connected to an LED.</p>
 <hr />
 <h2 id="extras"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2 0 .37-.03.73-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85-.32.63-.67 1.24-1.07 1.81-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56M23 18v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"/></svg></span> Extras</h2>
 <h3 id="components-details">Components details</h3>
 <ul>
-<li>Arduino Nano <a href="files/nano-datasheet.pdf" target="_blank">Data Sheet</a></li>
+<li>Arduino Uno <a href="../blink-an-led-on-arduino-uno/files/uno-datasheet.pdf" target="_blank">Data Sheet</a></li>
+<li>16x2 LCD Display <a href="https://components101.com/sites/default/files/component_datasheet/16x2%20LCD%20Datasheet.pdf" target="_blank">Data Sheet</a> </li>
 </ul>
 <h3 id="modules-libraries-used">Modules / Libraries Used</h3>
-<p>-Nil-</p>
+<ul>
+<li>LiquidCrystal.h<ul>
+<li>It provides ready-to-use functions to control 16×2 LCD displays such as <code>print()</code>, <code>clear()</code>, <code>setCursor()</code> etc.,</li>
+<li><a href="https://docs.arduino.cc/libraries/liquidcrystal/" target="_blank">More info</a> </li>
+<li><a href="https://github.com/arduino-libraries/LiquidCrystal" target="_blank">Github Source Code</a> </li>
+</ul>
+</li>
+</ul>
 
 
 
