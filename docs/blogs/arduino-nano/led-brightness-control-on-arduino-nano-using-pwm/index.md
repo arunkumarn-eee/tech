@@ -43,6 +43,48 @@ In this article, we present a step-by-step guide to controlling the brightness o
 
 ## Hardware Required
 
+<!-- Advertisement -->
+<div style="
+  display:flex;
+  gap:16px;
+  align-items:center;
+  padding:20px;
+  margin:24px 0;
+  border-radius:14px;
+  background:var(--md-default-bg-color);
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+">
+
+  <div style="
+    font-size:36px;
+    line-height:1;
+  ">
+    🛠️
+  </div>
+
+  <div style="flex:1;">
+    <strong>Get the right hardware kit</strong><br>
+    <span style="color:var(--md-default-fg-color--light);">
+      Arduino boards, sensors, and maker essentials—perfectly matched for your learning.
+    </span>
+  </div>
+
+  <a href="https://www.skilldisk.com/category/arduino"
+     target="_blank"
+     style="
+       padding:10px 18px;
+       border-radius:10px;
+       background:var(--md-primary-fg-color);
+       color:white;
+       text-decoration:none;
+       font-weight:600;
+       white-space:nowrap;
+     ">
+    Explore Hardware →
+  </a>
+
+</div>
+
 - Arduino Nano. 
 - LED.
 - Resistors.
@@ -60,12 +102,20 @@ In this article, we present a step-by-step guide to controlling the brightness o
 | Mini USB Cable | [link](#) |
 | 5V DC Adaptor | [link](https://amzn.to/4m82t8D) |
 
+
 !!! tip "Don't own a hardware :cry:"
 
     No worries,
 
-    Still you can learn using simulation.
-    check out simulation part :smiley:.
+    💡Still you can learn using simulation. check out simulation part :smiley:.
+
+    💡Power your mission with reliable Arduino Kits. [Explore :simple-arduino: Hardware →](https://www.skilldisk.com/category/arduino){target="_blank"}
+
+<div class="grid cards" markdown>
+- [![Arduino Nano](/assets/ads/nano_spark_ads.png)](https://www.skilldisk.com/product-page/nano-craft-spark-kit){target="_blank"}
+
+- [![Arduino Nano](/assets/ads/nano_explorer_ads.png)](https://www.skilldisk.com/product-page/nano-craft-explorer-kit){target="_blank"}
+</div>
 
 ### Connection Table
 
@@ -158,6 +208,54 @@ void loop() {
 
 <iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/448745386302446593" frameborder="2px" width="100%" height="700px"></iframe>
 
+
+<!-- Advertisement -->
+<div style="
+  display:flex;
+  gap:16px;
+  align-items:center;
+  padding:20px;
+  margin:24px 0;
+  border-radius:14px;
+  background:var(--md-default-bg-color);
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+">
+
+  <div style="
+    font-size:36px;
+    line-height:1;
+  ">
+    🛠️
+  </div>
+
+  <div style="flex:1;">
+    <strong>Get the right hardware kit</strong><br>
+    <span style="color:var(--md-default-fg-color--light);">
+      Arduino boards, sensors, and maker essentials—perfectly matched for your learning.
+    </span>
+  </div>
+
+  <a href="https://www.skilldisk.com/category/arduino"
+     target="_blank"
+     style="
+       padding:10px 18px;
+       border-radius:10px;
+       background:var(--md-primary-fg-color);
+       color:white;
+       text-decoration:none;
+       font-weight:600;
+       white-space:nowrap;
+     ">
+    Explore Hardware →
+  </a>
+
+</div>
+
+<div class="grid cards" markdown>
+- [![Arduino Nano](/assets/ads/nano_spark_ads.png)](https://www.skilldisk.com/product-page/nano-craft-spark-kit){target="_blank"}
+
+- [![Arduino Nano](/assets/ads/nano_explorer_ads.png)](https://www.skilldisk.com/product-page/nano-craft-explorer-kit){target="_blank"}
+</div>
 
 ---
 
