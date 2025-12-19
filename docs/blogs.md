@@ -24,6 +24,9 @@
 - [:simple-raspberrypi: Raspberry Pi Pico](./blogs/raspberry-pi-pico.md){style="color:#aa0000"} 
     
     ---
+    :material-sale: Check out [:simple-raspberrypi: Pico IoT Spark Kit](https://www.skilldisk.com/product-page/pico-iot-spark-kit){target="_blank"} | [:simple-raspberrypi: Pico IoT Explorer Kit](https://www.skilldisk.com/product-page/pico-iot-explorer-kit){target="_blank"} 
+
+    ---
     - Beginner’s Guide to Programming NeoPixel RGB LEDs with Pico & MicroPython [:material-link-variant: link](./blogs/raspberry-pi-pico/beginner-guide-to-programming-neopixel-rgb-leds-with-pico-and-micropython/index.md)
     - Getting Started: Reading Analog Values from a Potentiometer with Raspberry Pi Pico & MicroPython[:material-link-variant: link](./blogs/raspberry-pi-pico/getting-started-reading-analog-values-from-a-potentiometer-with-raspberry-pi-pico-micropython/index.md)
     - Getting Started with DHT11/22 on Raspberry Pi Pico using MicroPython [:material-link-variant: link](./blogs/raspberry-pi-pico/getting-started-with-dht11-22-on-raspberry-pi-pico-using-micropython/index.md)
@@ -43,6 +46,10 @@
 - [:simple-arduino: Arduino Nano](./blogs/arduino-nano.md){style="color:#22aa00"} 
     
     ---
+    :material-sale: Check out [:simple-arduino: Nano Craft Spark Kit](https://www.skilldisk.com/product-page/nano-craft-spark-kit){target="_blank"} | [:simple-arduino: Nano Craft Explorer Kit](https://www.skilldisk.com/product-page/nano-craft-explorer-kit){target="_blank"} 
+
+    ---
+    - Interfacing 16x2 LCD display with Arduino Nano [:material-link-variant: link](./blogs/arduino-nano/interfacing-16x2-lcd-display-with-arduino-nano/index.md)
     - LED Brightness Control on Arduino Nano using PWM [:material-link-variant: link](./blogs/arduino-nano/led-brightness-control-on-arduino-nano-using-pwm/index.md)
     - Interfacing LED to Arduino Nano and controlling it Using arduino code [:material-link-variant: link](./blogs/arduino-nano/interfacing-led-to-arduino-nano/index.md)
     - Blink an LED on Arduino Nano Using C/Cpp (Hardware & Simulation) : Step-by-Step Guide [:material-link-variant: link](./blogs/arduino-nano/blink-an-led-on-arduino-nano/index.md)
@@ -55,6 +62,10 @@
 - [:simple-arduino: Arduino Uno](./blogs/arduino-uno.md){style="color:#22aa00"} 
     
     ---
+    :material-sale: Check out [:simple-arduino: Uno Edge Spark Kit](https://www.skilldisk.com/product-page/uno-edge-spark-kit){target="_blank"} | [:simple-arduino: Uno Edge Explorer Kit](https://www.skilldisk.com/product-page/uno-edge-explorer-kit){target="_blank"} 
+
+    ---
+    - Interfacing 16x2 LCD display with Arduino Uno [:material-link-variant: link](./blogs/arduino-uno/interfacing-16x2-lcd-display-with-arduino-uno/index.md)
     - LED Brightness Control on Arduino Uno using PWM [:material-link-variant: link](./blogs/arduino-uno/led-brightness-control-on-arduino-uno-using-pwm/index.md)
     - Interfacing LED to Arduino Uno and controlling it Using arduino code [:material-link-variant: link](./blogs/arduino-uno/interfacing-led-to-arduino-uno/index.md)
     - Blink an LED on Arduino Uno Using C/Cpp (Hardware & Simulation) : Step-by-Step Guide [:material-link-variant: link](./blogs/arduino-uno/blink-an-led-on-arduino-uno/index.md)
