@@ -19,6 +19,7 @@
 
 </div>
 
+--8<-- "includes/pico-disk-link-cta.md"
 
 <div class="grid cards" markdown>
 - [:simple-raspberrypi: Raspberry Pi Pico](./blogs/raspberry-pi-pico.md){style="color:#aa0000"} 
@@ -71,3 +72,7 @@
     - Blink an LED on Arduino Uno Using C/Cpp (Hardware & Simulation) : Step-by-Step Guide [:material-link-variant: link](./blogs/arduino-uno/blink-an-led-on-arduino-uno/index.md)
     
 </div>
+
+<!-- Advertisement -->
+--8<-- "includes/pico-disk-link-cta.md"
+--8<-- "includes/pico-iot-cta.md"
