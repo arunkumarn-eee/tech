@@ -50,6 +50,7 @@
     :material-sale: Check out [:simple-arduino: Nano Craft Spark Kit](https://www.skilldisk.com/product-page/nano-craft-spark-kit){target="_blank"} | [:simple-arduino: Nano Craft Explorer Kit](https://www.skilldisk.com/product-page/nano-craft-explorer-kit){target="_blank"} 
 
     ---
+    - Interfacing 16x2 I2C LCD display with Arduino Nano [:material-link-variant: link](./blogs/arduino-nano/interfacing-16x2-I2C-lcd-display-with-arduino-nano/index.md)
     - Interfacing 16x2 LCD display with Arduino Nano [:material-link-variant: link](./blogs/arduino-nano/interfacing-16x2-lcd-display-with-arduino-nano/index.md)
     - LED Brightness Control on Arduino Nano using PWM [:material-link-variant: link](./blogs/arduino-nano/led-brightness-control-on-arduino-nano-using-pwm/index.md)
     - Interfacing LED to Arduino Nano and controlling it Using arduino code [:material-link-variant: link](./blogs/arduino-nano/interfacing-led-to-arduino-nano/index.md)
@@ -66,6 +67,7 @@
     :material-sale: Check out [:simple-arduino: Uno Edge Spark Kit](https://www.skilldisk.com/product-page/uno-edge-spark-kit){target="_blank"} | [:simple-arduino: Uno Edge Explorer Kit](https://www.skilldisk.com/product-page/uno-edge-explorer-kit){target="_blank"} 
 
     ---
+    - Interfacing 16x2 I2C LCD display with Arduino Uno [:material-link-variant: link](./blogs/arduino-uno/interfacing-16x2-I2C-lcd-display-with-arduino-uno/index.md)
     - Interfacing 16x2 LCD display with Arduino Uno [:material-link-variant: link](./blogs/arduino-uno/interfacing-16x2-lcd-display-with-arduino-uno/index.md)
     - LED Brightness Control on Arduino Uno using PWM [:material-link-variant: link](./blogs/arduino-uno/led-brightness-control-on-arduino-uno-using-pwm/index.md)
     - Interfacing LED to Arduino Uno and controlling it Using arduino code [:material-link-variant: link](./blogs/arduino-uno/interfacing-led-to-arduino-uno/index.md)
