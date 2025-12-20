@@ -987,18 +987,18 @@
 
   <h1>Interfacing 16x2 LCD display with Raspberry Pi Pico & MicroPython</h1>
 
-<div class="md-typeset">
+<div><div class="md-typeset">
     <div class="blogging-tags-grid">
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry pi pico" class="blogging-tag"><code>#raspberry pi pico</code></a>
+        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico" class="blogging-tag"><code>#raspberry pi pico</code></a>
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry pi pico 2" class="blogging-tag"><code>#raspberry pi pico 2</code></a>
+        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202" class="blogging-tag"><code>#raspberry pi pico 2</code></a>
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry pi pico w" class="blogging-tag"><code>#raspberry pi pico w</code></a>
+        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%20w" class="blogging-tag"><code>#raspberry pi pico w</code></a>
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry pi pico 2W" class="blogging-tag"><code>#raspberry pi pico 2W</code></a>
+        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202W" class="blogging-tag"><code>#raspberry pi pico 2W</code></a>
 
-        <a href="https://tech.arunkumarn.in/tags#micro python" class="blogging-tag"><code>#micro python</code></a>
+        <a href="https://tech.arunkumarn.in/tags#micro%20python" class="blogging-tag"><code>#micro python</code></a>
 
         <a href="https://tech.arunkumarn.in/tags#guide" class="blogging-tag"><code>#guide</code></a>
 
@@ -1027,7 +1027,7 @@
         border-radius: 5px;
     }
 </style>
-<p><img alt="16x2 lcd" src="../../../assets/blogs/raspberrypipico/16x2-lcd-display.png" /></p>
+<p><img alt="16x2 lcd" src="../../../assets/blogs/raspberrypipico/16x2-lcd-display.png"></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
@@ -1053,7 +1053,7 @@
 </details>
 <h2 id="abstract">Abstract</h2>
 <p>In this article, a comprehensive step-by-step guide to interface 16x2 LCD display with Raspberry Pi Pico board using MicroPython. Raspberry Pi Pico has 4 different variants (Pico, Pico 2, Pico W, Pico 2W) supporting micro-python. This articles lays the foundation for more advanced embedded system and IoT projects.</p>
-<h2 id="pre-request"><img alt="🧭" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9ed.svg" title=":compass:" /> Pre-Request</h2>
+<h2 id="pre-request"><img alt="🧭" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9ed.svg" title=":compass:"> Pre-Request</h2>
 <ul>
 <li>OS : Windows / Linux / Mac / Chrome</li>
 <li>Thonny IDE.</li>
@@ -1124,10 +1124,10 @@
 </tbody>
 </table>
 <div class="admonition tip">
-<p class="admonition-title">Don't own a hardware <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f622.svg" title=":cry:" /></p>
+<p class="admonition-title">Don't own a hardware <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f622.svg" title=":cry:"></p>
 <p>No worries,</p>
 <p>Still you can learn using simulation.
-check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:" />.</p>
+check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:">.</p>
 </div>
 <h3 id="connection-table">Connection Table</h3>
 <p>16x2 LCD can be connected in <em>4 wire</em> and <em>8 wire</em> mode. In this article 4 wire mode is demonstrated, as 8 wire mode is rarely used now a days. </p>
@@ -1220,13 +1220,13 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 </ul>
 </div>
 <figure>
-<p><img alt="Circuit Diagram" src="images/16x-2_lcd_pico.png" /></p>
+<p><img alt="Circuit Diagram" src="images/16x-2_lcd_pico.png"></p>
 <figcaption>
 <p>fig-Connection Diagram</p>
 </figcaption>
 </figure>
-<h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4c2.svg" title=":open_file_folder:" /> Code</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">main.py</label><label for="__tabbed_1_2">lcd_api.py</label></div>
+<h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4c2.svg" title=":open_file_folder:"> Code</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">main.py</label><label for="__tabbed_1_2">lcd_api.py</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
@@ -1262,21 +1262,21 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="c1"># Set cursor to Row 1, Column 1</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="n">lcd</span><span class="o">.</span><span class="n">returnHome</span><span class="p">()</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="n">lcd</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">&quot;  Aavishkarah   &quot;</span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="n">lcd</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">"  Aavishkarah   "</span><span class="p">)</span>
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
 </span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>
 </span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="c1"># Move to LCD (2, 0) position </span>
 </span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="c1"># Row 2 and Column 1 </span>
 </span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="n">lcd</span><span class="o">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="n">lcd</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">&quot;---Simulation---&quot;</span> <span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="n">lcd</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">"---Simulation---"</span> <span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 </span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
 </span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a>
 </span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a>
 </span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="c1"># Clear the Screen</span>
 </span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="n">lcd</span><span class="o">.</span><span class="n">clearScreen</span><span class="p">()</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="n">lcd</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">&quot;Check Link for&quot;</span><span class="p">,</span> <span class="mi">150</span><span class="p">)</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="n">lcd</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">"Check Link for"</span><span class="p">,</span> <span class="mi">150</span><span class="p">)</span>
 </span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="n">lcd</span><span class="o">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="n">lcd</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">&quot;more details&quot;</span> <span class="p">,</span> <span class="mi">150</span><span class="p">)</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="n">lcd</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">"more details"</span> <span class="p">,</span> <span class="mi">150</span><span class="p">)</span>
 </span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
@@ -1470,16 +1470,16 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 </span><span id="__span-1-91"><a id="__codelineno-1-91" name="__codelineno-1-91"></a>
 </span><span id="__span-1-92"><a id="__codelineno-1-92" name="__codelineno-1-92"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">clearScreen</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 </span><span id="__span-1-93"><a id="__codelineno-1-93" name="__codelineno-1-93"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">returnHome</span><span class="p">()</span>
-</span><span id="__span-1-94"><a id="__codelineno-1-94" name="__codelineno-1-94"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">*</span><span class="mi">16</span><span class="p">)</span>
+</span><span id="__span-1-94"><a id="__codelineno-1-94" name="__codelineno-1-94"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">" "</span><span class="o">*</span><span class="mi">16</span><span class="p">)</span>
 </span><span id="__span-1-95"><a id="__codelineno-1-95" name="__codelineno-1-95"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-</span><span id="__span-1-96"><a id="__codelineno-1-96" name="__codelineno-1-96"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">*</span><span class="mi">16</span><span class="p">)</span>
+</span><span id="__span-1-96"><a id="__codelineno-1-96" name="__codelineno-1-96"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">" "</span><span class="o">*</span><span class="mi">16</span><span class="p">)</span>
 </span><span id="__span-1-97"><a id="__codelineno-1-97" name="__codelineno-1-97"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">returnHome</span><span class="p">()</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
 </div>
 </div>
 <h3 id="code-explanation">Code Explanation</h3>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Imports</p>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:"> Imports</p>
 <div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">utime</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">lcd_api</span><span class="w"> </span><span class="kn">import</span> <span class="n">LCD_16x2_parallel</span>
@@ -1488,7 +1488,7 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <li><code>time</code> module for creating delay.</li>
 <li><code>lcd_api</code> module for interacting with 16x2 lcd display hardware.</li>
 </ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Instance of LCD display object.</p>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:"> Instance of LCD display object.</p>
 <div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-5">5</a></span>
 <span class="normal"><a href="#__codelineno-3-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="c1"># LCD_16x2_parallel(rs, e, d4, d5, d6, d7)</span>
 </span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="n">lcd</span> <span class="o">=</span> <span class="n">LCD_16x2_parallel</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
@@ -1501,24 +1501,24 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 </ul>
 </li>
 </ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Displaying the content</p>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:"> Displaying the content</p>
 <div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
 <span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-4-10">10</a></span>
 <span class="normal"><a href="#__codelineno-4-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="c1"># Set cursor to Row 1, Column 1</span>
 </span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="n">lcd</span><span class="o">.</span><span class="n">returnHome</span><span class="p">()</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="n">lcd</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">&quot;  Aavishkarah   &quot;</span><span class="p">)</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="n">lcd</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">"  Aavishkarah   "</span><span class="p">)</span>
 </span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <ul>
 <li><code>lcd.returnHome()</code> method sets the display cursor to Row 1 and Column 1</li>
 <li>The content to be displayed is passed to <code>lcd.display()</code> method.<ul>
-<li><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Make sure, the content is less than or equal to 16 Characters.</li>
+<li><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:"> Make sure, the content is less than or equal to 16 Characters.</li>
 </ul>
 </li>
 <li>A delay of 2 seconds is given, so that the user can view the content before new content is displayed.</li>
 </ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:" /> Shifting the cursors and typewriting effect.</p>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:"> Shifting the cursors and typewriting effect.</p>
 <div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-13">13</a></span>
 <span class="normal"><a href="#__codelineno-5-14">14</a></span>
 <span class="normal"><a href="#__codelineno-5-15">15</a></span>
@@ -1530,7 +1530,7 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <span class="normal"><a href="#__codelineno-5-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="c1"># Move to LCD (2, 0) position </span>
 </span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="c1"># Row 2 and Column 1 </span>
 </span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="n">lcd</span><span class="o">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16"></a><span class="n">lcd</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">&quot;---Simulation---&quot;</span> <span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16"></a><span class="n">lcd</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">"---Simulation---"</span> <span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 </span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17"></a><span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
 </span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18"></a>
 </span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19"></a>
@@ -1559,19 +1559,19 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <li>Observe the typing effect in the content display by altering the <strong>delay</strong> value of <code>display(&lt;data&gt;, &lt;delay&gt;)</code> method.</li>
 </ul>
 </div>
-<hr />
-<h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"/></svg></span> Simulation</h2>
+<hr>
+<h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"></path></svg></span> Simulation</h2>
 <div class="admonition danger">
 <p class="admonition-title">Not able to view the simulation</p>
 <ul>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M128 32c-35.3 0-64 28.7-64 64v256h64V96h384v256h64V96c0-35.3-28.7-64-64-64zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480h486.4c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2z"/></svg></span> Desktop or Laptop : Reload this page ( <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span> )</li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16s7.2-16 16-16"/></svg></span> Mobile : Use Landscape Mode and reload the page</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M128 32c-35.3 0-64 28.7-64 64v256h64V96h384v256h64V96c0-35.3-28.7-64-64-64zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480h486.4c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2z"></path></svg></span> Desktop or Laptop : Reload this page ( <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span> )</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16s7.2-16 16-16"></path></svg></span> Mobile : Use Landscape Mode and reload the page</li>
 </ul>
 </div>
 <iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/438365155467439105" frameborder="2px" width="100%" height="700px"></iframe>
 
-<hr />
-<h2 id="extras"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2 0 .37-.03.73-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85-.32.63-.67 1.24-1.07 1.81-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56M23 18v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"/></svg></span> Extras</h2>
+<hr>
+<h2 id="extras"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2 0 .37-.03.73-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85-.32.63-.67 1.24-1.07 1.81-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56M23 18v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"></path></svg></span> Extras</h2>
 <h3 id="components-details">Components details</h3>
 <ul>
 <li>Raspberry Pi Pico / Pico 2 : <a href="../pico2-pico2-w-key-features-pin-config/" target="_blank">Pin Diagram</a></li>
@@ -1592,7 +1592,7 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <li>It is a third part library or user defined library. </li>
 </ul>
 </li>
-</ul>
+</ul></div>
 
 
 

@@ -1014,7 +1014,7 @@
 
   <h1>Beyond print( ): Modern Python Text Display Techniques You Need to Know</h1>
 
-<div class="md-typeset">
+<div><div class="md-typeset">
     <div class="blogging-tags-grid">
 
         <a href="https://tech.arunkumarn.in/tags#rich" class="blogging-tag"><code>#rich</code></a>
@@ -1046,10 +1046,10 @@
         border-radius: 5px;
     }
 </style>
-<p><img alt="Beyond Print" src="../../../assets/blogs/python/BeyondPrint.png" /></p>
+<p><img alt="Beyond Print" src="../../../assets/blogs/python/BeyondPrint.png"></p>
 <p>Still using <code>print()</code> in your python scripts ?, the same old boring black &amp; white text, no flair, no styles ?</p>
 <p>After going through this article, you will print like a PRO!. Thats right, in this article we will see how to transform your boring terminal black &amp; white output into a work of art using python library <strong>Rich</strong>.</p>
-<p><img alt="normal to rich" src="images/normal_to_rich.png" /></p>
+<p><img alt="normal to rich" src="images/normal_to_rich.png"></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
@@ -1080,29 +1080,29 @@
 <p>It is a library for displaying rich text on the terminal and jupyter notebook. It also helps to render advanced contents such as tables, syntax highlighted code, progress bar, markdown files, json files etc.</p>
 <h2 id="installation">Installation</h2>
 <p>Rich can be installed using <code>pip</code> from PyPI or your favorite package manager like rye, uv or poetry etc.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">pip</label><label for="__tabbed_1_2">rye</label><label for="__tabbed_1_3">uv</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">pip</label><label for="__tabbed_1_2">rye</label><label for="__tabbed_1_3">uv</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>rich
+<p></p><div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>rich
 </span></code></pre></div>
-<img alt="pip gif" src="images/pip.gif" /></p>
+<img alt="pip gif" src="images/pip.gif">
 </div>
 <div class="tabbed-block">
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>rye<span class="w"> </span>init<span class="w"> </span>--virtual
+<p></p><div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>rye<span class="w"> </span>init<span class="w"> </span>--virtual
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>rye<span class="w"> </span>add<span class="w"> </span>rich
 </span></code></pre></div>
-<img alt="rye gif" src="images/rye.gif" /></p>
+<img alt="rye gif" src="images/rye.gif">
 </div>
 <div class="tabbed-block">
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>uv<span class="w"> </span>init
+<p></p><div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>uv<span class="w"> </span>init
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>uv<span class="w"> </span>add<span class="w"> </span>rich
 </span></code></pre></div>
-<img alt="uv gif" src="images/uv.gif" /></p>
+<img alt="uv gif" src="images/uv.gif">
 </div>
 </div>
 </div>
 <p>For using rich in  <strong>Jupyter Notebook</strong> or <strong>Jupyter Lab</strong>, install with additional dependencies using <code>rich[jupyter]</code></p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">pip</label><label for="__tabbed_2_2">rye</label><label for="__tabbed_2_3">uv</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><input id="__tabbed_2_3" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">pip</label><label for="__tabbed_2_2">rye</label><label for="__tabbed_2_3">uv</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip<span class="w"> </span>install<span class="w"> </span>rich<span class="o">[</span>jupyter<span class="o">]</span>
@@ -1123,9 +1123,9 @@
 <h2 id="rich-print">Rich <code>print</code></h2>
 <p>Rich print method is identical signature to the built-in <code>print</code> function with features included to add colors, formats, links and emojis using markup tags.</p>
 <h3 id="markup-tags">Markup Tags</h3>
-<p><div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>[ tag ] content [ /tag ]
+<p></p><div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>[ tag ] content [ /tag ]
 </span></code></pre></div>
-Tags can be used to define the text colors, background color, text formats, underline, strike-through, blink, links etc.</p>
+Tags can be used to define the text colors, background color, text formats, underline, strike-through, blink, links etc.
 <p><strong>Text Color</strong></p>
 <p>Color name or <abbr title="Cascading Style Sheet">CSS</abbr> color code can be used to represent the text color.</p>
 <ul>
@@ -1141,17 +1141,17 @@ Tags can be used to define the text colors, background color, text formats, unde
 </ul>
 <div class="language-python highlight"><span class="filename">color_text.py</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">rich</span><span class="w"> </span><span class="kn">import</span> <span class="nb">print</span>
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;----Color Names----&quot;</span><span class="p">)</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[red] Red Text [/]&quot;</span><span class="p">)</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[green] Green Text [/]&quot;</span><span class="p">)</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[magenta] Magenta Text [/]&quot;</span><span class="p">)</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[yellow on red]Yellow Text on Red Background [/]&quot;</span><span class="p">)</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;----Color Codes----&quot;</span><span class="p">)</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[#ffaa00] Orange Text [/]&quot;</span><span class="p">)</span>
-</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[#32CD32] Lime Green Text [/]&quot;</span><span class="p">)</span>
-</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[rgb(0,0,255)] Blue Text [/]&quot;</span><span class="p">)</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"----Color Names----"</span><span class="p">)</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[red] Red Text [/]"</span><span class="p">)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[green] Green Text [/]"</span><span class="p">)</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[magenta] Magenta Text [/]"</span><span class="p">)</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[yellow on red]Yellow Text on Red Background [/]"</span><span class="p">)</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"----Color Codes----"</span><span class="p">)</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[#ffaa00] Orange Text [/]"</span><span class="p">)</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[#32CD32] Lime Green Text [/]"</span><span class="p">)</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[rgb(0,0,255)] Blue Text [/]"</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="alt text" src="images/rich_color_text.png" /></p>
+<p><img alt="alt text" src="images/rich_color_text.png"></p>
 <p><strong>Text Format</strong></p>
 <ul>
 <li><code>[bold]Bold Text[/]</code></li>
@@ -1163,25 +1163,25 @@ Tags can be used to define the text colors, background color, text formats, unde
 </ul>
 <div class="language-python highlight"><span class="filename">formatted_text.py</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">rich</span><span class="w"> </span><span class="kn">import</span> <span class="nb">print</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[italic]Italic text[/]&quot;</span><span class="p">)</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[bold]Bold text[/]&quot;</span><span class="p">)</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[bold italic]Bold Italic text[/]&quot;</span><span class="p">)</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[strike]Strikethrough text[/]&quot;</span><span class="p">)</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[u]Underline text[/]&quot;</span><span class="p">)</span>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[uu]Double Underline text[/]&quot;</span><span class="p">)</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[blink]Blink text[/]&quot;</span><span class="p">)</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[italic]Italic text[/]"</span><span class="p">)</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[bold]Bold text[/]"</span><span class="p">)</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[bold italic]Bold Italic text[/]"</span><span class="p">)</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[strike]Strikethrough text[/]"</span><span class="p">)</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[u]Underline text[/]"</span><span class="p">)</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[uu]Double Underline text[/]"</span><span class="p">)</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[blink]Blink text[/]"</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="formatted_text" src="images/rich_formatted_text.png" /></p>
+<p><img alt="formatted_text" src="images/rich_formatted_text.png"></p>
 <p><strong>Link</strong></p>
 <ul>
 <li>[link=https://tech.arunkumarn.in]Tech Resources[/link]</li>
 </ul>
 <div class="language-python highlight"><span class="filename">rich_link.py</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">rich</span><span class="w"> </span><span class="kn">import</span> <span class="nb">print</span>
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[link=https://tech.arunkumarn.in]Resource link[/link]&quot;</span><span class="p">)</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[link=https://www.youtube.com/@aavishkarah]YouTube Channel[/link]&quot;</span><span class="p">)</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[link=https://tech.arunkumarn.in]Resource link[/link]"</span><span class="p">)</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"[link=https://www.youtube.com/@aavishkarah]YouTube Channel[/link]"</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="rich_link" src="images/rich_link.png" /></p>
+<p><img alt="rich_link" src="images/rich_link.png"></p>
 <p><strong>Emoji</strong></p>
 <p>Emoji can be inserted in the text using emoji code name surrounded by colons <span class="keys"><kbd class="key-colon">:</kbd></span> .</p>
 <p>Examples:</p>
@@ -1211,11 +1211,11 @@ Tags can be used to define the text colors, background color, text formats, unde
 </tr>
 <tr>
 <td><code>:shield:</code></td>
-<td><img alt="🛡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f6e1.svg" title=":shield:" /></td>
+<td><img alt="🛡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f6e1.svg" title=":shield:"></td>
 </tr>
 <tr>
 <td><code>:heart:</code></td>
-<td><img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2764.svg" title=":heart:" /></td>
+<td><img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2764.svg" title=":heart:"></td>
 </tr>
 </tbody>
 </table>
@@ -1224,9 +1224,9 @@ Tags can be used to define the text colors, background color, text formats, unde
 </span></code></pre></div>
 <div class="language-python highlight"><span class="filename">rich_emoji.py</span><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">rich</span><span class="w"> </span><span class="kn">import</span> <span class="nb">print</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;:+1: :speech_balloon: :arrow_right: :ice_cream: :hundred_points:&quot;</span><span class="p">)</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">":+1: :speech_balloon: :arrow_right: :ice_cream: :hundred_points:"</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="rich_emoji" src="images/rich_emoji.png" /></p>
+<p><img alt="rich_emoji" src="images/rich_emoji.png"></p>
 <h2 id="rich-console">Rich <code>Console</code></h2>
 <p>To have complete control over the terminal formatting, rich provides <code>Console</code> class. The console object auto detects the capabilities of the terminal like <strong>size</strong>, <strong>encoding</strong>, <strong>is_terminal</strong> and <strong>color_system</strong>, using these details it convert colors and styles accordingly.</p>
 <h3 id="print-method"><code>print</code> method</h3>
@@ -1238,26 +1238,26 @@ Tags can be used to define the text colors, background color, text formats, unde
 </span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
 </span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
 </span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;Welcome to Aavishkarah&quot;</span><span class="p">,</span> 
-</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>                <span class="n">style</span><span class="o">=</span><span class="s2">&quot;magenta&quot;</span><span class="p">)</span>
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;White Background with Red Text&quot;</span><span class="p">,</span> 
-</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>                <span class="n">style</span><span class="o">=</span><span class="s2">&quot;red on white&quot;</span><span class="p">)</span>
-</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;Blue bold text underlined with yellow background&quot;</span><span class="p">,</span> 
-</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>                <span class="n">style</span><span class="o">=</span><span class="s2">&quot;bold blue underline on yellow&quot;</span><span class="p">)</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">"Welcome to Aavishkarah"</span><span class="p">,</span> 
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>                <span class="n">style</span><span class="o">=</span><span class="s2">"magenta"</span><span class="p">)</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">"White Background with Red Text"</span><span class="p">,</span> 
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>                <span class="n">style</span><span class="o">=</span><span class="s2">"red on white"</span><span class="p">)</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">"Blue bold text underlined with yellow background"</span><span class="p">,</span> 
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>                <span class="n">style</span><span class="o">=</span><span class="s2">"bold blue underline on yellow"</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="console_style" src="images/console_style.png" /></p>
+<p><img alt="console_style" src="images/console_style.png"></p>
 <h4 id="justify-or-alignment">Justify or Alignment</h4>
 <p>Console <code>print</code> method supports justify argument. <strong>justify</strong> arguments accepts one of the four values <em>default</em>, <em>left</em>, <em>center</em> and <em>right</em>. </p>
 <div class="language-python highlight"><span class="filename">alignment.py</span><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">rich.console</span><span class="w"> </span><span class="kn">import</span> <span class="n">Console</span>
 </span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
 </span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
 </span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;Default justify&quot;</span><span class="p">)</span>
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;Left justify&quot;</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;Center justify&quot;</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
-</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;Right justify&quot;</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">"Default justify"</span><span class="p">)</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">"Left justify"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"left"</span><span class="p">)</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">"Center justify"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"center"</span><span class="p">)</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">"Right justify"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="alignment" src="images/alignment.png" /></p>
+<p><img alt="alignment" src="images/alignment.png"></p>
 <h4 id="overflow">Overflow</h4>
 <p>When the space is restricted, and you need to print content larger than the available space, overflow happens.
 <code>overflow</code> argument in <code>print</code> method helps to handel these type of scenarios. it accepts one of the three values <em>fold</em> (default value), <em>crop</em> and <em>ellipsis</em>.</p>
@@ -1286,20 +1286,20 @@ Tags can be used to define the text colors, background color, text formats, unde
 <div class="language-python highlight"><span class="filename">overflow.py</span><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">rich.console</span><span class="w"> </span><span class="kn">import</span> <span class="n">Console</span>
 </span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
 </span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://tech.arunkumarn.in/blogs/python/Convert_Jupyter_Notebooks_into_Interactive_Slides/&quot;</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="n">url</span><span class="o">=</span><span class="s2">"https://tech.arunkumarn.in/blogs/python/Convert_Jupyter_Notebooks_into_Interactive_Slides/"</span>
 </span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
-</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;fold&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;magenta&quot;</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
-</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">overflow</span><span class="o">=</span><span class="s2">&quot;fold&quot;</span><span class="p">)</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">"fold"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"magenta"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"center"</span><span class="p">)</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">overflow</span><span class="o">=</span><span class="s2">"fold"</span><span class="p">)</span>
 </span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="nb">print</span><span class="p">()</span>
 </span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>
-</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;crop&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;magenta&quot;</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
-</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">overflow</span><span class="o">=</span><span class="s2">&quot;crop&quot;</span><span class="p">)</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">"crop"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"magenta"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"center"</span><span class="p">)</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">overflow</span><span class="o">=</span><span class="s2">"crop"</span><span class="p">)</span>
 </span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="nb">print</span><span class="p">()</span>
 </span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>
-</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;ellipsis&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;magenta&quot;</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
-</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">overflow</span><span class="o">=</span><span class="s2">&quot;ellipsis&quot;</span><span class="p">)</span>
+</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">"ellipsis"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"magenta"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"center"</span><span class="p">)</span>
+</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">overflow</span><span class="o">=</span><span class="s2">"ellipsis"</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="overflow" src="images/overflow.png" /></p>
+<p><img alt="overflow" src="images/overflow.png"></p>
 <h3 id="rule-method"><code>rule</code> method</h3>
 <p><code>rule()</code> method draws a line with optional centered title. It can accept four optional arguments.</p>
 <table>
@@ -1333,16 +1333,16 @@ Tags can be used to define the text colors, background color, text formats, unde
 </span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
 </span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
 </span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">()</span>
-</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">(</span><span class="s2">&quot;Aavishkarah&quot;</span><span class="p">)</span>
-</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">(</span><span class="s2">&quot;Aavishkarah&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
-</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">(</span><span class="s2">&quot;Aavishkarah&quot;</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
-</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">(</span><span class="s2">&quot;Aavishkarah&quot;</span><span class="p">,</span> <span class="n">characters</span><span class="o">=</span><span class="s2">&quot;*&quot;</span><span class="p">)</span>
-</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">(</span><span class="s2">&quot;Aavishkarah&quot;</span><span class="p">,</span> <span class="n">characters</span><span class="o">=</span><span class="s2">&quot;&gt;:&lt;&quot;</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;magenta&quot;</span><span class="p">)</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">(</span><span class="s2">"Aavishkarah"</span><span class="p">)</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">(</span><span class="s2">"Aavishkarah"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">(</span><span class="s2">"Aavishkarah"</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s2">"right"</span><span class="p">)</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">(</span><span class="s2">"Aavishkarah"</span><span class="p">,</span> <span class="n">characters</span><span class="o">=</span><span class="s2">"*"</span><span class="p">)</span>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">(</span><span class="s2">"Aavishkarah"</span><span class="p">,</span> <span class="n">characters</span><span class="o">=</span><span class="s2">"&gt;:&lt;"</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s2">"left"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"magenta"</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="rules" src="images/rules.png" /></p>
+<p><img alt="rules" src="images/rules.png"></p>
 <h3 id="printing-json">Printing Json</h3>
 <p><code>print_json</code> method is used to pretty print the JSON.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Code</label><label for="__tabbed_3_2">json file</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="__tabbed_3_1" name="__tabbed_3" type="radio"><input id="__tabbed_3_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="__tabbed_3_1">Code</label><label for="__tabbed_3_2">json file</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-python highlight"><span class="filename">json_format.py</span><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
@@ -1350,24 +1350,24 @@ Tags can be used to define the text colors, background color, text formats, unde
 </span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
 </span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
 </span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>
-</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;aavishkarah.json&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"aavishkarah.json"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
 </span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>    <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>
 </span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>
-</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">(</span><span class="s2">&quot;Normal Print&quot;</span><span class="p">,</span><span class="n">characters</span><span class="o">=</span><span class="s2">&quot;~&quot;</span><span class="p">)</span>
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">(</span><span class="s2">"Normal Print"</span><span class="p">,</span><span class="n">characters</span><span class="o">=</span><span class="s2">"~"</span><span class="p">)</span>
 </span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="nb">print</span><span class="p">()</span>
-</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">(</span><span class="s2">&quot;[magenta]Rich[/] [yellow]Print[/]&quot;</span><span class="p">,</span> <span class="n">characters</span><span class="o">=</span><span class="s2">&quot;&gt;:~:&lt;&quot;</span><span class="p">)</span>
+</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">(</span><span class="s2">"[magenta]Rich[/] [yellow]Print[/]"</span><span class="p">,</span> <span class="n">characters</span><span class="o">=</span><span class="s2">"&gt;:~:&lt;"</span><span class="p">)</span>
 </span><span id="__span-16-14"><a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="n">console</span><span class="o">.</span><span class="n">print_json</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-json highlight"><span class="filename">aavishkarah.json</span><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="p">{</span><span class="nt">&quot;YouTube&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.youtube.com/@aavishkarah?sub_confirmation=1&quot;</span><span class="p">,</span><span class="nt">&quot;Instagram&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://instagram.com/aavishkarah&quot;</span><span class="p">,</span><span class="nt">&quot;Facebook&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://facebook.com/people/Aavishkarah/61573021117727&quot;</span><span class="p">,</span><span class="nt">&quot;Whatsapp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://whatsapp.com/channel/0029Vb5ddY75a24ASH3a4535&quot;</span><span class="p">,</span><span class="nt">&quot;Telegram&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://t.me/SDpython&quot;</span><span class="p">,</span><span class="nt">&quot;Github&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/aavishkarah&quot;</span><span class="p">,</span><span class="nt">&quot;Website&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://tech.arunkumarn.in/&quot;</span><span class="p">}</span>
+<div class="language-json highlight"><span class="filename">aavishkarah.json</span><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="p">{</span><span class="nt">"YouTube"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.youtube.com/@aavishkarah?sub_confirmation=1"</span><span class="p">,</span><span class="nt">"Instagram"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://instagram.com/aavishkarah"</span><span class="p">,</span><span class="nt">"Facebook"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://facebook.com/people/Aavishkarah/61573021117727"</span><span class="p">,</span><span class="nt">"Whatsapp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://whatsapp.com/channel/0029Vb5ddY75a24ASH3a4535"</span><span class="p">,</span><span class="nt">"Telegram"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://t.me/SDpython"</span><span class="p">,</span><span class="nt">"Github"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://github.com/aavishkarah"</span><span class="p">,</span><span class="nt">"Website"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tech.arunkumarn.in/"</span><span class="p">}</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
-<p><img alt="json_format" src="images/json_format.png" /></p>
+<p><img alt="json_format" src="images/json_format.png"></p>
 <h3 id="status-indication">Status Indication</h3>
 <p>while you are download a file or function is taking longer time to execute, it will be hard to indicate the status in the terminal. Now with the help of <code>status()</code> method, that problem is solved.</p>
 <p><code>status</code> method can display status messages with a <code>spinner</code> animation that won't interfere with regular console output. Use context manager to display the status message.</p>
@@ -1378,24 +1378,24 @@ Tags can be used to define the text colors, background color, text formats, unde
 </span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>
 </span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">delay_task</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 </span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>        <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">=}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>        <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">i</span><span class="si">=}</span><span class="s2">"</span><span class="p">)</span>
 </span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>        <span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>
-</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="k">with</span> <span class="n">console</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="s2">&quot;Working....&quot;</span><span class="p">,</span> <span class="n">spinner</span><span class="o">=</span><span class="s2">&quot;monkey&quot;</span><span class="p">):</span>
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="k">with</span> <span class="n">console</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="s2">"Working...."</span><span class="p">,</span> <span class="n">spinner</span><span class="o">=</span><span class="s2">"monkey"</span><span class="p">):</span>
 </span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>    <span class="n">delay_task</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="status" src="images/status.gif" /></p>
+<p><img alt="status" src="images/status.gif"></p>
 <p>To list out all the <code>spinners</code> run the following command in terminal.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>python<span class="w"> </span>-m<span class="w"> </span>rich.spinner
 </span></code></pre></div>
-<p><img alt="spinners" src="images/spinner.gif" /></p>
+<p><img alt="spinners" src="images/spinner.gif"></p>
 <h2 id="rich-in-repl">Rich in REPL</h2>
 <p>While working in REPL to style the output, simply execute a line of code inside the interpreter, so that python data structures are automatically highlighted and pretty printed.</p>
-<p><div class="language-python highlight"><span class="filename">python interpreter</span><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span><span class="w"> </span><span class="nn">rich</span><span class="w"> </span><span class="kn">import</span> <span class="n">pretty</span>
+<p></p><div class="language-python highlight"><span class="filename">python interpreter</span><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span><span class="w"> </span><span class="nn">rich</span><span class="w"> </span><span class="kn">import</span> <span class="n">pretty</span>
 </span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">pretty</span><span class="o">.</span><span class="n">install</span><span class="p">()</span>
 </span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="o">&gt;&gt;&gt;</span>
 </span></code></pre></div>
-<img alt="repl" src="images/repl_mask.png" /></p>
+<img alt="repl" src="images/repl_mask.png"></div>
 
 
 

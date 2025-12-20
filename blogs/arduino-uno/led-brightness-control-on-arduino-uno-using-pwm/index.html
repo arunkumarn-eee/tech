@@ -1014,10 +1014,10 @@
 
   <h1>LED Brightness Control on Raspberry Pi Pico with MicroPython & PWM</h1>
 
-<div class="md-typeset">
+<div><div class="md-typeset">
     <div class="blogging-tags-grid">
 
-        <a href="https://tech.arunkumarn.in/tags#arduino uno" class="blogging-tag"><code>#arduino uno</code></a>
+        <a href="https://tech.arunkumarn.in/tags#arduino%20uno" class="blogging-tag"><code>#arduino uno</code></a>
 
         <a href="https://tech.arunkumarn.in/tags#arduino" class="blogging-tag"><code>#arduino</code></a>
 
@@ -1052,7 +1052,7 @@
         border-radius: 5px;
     }
 </style>
-<p><img alt="brightness led" src="../../../assets/blogs/arduino-uno/Varying_brightness.png" /></p>
+<p><img alt="brightness led" src="../../../assets/blogs/arduino-uno/Varying_brightness.png"></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
@@ -1081,7 +1081,7 @@
 </details>
 <h2 id="abstract">Abstract</h2>
 <p>In this article, we present a step-by-step guide to controlling the brightness of an LED using an Arduino Uno. By leveraging Pulse Width Modulation (PWM), you can smoothly vary the LED intensity — from dim glow to full brightness — rather than simply turning it on or off. This technique is a fundamental building block for more advanced projects such as LED dimmers, ambient lighting, and more.</p>
-<h2 id="pre-request"><img alt="🧭" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9ed.svg" title=":compass:" /> Pre-Request</h2>
+<h2 id="pre-request"><img alt="🧭" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9ed.svg" title=":compass:"> Pre-Request</h2>
 <ul>
 <li>Arduino Uno board (or any Arduino with PWM-capable pins)</li>
 <li>USB cable to connect the Arduino Uno to your computer</li>
@@ -1108,9 +1108,7 @@
     Arduino boards, sensors, and maker essential Kits—perfectly matched for your learning.
   </div>
 
-  <a href="https://www.skilldisk.com/category/arduino"
-     target="_blank"
-     style="
+  <a href="https://www.skilldisk.com/category/arduino" target="_blank" style="
        padding:12px 18px;
        border-radius:10px;
        background:var(--md-accent-fg-color);
@@ -1168,19 +1166,19 @@
 </tbody>
 </table>
 <div class="admonition tip">
-<p class="admonition-title">Don't own a hardware <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f622.svg" title=":cry:" /></p>
+<p class="admonition-title">Don't own a hardware <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f622.svg" title=":cry:"></p>
 <p>No worries,</p>
-<p>💡Still you can learn using simulation. check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:" />.</p>
-<p>💡Power your mission with reliable Arduino Kits. <a href="https://www.skilldisk.com/category/arduino" target="_blank">Explore <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"/></svg></span> Hardware →</a></p>
+<p>💡Still you can learn using simulation. check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:">.</p>
+<p>💡Power your mission with reliable Arduino Kits. <a href="https://www.skilldisk.com/category/arduino" target="_blank">Explore <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"></path></svg></span> Hardware →</a></p>
 </div>
 <!-- Advertisement -->
 <div class="grid cards">
 <ul>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/uno-edge-spark-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_spark_ads.png" /></a></p>
+<p><a href="https://www.skilldisk.com/product-page/uno-edge-spark-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_spark_ads.png"></a></p>
 </li>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/uno-edge-explorer-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_explorer_ads.png" /></a></p>
+<p><a href="https://www.skilldisk.com/product-page/uno-edge-explorer-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_explorer_ads.png"></a></p>
 </li>
 </ul>
 </div>
@@ -1206,12 +1204,12 @@
 <p>Using a current-limiting resistor (220 Ω to 330 Ω) is important to protect the LED and Arduino pin.</p>
 </div>
 <figure>
-<p><img alt="Circuit Diagram" src="images/led_brightness.png" /></p>
+<p><img alt="Circuit Diagram" src="images/led_brightness.png"></p>
 <figcaption>
 <p>fig-Connection Diagram</p>
 </figcaption>
 </figure>
-<h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4c2.svg" title=":open_file_folder:" /> Code</h2>
+<h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4c2.svg" title=":open_file_folder:"> Code</h2>
 <div class="language-arduino highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -1305,13 +1303,13 @@
 <li>DIY Arduino Uno Christmas Light Controller</li>
 </ul>
 </div>
-<hr />
-<h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"/></svg></span> Simulation</h2>
+<hr>
+<h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"></path></svg></span> Simulation</h2>
 <div class="admonition danger">
 <p class="admonition-title">Not able to view the simulation</p>
 <ul>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M128 32c-35.3 0-64 28.7-64 64v256h64V96h384v256h64V96c0-35.3-28.7-64-64-64zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480h486.4c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2z"/></svg></span> Desktop or Laptop : Reload this page ( <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span> )</li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16s7.2-16 16-16"/></svg></span> Mobile : Use Landscape Mode and reload the page</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M128 32c-35.3 0-64 28.7-64 64v256h64V96h384v256h64V96c0-35.3-28.7-64-64-64zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480h486.4c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2z"></path></svg></span> Desktop or Laptop : Reload this page ( <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span> )</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16s7.2-16 16-16"></path></svg></span> Mobile : Use Landscape Mode and reload the page</li>
 </ul>
 </div>
 <iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/448745604342358017" frameborder="2px" width="100%" height="700px"></iframe>
@@ -1335,9 +1333,7 @@
     Arduino boards, sensors, and maker essential Kits—perfectly matched for your learning.
   </div>
 
-  <a href="https://www.skilldisk.com/category/arduino"
-     target="_blank"
-     style="
+  <a href="https://www.skilldisk.com/category/arduino" target="_blank" style="
        padding:12px 18px;
        border-radius:10px;
        background:var(--md-accent-fg-color);
@@ -1354,15 +1350,15 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/uno-edge-spark-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_spark_ads.png" /></a></p>
+<p><a href="https://www.skilldisk.com/product-page/uno-edge-spark-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_spark_ads.png"></a></p>
 </li>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/uno-edge-explorer-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_explorer_ads.png" /></a></p>
+<p><a href="https://www.skilldisk.com/product-page/uno-edge-explorer-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_explorer_ads.png"></a></p>
 </li>
 </ul>
 </div>
-<hr />
-<h2 id="extras"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2 0 .37-.03.73-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85-.32.63-.67 1.24-1.07 1.81-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56M23 18v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"/></svg></span> Extras</h2>
+<hr>
+<h2 id="extras"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2 0 .37-.03.73-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85-.32.63-.67 1.24-1.07 1.81-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56M23 18v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"></path></svg></span> Extras</h2>
 <h3 id="why-pwm-for-brightness">Why PWM for brightness?</h3>
 <p>Many microcontrollers, including Arduino, do not provide a true analog voltage output. PWM offers a clever workaround: by switching the output pin on and off very quickly (faster than the eye can detect), and controlling how long it stays ON vs OFF, you can simulate a varying voltage. This allows for analog-like control (brightness, motor speed, audio volume) using purely digital pins. 
 Halvorsen Blog
@@ -1374,7 +1370,7 @@ Halvorsen Blog
 <li>Arduino Uno <a href="../blink-an-led-on-arduino-uno/files/uno-datasheet.pdf" target="_blank">Data Sheet</a></li>
 </ul>
 <h3 id="modules-libraries-used">Modules / Libraries Used</h3>
-<p>NIL</p>
+<p>NIL</p></div>
 
 
 
