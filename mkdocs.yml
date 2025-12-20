@@ -63,6 +63,7 @@ theme:
         name: Switch to system preference
 
 plugins:
+  - mkdocs-video
   - blogging:
       locale: IN
       dirs:
