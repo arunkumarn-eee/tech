@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     
-        <meta name="description" content="Arduino Nano DHT11 and DHT22 tutorial for real-time temperature and humidity monitoring with hardware setup, code, and Wokwi simulation.">
+        <meta name="description" content="Arduino Uno and potentiometer tutorial for analog input control with hardware wiring, Arduino code, and Wokwi simulation.">
     
     
         <meta name="author" content="Arun kumar N">
     
     
-        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/arduino-nano/learn-dht11-and-dht22-interfacing-with-arduino-nano-step-by-step-guide/">
+        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/arduino-uno/potentiometer-with-arduino-uno-analog-input-control-hardware-and-wokwi-simulation/">
     
     
     
@@ -21,17 +21,17 @@
 
     <meta property="og:type" content="website" />
     
-        <meta property="og:title" content="Learn DHT11 & DHT22 Interfacing with Arduino Nano – Step-by-Step Guide" />
+        <meta property="og:title" content="Potentiometer with Arduino Uno – Analog Input Control (Hardware & Wokwi Simulation)" />
     
     
-        <meta property="og:description" content="Arduino Nano DHT11 and DHT22 tutorial for real-time temperature and humidity monitoring with hardware setup, code, and Wokwi simulation." />
+        <meta property="og:description" content="Arduino Uno and potentiometer tutorial for analog input control with hardware wiring, Arduino code, and Wokwi simulation." />
     
     
-        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/arduino-nano/learn-dht11-and-dht22-interfacing-with-arduino-nano-step-by-step-guide/">
+        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/arduino-uno/potentiometer-with-arduino-uno-analog-input-control-hardware-and-wokwi-simulation/">
     
     <meta property="og:site_name" content="Tech Aavishkarah" />
     
-        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-nano/dht_11_22.png" />
+        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-uno/pot_interface.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
     
@@ -39,21 +39,21 @@
 
     <meta name="twitter:card" content="summary" />
     
-        <meta name="twitter:description" content="Arduino Nano DHT11 and DHT22 tutorial for real-time temperature and humidity monitoring with hardware setup, code, and Wokwi simulation." />
+        <meta name="twitter:description" content="Arduino Uno and potentiometer tutorial for analog input control with hardware wiring, Arduino code, and Wokwi simulation." />
     
     
-        <meta name="twitter:title"  content="Learn DHT11 & DHT22 Interfacing with Arduino Nano – Step-by-Step Guide" />
+        <meta name="twitter:title"  content="Potentiometer with Arduino Uno – Analog Input Control (Hardware & Wokwi Simulation)" />
     
     
     <meta name="twitter:site" content="@arunkumarn_eee" />
     
-        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-nano/dht_11_22.png" />
+        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-uno/pot_interface.png" />
     
     <meta name="twitter:creator" content="@arunkumarn_eee" />
 
     
       
-        <title>Learn DHT11 & DHT22 Interfacing with Arduino Nano – Step-by-Step Guide - Tech Aavishkarah</title>
+        <title>Potentiometer with Arduino Uno – Analog Input Control (Hardware & Wokwi Simulation) - Tech Aavishkarah</title>
       
     
     
@@ -152,7 +152,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Learn DHT11 & DHT22 Interfacing with Arduino Nano – Step-by-Step Guide
+              Potentiometer with Arduino Uno – Analog Input Control (Hardware & Wokwi Simulation)
             
           </span>
         </div>
@@ -600,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../arduino-nano/" class="md-nav__link">
         
   
   
@@ -623,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../arduino-uno/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -884,22 +884,22 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Hardware Required">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#understanding-the-dht11-dht22-sensor" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-the-potentiometer" class="md-nav__link">
     <span class="md-ellipsis">
-      Understanding the DHT11 / DHT22 Sensor
+      Understanding the Potentiometer
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Understanding the Potentiometer">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#differences" class="md-nav__link">
+  <a href="#pin-description" class="md-nav__link">
     <span class="md-ellipsis">
-      Differences
+      Pin Description
     </span>
   </a>
   
@@ -911,16 +911,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sensor-pinout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sensor Pinout
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Sensor Pinout">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#connection-table" class="md-nav__link">
     <span class="md-ellipsis">
       Connection Table
@@ -931,16 +921,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#dht-sensor-arduino-nano" class="md-nav__link">
+  <a href="#potentiometer-arduino-uno" class="md-nav__link">
     <span class="md-ellipsis">
-      DHT Sensor → Arduino Nano
+      Potentiometer → Arduino Uno
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1016,6 +1001,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#common-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
       Conclusion
@@ -1042,12 +1036,12 @@
 
 
 
-  <h1>Learn DHT11 & DHT22 Interfacing with Arduino Nano – Step-by-Step Guide</h1>
+  <h1>Potentiometer with Arduino Uno – Analog Input Control (Hardware & Wokwi Simulation)</h1>
 
 <div><div class="md-typeset">
     <div class="blogging-tags-grid">
 
-        <a href="https://tech.arunkumarn.in/tags#arduino%20nano" class="blogging-tag"><code>#arduino nano</code></a>
+        <a href="https://tech.arunkumarn.in/tags#arduino%20uno" class="blogging-tag"><code>#arduino uno</code></a>
 
         <a href="https://tech.arunkumarn.in/tags#arduino" class="blogging-tag"><code>#arduino</code></a>
 
@@ -1086,23 +1080,20 @@
         border-radius: 5px;
     }
 </style>
-<p><img alt="DHT 11 / 22" src="../../../assets/blogs/arduino-nano/dht_11_22.png"></p>
+<p><img alt="DHT 11 / 22" src="../../../assets/blogs/arduino-uno/pot_interface.png"></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
 <ul>
 <li><a href="#abstract">Abstract</a></li>
 <li><a href="#pre-request">Pre-Request</a></li>
-<li><a href="#hardware-required">Hardware Required</a><ul>
-<li><a href="#understanding-the-dht11-dht22-sensor">Understanding the DHT11 / DHT22 Sensor</a></li>
-<li><a href="#differences">Differences</a></li>
+<li><a href="#hardware-required">Hardware Required</a></li>
+<li><a href="#understanding-the-potentiometer">Understanding the Potentiometer</a><ul>
+<li><a href="#pin-description">Pin Description</a></li>
 </ul>
 </li>
-<li><a href="#sensor-pinout">Sensor Pinout</a><ul>
 <li><a href="#connection-table">Connection Table</a><ul>
-<li><a href="#dht-sensor-arduino-nano">DHT Sensor → Arduino Nano</a></li>
-</ul>
-</li>
+<li><a href="#potentiometer-arduino-uno">Potentiometer → Arduino Uno</a></li>
 </ul>
 </li>
 <li><a href="#code">Code</a><ul>
@@ -1115,13 +1106,14 @@
 <li><a href="#modules-libraries-used">Modules / Libraries Used</a></li>
 </ul>
 </li>
+<li><a href="#common-applications">Common Applications</a></li>
 <li><a href="#conclusion">Conclusion</a></li>
 </ul>
 </div>
 </details>
 <h2 id="abstract">Abstract</h2>
-<p>In this article, we will learn how to interface the DHT11 / DHT22 temperature and humidity sensor with the Arduino Nano. These sensors are widely used in IoT, weather monitoring, HVAC systems, and smart agriculture projects.</p>
-<p>We will cover the hardware connections, understand how the sensor works, write the Arduino program, and test the setup using real hardware or Wokwi simulation.</p>
+<p>In this article, we will learn how to interface a <strong>potentiometer</strong> with the <strong>Arduino Uno</strong> to read analog values. A potentiometer is a variable resistor that allows us to manually change voltage levels, making it ideal for controlling brightness, motor speed, volume, and sensor calibration.</p>
+<p>We will cover the <strong>hardware connections</strong>, understand how <strong>analog input works</strong>, write the <strong>Arduino code</strong>, and test the setup using <strong>real hardware</strong> or <strong>Wokwi simulation</strong>.</p>
 <h2 id="pre-request"><img alt="🧭" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9ed.svg" title=":compass:"> Pre-Request</h2>
 <ul>
 <li>OS : Windows / Linux / Mac / Chrome</li>
@@ -1162,8 +1154,8 @@
 </div>
 
 <ul>
-<li>Arduino Nano. </li>
-<li>DHT11 or DHT22 sensor</li>
+<li>Arduino Uno. </li>
+<li>Potentiometer (10kΩ)</li>
 <li>BreadBoard.</li>
 <li>Mini USB Cable.</li>
 <li>Connecting wires.</li>
@@ -1178,15 +1170,11 @@
 </thead>
 <tbody>
 <tr>
-<td>Arduino Nano</td>
+<td>Arduino Uno</td>
 <td><a href="#">link</a></td>
 </tr>
 <tr>
-<td>DHT 11</td>
-<td><a href="#">link</a></td>
-</tr>
-<tr>
-<td>DHT 22</td>
+<td>Potentiometer (10kΩ)</td>
 <td><a href="#">link</a></td>
 </tr>
 <tr>
@@ -1213,59 +1201,20 @@
 <p>💡Still you can learn using simulation. check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:">.</p>
 <p>💡Power your mission with reliable Arduino Kits. <a href="https://www.skilldisk.com/category/arduino" target="_blank">Explore <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"></path></svg></span> Hardware →</a></p>
 </div>
-<!-- Nano Craft Advertisement -->
+<!-- Uno Craft Advertisement -->
 <div class="grid cards">
 <ul>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/nano-craft-spark-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_spark_ads.png"></a></p>
+<p><a href="https://www.skilldisk.com/product-page/uno-edge-spark-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_spark_ads.png"></a></p>
 </li>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/nano-craft-explorer-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_explorer_ads.png"></a></p>
+<p><a href="https://www.skilldisk.com/product-page/uno-edge-explorer-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_explorer_ads.png"></a></p>
 </li>
 </ul>
 </div>
-<h3 id="understanding-the-dht11-dht22-sensor">Understanding the DHT11 / DHT22 Sensor</h3>
-<p>The <strong>DHT sensors</strong> measure:</p>
-<ul>
-<li><strong>Temperature</strong></li>
-<li><strong>Relative Humidity</strong></li>
-</ul>
-<p>They use a <strong>single-wire digital communication protocol</strong>, making them very easy to interface with Arduino.</p>
-<h3 id="differences">Differences</h3>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>DHT11</th>
-<th>DHT22</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Temperature Range</td>
-<td>0–50 °C</td>
-<td>−40 to 80 °C</td>
-</tr>
-<tr>
-<td>Humidity Range</td>
-<td>20–80 %</td>
-<td>0–100 %</td>
-</tr>
-<tr>
-<td>Accuracy</td>
-<td>Moderate</td>
-<td>High</td>
-</tr>
-<tr>
-<td>Cost</td>
-<td>Low</td>
-<td>Slightly higher</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id="sensor-pinout">Sensor Pinout</h2>
-<p>Most DHT modules have <strong>3 pins</strong>:</p>
+<h2 id="understanding-the-potentiometer">Understanding the Potentiometer</h2>
+<p>A <strong>potentiometer</strong> is a <strong>three-terminal variable resistor</strong>. It works as a <strong>voltage divider</strong>, producing a variable output voltage depending on the position of its knob.</p>
+<h3 id="pin-description">Pin Description</h3>
 <table>
 <thead>
 <tr>
@@ -1275,46 +1224,70 @@
 </thead>
 <tbody>
 <tr>
-<td>VCC</td>
-<td>Power (3.3 V / 5 V)</td>
-</tr>
-<tr>
-<td>DATA</td>
-<td>Data Output</td>
-</tr>
-<tr>
+<td>Left Pin</td>
 <td>GND</td>
-<td>Ground</td>
+</tr>
+<tr>
+<td>Middle Pin</td>
+<td>Output (Variable voltage)</td>
+</tr>
+<tr>
+<td>Right Pin</td>
+<td>VCC (5V)</td>
 </tr>
 </tbody>
 </table>
-<h3 id="connection-table">Connection Table</h3>
-<h4 id="dht-sensor-arduino-nano">DHT Sensor → Arduino Nano</h4>
+<p>As you rotate the knob, the middle pin outputs a voltage between <strong>0V and 5V</strong>.</p>
+<h2 id="connection-table">Connection Table</h2>
+<h4 id="potentiometer-arduino-uno">Potentiometer → Arduino Uno</h4>
 <table>
 <thead>
 <tr>
-<th>DHT Pin</th>
-<th>Arduino Nano</th>
+<th>Potentiometer Pin</th>
+<th>Arduino Uno</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>VCC</td>
+<td>Left Pin</td>
 <td>5V</td>
 </tr>
 <tr>
-<td>DATA</td>
-<td>D2</td>
+<td>Middle Pin</td>
+<td>A0</td>
 </tr>
 <tr>
-<td>GND</td>
+<td>Right Pin</td>
 <td>GND</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>💡 If using a bare DHT sensor, connect a <strong>10 kΩ pull-up resistor</strong> between VCC and DATA.</p>
+<p>Arduino Uno has a built-in <strong>10-bit Analog-to-Digital Converter (ADC)</strong>.
+This converts voltage (0–5V) into digital values from <strong>0 to 1023</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Voltage</th>
+<th>ADC Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 V</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2.5 V</td>
+<td>~512</td>
+</tr>
+<tr>
+<td>5 V</td>
+<td>1023</td>
+</tr>
+</tbody>
+</table>
 </div>
 <figure>
 <p><img alt="Circuit Diagram" src="images/ckt.png"></p>
@@ -1323,10 +1296,6 @@
 </figcaption>
 </figure>
 <h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4c2.svg" title=":open_file_folder:"> Code</h2>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Install the <strong>DHT Sensor Library</strong> from Arduino Library Manager.</p>
-</div>
 <div class="language-arduino highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -1340,161 +1309,28 @@
 <span class="normal"><a href="#__codelineno-0-11">11</a></span>
 <span class="normal"><a href="#__codelineno-0-12">12</a></span>
 <span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span>
-<span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span>
-<span class="normal"><a href="#__codelineno-0-24">24</a></span>
-<span class="normal"><a href="#__codelineno-0-25">25</a></span>
-<span class="normal"><a href="#__codelineno-0-26">26</a></span>
-<span class="normal"><a href="#__codelineno-0-27">27</a></span>
-<span class="normal"><a href="#__codelineno-0-28">28</a></span>
-<span class="normal"><a href="#__codelineno-0-29">29</a></span>
-<span class="normal"><a href="#__codelineno-0-30">30</a></span>
-<span class="normal"><a href="#__codelineno-0-31">31</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;DHT.h&gt;</span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">#define POT_PIN A0</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="cp">#define DHTPIN 2        </span><span class="c1">// Data pin connected to Arduino Nano</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="cp">#define DHTTYPE DHT22  </span><span class="c1">// Change to DHT11 if using DHT11</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="n">DHT</span><span class="w"> </span><span class="nf">dht</span><span class="p">(</span><span class="n">DHTPIN</span><span class="p">,</span><span class="w"> </span><span class="n">DHTTYPE</span><span class="p">);</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="kr">void</span><span class="w"> </span><span class="nb">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="n">dht</span><span class="p">.</span><span class="nf">begin</span><span class="p">();</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="p">}</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kr">void</span><span class="w"> </span><span class="nb">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="p">}</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="kr">void</span><span class="w"> </span><span class="nb">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="kr">int</span><span class="w"> </span><span class="n">potValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">analogRead</span><span class="p">(</span><span class="n">POT_PIN</span><span class="p">);</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">"Potentiometer Value: "</span><span class="p">);</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="n">potValue</span><span class="p">);</span>
 </span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="kr">void</span><span class="w"> </span><span class="nb">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="kr">float</span><span class="w"> </span><span class="n">humidity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">readHumidity</span><span class="p">();</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="kr">float</span><span class="w"> </span><span class="n">temperature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="nf">readTemperature</span><span class="p">();</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isnan</span><span class="p">(</span><span class="n">humidity</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">isnan</span><span class="p">(</span><span class="n">temperature</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">    </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">"Failed to read from DHT sensor!"</span><span class="p">);</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">    </span><span class="k">return</span><span class="p">;</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="p">}</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">"Humidity: "</span><span class="p">);</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">humidity</span><span class="p">);</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">" %  |  "</span><span class="p">);</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">"Temperature: "</span><span class="p">);</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">temperature</span><span class="p">);</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">" °C"</span><span class="p">);</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29"></a>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="nf">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="p">}</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="nf">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
 <h3 id="code-explanation">Code Explanation</h3>
-<p>Let’s break down the Arduino sketch <strong>line by line</strong> to clearly understand how the DHT22 works with the Arduino Nano.</p>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:"> Imports</p>
-<div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;DHT.h&gt;</span>
-</span></code></pre></div></td></tr></table></div>
 <ul>
-<li><code>DHT.h</code>
-    This library provides all the functions needed to communicate with DHT sensors, such as reading temperature and humidity values.</li>
-<li>💡 These libraries hide the low-level DHT22 complexity and make sensor interface simple.</li>
+<li><code>analogRead(A0)</code> reads voltage from the potentiometer.</li>
+<li>The value ranges from <strong>0 to 1023</strong>.</li>
+<li>The value is displayed on the <strong>Serial Monitor</strong>.</li>
+<li><code>delay(500)</code> updates the reading every 0.5 seconds.</li>
 </ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:"> Define Sensor details</p>
-<div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span>
-<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="cp">#define DHTPIN 2        </span><span class="c1">// Data pin connected to Arduino Nano</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="cp">#define DHTTYPE DHT22  </span><span class="c1">// Change to DHT11 if using DHT11</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="n">DHT</span><span class="w"> </span><span class="nf">dht</span><span class="p">(</span><span class="n">DHTPIN</span><span class="p">,</span><span class="w"> </span><span class="n">DHTTYPE</span><span class="p">);</span>
-</span></code></pre></div></td></tr></table></div>
-<ul>
-<li>Sensor type connected is <code>DHT22</code></li>
-<li><code>D2</code> → connected to DHT22 Signal pin</li>
-<li>Create a DHT sensor object named <code>dht</code>, using the defined pin and sensor type. All sensor readings will be taken using this object.</li>
-</ul>
-<div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-3-10">10</a></span>
-<span class="normal"><a href="#__codelineno-3-11">11</a></span>
-<span class="normal"><a href="#__codelineno-3-12">12</a></span>
-<span class="normal"><a href="#__codelineno-3-13">13</a></span>
-<span class="normal"><a href="#__codelineno-3-14">14</a></span>
-<span class="normal"><a href="#__codelineno-3-15">15</a></span>
-<span class="normal"><a href="#__codelineno-3-16">16</a></span>
-<span class="normal"><a href="#__codelineno-3-17">17</a></span>
-<span class="normal"><a href="#__codelineno-3-18">18</a></span>
-<span class="normal"><a href="#__codelineno-3-19">19</a></span>
-<span class="normal"><a href="#__codelineno-3-20">20</a></span>
-<span class="normal"><a href="#__codelineno-3-21">21</a></span>
-<span class="normal"><a href="#__codelineno-3-22">22</a></span>
-<span class="normal"><a href="#__codelineno-3-23">23</a></span>
-<span class="normal"><a href="#__codelineno-3-24">24</a></span>
-<span class="normal"><a href="#__codelineno-3-25">25</a></span>
-<span class="normal"><a href="#__codelineno-3-26">26</a></span>
-<span class="normal"><a href="#__codelineno-3-27">27</a></span>
-<span class="normal"><a href="#__codelineno-3-28">28</a></span>
-<span class="normal"><a href="#__codelineno-3-29">29</a></span>
-<span class="normal"><a href="#__codelineno-3-30">30</a></span>
-<span class="normal"><a href="#__codelineno-3-31">31</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="w">    </span><span class="n">dht</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="p">}</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12"></a>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">humidity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">readHumidity</span><span class="p">();</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">temperature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">readTemperature</span><span class="p">();</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16"></a>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isnan</span><span class="p">(</span><span class="n">humidity</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">isnan</span><span class="p">(</span><span class="n">temperature</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="w">        </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Failed to read from DHT sensor!"</span><span class="p">);</span>
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19"></a><span class="w">        </span><span class="k">return</span><span class="p">;</span>
-</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21"></a>
-</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"Humidity: "</span><span class="p">);</span>
-</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">humidity</span><span class="p">);</span>
-</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">" %  |  "</span><span class="p">);</span>
-</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25"></a>
-</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"Temperature: "</span><span class="p">);</span>
-</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">temperature</span><span class="p">);</span>
-</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">" °C"</span><span class="p">);</span>
-</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29"></a>
-</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30"></a><span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
-</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
-<ul>
-<li><code>dht.begin()</code> starts sensor communication.</li>
-<li><code>readHumidity()</code> and <code>readTemperature()</code> get real-time data.</li>
-<li>Data is displayed on the <strong>Serial Monitor</strong> every 2 seconds.</li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Common Issues &amp; Troubleshooting</p>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Solution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>No readings</td>
-<td>Check DATA pin number</td>
-</tr>
-<tr>
-<td>NaN values</td>
-<td>Check sensor type</td>
-</tr>
-<tr>
-<td>Sensor not detected</td>
-<td>Ensure pull-up resistor</td>
-</tr>
-<tr>
-<td>Wrong values</td>
-<td>Use correct DHT type</td>
-</tr>
-</tbody>
-</table>
-</div>
 <hr>
 <h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"></path></svg></span> Simulation</h2>
 <div class="admonition danger">
@@ -1504,7 +1340,7 @@
 <li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16s7.2-16 16-16"></path></svg></span> Mobile : Use Landscape Mode and reload the page</li>
 </ul>
 </div>
-<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/452947149063387137" frameborder="2px" width="100%" height="700px"></iframe>
+<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/453014886689120257" frameborder="2px" width="100%" height="700px"></iframe>
 
 <!-- Advertisement -->
 <div style="
@@ -1542,10 +1378,10 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/nano-craft-spark-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_spark_ads.png"></a></p>
+<p><a href="https://www.skilldisk.com/product-page/uno-edge-spark-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_spark_ads.png"></a></p>
 </li>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/nano-craft-explorer-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_explorer_ads.png"></a></p>
+<p><a href="https://www.skilldisk.com/product-page/uno-edge-explorer-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_explorer_ads.png"></a></p>
 </li>
 </ul>
 </div>
@@ -1553,22 +1389,22 @@
 <h2 id="extras"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2 0 .37-.03.73-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85-.32.63-.67 1.24-1.07 1.81-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56M23 18v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"></path></svg></span> Extras</h2>
 <h3 id="components-details">Components details</h3>
 <ul>
-<li>Arduino Nano <a href="../blink-an-led-on-arduino-nano/files/nano-datasheet.pdf" target="_blank">Data Sheet</a></li>
-<li>DHT 11 Sensor <a href="https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf" target="_blank">Data Sheet</a> </li>
+<li>Arduino Uno <a href="../blink-an-led-on-arduino-uno/files/uno-datasheet.pdf" target="_blank">Data Sheet</a></li>
 </ul>
 <h3 id="modules-libraries-used">Modules / Libraries Used</h3>
+<p>NIL</p>
+<hr>
+<h2 id="common-applications">Common Applications</h2>
 <ul>
-<li>DHT.h<ul>
-<li>Arduino library for DHT11, DHT22, etc Temp &amp; Humidity Sensors.</li>
-<li><a href="https://www.arduinolibraries.info/libraries/dht-sensor-library" target="_blank">More info</a> </li>
-<li><a href="https://github.com/adafruit/DHT-sensor-library" target="_blank">Github Source Code</a> </li>
-</ul>
-</li>
+<li>LED brightness control</li>
+<li>Volume control</li>
+<li>Motor speed control</li>
+<li>Menu navigation</li>
+<li>Sensor calibration</li>
 </ul>
 <hr>
 <h2 id="conclusion">Conclusion</h2>
-<p>Interfacing a <strong>DHT11 or DHT22 sensor with Arduino Nano</strong> is one of the easiest ways to build a <strong>temperature and humidity monitoring system</strong>. With only one data wire, the sensor provides reliable environmental data that can be used in <strong>IoT dashboards, weather stations, greenhouses, and smart homes</strong>.</p>
-<p>Using <strong>Wokwi simulation</strong>, you can test and debug your project even without physical hardware, making this setup perfect for <strong>learning, teaching, and prototyping</strong>.</p></div>
+<p>Interfacing a <strong>potentiometer with Arduino Uno</strong> is one of the best ways to understand <strong>analog input</strong>. It allows real-time control of voltage, making it ideal for interactive electronics and IoT projects. Using <strong>Wokwi simulation</strong>, you can test and learn even without physical components.</p></div>
 
 
 
