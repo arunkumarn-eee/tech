@@ -75,7 +75,7 @@ We will cover the hardware connections, understand how the sensor works, write t
     💡Power your mission with reliable Arduino Kits. [Explore :simple-arduino: Hardware →](https://www.skilldisk.com/category/arduino){target="_blank"}
 
 <!-- Uno Craft Advertisement -->
---8<-- "includes/uno-craft-cta.md"
+--8<-- "includes/uno-edge-cta.md"
 
 ### Understanding the DHT11 / DHT22 Sensor
 
@@ -134,45 +134,42 @@ fig-Connection Diagram
     Install the **DHT Sensor Library** from Arduino Library Manager.
 
 
-=== "main.py"
-    ```arduino linenums="1"
+```arduino linenums="1"
 
-    #include <DHT.h>
+#include <DHT.h>
 
-    #define DHTPIN 2        // Data pin connected to Arduino Uno
-    #define DHTTYPE DHT22  // Change to DHT11 if using DHT11
+#define DHTPIN 2        // Data pin connected to Arduino Uno
+#define DHTTYPE DHT22  // Change to DHT11 if using DHT11
 
-    DHT dht(DHTPIN, DHTTYPE);
+DHT dht(DHTPIN, DHTTYPE);
 
-    void setup() {
-    Serial.begin(9600);
-    dht.begin();
-    }
+void setup() {
+Serial.begin(9600);
+dht.begin();
+}
 
-    void loop() {
-    float humidity = dht.readHumidity();
-    float temperature = dht.readTemperature();
+void loop() {
+float humidity = dht.readHumidity();
+float temperature = dht.readTemperature();
 
-    if (isnan(humidity) || isnan(temperature)) {
-        Serial.println("Failed to read from DHT sensor!");
-        return;
-    }
+if (isnan(humidity) || isnan(temperature)) {
+    Serial.println("Failed to read from DHT sensor!");
+    return;
+}
 
-    Serial.print("Humidity: ");
-    Serial.print(humidity);
-    Serial.print(" %  |  ");
+Serial.print("Humidity: ");
+Serial.print(humidity);
+Serial.print(" %  |  ");
 
-    Serial.print("Temperature: ");
-    Serial.print(temperature);
-    Serial.println(" °C");
+Serial.print("Temperature: ");
+Serial.print(temperature);
+Serial.println(" °C");
 
-    delay(2000);
-    }
-
+delay(2000);
+}
 
 
-
-    ```
+```
 
 
 ### Code Explanation

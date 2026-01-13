@@ -134,45 +134,45 @@ fig-Connection Diagram
     Install the **DHT Sensor Library** from Arduino Library Manager.
 
 
-=== "main.py"
-    ```arduino linenums="1"
 
-    #include <DHT.h>
+```arduino linenums="1"
 
-    #define DHTPIN 2        // Data pin connected to Arduino Nano
-    #define DHTTYPE DHT22  // Change to DHT11 if using DHT11
+#include <DHT.h>
 
-    DHT dht(DHTPIN, DHTTYPE);
+#define DHTPIN 2        // Data pin connected to Arduino Nano
+#define DHTTYPE DHT22  // Change to DHT11 if using DHT11
 
-    void setup() {
-    Serial.begin(9600);
-    dht.begin();
-    }
+DHT dht(DHTPIN, DHTTYPE);
 
-    void loop() {
-    float humidity = dht.readHumidity();
-    float temperature = dht.readTemperature();
+void setup() {
+Serial.begin(9600);
+dht.begin();
+}
 
-    if (isnan(humidity) || isnan(temperature)) {
-        Serial.println("Failed to read from DHT sensor!");
-        return;
-    }
+void loop() {
+float humidity = dht.readHumidity();
+float temperature = dht.readTemperature();
 
-    Serial.print("Humidity: ");
-    Serial.print(humidity);
-    Serial.print(" %  |  ");
+if (isnan(humidity) || isnan(temperature)) {
+    Serial.println("Failed to read from DHT sensor!");
+    return;
+}
 
-    Serial.print("Temperature: ");
-    Serial.print(temperature);
-    Serial.println(" °C");
+Serial.print("Humidity: ");
+Serial.print(humidity);
+Serial.print(" %  |  ");
 
-    delay(2000);
-    }
+Serial.print("Temperature: ");
+Serial.print(temperature);
+Serial.println(" °C");
 
-
+delay(2000);
+}
 
 
-    ```
+
+
+```
 
 
 ### Code Explanation
