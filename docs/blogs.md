@@ -50,6 +50,7 @@
     :material-sale: Check out [:simple-arduino: Nano Craft Spark Kit](https://www.skilldisk.com/product-page/nano-craft-spark-kit){target="_blank"} | [:simple-arduino: Nano Craft Explorer Kit](https://www.skilldisk.com/product-page/nano-craft-explorer-kit){target="_blank"} 
 
     ---
+    - Learn DHT11 & DHT22 Interfacing with Arduino Nano [:material-link-variant: link](./blogs/arduino-nano/learn-dht11-and-dht22-interfacing-with-arduino-nano-step-by-step-guide/index.md)
     - Interfacing 16x2 I2C LCD display with Arduino Nano [:material-link-variant: link](./blogs/arduino-nano/interfacing-16x2-I2C-lcd-display-with-arduino-nano/index.md)
     - Interfacing 16x2 LCD display with Arduino Nano [:material-link-variant: link](./blogs/arduino-nano/interfacing-16x2-lcd-display-with-arduino-nano/index.md)
     - LED Brightness Control on Arduino Nano using PWM [:material-link-variant: link](./blogs/arduino-nano/led-brightness-control-on-arduino-nano-using-pwm/index.md)
@@ -67,6 +68,7 @@
     :material-sale: Check out [:simple-arduino: Uno Edge Spark Kit](https://www.skilldisk.com/product-page/uno-edge-spark-kit){target="_blank"} | [:simple-arduino: Uno Edge Explorer Kit](https://www.skilldisk.com/product-page/uno-edge-explorer-kit){target="_blank"} 
 
     ---
+    - Learn DHT11 & DHT22 Interfacing with Arduino Uno [:material-link-variant: link](./blogs/arduino-uno/learn-dht11-and-dht22-interfacing-with-arduino-uno-step-by-step-guide/index.md)
     - Interfacing 16x2 I2C LCD display with Arduino Uno [:material-link-variant: link](./blogs/arduino-uno/interfacing-16x2-I2C-lcd-display-with-arduino-uno/index.md)
     - Interfacing 16x2 LCD display with Arduino Uno [:material-link-variant: link](./blogs/arduino-uno/interfacing-16x2-lcd-display-with-arduino-uno/index.md)
     - LED Brightness Control on Arduino Uno using PWM [:material-link-variant: link](./blogs/arduino-uno/led-brightness-control-on-arduino-uno-using-pwm/index.md)

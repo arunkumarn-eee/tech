@@ -1,6 +1,6 @@
 ---
-title: 'Learn DHT11 & DHT22 Interfacing with Arduino Nano – Step-by-Step Guide'
-description: Arduino Nano DHT11 and DHT22 tutorial for real-time temperature and humidity monitoring with hardware setup, code, and Wokwi simulation.
+title: 'Learn DHT11 & DHT22 Interfacing with Arduino Uno – Step-by-Step Guide'
+description: Arduino Uno DHT11 and DHT22 tutorial for real-time temperature and humidity monitoring with hardware setup, code, and Wokwi simulation.
 authors:
   -
     name: Arun kumar N
@@ -9,9 +9,9 @@ authors:
 # update_date : 2025-12-19
 published_date : 2026-01-12
 # prefer light image
-banner_image : assets/blogs/arduino-nano/dht_11_22.png
+banner_image : assets/blogs/arduino-uno/dht_11_22.png
 tags:
-  - arduino nano
+  - arduino uno
   - arduino
   - cpp
   - c
@@ -25,7 +25,7 @@ draft: false
 ---
 
 
-![DHT 11 / 22](./../../../assets/blogs/arduino-nano/dht_11_22.png)
+![DHT 11 / 22](./../../../assets/blogs/arduino-uno/dht_11_22.png)
 
 ???+ Abstract "Table of Contents"
 
@@ -34,7 +34,7 @@ draft: false
 
 ## Abstract
 
-In this article, we will learn how to interface the DHT11 / DHT22 temperature and humidity sensor with the Arduino Nano. These sensors are widely used in IoT, weather monitoring, HVAC systems, and smart agriculture projects.
+In this article, we will learn how to interface the DHT11 / DHT22 temperature and humidity sensor with the Arduino Uno. These sensors are widely used in IoT, weather monitoring, HVAC systems, and smart agriculture projects.
 
 We will cover the hardware connections, understand how the sensor works, write the Arduino program, and test the setup using real hardware or Wokwi simulation.
 
@@ -49,7 +49,7 @@ We will cover the hardware connections, understand how the sensor works, write t
 --8<-- "includes/arduino-link-cta.md"
 
 
-- Arduino Nano. 
+- Arduino Uno. 
 - DHT11 or DHT22 sensor
 - BreadBoard.
 - Mini USB Cable.
@@ -58,7 +58,7 @@ We will cover the hardware connections, understand how the sensor works, write t
 
 | Components | Purchase Link |
 | -- | -- |
-| Arduino Nano | [link](#) |
+| Arduino Uno | [link](#) |
 | DHT 11 | [link](#) |
 | DHT 22 | [link](#) |
 | Mini USB Cable | [link](#) |
@@ -74,8 +74,8 @@ We will cover the hardware connections, understand how the sensor works, write t
 
     💡Power your mission with reliable Arduino Kits. [Explore :simple-arduino: Hardware →](https://www.skilldisk.com/category/arduino){target="_blank"}
 
-<!-- Nano Craft Advertisement -->
---8<-- "includes/nano-craft-cta.md"
+<!-- Uno Craft Advertisement -->
+--8<-- "includes/uno-craft-cta.md"
 
 ### Understanding the DHT11 / DHT22 Sensor
 
@@ -110,9 +110,9 @@ Most DHT modules have **3 pins**:
 
 ### Connection Table
 
-#### DHT Sensor → Arduino Nano
+#### DHT Sensor → Arduino Uno
 
-| DHT Pin | Arduino Nano |
+| DHT Pin | Arduino Uno |
 | ------- | ------------ |
 | VCC     | 5V           |
 | DATA    | D2           |
@@ -139,7 +139,7 @@ fig-Connection Diagram
 
     #include <DHT.h>
 
-    #define DHTPIN 2        // Data pin connected to Arduino Nano
+    #define DHTPIN 2        // Data pin connected to Arduino Uno
     #define DHTTYPE DHT22  // Change to DHT11 if using DHT11
 
     DHT dht(DHTPIN, DHTTYPE);
@@ -177,7 +177,7 @@ fig-Connection Diagram
 
 ### Code Explanation
 
-Let’s break down the Arduino sketch **line by line** to clearly understand how the DHT22 works with the Arduino Nano.
+Let’s break down the Arduino sketch **line by line** to clearly understand how the DHT22 works with the Arduino Uno.
 
 :point_right: Imports
 
@@ -194,7 +194,7 @@ Let’s break down the Arduino sketch **line by line** to clearly understand how
 :point_right: Define Sensor details
 
 ```cpp linenums="3"
-#define DHTPIN 2        // Data pin connected to Arduino Nano
+#define DHTPIN 2        // Data pin connected to Arduino Uno
 #define DHTTYPE DHT22  // Change to DHT11 if using DHT11
 
 DHT dht(DHTPIN, DHTTYPE);
@@ -253,12 +253,12 @@ void loop() {
     - :fontawesome-solid-mobile: Mobile : Use Landscape Mode and reload the page
 
 
-<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/452947149063387137" frameborder="2px" width="100%" height="700px"></iframe>
+<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/453010649391157249" frameborder="2px" width="100%" height="700px"></iframe>
 
 <!-- Advertisement -->
 --8<-- "includes/arduino-link-cta.md"
 
---8<-- "includes/nano-craft-cta.md"
+--8<-- "includes/uno-edge-cta.md"
 
 ---
 
@@ -266,7 +266,7 @@ void loop() {
 
 ### Components details
 
-- Arduino Nano [Data Sheet](../blink-an-led-on-arduino-nano/files/nano-datasheet.pdf){target="_blank"}
+- Arduino Uno [Data Sheet](../blink-an-led-on-arduino-uno/files/uno-datasheet.pdf){target="_blank"}
 - DHT 11 Sensor [Data Sheet](https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf){target="_blank"} 
 
 ### Modules / Libraries Used
@@ -280,6 +280,6 @@ void loop() {
 
 ## Conclusion
 
-Interfacing a **DHT11 or DHT22 sensor with Arduino Nano** is one of the easiest ways to build a **temperature and humidity monitoring system**. With only one data wire, the sensor provides reliable environmental data that can be used in **IoT dashboards, weather stations, greenhouses, and smart homes**.
+Interfacing a **DHT11 or DHT22 sensor with Arduino Uno** is one of the easiest ways to build a **temperature and humidity monitoring system**. With only one data wire, the sensor provides reliable environmental data that can be used in **IoT dashboards, weather stations, greenhouses, and smart homes**.
 
 Using **Wokwi simulation**, you can test and debug your project even without physical hardware, making this setup perfect for **learning, teaching, and prototyping**.
