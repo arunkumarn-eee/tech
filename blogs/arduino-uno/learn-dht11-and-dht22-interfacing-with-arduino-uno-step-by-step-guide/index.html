@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     
-        <meta name="description" content="Beginner-friendly guide to LED blinking with Raspberry Pi Pico, MicroPython, and online simulations.">
+        <meta name="description" content="Arduino Uno DHT11 and DHT22 tutorial for real-time temperature and humidity monitoring with hardware setup, code, and Wokwi simulation.">
     
     
         <meta name="author" content="Arun kumar N">
     
     
-        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/blink-an-led-on-raspberry-pi-pico-using-micropython/">
+        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/arduino-uno/learn-dht11-and-dht22-interfacing-with-arduino-uno-step-by-step-guide/">
     
     
     
@@ -21,17 +21,17 @@
 
     <meta property="og:type" content="website" />
     
-        <meta property="og:title" content="Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide" />
+        <meta property="og:title" content="Learn DHT11 & DHT22 Interfacing with Arduino Uno – Step-by-Step Guide" />
     
     
-        <meta property="og:description" content="Beginner-friendly guide to LED blinking with Raspberry Pi Pico, MicroPython, and online simulations." />
+        <meta property="og:description" content="Arduino Uno DHT11 and DHT22 tutorial for real-time temperature and humidity monitoring with hardware setup, code, and Wokwi simulation." />
     
     
-        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/blink-an-led-on-raspberry-pi-pico-using-micropython/">
+        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/arduino-uno/learn-dht11-and-dht22-interfacing-with-arduino-uno-step-by-step-guide/">
     
     <meta property="og:site_name" content="Tech Aavishkarah" />
     
-        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/pico-led-blinking.png" />
+        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-uno/dht_11_22.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
     
@@ -39,21 +39,21 @@
 
     <meta name="twitter:card" content="summary" />
     
-        <meta name="twitter:description" content="Beginner-friendly guide to LED blinking with Raspberry Pi Pico, MicroPython, and online simulations." />
+        <meta name="twitter:description" content="Arduino Uno DHT11 and DHT22 tutorial for real-time temperature and humidity monitoring with hardware setup, code, and Wokwi simulation." />
     
     
-        <meta name="twitter:title"  content="Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide" />
+        <meta name="twitter:title"  content="Learn DHT11 & DHT22 Interfacing with Arduino Uno – Step-by-Step Guide" />
     
     
     <meta name="twitter:site" content="@arunkumarn_eee" />
     
-        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/pico-led-blinking.png" />
+        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-uno/dht_11_22.png" />
     
     <meta name="twitter:creator" content="@arunkumarn_eee" />
 
     
       
-        <title>Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide - Tech Aavishkarah</title>
+        <title>Learn DHT11 & DHT22 Interfacing with Arduino Uno – Step-by-Step Guide - Tech Aavishkarah</title>
       
     
     
@@ -152,7 +152,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide
+              Learn DHT11 & DHT22 Interfacing with Arduino Uno – Step-by-Step Guide
             
           </span>
         </div>
@@ -577,7 +577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../raspberry-pi-pico/" class="md-nav__link">
         
   
   
@@ -623,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../arduino-uno/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -888,11 +888,59 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#understanding-the-dht11-dht22-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding the DHT11 / DHT22 Sensor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Differences
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensor-pinout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensor Pinout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sensor Pinout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#connection-table" class="md-nav__link">
     <span class="md-ellipsis">
       Connection Table
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Connection Table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dht-sensor-arduino-uno" class="md-nav__link">
+    <span class="md-ellipsis">
+      DHT Sensor → Arduino Uno
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -935,15 +983,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#result" class="md-nav__link">
-    <span class="md-ellipsis">
-      Result
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#extras" class="md-nav__link">
     <span class="md-ellipsis">
       Extras
@@ -976,6 +1015,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -994,18 +1042,24 @@
 
 
 
-  <h1>Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide</h1>
+  <h1>Learn DHT11 & DHT22 Interfacing with Arduino Uno – Step-by-Step Guide</h1>
 
 <div><div class="md-typeset">
     <div class="blogging-tags-grid">
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico" class="blogging-tag"><code>#raspberry pi pico</code></a>
+        <a href="https://tech.arunkumarn.in/tags#arduino%20uno" class="blogging-tag"><code>#arduino uno</code></a>
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202" class="blogging-tag"><code>#raspberry pi pico 2</code></a>
+        <a href="https://tech.arunkumarn.in/tags#arduino" class="blogging-tag"><code>#arduino</code></a>
 
-        <a href="https://tech.arunkumarn.in/tags#micro%20python" class="blogging-tag"><code>#micro python</code></a>
+        <a href="https://tech.arunkumarn.in/tags#cpp" class="blogging-tag"><code>#cpp</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#c" class="blogging-tag"><code>#c</code></a>
 
         <a href="https://tech.arunkumarn.in/tags#guide" class="blogging-tag"><code>#guide</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#DHT11" class="blogging-tag"><code>#DHT11</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#DHT22" class="blogging-tag"><code>#DHT22</code></a>
 
     </div>
 
@@ -1032,7 +1086,7 @@
         border-radius: 5px;
     }
 </style>
-<p><img alt="blink led" src="../../../assets/blogs/raspberrypipico/pico-led-blinking.png"></p>
+<p><img alt="DHT 11 / 22" src="../../../assets/blogs/arduino-uno/dht_11_22.png"></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
@@ -1040,7 +1094,15 @@
 <li><a href="#abstract">Abstract</a></li>
 <li><a href="#pre-request">Pre-Request</a></li>
 <li><a href="#hardware-required">Hardware Required</a><ul>
-<li><a href="#connection-table">Connection Table</a></li>
+<li><a href="#understanding-the-dht11-dht22-sensor">Understanding the DHT11 / DHT22 Sensor</a></li>
+<li><a href="#differences">Differences</a></li>
+</ul>
+</li>
+<li><a href="#sensor-pinout">Sensor Pinout</a><ul>
+<li><a href="#connection-table">Connection Table</a><ul>
+<li><a href="#dht-sensor-arduino-uno">DHT Sensor → Arduino Uno</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#code">Code</a><ul>
@@ -1048,37 +1110,64 @@
 </ul>
 </li>
 <li><a href="#simulation">Simulation</a></li>
-<li><a href="#result">Result</a></li>
 <li><a href="#extras">Extras</a><ul>
 <li><a href="#components-details">Components details</a></li>
 <li><a href="#modules-libraries-used">Modules / Libraries Used</a></li>
 </ul>
 </li>
+<li><a href="#conclusion">Conclusion</a></li>
 </ul>
 </div>
 </details>
 <h2 id="abstract">Abstract</h2>
-<p>Raspberry Pi Pico is a modern development board with Cortex-M0+, Dual core microcontroller supporting micro-python. Know the <a href="../pico2-pico2-w-key-features-pin-config/" target="_blank">key features</a> and <a href="../pico-vs-pico2/" target="_blank">comparison with Pico 2 version</a>. </p>
-<p>In this article we go through.</p>
-<ul>
-<li>Accessing the built-in led of the Raspberry Pi Pico board.</li>
-<li>Turning <code>on</code> and <code>off</code> built-in led using micro python.</li>
-<li>Simulation using wokwi.</li>
-<li>Hardware demo.</li>
-</ul>
+<p>In this article, we will learn how to interface the DHT11 / DHT22 temperature and humidity sensor with the Arduino Uno. These sensors are widely used in IoT, weather monitoring, HVAC systems, and smart agriculture projects.</p>
+<p>We will cover the hardware connections, understand how the sensor works, write the Arduino program, and test the setup using real hardware or Wokwi simulation.</p>
 <h2 id="pre-request"><img alt="🧭" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9ed.svg" title=":compass:"> Pre-Request</h2>
 <ul>
 <li>OS : Windows / Linux / Mac / Chrome</li>
-<li>Thonny IDE.</li>
-<li>MicroPython firmware in Raspberry Pi Pico / Pico 2. <ul>
-<li>For step by step procedure Click <a href="../installing-micropython/" target="_blank">here</a> . </li>
-</ul>
-</li>
+<li>Arduino IDE </li>
 </ul>
 <h2 id="hardware-required">Hardware Required</h2>
+<!-- Advertisement -->
+<div style="
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  align-items:center;
+  padding:20px;
+  margin:24px 0;
+  border-radius:14px;
+  background:var(--md-default-bg-color);
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+">
+  <div style="font-size:36px;">🛠️</div>
+
+  <div style="flex:1 1 220px;">
+    <strong>Get the right hardware kit</strong><br>
+    Arduino boards, sensors, and maker essential Kits—perfectly matched for your learning.
+  </div>
+
+  <a href="https://www.skilldisk.com/category/arduino" target="_blank" style="
+       padding:12px 18px;
+       border-radius:10px;
+       background:var(--md-accent-fg-color);
+       color:#fff;
+       font-weight:600;
+       text-decoration:none;
+       text-align:center;
+       flex:1 1 160px;
+     ">
+    Explore Hardware →
+  </a>
+</div>
+
 <ul>
-<li>Raspberry Pi Pico / Pico 2. </li>
-<li>Micro USB Cable.</li>
+<li>Arduino Uno. </li>
+<li>DHT11 or DHT22 sensor</li>
+<li>BreadBoard.</li>
+<li>Mini USB Cable.</li>
+<li>Connecting wires.</li>
+<li>5V DC power supply (Optional)</li>
 </ul>
 <table>
 <thead>
@@ -1089,46 +1178,150 @@
 </thead>
 <tbody>
 <tr>
-<td>Raspberry Pi Pico</td>
-<td><a href="https://amzn.to/3JNpv7v">Purchase Link</a></td>
-</tr>
-<tr>
-<td>Raspberry Pi Pico 2</td>
+<td>Arduino Uno</td>
 <td><a href="#">link</a></td>
 </tr>
 <tr>
-<td>Micro USB Cable</td>
-<td><a href="https://amzn.to/4gfMgNa">Purchase Link</a></td>
+<td>DHT 11</td>
+<td><a href="#">link</a></td>
+</tr>
+<tr>
+<td>DHT 22</td>
+<td><a href="#">link</a></td>
+</tr>
+<tr>
+<td>Mini USB Cable</td>
+<td><a href="#">link</a></td>
+</tr>
+<tr>
+<td>BreadBoard</td>
+<td><a href="https://amzn.to/4pgNX1c">large</a> : <a href="https://amzn.to/47SMzvB">small</a></td>
+</tr>
+<tr>
+<td>Connecting Wires</td>
+<td><a href="https://amzn.to/4pepr0H">link</a></td>
+</tr>
+<tr>
+<td>5V DC Adaptor</td>
+<td><a href="https://amzn.to/4m82t8D">link</a></td>
 </tr>
 </tbody>
 </table>
 <div class="admonition tip">
 <p class="admonition-title">Don't own a hardware <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f622.svg" title=":cry:"></p>
 <p>No worries,</p>
-<p>Still you can learn using simulation.
-check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:">.</p>
+<p>💡Still you can learn using simulation. check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:">.</p>
+<p>💡Power your mission with reliable Arduino Kits. <a href="https://www.skilldisk.com/category/arduino" target="_blank">Explore <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"></path></svg></span> Hardware →</a></p>
 </div>
-<h3 id="connection-table">Connection Table</h3>
-<p>Built-in led of Raspberry Pi Pico is internally connected to GPIO 25.</p>
+<!-- Uno Craft Advertisement -->
+
+<h3 id="understanding-the-dht11-dht22-sensor">Understanding the DHT11 / DHT22 Sensor</h3>
+<p>The <strong>DHT sensors</strong> measure:</p>
+<ul>
+<li><strong>Temperature</strong></li>
+<li><strong>Relative Humidity</strong></li>
+</ul>
+<p>They use a <strong>single-wire digital communication protocol</strong>, making them very easy to interface with Arduino.</p>
+<h3 id="differences">Differences</h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">Particular</th>
-<th style="text-align: center;">GPIO</th>
-<th style="text-align: left;">Remarks</th>
+<th>Feature</th>
+<th>DHT11</th>
+<th>DHT22</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Built-in LED</td>
-<td style="text-align: center;">25</td>
-<td style="text-align: left;">Internally Connected</td>
+<td>Temperature Range</td>
+<td>0–50 °C</td>
+<td>−40 to 80 °C</td>
+</tr>
+<tr>
+<td>Humidity Range</td>
+<td>20–80 %</td>
+<td>0–100 %</td>
+</tr>
+<tr>
+<td>Accuracy</td>
+<td>Moderate</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Cost</td>
+<td>Low</td>
+<td>Slightly higher</td>
 </tr>
 </tbody>
 </table>
-<p><img alt="Built-in LED" src="images/Built_in_LED_pico.png"></p>
+<hr>
+<h2 id="sensor-pinout">Sensor Pinout</h2>
+<p>Most DHT modules have <strong>3 pins</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VCC</td>
+<td>Power (3.3 V / 5 V)</td>
+</tr>
+<tr>
+<td>DATA</td>
+<td>Data Output</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>Ground</td>
+</tr>
+</tbody>
+</table>
+<h3 id="connection-table">Connection Table</h3>
+<h4 id="dht-sensor-arduino-uno">DHT Sensor → Arduino Uno</h4>
+<table>
+<thead>
+<tr>
+<th>DHT Pin</th>
+<th>Arduino Uno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VCC</td>
+<td>5V</td>
+</tr>
+<tr>
+<td>DATA</td>
+<td>D2</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>💡 If using a bare DHT sensor, connect a <strong>10 kΩ pull-up resistor</strong> between VCC and DATA.</p>
+</div>
+<figure>
+<p><img alt="Circuit Diagram" src="images/ckt.png"></p>
+<figcaption>
+<p>fig-Connection Diagram</p>
+</figcaption>
+</figure>
 <h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4c2.svg" title=":open_file_folder:"> Code</h2>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Install the <strong>DHT Sensor Library</strong> from Arduino Library Manager.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">main.py</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-arduino highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
@@ -1138,66 +1331,166 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
 <span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Built-in LED is connected to GPIO 25</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>    <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>    <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span>
+<span class="normal"><a href="#__codelineno-0-25">25</a></span>
+<span class="normal"><a href="#__codelineno-0-26">26</a></span>
+<span class="normal"><a href="#__codelineno-0-27">27</a></span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span>
+<span class="normal"><a href="#__codelineno-0-29">29</a></span>
+<span class="normal"><a href="#__codelineno-0-30">30</a></span>
+<span class="normal"><a href="#__codelineno-0-31">31</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;DHT.h&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="cp">#define DHTPIN 2        </span><span class="c1">// Data pin connected to Arduino Uno</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="cp">#define DHTTYPE DHT22  </span><span class="c1">// Change to DHT11 if using DHT11</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="n">DHT</span><span class="w"> </span><span class="nf">dht</span><span class="p">(</span><span class="n">DHTPIN</span><span class="p">,</span><span class="w"> </span><span class="n">DHTTYPE</span><span class="p">);</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="kr">void</span><span class="w"> </span><span class="nb">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="n">dht</span><span class="p">.</span><span class="nf">begin</span><span class="p">();</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="p">}</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="kr">void</span><span class="w"> </span><span class="nb">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="kr">float</span><span class="w"> </span><span class="n">humidity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">readHumidity</span><span class="p">();</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="kr">float</span><span class="w"> </span><span class="n">temperature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="nf">readTemperature</span><span class="p">();</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isnan</span><span class="p">(</span><span class="n">humidity</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">isnan</span><span class="p">(</span><span class="n">temperature</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">    </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">"Failed to read from DHT sensor!"</span><span class="p">);</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">    </span><span class="k">return</span><span class="p">;</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="p">}</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">"Humidity: "</span><span class="p">);</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">humidity</span><span class="p">);</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">" %  |  "</span><span class="p">);</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">"Temperature: "</span><span class="p">);</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">temperature</span><span class="p">);</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">" °C"</span><span class="p">);</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29"></a>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="nf">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
 <h3 id="code-explanation">Code Explanation</h3>
+<p>Let’s break down the Arduino sketch <strong>line by line</strong> to clearly understand how the DHT22 works with the Arduino Uno.</p>
 <p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:"> Imports</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;DHT.h&gt;</span>
 </span></code></pre></div></td></tr></table></div>
 <ul>
-<li>Importing <code>Pin</code> class from machine module to control the GPIO pins.</li>
-<li><code>time</code> module for creating delay between <code>on</code> and <code>off</code> state.</li>
+<li><code>DHT.h</code>
+    This library provides all the functions needed to communicate with DHT sensors, such as reading temperature and humidity values.</li>
+<li>💡 These libraries hide the low-level DHT22 complexity and make sensor interface simple.</li>
 </ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:"> Accessing built-in led of Raspberry Pi Pico / Pico 2 board.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="c1"># Built-in LED is connected to GPIO 25</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:"> Define Sensor details</p>
+<div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="cp">#define DHTPIN 2        </span><span class="c1">// Data pin connected to Arduino Uno</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="cp">#define DHTTYPE DHT22  </span><span class="c1">// Change to DHT11 if using DHT11</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="n">DHT</span><span class="w"> </span><span class="nf">dht</span><span class="p">(</span><span class="n">DHTPIN</span><span class="p">,</span><span class="w"> </span><span class="n">DHTTYPE</span><span class="p">);</span>
 </span></code></pre></div></td></tr></table></div>
 <ul>
-<li>GPIO pin 25 is configured as <code>OUTPUT</code> pin (Line number 5) and assigned to a variable <code>led</code></li>
+<li>Sensor type connected is <code>DHT22</code></li>
+<li><code>D2</code> → connected to DHT22 Signal pin</li>
+<li>Create a DHT sensor object named <code>dht</code>, using the defined pin and sensor type. All sensor readings will be taken using this object.</li>
 </ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:"> Blinking LED</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
 <span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-3-10">10</a></span>
-<span class="normal"><a href="#__codelineno-3-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a>    <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a>    <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span>
+<span class="normal"><a href="#__codelineno-3-20">20</a></span>
+<span class="normal"><a href="#__codelineno-3-21">21</a></span>
+<span class="normal"><a href="#__codelineno-3-22">22</a></span>
+<span class="normal"><a href="#__codelineno-3-23">23</a></span>
+<span class="normal"><a href="#__codelineno-3-24">24</a></span>
+<span class="normal"><a href="#__codelineno-3-25">25</a></span>
+<span class="normal"><a href="#__codelineno-3-26">26</a></span>
+<span class="normal"><a href="#__codelineno-3-27">27</a></span>
+<span class="normal"><a href="#__codelineno-3-28">28</a></span>
+<span class="normal"><a href="#__codelineno-3-29">29</a></span>
+<span class="normal"><a href="#__codelineno-3-30">30</a></span>
+<span class="normal"><a href="#__codelineno-3-31">31</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="w">    </span><span class="n">dht</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="p">}</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12"></a>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">humidity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">readHumidity</span><span class="p">();</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">temperature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">readTemperature</span><span class="p">();</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16"></a>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isnan</span><span class="p">(</span><span class="n">humidity</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">isnan</span><span class="p">(</span><span class="n">temperature</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="w">        </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Failed to read from DHT sensor!"</span><span class="p">);</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19"></a><span class="w">        </span><span class="k">return</span><span class="p">;</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21"></a>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"Humidity: "</span><span class="p">);</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">humidity</span><span class="p">);</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">" %  |  "</span><span class="p">);</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25"></a>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"Temperature: "</span><span class="p">);</span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">temperature</span><span class="p">);</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28"></a><span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">" °C"</span><span class="p">);</span>
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29"></a>
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30"></a><span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
 <ul>
-<li>Continuous loop is achieved using <code>while True:</code></li>
-<li><code>led.on()</code> sets the value of GPIO 25 to <code>HIGH</code> or <code>1</code>, which in turn  turns ON the LED. (line number 8)</li>
-<li>Delay of <code>1</code> second is achieved through <code>time.sleep(1)</code> method. (line number 9 &amp; 11) </li>
-<li><code>led.off()</code> sets the value of GPIO 25 to <code>LOW</code> or <code>0</code>, which in turn  turns OFF the LED. (line number 10)</li>
+<li><code>dht.begin()</code> starts sensor communication.</li>
+<li><code>readHumidity()</code> and <code>readTemperature()</code> get real-time data.</li>
+<li>Data is displayed on the <strong>Serial Monitor</strong> every 2 seconds.</li>
 </ul>
 <div class="admonition tip">
-<p class="admonition-title">Try It</p>
-<ul>
-<li>Change the value in the sleep method and observe the change in the on and off time.<ul>
-<li><code>time.sleep(2)</code>, <code>time.sleep(4)</code> , etc</li>
-</ul>
-</li>
-<li>Use <code>time.sleep_ms()</code> method to set the values in terms of milli seconds.<ul>
-<li><code>time.sleep_ms(1000)</code> : 1000 ms or 1 s</li>
-<li><code>time.sleep_ms(500)</code>  : 500 ms or 0.5 s</li>
-</ul>
-</li>
-</ul>
+<p class="admonition-title">Common Issues &amp; Troubleshooting</p>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No readings</td>
+<td>Check DATA pin number</td>
+</tr>
+<tr>
+<td>NaN values</td>
+<td>Check sensor type</td>
+</tr>
+<tr>
+<td>Sensor not detected</td>
+<td>Ensure pull-up resistor</td>
+</tr>
+<tr>
+<td>Wrong values</td>
+<td>Use correct DHT type</td>
+</tr>
+</tbody>
+</table>
 </div>
 <hr>
 <h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"></path></svg></span> Simulation</h2>
@@ -1208,34 +1501,71 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16s7.2-16 16-16"></path></svg></span> Mobile : Use Landscape Mode and reload the page</li>
 </ul>
 </div>
-<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/438357372184564737" frameborder="2px" width="100%" height="700px"></iframe>
+<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/453010649391157249" frameborder="2px" width="100%" height="700px"></iframe>
 
-<h2 id="result">Result</h2>
-<p>Above code turns ON LED for 1 second and OFF for 1 second. Similar to a square wave of <code>0.5 Hz</code> output connected to an LED.</p>
+<!-- Advertisement -->
+<div style="
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  align-items:center;
+  padding:20px;
+  margin:24px 0;
+  border-radius:14px;
+  background:var(--md-default-bg-color);
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+">
+  <div style="font-size:36px;">🛠️</div>
+
+  <div style="flex:1 1 220px;">
+    <strong>Get the right hardware kit</strong><br>
+    Arduino boards, sensors, and maker essential Kits—perfectly matched for your learning.
+  </div>
+
+  <a href="https://www.skilldisk.com/category/arduino" target="_blank" style="
+       padding:12px 18px;
+       border-radius:10px;
+       background:var(--md-accent-fg-color);
+       color:#fff;
+       font-weight:600;
+       text-decoration:none;
+       text-align:center;
+       flex:1 1 160px;
+     ">
+    Explore Hardware →
+  </a>
+</div>
+
+<div class="grid cards">
+<ul>
+<li>
+<p><a href="https://www.skilldisk.com/product-page/uno-edge-spark-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_spark_ads.png"></a></p>
+</li>
+<li>
+<p><a href="https://www.skilldisk.com/product-page/uno-edge-explorer-kit" target="_blank"><img alt="Arduino Uno" src="/assets/ads/uno_explorer_ads.png"></a></p>
+</li>
+</ul>
+</div>
 <hr>
 <h2 id="extras"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2 0 .37-.03.73-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85-.32.63-.67 1.24-1.07 1.81-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56M23 18v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"></path></svg></span> Extras</h2>
 <h3 id="components-details">Components details</h3>
 <ul>
-<li>Raspberry Pi Pico / Pico 2 : <a href="../pico2-pico2-w-key-features-pin-config/" target="_blank">Pin Diagram</a></li>
-<li>Raspberry Pi Pico <a href="files/pico-datasheet.pdf" target="_blank">Data Sheet</a></li>
+<li>Arduino Uno <a href="../blink-an-led-on-arduino-uno/files/uno-datasheet.pdf" target="_blank">Data Sheet</a></li>
+<li>DHT 11 Sensor <a href="https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf" target="_blank">Data Sheet</a> </li>
 </ul>
 <h3 id="modules-libraries-used">Modules / Libraries Used</h3>
 <ul>
-<li>
-<p><em>machine</em></p>
-<ul>
-<li><code>machine</code> module contains specific attributes and methods related to hardware on a particular board. Here class <code>Pin</code> is imported to control the Input Output pins. </li>
-<li><a href="https://docs.micropython.org/en/latest/library/machine.html" target="_blank">More Details</a> </li>
+<li>DHT.h<ul>
+<li>Arduino library for DHT11, DHT22, etc Temp &amp; Humidity Sensors.</li>
+<li><a href="https://www.arduinolibraries.info/libraries/dht-sensor-library" target="_blank">More info</a> </li>
+<li><a href="https://github.com/adafruit/DHT-sensor-library" target="_blank">Github Source Code</a> </li>
 </ul>
 </li>
-<li>
-<p><em>time</em></p>
-<ul>
-<li><code>time</code> module provides functions related to date &amp; time, measuring time intervals and generating delays.</li>
-<li><a href="https://docs.micropython.org/en/latest/library/time.html" target="_blank">More Details</a> </li>
 </ul>
-</li>
-</ul></div>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>Interfacing a <strong>DHT11 or DHT22 sensor with Arduino Uno</strong> is one of the easiest ways to build a <strong>temperature and humidity monitoring system</strong>. With only one data wire, the sensor provides reliable environmental data that can be used in <strong>IoT dashboards, weather stations, greenhouses, and smart homes</strong>.</p>
+<p>Using <strong>Wokwi simulation</strong>, you can test and debug your project even without physical hardware, making this setup perfect for <strong>learning, teaching, and prototyping</strong>.</p></div>
 
 
 
