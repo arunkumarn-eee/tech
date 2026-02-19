@@ -52,6 +52,7 @@
     :material-sale: Check out [:simple-arduino: Nano Craft Spark Kit](https://www.skilldisk.com/product-page/nano-craft-spark-kit){target="_blank"} | [:simple-arduino: Nano Craft Explorer Kit](https://www.skilldisk.com/product-page/nano-craft-explorer-kit){target="_blank"} 
 
     ---
+    - Interfacing 128x64 Monochrome OLED (SSD1306) with Arduino Nano[:material-link-variant: link](./blogs/arduino-nano/interfacing-128x64-monochrome-oled-ssd1306-with-arduino-nano/index.md)
     - Interfacing NeoPixel RGB LEDs with Arduino Nano[:material-link-variant: link](./blogs/arduino-nano/interfacing-neopixel-rgb-led-with-arduino-nano/index.md)
     - Potentiometer with Arduino Nano – Analog Input Control [:material-link-variant: link](./blogs/arduino-nano/potentiometer-with-arduino-nano-analog-input-control-hardware-and-wokwi-simulation/index.md)
     - Learn DHT11 & DHT22 Interfacing with Arduino Nano [:material-link-variant: link](./blogs/arduino-nano/learn-dht11-and-dht22-interfacing-with-arduino-nano-step-by-step-guide/index.md)
@@ -72,6 +73,7 @@
     :material-sale: Check out [:simple-arduino: Uno Edge Spark Kit](https://www.skilldisk.com/product-page/uno-edge-spark-kit){target="_blank"} | [:simple-arduino: Uno Edge Explorer Kit](https://www.skilldisk.com/product-page/uno-edge-explorer-kit){target="_blank"} 
 
     ---
+    - Interfacing 128x64 Monochrome OLED (SSD1306) with Arduino Uno[:material-link-variant: link](./blogs/arduino-uno/interfacing-128x64-monochrome-oled-ssd1306-with-arduino-uno/index.md)
     - Interfacing NeoPixel RGB LEDs with Arduino Uno[:material-link-variant: link](./blogs/arduino-uno/interfacing-neopixel-rgb-led-with-arduino-uno/index.md)
     - Potentiometer with Arduino Uno – Analog Input Control [:material-link-variant: link](./blogs/arduino-uno/potentiometer-with-arduino-uno-analog-input-control-hardware-and-wokwi-simulation/index.md)
     - Learn DHT11 & DHT22 Interfacing with Arduino Uno [:material-link-variant: link](./blogs/arduino-uno/learn-dht11-and-dht22-interfacing-with-arduino-uno-step-by-step-guide/index.md)

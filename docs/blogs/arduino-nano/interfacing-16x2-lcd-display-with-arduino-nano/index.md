@@ -111,7 +111,7 @@ fig-Connection Diagram
 
 ## :open_file_folder: Code
 
-=== "main.py"
+=== "code.ino"
     ```arduino linenums="1"
 
     #include <LiquidCrystal.h>
