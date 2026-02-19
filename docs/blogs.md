@@ -28,6 +28,8 @@
     :material-sale: Check out [:simple-raspberrypi: Pico IoT Spark Kit](https://www.skilldisk.com/product-page/pico-iot-spark-kit){target="_blank"} | [:simple-raspberrypi: Pico IoT Explorer Kit](https://www.skilldisk.com/product-page/pico-iot-explorer-kit){target="_blank"} 
 
     ---
+    - Interfacing 128x64 Monochrome OLED (SSD1306) with Raspberry Pi Pico (MicroPython) [:material-link-variant: link](./blogs/raspberry-pi-pico/interfacing-128x64-monochrome-oled-ssd1306-with-raspberry-pi-pico/index.md)
+    - How to Use Arduino Framework on Raspberry Pi Pico with Arduino IDE (Step-by-Step Guide) [:material-link-variant: link](./blogs/raspberry-pi-pico/how-to-use-arduino-framework-on-raspberry-pi-pico-with-arduino-ide/index.md)
     - Beginner’s Guide to Programming NeoPixel RGB LEDs with Pico & MicroPython [:material-link-variant: link](./blogs/raspberry-pi-pico/beginner-guide-to-programming-neopixel-rgb-leds-with-pico-and-micropython/index.md)
     - Getting Started: Reading Analog Values from a Potentiometer with Raspberry Pi Pico & MicroPython[:material-link-variant: link](./blogs/raspberry-pi-pico/getting-started-reading-analog-values-from-a-potentiometer-with-raspberry-pi-pico-micropython/index.md)
     - Getting Started with DHT11/22 on Raspberry Pi Pico using MicroPython [:material-link-variant: link](./blogs/raspberry-pi-pico/getting-started-with-dht11-22-on-raspberry-pi-pico-using-micropython/index.md)
