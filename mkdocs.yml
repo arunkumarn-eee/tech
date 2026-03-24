@@ -9,6 +9,7 @@ nav:
       - Built-ins: python/builtin_methods/index.md
   - Blog:
       - Topics : blogs.md
+      - Technology: blogs/tech.md
       - Python: blogs/python.md
       - Raspberry Pi Pico: blogs/raspberry-pi-pico.md
       - Arduino Nano: blogs/arduino-nano.md
@@ -104,6 +105,14 @@ plugins:
         - name: arduino-uno
           dirs:
             - blogs/arduino-uno
+          template: blogoverride/blog-custom.html
+          size: 5
+          sort:
+            from: new
+            by: revision
+        - name: tech
+          dirs:
+            - blogs/tech
           template: blogoverride/blog-custom.html
           size: 5
           sort:
