@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     
-        <meta name="description" content="In this beginner-friendly tutorial, you’ll learn how to connect and program NeoPixel RGB LEDs using the Raspberry Pi Pico.">
+        <meta name="description" content="Learn how to set up Node-RED on a DigitalOcean Droplet using Nginx as a reverse proxy, PM2 for process management, and Certbot for SSL.">
     
     
         <meta name="author" content="Arun kumar N">
     
     
-        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/beginner-guide-to-programming-neopixel-rgb-leds-with-pico-and-micropython/">
+        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/tech/deploying-scalable-node-red-flows-in-the-cloud/">
     
     
     
@@ -21,17 +21,17 @@
 
     <meta property="og:type" content="website" />
     
-        <meta property="og:title" content="Beginner’s Guide to Programming NeoPixel RGB LEDs with Pico & MicroPython" />
+        <meta property="og:title" content="The Ultimate Guide to Deploying Scalable Node-RED in the Cloud" />
     
     
-        <meta property="og:description" content="In this beginner-friendly tutorial, you’ll learn how to connect and program NeoPixel RGB LEDs using the Raspberry Pi Pico." />
+        <meta property="og:description" content="Learn how to set up Node-RED on a DigitalOcean Droplet using Nginx as a reverse proxy, PM2 for process management, and Certbot for SSL." />
     
     
-        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/beginner-guide-to-programming-neopixel-rgb-leds-with-pico-and-micropython/">
+        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/tech/deploying-scalable-node-red-flows-in-the-cloud/">
     
     <meta property="og:site_name" content="Tech Aavishkarah" />
     
-        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/neopixel_interface.png" />
+        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/tech/nodered-cloud.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
     
@@ -39,21 +39,21 @@
 
     <meta name="twitter:card" content="summary" />
     
-        <meta name="twitter:description" content="In this beginner-friendly tutorial, you’ll learn how to connect and program NeoPixel RGB LEDs using the Raspberry Pi Pico." />
+        <meta name="twitter:description" content="Learn how to set up Node-RED on a DigitalOcean Droplet using Nginx as a reverse proxy, PM2 for process management, and Certbot for SSL." />
     
     
-        <meta name="twitter:title"  content="Beginner’s Guide to Programming NeoPixel RGB LEDs with Pico & MicroPython" />
+        <meta name="twitter:title"  content="The Ultimate Guide to Deploying Scalable Node-RED in the Cloud" />
     
     
     <meta name="twitter:site" content="@arunkumarn_eee" />
     
-        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/neopixel_interface.png" />
+        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/tech/nodered-cloud.png" />
     
     <meta name="twitter:creator" content="@arunkumarn_eee" />
 
     
       
-        <title>Beginner’s Guide to Programming NeoPixel RGB LEDs with Pico & MicroPython - Tech Aavishkarah</title>
+        <title>The Ultimate Guide to Deploying Scalable Node-RED in the Cloud - Tech Aavishkarah</title>
       
     
     
@@ -152,7 +152,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Beginner’s Guide to Programming NeoPixel RGB LEDs with Pico & MicroPython
+              The Ultimate Guide to Deploying Scalable Node-RED in the Cloud
             
           </span>
         </div>
@@ -554,7 +554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tech/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -600,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../raspberry-pi-pico/" class="md-nav__link">
         
   
   
@@ -885,35 +885,26 @@
         <li class="md-nav__item">
   <a href="#abstract" class="md-nav__link">
     <span class="md-ellipsis">
-      Abstract
+      🧾 Abstract
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pre-request" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Pre-Request
+      📚 Prerequisites
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hardware-required" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware Required
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Hardware Required">
+    <nav class="md-nav" aria-label="📚 Prerequisites">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#connection-table" class="md-nav__link">
+  <a href="#supported-os" class="md-nav__link">
     <span class="md-ellipsis">
-      Connection Table
+      ✅ Supported OS
     </span>
   </a>
   
@@ -925,19 +916,91 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#code" class="md-nav__link">
+  <a href="#exclusive-offer-get-200-free-credit" class="md-nav__link">
     <span class="md-ellipsis">
-      Code
+      💰 Exclusive Offer: Get $200 Free Credit
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Code">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗️ Architecture Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-setup-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Step-by-Step Setup Instructions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Step-by-Step Setup Instructions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#code-explanation" class="md-nav__link">
+  <a href="#step-1-create-a-digitalocean-droplet" class="md-nav__link">
     <span class="md-ellipsis">
-      Code Explanation
+      ✅ Step 1: Create a DigitalOcean Droplet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-login-to-the-droplet" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Step 2: Login to the Droplet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-install-nodejs-and-node-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Step 3: Install Node.js and Node-RED
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-setup-pm2-process-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Step 4: Setup PM2 Process Manager
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-configure-nginx-reverse-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Step 5: Configure Nginx Reverse Proxy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dns-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 DNS Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-ssl-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Install SSL Certificate
     </span>
   </a>
   
@@ -949,44 +1012,38 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#simulation" class="md-nav__link">
+  <a href="#security-hardening" class="md-nav__link">
     <span class="md-ellipsis">
-      Simulation
+      🛑 Security Hardening
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#extras" class="md-nav__link">
+  <a href="#advanced-tips" class="md-nav__link">
     <span class="md-ellipsis">
-      Extras
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Extras">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#components-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Components details
+      🚀 Advanced Tips
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#modules-libraries-used" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
     <span class="md-ellipsis">
-      Modules / Libraries Used
+      📌 References
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏁 Conclusion
+    </span>
+  </a>
   
 </li>
       
@@ -1008,26 +1065,22 @@
 
 
 
-  <h1>Beginner’s Guide to Programming NeoPixel RGB LEDs with Pico & MicroPython</h1>
+  <h1>The Ultimate Guide to Deploying Scalable Node-RED in the Cloud</h1>
 
 <div><div class="md-typeset">
     <div class="blogging-tags-grid">
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico" class="blogging-tag"><code>#raspberry pi pico</code></a>
+        <a href="https://tech.arunkumarn.in/tags#node-red" class="blogging-tag"><code>#node-red</code></a>
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202" class="blogging-tag"><code>#raspberry pi pico 2</code></a>
+        <a href="https://tech.arunkumarn.in/tags#iot" class="blogging-tag"><code>#iot</code></a>
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%20w" class="blogging-tag"><code>#raspberry pi pico w</code></a>
+        <a href="https://tech.arunkumarn.in/tags#cloud" class="blogging-tag"><code>#cloud</code></a>
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202W" class="blogging-tag"><code>#raspberry pi pico 2W</code></a>
+        <a href="https://tech.arunkumarn.in/tags#Ngnix" class="blogging-tag"><code>#Ngnix</code></a>
 
-        <a href="https://tech.arunkumarn.in/tags#micro%20python" class="blogging-tag"><code>#micro python</code></a>
+        <a href="https://tech.arunkumarn.in/tags#DigitalOcean" class="blogging-tag"><code>#DigitalOcean</code></a>
 
-        <a href="https://tech.arunkumarn.in/tags#guide" class="blogging-tag"><code>#guide</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#NeoPixel" class="blogging-tag"><code>#NeoPixel</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#WS2812B" class="blogging-tag"><code>#WS2812B</code></a>
+        <a href="https://tech.arunkumarn.in/tags#Automation" class="blogging-tag"><code>#Automation</code></a>
 
     </div>
 
@@ -1054,282 +1107,275 @@
         border-radius: 5px;
     }
 </style>
-<p><img alt="Neopixel LED" src="../../../assets/blogs/raspberrypipico/neopixel_interface.png"></p>
+<p><img alt="Node-Red in Cloud" src="../../../assets/blogs/tech/nodered-cloud.png"></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
 <ul>
-<li><a href="#abstract">Abstract</a></li>
-<li><a href="#pre-request">Pre-Request</a></li>
-<li><a href="#hardware-required">Hardware Required</a><ul>
-<li><a href="#connection-table">Connection Table</a></li>
+<li><a href="#abstract">🧾 Abstract</a></li>
+<li><a href="#prerequisites">📚 Prerequisites</a><ul>
+<li><a href="#supported-os">✅ Supported OS</a></li>
 </ul>
 </li>
-<li><a href="#code">Code</a><ul>
-<li><a href="#code-explanation">Code Explanation</a></li>
+<li><a href="#exclusive-offer-get-200-free-credit">💰 Exclusive Offer: Get $200 Free Credit</a></li>
+<li><a href="#architecture-overview">🏗️ Architecture Overview</a></li>
+<li><a href="#step-by-step-setup-instructions">🛠️ Step-by-Step Setup Instructions</a><ul>
+<li><a href="#step-1-create-a-digitalocean-droplet">✅ Step 1: Create a DigitalOcean Droplet</a></li>
+<li><a href="#step-2-login-to-the-droplet">✅ Step 2: Login to the Droplet</a></li>
+<li><a href="#step-3-install-nodejs-and-node-red">✅ Step 3: Install Node.js and Node-RED</a></li>
+<li><a href="#step-4-setup-pm2-process-manager">✅ Step 4: Setup PM2 Process Manager</a></li>
+<li><a href="#step-5-configure-nginx-reverse-proxy">✅ Step 5: Configure Nginx Reverse Proxy</a></li>
+<li><a href="#dns-configuration">🌐 DNS Configuration</a></li>
+<li><a href="#install-ssl-certificate">🔒 Install SSL Certificate</a></li>
 </ul>
 </li>
-<li><a href="#simulation">Simulation</a></li>
-<li><a href="#extras">Extras</a><ul>
-<li><a href="#components-details">Components details</a></li>
-<li><a href="#modules-libraries-used">Modules / Libraries Used</a></li>
-</ul>
-</li>
+<li><a href="#security-hardening">🛑 Security Hardening</a></li>
+<li><a href="#advanced-tips">🚀 Advanced Tips</a></li>
+<li><a href="#references">📌 References</a></li>
+<li><a href="#conclusion">🏁 Conclusion</a></li>
 </ul>
 </div>
 </details>
-<h2 id="abstract">Abstract</h2>
-<p>In this beginner-friendly tutorial, you’ll learn how to connect and program NeoPixel RGB LEDs using the Raspberry Pi Pico. With the help of MicroPython and Wokwi simulation, we’ll walk through step-by-step code examples to control colors, patterns, and simple animations. By the end, you’ll be ready to add vibrant lighting effects to your own projects with ease.</p>
-<p>In this article, a comprehensive step-by-step guide to interface Analog data (Potentiometer) with Raspberry Pi Pico board using MicroPython. Raspberry Pi Pico has 4 different variants (Pico, Pico 2, Pico W, Pico 2W) supporting micro-python. This articles lays the foundation for more advanced embedded system and IoT projects.</p>
-<h2 id="pre-request"><img alt="🧭" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9ed.svg" title=":compass:"> Pre-Request</h2>
-<ul>
-<li>OS : Windows / Linux / Mac / Chrome</li>
-<li>Thonny IDE.</li>
-<li>MicroPython firmware in Raspberry Pi Pico / Pico 2 / Pico W / Pico 2W. <ul>
-<li>For step by step procedure <a href="../installing-micropython/" target="_blank">click here</a> . </li>
-</ul>
-</li>
-</ul>
-<h2 id="hardware-required">Hardware Required</h2>
-<ul>
-<li>Raspberry Pi Pico / Pico 2 / Pico W / Pico 2W. </li>
-<li>NeoPixel / WS2812B.</li>
-<li>BreadBoard.</li>
-<li>Micro USB Cable.</li>
-<li>Connecting wires.</li>
-<li>5V DC power supply (optional)</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Components</th>
-<th>Purchase Link</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Raspberry Pi Pico</td>
-<td><a href="https://amzn.to/3JNpv7v">link</a></td>
-</tr>
-<tr>
-<td>Raspberry Pi Pico 2</td>
-<td><a href="#">link</a></td>
-</tr>
-<tr>
-<td>Raspberry Pi Pico W</td>
-<td><a href="https://amzn.to/3KeWamg">link</a></td>
-</tr>
-<tr>
-<td>Raspberry Pi Pico 2W</td>
-<td><a href="#">link</a></td>
-</tr>
-<tr>
-<td>NeoPixel</td>
-<td><a href="#">16 LED</a> : <a href="#">8 LED</a></td>
-</tr>
-<tr>
-<td>BreadBoard</td>
-<td><a href="https://amzn.to/4pgNX1c">large</a> : <a href="https://amzn.to/47SMzvB">small</a></td>
-</tr>
-<tr>
-<td>Connecting Wires</td>
-<td><a href="https://amzn.to/4pepr0H">link</a></td>
-</tr>
-<tr>
-<td>Micro USB Cable</td>
-<td><a href="https://amzn.to/4gfMgNa">link</a></td>
-</tr>
-</tbody>
-</table>
-<div class="admonition tip">
-<p class="admonition-title">Don't own a hardware <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f622.svg" title=":cry:"></p>
-<p>No worries,</p>
-<p>Still you can learn using simulation.
-check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:">.</p>
-</div>
-<h3 id="connection-table">Connection Table</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">NeoPixel</th>
-<th style="text-align: center;">GPIO</th>
-<th style="text-align: left;">Remarks</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">GND</td>
-<td style="text-align: center;">GND</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: center;">Vcc</td>
-<td style="text-align: center;">+5 V</td>
-<td style="text-align: left;">+5V of Board or External 5V DC Supply</td>
-</tr>
-<tr>
-<td style="text-align: center;">Din</td>
-<td style="text-align: center;">21</td>
-<td style="text-align: left;">Any GPIO pin can be used.</td>
-</tr>
-<tr>
-<td style="text-align: center;">Dout</td>
-<td style="text-align: center;">--</td>
-<td style="text-align: left;">No Connection</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<ul>
-<li>While using External 5 V supply, make sure ground pin of External Supply and Pico board is connected. </li>
-</ul>
-</div>
-<figure>
-<p><img alt="Circuit Diagram" src="images/neopixel_circuit.png"></p>
-<figcaption>
-<p>fig-Connection Diagram</p>
-</figcaption>
-</figure>
-<h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4c2.svg" title=":open_file_folder:"> Code</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">main.py</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span>
-<span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span>
-<span class="normal"><a href="#__codelineno-0-24">24</a></span>
-<span class="normal"><a href="#__codelineno-0-25">25</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">neopixel</span><span class="w"> </span><span class="kn">import</span> <span class="n">NeoPixel</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="n">pin</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">21</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>   <span class="c1"># set GPIO 21 to output to drive NeoPixels</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="n">np</span> <span class="o">=</span> <span class="n">NeoPixel</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>   <span class="c1"># create NeoPixel driver on GPIO 21 for 16 pixels</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="n">colors</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span> <span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">169</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)]</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="n">colors</span><span class="p">:</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">16</span><span class="p">):</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>        <span class="n">np</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">color</span> 
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>        <span class="n">np</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>        <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="n">colors</span><span class="p">:</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a>        <span class="n">np</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">color</span> 
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a>        <span class="n">np</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a>        <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span></code></pre></div></td></tr></table></div>
-</div>
-</div>
-</div>
-<h3 id="code-explanation">Code Explanation</h3>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:"> Imports</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">neopixel</span><span class="w"> </span><span class="kn">import</span> <span class="n">NeoPixel</span>
-</span></code></pre></div></td></tr></table></div>
-<ul>
-<li><code>time</code> module for creating delay.</li>
-<li><code>neopixel</code> module for interacting with WS2812 / NeoPixel LED.</li>
-</ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:"> Initialize NeoPixel LED.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-5">5</a></span>
-<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="n">pin</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">21</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>   <span class="c1"># set GPIO 21 to output to drive NeoPixels</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="n">np</span> <span class="o">=</span> <span class="n">NeoPixel</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>   <span class="c1"># create NeoPixel driver on GPIO 21 for 16 pixels</span>
-</span></code></pre></div></td></tr></table></div>
-<ul>
-<li>GPIO <code>21</code> is connected to <code>Din</code> of NeoPixel LED.</li>
-<li><code>16</code> NeoPixel LED's are used in the strip (<code>np = NeoPixel(pin, 16)</code>)</li>
-</ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:"> Initializing list of Color values.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="n">colors</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span> <span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">169</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)]</span>
-</span></code></pre></div></td></tr></table></div>
-<ul>
-<li>Color values are configured in RGB mode</li>
-<li>Each tuple represents a RGB color code<ul>
-<li>(R, G, B)</li>
-<li>(255, 0, 0) --&gt; Red 255, Green 0, Blue 0</li>
-</ul>
-</li>
-<li>Each color value range from 0 to 255</li>
-</ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f449.svg" title=":point_right:"> Setting the color.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-12">12</a></span>
-<span class="normal"><a href="#__codelineno-4-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="n">np</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">color</span> 
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="n">np</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
-</span></code></pre></div></td></tr></table></div>
-<ul>
-<li><code>np.fill(&lt;color_r_g_b&gt;)</code> : fills the color to all the led.</li>
-<li><code>np[i]</code> : Set the color to the <code>i</code> i<sup>th</sup> LED</li>
-<li><code>np.write()</code> : Use <code>write</code> method to observe the effect on the LED.<ul>
-<li>Only after execution of the <code>write</code> method, you can observe the changes in the LED color.</li>
-</ul>
-</li>
-<li><code>for</code> loop in the code is used to loop through the color on individual led in clockwise and anti-clockwise direction.</li>
-</ul>
+<h2 id="abstract">🧾 Abstract</h2>
+<p>Node-RED is a powerful tool for wiring together hardware devices, APIs, and online services. While running it locally on a Raspberry Pi is great for prototyping, deploying it to the cloud ensures 24/7 availability and scalability. In this guide, you will learn how to deploy a production-ready <strong>Node-RED</strong> instance on a <strong>DigitalOcean Droplet</strong>, secured with <strong>Nginx</strong> as a reverse proxy, managed by <strong>PM2</strong>, and mapped to your custom domain <code>nodered.arunkumarn.in</code> using <strong>Cloudflare</strong>.</p>
 <hr>
-<h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"></path></svg></span> Simulation</h2>
-<div class="admonition danger">
-<p class="admonition-title">Not able to view the simulation</p>
+<h2 id="prerequisites">📚 Prerequisites</h2>
+<p>Before starting, you should have:</p>
 <ul>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M128 32c-35.3 0-64 28.7-64 64v256h64V96h384v256h64V96c0-35.3-28.7-64-64-64zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480h486.4c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2z"></path></svg></span> Desktop or Laptop : Reload this page ( <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span> )</li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16s7.2-16 16-16"></path></svg></span> Mobile : Use Landscape Mode and reload the page</li>
+<li>Basic knowledge of the <strong>Linux Command Line</strong>.</li>
+<li>SSH access to a remote server.</li>
 </ul>
+<h3 id="supported-os">✅ Supported OS</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Platform</th>
+<th style="text-align: left;">Supported</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Ubuntu 22.04 / 24.04 LTS</td>
+<td style="text-align: left;">✅ Yes (Recommended)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Debian 11/12</td>
+<td style="text-align: left;">✅ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">CentOS/RHEL</td>
+<td style="text-align: left;">✅ Yes</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="exclusive-offer-get-200-free-credit">💰 Exclusive Offer: Get $200 Free Credit</h2>
+<p>Ready to deploy? Use the link below to create your DigitalOcean account and receive <strong>$200 in free credit</strong> to experiment with Node-RED and other cloud services.</p>
+<div style="
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  align-items:center;
+  padding:20px;
+  margin:24px 0;
+  border-radius:14px;
+  background:var(--md-default-bg-color);
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+">
+  <div style="font-size:36px;">💰</div>
+
+  <div style="flex:1 1 220px;">
+    <strong>Limited Time Offer</strong><br>
+    Enrol using the link to get $200 DigitalOcean credit
+  </div>
+
+  <a href="https://m.do.co/c/263255aa0152" target="_blank" style="
+       padding:12px 18px;
+       border-radius:10px;
+       background:var(--md-accent-fg-color);
+       color:#fff;
+       font-weight:600;
+       text-decoration:none;
+       text-align:center;
+       flex:1 1 160px;
+     ">
+    Click here for $200 Credit →
+  </a>
 </div>
-<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/438371841319801857" frameborder="2px" width="100%" height="700px"></iframe>
 
 <hr>
-<h2 id="extras"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2 0 .37-.03.73-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85-.32.63-.67 1.24-1.07 1.81-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56M23 18v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"></path></svg></span> Extras</h2>
-<h3 id="components-details">Components details</h3>
+<h2 id="architecture-overview">🏗️ Architecture Overview</h2>
+<p>For a scalable and secure deployment, we use the following stack:</p>
+<ol>
+<li><strong>DigitalOcean Droplet:</strong> The virtual private server (VPS) hosting our environment.</li>
+<li><strong>Node-RED:</strong> The core low-code engine.</li>
+<li><strong>PM2:</strong> A process manager to ensure Node-RED restarts automatically if it crashes or the server reboots.</li>
+<li><strong>Nginx:</strong> Acts as a reverse proxy to handle SSL and forward traffic to Node-RED.</li>
+<li><strong>Cloudflare:</strong> Manages DNS records and provides an extra layer of security.</li>
+</ol>
+<hr>
+<h2 id="step-by-step-setup-instructions">🛠️ Step-by-Step Setup Instructions</h2>
+<h3 id="step-1-create-a-digitalocean-droplet">✅ Step 1: Create a DigitalOcean Droplet</h3>
 <ul>
-<li>NeoPixel LED / WS2812B : <a href="#">Data Sheet</a></li>
-<li>Raspberry Pi Pico / Pico 2 : <a href="../pico2-pico2-w-key-features-pin-config/" target="_blank">Pin Diagram</a></li>
-<li>Raspberry Pi Pico : <a href="https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf" target="_blank">Data Sheet</a></li>
-<li>Raspberry Pi Pico 2 : <a href="https://datasheets.raspberrypi.com/pico/pico-2-datasheet.pdf" target="_blank">Data Sheet</a></li>
-<li>Raspberry Pi Pico W : <a href="https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf" target="_blank">Data Sheet</a></li>
-<li>Raspberry Pi Pico 2 W : <a href="https://datasheets.raspberrypi.com/picow/pico-2-w-datasheet.pdf" target="_blank">Data Sheet</a></li>
+<li>Sign in to your DigitalOcean account.</li>
+<li>Click Create (top right) and select Droplets.
+<img alt="DigitalOcean" src="images/digital_ocean.png"></li>
+<li>Choose Region: Select the data center closest to you (e.g., Bangalore, NYC, or London).
+<img alt="DigitalOcean" src="images/location.png"></li>
+<li>Choose Image: Select Ubuntu 24.04 LTS.</li>
+<li>Choose Size: Select the Basic plan. For Node-RED, the $4/month or $6/month (Regular SSD) is more than enough.
+<img alt="DigitalOcean" src="images/os_cost.png"></li>
+<li>Authentication: Choose SSH Keys (Recommended for security) or Password.</li>
+<li>Finalize and click Create Droplet.
+<img alt="DigitalOcean" src="images/ssh_create.png"></li>
 </ul>
-<h3 id="modules-libraries-used">Modules / Libraries Used</h3>
+<p>Once created, copy the <abbr title="Internet Protocol">IP</abbr> Address of your new Droplet.
+<img alt="DigitalOcean" src="images/ip_address.png"></p>
+<h3 id="step-2-login-to-the-droplet">✅ Step 2: Login to the Droplet</h3>
 <ul>
-<li><em>machine</em><ul>
-<li><code>machine</code> module contains specific attributes and methods related to hardware on a particular board. Here class <code>ADC</code> is imported to configure the Analog pins. </li>
-<li><a href="https://docs.micropython.org/en/latest/library/machine.html" target="_blank">More Details</a> </li>
+<li>SSH into your server:</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ssh<span class="w"> </span>root@your_droplet_ip
+</span></code></pre></div>
+<ul>
+<li>Update the system:</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
+</span></code></pre></div>
+<h3 id="step-3-install-nodejs-and-node-red">✅ Step 3: Install Node.js and Node-RED</h3>
+<ul>
+<li>Node-RED requires Node.js. Install the LTS version:</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Download and install nvm:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>curl<span class="w"> </span>-o-<span class="w"> </span>https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># restarting the shell</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="se">\.</span><span class="w"> </span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.nvm/nvm.sh"</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Download and install Node.js:</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>nvm<span class="w"> </span>install<span class="w"> </span><span class="m">24</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1"># Verify the Node.js version:</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>node<span class="w"> </span>-v<span class="w"> </span><span class="c1"># Should print "v24.14.0".</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1"># Verify npm version:</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>npm<span class="w"> </span>-v<span class="w"> </span><span class="c1"># Should print "11.9.0".</span>
+</span></code></pre></div>
+<ul>
+<li>Now, install Node-RED globally:</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>--unsafe-perm<span class="w"> </span>node-red
+</span></code></pre></div>
+<h3 id="step-4-setup-pm2-process-manager">✅ Step 4: Setup PM2 Process Manager</h3>
+<p>To keep Node-RED running in the background:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>pm2
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>pm2<span class="w"> </span>start<span class="w"> </span>/usr/bin/node-red<span class="w"> </span>--<span class="w"> </span>-v
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>pm2<span class="w"> </span>save
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>pm2<span class="w"> </span>startup
+</span></code></pre></div>
+<h3 id="step-5-configure-nginx-reverse-proxy">✅ Step 5: Configure Nginx Reverse Proxy</h3>
+<ul>
+<li>Install Nginx:</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>nginx<span class="w"> </span>-y
+</span></code></pre></div>
+<ul>
+<li>Create a configuration file for your domain:</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/nginx/sites-available/nodered.arunkumarn.in
+</span></code></pre></div>
+<ul>
+<li>Paste the following configuration:</li>
+</ul>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">nodered.arunkumarn.in</span><span class="p">;</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">        </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://localhost:1880</span><span class="p">;</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">        </span><span class="kn">proxy_http_version</span><span class="w"> </span><span class="mi">1</span><span class="s">.1</span><span class="p">;</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Upgrade</span><span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Connection</span><span class="w"> </span><span class="s">"upgrade"</span><span class="p">;</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Host</span><span class="w"> </span><span class="nv">$host</span><span class="p">;</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Real-IP</span><span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="p">}</span>
+</span></code></pre></div>
+<ul>
+<li>Enable the site and restart Nginx:</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/etc/nginx/sites-available/nodered.arunkumarn.in<span class="w"> </span>/etc/nginx/sites-enabled/
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>nginx<span class="w"> </span>-t
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>nginx
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>replace the domain name <code>nodered.arunkumarn.in</code> with your custom domain name.</p>
+</div>
+<hr>
+<h3 id="dns-configuration">🌐 DNS Configuration</h3>
+<ol>
+<li>Login to your DNS server <ul>
+<li>Here <strong>Cloudflare</strong> is used.</li>
 </ul>
 </li>
-<li><em>time</em><ul>
-<li><code>time</code> module provides functions related to date &amp; time, measuring time intervals and generating delays.</li>
-<li><a href="https://docs.micropython.org/en/latest/library/time.html" target="_blank">More Details</a> </li>
-</ul>
+<li>Select your domain <code>arunkumarn.in</code>.</li>
+<li>Go to <strong>DNS Settings</strong> &gt; <strong>Add Record</strong>.</li>
+<li>Type: <code>A</code>, Name: <code>nodered</code>, Content: <code>Your_Droplet_IP</code>.</li>
+<li>Ensure the <strong>Proxy Status</strong> is set to "Proxied" (Orange cloud) for automatic SSL handling.</li>
+</ol>
+<p><img alt="dns config" src="images/cloud_flare.png"></p>
+<hr>
+<h3 id="install-ssl-certificate">🔒 Install SSL Certificate</h3>
+<p>We will use <strong>Certbot</strong> to get a free SSL certificate from Let's Encrypt.</p>
+<ol>
+<li>
+<p><strong>Install Certbot:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>certbot<span class="w"> </span>python3-certbot-nginx<span class="w"> </span>-y
+</span></code></pre></div>
 </li>
-</ul></div>
+<li>
+<p><strong>Run Certbot:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>certbot<span class="w"> </span>--nginx<span class="w"> </span>-d<span class="w"> </span>nodered.arunkumarn.in
+</span></code></pre></div>
+<p><em>Follow the prompts: Enter your email and agree to the terms. Certbot will automatically update your Nginx file to use SSL.</em></p>
+</li>
+<li>
+<p><strong>Verify Auto-Renewal:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>certbot<span class="w"> </span>renew<span class="w"> </span>--dry-run
+</span></code></pre></div>
+</li>
+</ol>
+<hr>
+<h2 id="security-hardening">🛑 Security Hardening</h2>
+<p>By default, Node-RED is open. You <strong>must</strong> enable authentication:</p>
+<ol>
+<li>Generate a password hash:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>node-red-admin<span class="w"> </span>hash-pw
+</span></code></pre></div></li>
+<li>Edit the settings file:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>nano<span class="w"> </span>~/.node-red/settings.js
+</span></code></pre></div></li>
+<li>Find the <code>adminAuth</code> section, uncomment it, and replace the password hash with yours.</li>
+<li>Restart Node-RED: <code>pm2 restart node-red</code>.</li>
+</ol>
+<hr>
+<h2 id="advanced-tips">🚀 Advanced Tips</h2>
+<ul>
+<li><strong>Continuous Backups:</strong> Use GitHub to version control your <code>flows.json</code>.</li>
+<li><strong>Environment Variables:</strong> Store sensitive API keys in a <code>.env</code> file instead of hardcoding them in nodes.</li>
+<li><strong>Monitoring:</strong> Use the <code>pm2 monit</code> command to watch CPU and memory usage in real-time.</li>
+</ul>
+<hr>
+<h2 id="references">📌 References</h2>
+<ul>
+<li><a href="https://nodered.org/docs/">Node-RED Official Documentation</a></li>
+<li><a href="https://docs.digitalocean.com/products/droplets/">DigitalOcean Droplet Documentation</a></li>
+<li><a href="https://pm2.keymetrics.io/docs/usage/quick-start/">PM2 Quick Start</a></li>
+</ul>
+<hr>
+<h2 id="conclusion">🏁 Conclusion</h2>
+<p>You now have a production-grade Node-RED instance running at your custom domain🎉. With PM2 managing the process and Nginx handling the traffic, your IoT automation flows are ready to scale with high availability. Happy wiring!</p></div>
 
 
 

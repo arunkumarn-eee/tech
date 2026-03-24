@@ -37,6 +37,10 @@
           <lastmod></lastmod>   
     </url>
     <url>
+         <loc>https://tech.arunkumarn.in/blogs/tech/</loc>
+          <lastmod></lastmod>   
+    </url>
+    <url>
          <loc>https://tech.arunkumarn.in/blogs/arduino-nano/blink-an-led-on-arduino-nano/</loc>
           <lastmod>2025-11-25</lastmod>   
     </url>
@@ -179,6 +183,10 @@
     <url>
          <loc>https://tech.arunkumarn.in/blogs/raspberry-pi-pico/pico2-pico2-w-key-features-pin-config/</loc>
           <lastmod>2025-06-13</lastmod>   
+    </url>
+    <url>
+         <loc>https://tech.arunkumarn.in/blogs/tech/deploying-scalable-node-red-flows-in-the-cloud/</loc>
+          <lastmod>2026-03-25</lastmod>   
     </url>
     <url>
          <loc>https://tech.arunkumarn.in/projects/iot-based-humidity-and-temperature-monitoring-using-thingspeak-platform/</loc>
