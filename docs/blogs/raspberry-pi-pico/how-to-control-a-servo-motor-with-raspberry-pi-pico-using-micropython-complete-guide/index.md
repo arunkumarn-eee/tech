@@ -47,6 +47,9 @@ Servo motors are essential components in robotics, automation, and DIY electroni
 
 ## Hardware Required
 
+<!-- Advertisement -->
+--8<-- "includes/pico-disk-link-cta.md"
+
 - Raspberry Pi Pico / Pico 2 / Pico W / Pico 2W. 
 - Servo Motor (SG90 or MG90).
 - BreadBoard.
@@ -235,6 +238,12 @@ Continuously sweep through the set angle as per the list. ([0, 90, 180, 90, 0])
 
 <iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/457997236483934209" frameborder="2px" width="100%" height="700px"></iframe>
 
+---
+
+
+<!-- Advertisement -->
+--8<-- "includes/pico-disk-link-cta.md"
+--8<-- "includes/pico-iot-cta.md"
 
 ---
 
