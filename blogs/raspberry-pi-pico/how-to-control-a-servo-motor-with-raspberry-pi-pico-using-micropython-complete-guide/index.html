@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     
-        <meta name="description" content="Beginner-friendly guide to LED blinking with Raspberry Pi Pico, MicroPython, and online simulations.">
+        <meta name="description" content="Learn to control an SG90 servo motor with Raspberry Pi Pico using MicroPython. Step-by-step guide with wiring, PWM code, and troubleshooting tips.">
     
     
         <meta name="author" content="Arun kumar N">
     
     
-        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/blink-an-led-on-raspberry-pi-pico-using-micropython/">
+        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/how-to-control-a-servo-motor-with-raspberry-pi-pico-using-micropython-complete-guide/">
     
     
     
@@ -21,17 +21,17 @@
 
     <meta property="og:type" content="website" />
     
-        <meta property="og:title" content="Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide" />
+        <meta property="og:title" content="How to Control a Servo Motor with Raspberry Pi Pico using MicroPython: Complete Guide" />
     
     
-        <meta property="og:description" content="Beginner-friendly guide to LED blinking with Raspberry Pi Pico, MicroPython, and online simulations." />
+        <meta property="og:description" content="Learn to control an SG90 servo motor with Raspberry Pi Pico using MicroPython. Step-by-step guide with wiring, PWM code, and troubleshooting tips." />
     
     
-        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/blink-an-led-on-raspberry-pi-pico-using-micropython/">
+        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/how-to-control-a-servo-motor-with-raspberry-pi-pico-using-micropython-complete-guide/">
     
     <meta property="og:site_name" content="Tech Aavishkarah" />
     
-        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/pico-led-blinking.png" />
+        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/servo_motor.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
     
@@ -39,21 +39,21 @@
 
     <meta name="twitter:card" content="summary" />
     
-        <meta name="twitter:description" content="Beginner-friendly guide to LED blinking with Raspberry Pi Pico, MicroPython, and online simulations." />
+        <meta name="twitter:description" content="Learn to control an SG90 servo motor with Raspberry Pi Pico using MicroPython. Step-by-step guide with wiring, PWM code, and troubleshooting tips." />
     
     
-        <meta name="twitter:title"  content="Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide" />
+        <meta name="twitter:title"  content="How to Control a Servo Motor with Raspberry Pi Pico using MicroPython: Complete Guide" />
     
     
     <meta name="twitter:site" content="@arunkumarn_eee" />
     
-        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/pico-led-blinking.png" />
+        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/servo_motor.png" />
     
     <meta name="twitter:creator" content="@arunkumarn_eee" />
 
     
       
-        <title>Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide - Tech Aavishkarah</title>
+        <title>How to Control a Servo Motor with Raspberry Pi Pico using MicroPython: Complete Guide - Tech Aavishkarah</title>
       
     
     
@@ -151,7 +151,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide
+              How to Control a Servo Motor with Raspberry Pi Pico using MicroPython: Complete Guide
             
           </span>
         </div>
@@ -1013,14 +1013,53 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Hardware Required">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-servo-motors-pwm-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Understanding Servo Motors &amp; PWM Control
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚡ Understanding Servo Motors &amp; PWM Control">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#connection-table" class="md-nav__link">
+  <a href="#how-pwm-controls-servo-position" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Connection Table
+        🔹 How PWM Controls Servo Position
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connection-wiring-guide-raspberry-pi-pico-to-sg90-servo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧷 Connection / Wiring Guide (Raspberry Pi Pico to SG90 Servo)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧷 Connection / Wiring Guide (Raspberry Pi Pico to SG90 Servo)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pin-mapping-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔥 Pin Mapping Table
       
     </span>
   </a>
@@ -1072,10 +1111,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#result" class="md-nav__link">
+  <a href="#troubleshooting-common-issues-fixes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Result
+        🛑 Troubleshooting (Common Issues &amp; Fixes)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏁 Conclusion
       
     </span>
   </a>
@@ -1099,17 +1149,6 @@
     <span class="md-ellipsis">
       
         Components details
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modules-libraries-used" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Modules / Libraries Used
       
     </span>
   </a>
@@ -1140,7 +1179,7 @@
 
 
 
-  <h1>Blink an LED on Raspberry Pi Pico Using MicroPython (Hardware & Simulation) : Step-by-Step Guide</h1>
+  <h1>How to Control a Servo Motor with Raspberry Pi Pico using MicroPython: Complete Guide</h1>
 
 <div><div class="md-typeset">
     <div class="blogging-tags-grid">
@@ -1149,9 +1188,17 @@
 
         <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202" class="blogging-tag"><code>#raspberry pi pico 2</code></a>
 
+        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%20w" class="blogging-tag"><code>#raspberry pi pico w</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202W" class="blogging-tag"><code>#raspberry pi pico 2W</code></a>
+
         <a href="https://tech.arunkumarn.in/tags#micro%20python" class="blogging-tag"><code>#micro python</code></a>
 
         <a href="https://tech.arunkumarn.in/tags#guide" class="blogging-tag"><code>#guide</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#servo%20motor" class="blogging-tag"><code>#servo motor</code></a>
+
+        <a href="https://tech.arunkumarn.in/tags#sg90" class="blogging-tag"><code>#sg90</code></a>
 
     </div>
 
@@ -1178,15 +1225,20 @@
         border-radius: 5px;
     }
 </style>
-<p><img alt="blink led" src="../../../assets/blogs/raspberrypipico/pico-led-blinking.png"></p>
+<p><img alt="Neopixel LED" src="../../../assets/blogs/raspberrypipico/servo_motor.png"></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
 <ul>
 <li><a href="#abstract">Abstract</a></li>
 <li><a href="#pre-request">Pre-Request</a></li>
-<li><a href="#hardware-required">Hardware Required</a><ul>
-<li><a href="#connection-table">Connection Table</a></li>
+<li><a href="#hardware-required">Hardware Required</a></li>
+<li><a href="#understanding-servo-motors-pwm-control">⚡ Understanding Servo Motors &amp; PWM Control</a><ul>
+<li><a href="#how-pwm-controls-servo-position">🔹 How PWM Controls Servo Position</a></li>
+</ul>
+</li>
+<li><a href="#connection-wiring-guide-raspberry-pi-pico-to-sg90-servo">🧷 Connection / Wiring Guide (Raspberry Pi Pico to SG90 Servo)</a><ul>
+<li><a href="#pin-mapping-table">🔥 Pin Mapping Table</a></li>
 </ul>
 </li>
 <li><a href="#code">Code</a><ul>
@@ -1194,37 +1246,34 @@
 </ul>
 </li>
 <li><a href="#simulation">Simulation</a></li>
-<li><a href="#result">Result</a></li>
+<li><a href="#troubleshooting-common-issues-fixes">🛑 Troubleshooting (Common Issues &amp; Fixes)</a></li>
+<li><a href="#conclusion">🏁 Conclusion</a></li>
 <li><a href="#extras">Extras</a><ul>
 <li><a href="#components-details">Components details</a></li>
-<li><a href="#modules-libraries-used">Modules / Libraries Used</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </details>
 <h2 id="abstract">Abstract</h2>
-<p>Raspberry Pi Pico is a modern development board with Cortex-M0+, Dual core microcontroller supporting micro-python. Know the <a href="../pico2-pico2-w-key-features-pin-config/" target="_blank">key features</a> and <a href="../pico-vs-pico2/" target="_blank">comparison with Pico 2 version</a>. </p>
-<p>In this article we go through.</p>
-<ul>
-<li>Accessing the built-in led of the Raspberry Pi Pico board.</li>
-<li>Turning <code>on</code> and <code>off</code> built-in led using micro python.</li>
-<li>Simulation using wokwi.</li>
-<li>Hardware demo.</li>
-</ul>
+<p>Servo motors are essential components in robotics, automation, and DIY electronics projects due to their precise angular control and compact size. In this tutorial, you will learn how to interface a standard SG90 servo motor with a Raspberry Pi Pico microcontroller using MicroPython. By the end, you will be able to control servo position from 0° to 180°, understand PWM signal fundamentals, and integrate servo control into your own embedded projects.</p>
 <h2 id="pre-request"><img alt="🧭" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f9ed.svg" title=":compass:"> Pre-Request</h2>
 <ul>
 <li>OS : Windows / Linux / Mac / Chrome</li>
 <li>Thonny IDE.</li>
-<li>MicroPython firmware in Raspberry Pi Pico / Pico 2. <ul>
-<li>For step by step procedure Click <a href="../installing-micropython/" target="_blank">here</a> . </li>
+<li>MicroPython firmware in Raspberry Pi Pico / Pico 2 / Pico W / Pico 2W. <ul>
+<li>For step by step procedure <a href="../installing-micropython/" target="_blank">click here</a> . </li>
 </ul>
 </li>
 </ul>
 <h2 id="hardware-required">Hardware Required</h2>
 <ul>
-<li>Raspberry Pi Pico / Pico 2. </li>
+<li>Raspberry Pi Pico / Pico 2 / Pico W / Pico 2W. </li>
+<li>Servo Motor (SG90 or MG90).</li>
+<li>BreadBoard.</li>
 <li>Micro USB Cable.</li>
+<li>Connecting wires.</li>
+<li>5V DC power supply (optional)</li>
 </ul>
 <table>
 <thead>
@@ -1236,15 +1285,35 @@
 <tbody>
 <tr>
 <td>Raspberry Pi Pico</td>
-<td><a href="https://amzn.to/3JNpv7v">Purchase Link</a></td>
+<td><a href="https://amzn.to/3JNpv7v">link</a></td>
 </tr>
 <tr>
 <td>Raspberry Pi Pico 2</td>
-<td><a href="#">link</a></td>
+<td><a href="https://www.skilldisk.com/product-page/pico-iot-spark-kit">link</a></td>
+</tr>
+<tr>
+<td>Raspberry Pi Pico W</td>
+<td><a href="https://amzn.to/3KeWamg">link</a></td>
+</tr>
+<tr>
+<td>Raspberry Pi Pico 2W</td>
+<td><a href="https://www.skilldisk.com/product-page/pico-iot-spark-kit">link</a></td>
+</tr>
+<tr>
+<td>Servo Motor</td>
+<td><a href="https://www.skilldisk.com/product-page/pico-iot-spark-kit">SG90</a> : <a href="https://www.skilldisk.com/product-page/pico-iot-spark-kit">MG90</a></td>
+</tr>
+<tr>
+<td>BreadBoard</td>
+<td><a href="https://amzn.to/4pgNX1c">large</a> : <a href="https://amzn.to/47SMzvB">small</a></td>
+</tr>
+<tr>
+<td>Connecting Wires</td>
+<td><a href="https://amzn.to/4pepr0H">link</a></td>
 </tr>
 <tr>
 <td>Micro USB Cable</td>
-<td><a href="https://amzn.to/4gfMgNa">Purchase Link</a></td>
+<td><a href="https://amzn.to/4gfMgNa">link</a></td>
 </tr>
 </tbody>
 </table>
@@ -1254,26 +1323,95 @@
 <p>Still you can learn using simulation.
 check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f603.svg" title=":smiley:">.</p>
 </div>
-<h3 id="connection-table">Connection Table</h3>
-<p>Built-in led of Raspberry Pi Pico is internally connected to GPIO 25.</p>
+<hr>
+<h2 id="understanding-servo-motors-pwm-control">⚡ Understanding Servo Motors &amp; PWM Control</h2>
+<p>The <strong>SG90</strong> is a popular hobby servo motor controlled via <strong>Pulse Width Modulation (PWM)</strong>. Unlike standard DC motors, servos rotate to precise angular positions (typically 0°–180°) based on the width of an incoming PWM pulse.</p>
+<h3 id="how-pwm-controls-servo-position">🔹 How PWM Controls Servo Position</h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">Particular</th>
-<th style="text-align: center;">GPIO</th>
-<th style="text-align: left;">Remarks</th>
+<th>Pulse Width</th>
+<th>Servo Angle</th>
+<th>Duty Cycle (50Hz)</th>
+<th>RP2040 <code>duty_u16</code> Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Built-in LED</td>
-<td style="text-align: center;">25</td>
-<td style="text-align: left;">Internally Connected</td>
+<td>~0.5 ms</td>
+<td>0°</td>
+<td>~2.5%</td>
+<td>~1638</td>
+</tr>
+<tr>
+<td>~1.45 ms</td>
+<td>90°</td>
+<td>~7.25%</td>
+<td>~4751</td>
+</tr>
+<tr>
+<td>~2.4 ms</td>
+<td>180°</td>
+<td>~12%</td>
+<td>~7864</td>
 </tr>
 </tbody>
 </table>
-<p><img alt="Built-in LED" src="images/Built_in_LED_pico.png"></p>
+<div class="admonition note">
+<p class="admonition-title">PWM Frequency</p>
+<p>Servo motors require a <strong>50Hz PWM signal</strong> (20ms period). The Raspberry Pi Pico's hardware PWM peripheral can generate this signal reliably on any GPIO pin.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Power Considerations</p>
+<p>Small servos like the SG90 can be powered from the Pico's <code>5V</code> (VBUS) pin. However, for multiple servos or high-torque models, use an <strong>external 5V supply</strong> and connect its GND to the Pico's GND to avoid brownouts or regulator damage.</p>
+</div>
+<hr>
+<h2 id="connection-wiring-guide-raspberry-pi-pico-to-sg90-servo">🧷 Connection / Wiring Guide (Raspberry Pi Pico to SG90 Servo)</h2>
+<h3 id="pin-mapping-table">🔥 Pin Mapping Table</h3>
+<table>
+<thead>
+<tr>
+<th>Servo Wire</th>
+<th>Color</th>
+<th>Raspberry Pi Pico Pin</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GND</strong></td>
+<td>Brown</td>
+<td><code>GND</code></td>
+<td>Common ground</td>
+</tr>
+<tr>
+<td><strong>VCC</strong></td>
+<td>Red</td>
+<td><code>5V</code> (VBUS, Pin 40) <em>or</em> External <code>5V</code> Power Supply</td>
+<td>Power supply</td>
+</tr>
+<tr>
+<td><strong>Signal</strong></td>
+<td>Orange/Yellow</td>
+<td><code>GP16</code> <em>or any PWM-capable GPIO</em></td>
+<td>PWM control signal</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">PWM-Capable Pins</p>
+<p><strong>All GPIO pins</strong> on the Raspberry Pi Pico support hardware PWM output. You can use any pin — just update the pin number in your code accordingly.</p>
+</div>
+<figure>
+<p><img alt="Circuit Diagram" src="images/servo_motor_circuit.png"></p>
+<figcaption>
+<p>fig-Connection Diagram</p>
+</figcaption>
+</figure>
 <h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4c2.svg" title=":open_file_folder:"> Code</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">main.py</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -1284,67 +1422,128 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
 <span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span>
+<span class="normal"><a href="#__codelineno-0-25">25</a></span>
+<span class="normal"><a href="#__codelineno-0-26">26</a></span>
+<span class="normal"><a href="#__codelineno-0-27">27</a></span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span>
+<span class="normal"><a href="#__codelineno-0-29">29</a></span>
+<span class="normal"><a href="#__codelineno-0-30">30</a></span>
+<span class="normal"><a href="#__codelineno-0-31">31</a></span>
+<span class="normal"><a href="#__codelineno-0-32">32</a></span>
+<span class="normal"><a href="#__codelineno-0-33">33</a></span>
+<span class="normal"><a href="#__codelineno-0-34">34</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">PWM</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">time</span><span class="w"> </span><span class="kn">import</span> <span class="n">sleep</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Built-in LED is connected to GPIO 25</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>    <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>    <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Initialize PWM on GPIO 16</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="n">servo_pin</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="n">servo</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">servo_pin</span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="c1">########## NOTE #################</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="c1"># Pulse range varies with manufacturer.</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="c1"># Check data sheet for the same</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="c1"># PWM Configuration for SG90 Servo</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="n">FREQUENCY</span> <span class="o">=</span> <span class="mi">50</span>  <span class="c1"># 50Hz standard for servos</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="n">MIN_DUTY</span> <span class="o">=</span> <span class="mi">1638</span>  <span class="c1"># ~0.5ms pulse → 0°</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="n">MAX_DUTY</span> <span class="o">=</span> <span class="mi">7864</span>  <span class="c1"># ~2.4ms pulse → 180°</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="n">servo</span><span class="o">.</span><span class="n">freq</span><span class="p">(</span><span class="n">FREQUENCY</span><span class="p">)</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="k">def</span><span class="w"> </span><span class="nf">servo_angle</span><span class="p">(</span><span class="n">angle</span><span class="p">):</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">    </span><span class="sd">"""Map angle (0-180) to duty cycle (1638-7864)"""</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a>    <span class="n">angle</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="mi">180</span><span class="p">,</span> <span class="n">angle</span><span class="p">))</span>  <span class="c1"># Clamp to valid range</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a>    <span class="n">duty</span> <span class="o">=</span> <span class="n">MIN_DUTY</span> <span class="o">+</span> <span class="p">(</span><span class="n">angle</span> <span class="o">/</span> <span class="mi">180</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">MAX_DUTY</span> <span class="o">-</span> <span class="n">MIN_DUTY</span><span class="p">)</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a>    <span class="n">servo</span><span class="o">.</span><span class="n">duty_u16</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">duty</span><span class="p">))</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27"></a>        <span class="c1"># Sweep: 0° → 90° → 180° → 90° → 0°</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a>        <span class="k">for</span> <span class="n">angle</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">]:</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29"></a>            <span class="n">servo_angle</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a>            <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31"></a>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Stopping servo..."</span><span class="p">)</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34"></a>    <span class="n">servo</span><span class="o">.</span><span class="n">deinit</span><span class="p">()</span>  <span class="c1"># Disable PWM output</span>
 </span></code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
 <h3 id="code-explanation">Code Explanation</h3>
 <p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Imports</p>
 <div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">PWM</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">time</span><span class="w"> </span><span class="kn">import</span> <span class="n">sleep</span>
 </span></code></pre></div></td></tr></table></div>
 <ul>
-<li>Importing <code>Pin</code> class from machine module to control the GPIO pins.</li>
-<li><code>time</code> module for creating delay between <code>on</code> and <code>off</code> state.</li>
+<li><code>time</code> module for creating delay.</li>
 </ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Accessing built-in led of Raspberry Pi Pico / Pico 2 board.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="c1"># Built-in LED is connected to GPIO 25</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Initialize Servo Motor.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="n">servo_pin</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span> <span class="c1"># Any gpio pin with PWM feature can be used.</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="n">servo</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">servo_pin</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <ul>
-<li>GPIO pin 25 is configured as <code>OUTPUT</code> pin (Line number 5) and assigned to a variable <code>led</code></li>
+<li>GPIO <code>16</code> is connected to <code>Signal</code> of Servo Motor.</li>
 </ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Blinking LED</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-3-10">10</a></span>
-<span class="normal"><a href="#__codelineno-3-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a>    <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a>    <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> PWM Configuration.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="c1"># PWM Configuration for SG90 Servo</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="n">FREQUENCY</span> <span class="o">=</span> <span class="mi">50</span>  <span class="c1"># 50Hz standard for servos</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="n">MIN_DUTY</span> <span class="o">=</span> <span class="mi">1638</span>  <span class="c1"># ~0.5ms pulse → 0°</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="n">MAX_DUTY</span> <span class="o">=</span> <span class="mi">7864</span>  <span class="c1"># ~2.4ms pulse → 180°</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17"></a>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="n">servo</span><span class="o">.</span><span class="n">freq</span><span class="p">(</span><span class="n">FREQUENCY</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <ul>
-<li>Continuous loop is achieved using <code>while True:</code></li>
-<li><code>led.on()</code> sets the value of GPIO 25 to <code>HIGH</code> or <code>1</code>, which in turn  turns ON the LED. (line number 8)</li>
-<li>Delay of <code>1</code> second is achieved through <code>time.sleep(1)</code> method. (line number 9 &amp; 11) </li>
-<li><code>led.off()</code> sets the value of GPIO 25 to <code>LOW</code> or <code>0</code>, which in turn  turns OFF the LED. (line number 10)</li>
+<li>Sets <code>50Hz</code> frequency (20ms period), standard for hobby servos</li>
+<li>Pico has 16-bit PWM resolution (0–65535)</li>
+<li>Values 1638 and 7864 correspond to ~0.5ms and ~2.4ms pulse widths respectively.</li>
 </ul>
-<div class="admonition tip">
-<p class="admonition-title">Try It</p>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Setting the color.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-19">19</a></span>
+<span class="normal"><a href="#__codelineno-4-20">20</a></span>
+<span class="normal"><a href="#__codelineno-4-21">21</a></span>
+<span class="normal"><a href="#__codelineno-4-22">22</a></span>
+<span class="normal"><a href="#__codelineno-4-23">23</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19"></a><span class="k">def</span><span class="w"> </span><span class="nf">servo_angle</span><span class="p">(</span><span class="n">angle</span><span class="p">):</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20"></a><span class="w">    </span><span class="sd">"""Map angle (0-180) to duty cycle (1638-7864)"""</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21"></a>    <span class="n">angle</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="mi">180</span><span class="p">,</span> <span class="n">angle</span><span class="p">))</span>  <span class="c1"># Clamp to valid range</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22"></a>    <span class="n">duty</span> <span class="o">=</span> <span class="n">MIN_DUTY</span> <span class="o">+</span> <span class="p">(</span><span class="n">angle</span> <span class="o">/</span> <span class="mi">180</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">MAX_DUTY</span> <span class="o">-</span> <span class="n">MIN_DUTY</span><span class="p">)</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23"></a>    <span class="n">servo</span><span class="o">.</span><span class="n">duty_u16</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">duty</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
 <ul>
-<li>Change the value in the sleep method and observe the change in the on and off time.<ul>
-<li><code>time.sleep(2)</code>, <code>time.sleep(4)</code> , etc</li>
+<li>Function to calculate duty_u16 value for the specified angle between 0 to 180 deg</li>
 </ul>
-</li>
-<li>Use <code>time.sleep_ms()</code> method to set the values in terms of milli seconds.<ul>
-<li><code>time.sleep_ms(1000)</code> : 1000 ms or 1 s</li>
-<li><code>time.sleep_ms(500)</code>  : 500 ms or 0.5 s</li>
-</ul>
-</li>
-</ul>
-</div>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Sweep through the angle.</p>
+<p></p><div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-26">26</a></span>
+<span class="normal"><a href="#__codelineno-5-27">27</a></span>
+<span class="normal"><a href="#__codelineno-5-28">28</a></span>
+<span class="normal"><a href="#__codelineno-5-29">29</a></span>
+<span class="normal"><a href="#__codelineno-5-30">30</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27"></a>        <span class="c1"># Sweep: 0° → 90° → 180° → 90° → 0°</span>
+</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28"></a>        <span class="k">for</span> <span class="n">angle</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">]:</span>
+</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29"></a>            <span class="n">servo_angle</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30"></a>            <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+Continuously sweep through the set angle as per the list. ([0, 90, 180, 90, 0])
 <hr>
 <h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"></path></svg></span> Simulation</h2>
 <div class="admonition danger">
@@ -1354,33 +1553,65 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm72 416h80c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24"></path></svg></span> Mobile : Use Landscape Mode and reload the page</li>
 </ul>
 </div>
-<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/438357372184564737" frameborder="2px" width="100%" height="700px"></iframe>
+<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/457997236483934209" frameborder="2px" width="100%" height="700px"></iframe>
 
-<h2 id="result">Result</h2>
-<p>Above code turns ON LED for 1 second and OFF for 1 second. Similar to a square wave of <code>0.5 Hz</code> output connected to an LED.</p>
+<hr>
+<h2 id="troubleshooting-common-issues-fixes">🛑 Troubleshooting (Common Issues &amp; Fixes)</h2>
+<p>❌ <strong>Issue 1: Servo doesn't move or jitters</strong></p>
+<p>✅ <strong>Causes:</strong>
+- Incorrect PWM frequency (must be 50Hz)
+- Weak power supply causing voltage drops
+- Signal wire connected to non-PWM pin (rare on Pico)</p>
+<p>✅ <strong>Fix:</strong>
+</p><div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">servo</span><span class="o">.</span><span class="n">freq</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># Ensure 50Hz</span>
+</span></code></pre></div>
+- Use a <strong>stable 5V supply</strong> for servos drawing &gt;200mA.
+- Add a <strong>100µF capacitor</strong> between servo VCC and GND near the motor.
+<hr>
+<p>❌ <strong>Issue 2: Servo buzzes at 0° or 180°</strong></p>
+<p>✅ <strong>Cause:</strong>
+- Pulse width values outside servo's mechanical range.</p>
+<p>✅ <strong>Fix:</strong>
+</p><div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Adjust these values incrementally</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">MIN_DUTY</span> <span class="o">=</span> <span class="mi">1600</span>  <span class="c1"># Was 1638</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">MAX_DUTY</span> <span class="o">=</span> <span class="mi">7900</span>  <span class="c1"># Was 7864</span>
+</span></code></pre></div>
+- Test with smaller angle ranges first (e.g., 10°–170°).
+<hr>
+<p>❌ <strong>Issue 3: Raspberry Pi Pico resets during servo motion</strong></p>
+<p>✅ <strong>Cause:</strong>
+- Servo current spike exceeds Pico's regulator capacity (~300mA).</p>
+<p>✅ <strong>Fix:</strong>
+- Power servo from <strong>external 5V supply</strong>.
+- Connect external supply GND to Pico GND (common ground).
+- Keep signal wire connection intact.</p>
+<hr>
+<h2 id="conclusion">🏁 Conclusion</h2>
+<p>You have successfully interfaced an <strong>SG90 servo motor</strong> with a <strong>Raspberry Pi Pico</strong> using <strong>MicroPython</strong> 🎉. You now understand:</p>
+<ul>
+<li>How PWM signals control servo angular position</li>
+<li>How to calculate duty cycle values for precise motion</li>
+<li>Best practices for power management and troubleshooting</li>
+</ul>
+<p>With this foundation, you can build interactive projects like:
+- 🤖 Robotic arm controllers
+- 🚗 RC car steering systems
+- 📡 Pan-tilt camera mounts
+- 🎮 Game controller feedback mechanisms</p>
+<div class="admonition tip">
+<p class="admonition-title">Next Steps</p>
+<p>Combine servo control with sensors (ultrasonic, potentiometer) or communication modules (WiFi, Bluetooth) to create smart, responsive embedded systems. Explore the <a href="https://docs.micropython.org/en/latest/rp2/quickref.html">Raspberry Pi Pico MicroPython documentation</a> for advanced PWM features.</p>
+</div>
 <hr>
 <h2 id="extras"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2 0 .37-.03.73-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85-.32.63-.67 1.24-1.07 1.81-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56M23 18v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"></path></svg></span> Extras</h2>
 <h3 id="components-details">Components details</h3>
 <ul>
+<li>Servo Motor : <a href="#">Data Sheet</a></li>
 <li>Raspberry Pi Pico / Pico 2 : <a href="../pico2-pico2-w-key-features-pin-config/" target="_blank">Pin Diagram</a></li>
-<li>Raspberry Pi Pico <a href="files/pico-datasheet.pdf" target="_blank">Data Sheet</a></li>
-</ul>
-<h3 id="modules-libraries-used">Modules / Libraries Used</h3>
-<ul>
-<li>
-<p><em>machine</em></p>
-<ul>
-<li><code>machine</code> module contains specific attributes and methods related to hardware on a particular board. Here class <code>Pin</code> is imported to control the Input Output pins. </li>
-<li><a href="https://docs.micropython.org/en/latest/library/machine.html" target="_blank">More Details</a> </li>
-</ul>
-</li>
-<li>
-<p><em>time</em></p>
-<ul>
-<li><code>time</code> module provides functions related to date &amp; time, measuring time intervals and generating delays.</li>
-<li><a href="https://docs.micropython.org/en/latest/library/time.html" target="_blank">More Details</a> </li>
-</ul>
-</li>
+<li>Raspberry Pi Pico : <a href="https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf" target="_blank">Data Sheet</a></li>
+<li>Raspberry Pi Pico 2 : <a href="https://datasheets.raspberrypi.com/pico/pico-2-datasheet.pdf" target="_blank">Data Sheet</a></li>
+<li>Raspberry Pi Pico W : <a href="https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf" target="_blank">Data Sheet</a></li>
+<li>Raspberry Pi Pico 2 W : <a href="https://datasheets.raspberrypi.com/picow/pico-2-w-datasheet.pdf" target="_blank">Data Sheet</a></li>
 </ul></div>
 
 
