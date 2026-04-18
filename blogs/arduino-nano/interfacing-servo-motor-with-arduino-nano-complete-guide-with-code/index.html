@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     
-        <meta name="description" content="Learn to control an SG90 servo motor with Raspberry Pi Pico using MicroPython. Step-by-step guide with wiring, PWM code, and troubleshooting tips.">
+        <meta name="description" content="Learn to control SG90 servo motors using Arduino Nano and the Servo.h library. Includes wiring diagram, PWM explanation, ready-to-upload Arduino code, troubleshooting, and project ideas for robotics beginners.">
     
     
         <meta name="author" content="Arun kumar N">
     
     
-        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/how-to-control-a-servo-motor-with-raspberry-pi-pico-using-micropython-complete-guide/">
+        <link rel="canonical" href="https://tech.arunkumarn.in/blogs/arduino-nano/interfacing-servo-motor-with-arduino-nano-complete-guide-with-code/">
     
     
     
@@ -21,17 +21,17 @@
 
     <meta property="og:type" content="website" />
     
-        <meta property="og:title" content="How to Control a Servo Motor with Raspberry Pi Pico using MicroPython: Complete Guide" />
+        <meta property="og:title" content="Interfacing Servo Motor with Arduino Nano – Complete Guide with Code" />
     
     
-        <meta property="og:description" content="Learn to control an SG90 servo motor with Raspberry Pi Pico using MicroPython. Step-by-step guide with wiring, PWM code, and troubleshooting tips." />
+        <meta property="og:description" content="Learn to control SG90 servo motors using Arduino Nano and the Servo.h library. Includes wiring diagram, PWM explanation, ready-to-upload Arduino code, troubleshooting, and project ideas for robotics beginners." />
     
     
-        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/how-to-control-a-servo-motor-with-raspberry-pi-pico-using-micropython-complete-guide/">
+        <meta property="og:url" content="https://tech.arunkumarn.in/blogs/arduino-nano/interfacing-servo-motor-with-arduino-nano-complete-guide-with-code/">
     
     <meta property="og:site_name" content="Tech Aavishkarah" />
     
-        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/servo_motor.png" />
+        <meta property="og:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-nano/servo_motor.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
     
@@ -39,21 +39,21 @@
 
     <meta name="twitter:card" content="summary" />
     
-        <meta name="twitter:description" content="Learn to control an SG90 servo motor with Raspberry Pi Pico using MicroPython. Step-by-step guide with wiring, PWM code, and troubleshooting tips." />
+        <meta name="twitter:description" content="Learn to control SG90 servo motors using Arduino Nano and the Servo.h library. Includes wiring diagram, PWM explanation, ready-to-upload Arduino code, troubleshooting, and project ideas for robotics beginners." />
     
     
-        <meta name="twitter:title"  content="How to Control a Servo Motor with Raspberry Pi Pico using MicroPython: Complete Guide" />
+        <meta name="twitter:title"  content="Interfacing Servo Motor with Arduino Nano – Complete Guide with Code" />
     
     
     <meta name="twitter:site" content="@arunkumarn_eee" />
     
-        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/raspberrypipico/servo_motor.png" />
+        <meta name="twitter:image" content="https://tech.arunkumarn.in/assets/blogs/arduino-nano/servo_motor.png" />
     
     <meta name="twitter:creator" content="@arunkumarn_eee" />
 
     
       
-        <title>How to Control a Servo Motor with Raspberry Pi Pico using MicroPython: Complete Guide - Tech Aavishkarah</title>
+        <title>Interfacing Servo Motor with Arduino Nano – Complete Guide with Code - Tech Aavishkarah</title>
       
     
     
@@ -151,7 +151,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to Control a Servo Motor with Raspberry Pi Pico using MicroPython: Complete Guide
+              Interfacing Servo Motor with Arduino Nano – Complete Guide with Code
             
           </span>
         </div>
@@ -647,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../raspberry-pi-pico/" class="md-nav__link">
         
   
   
@@ -675,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../arduino-nano/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -1019,47 +1019,30 @@
   <a href="#understanding-servo-motors-pwm-control" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚡ Understanding Servo Motors &amp; PWM Control
+        ⚡ Understanding Servo Motors (PWM Control)
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="⚡ Understanding Servo Motors &amp; PWM Control">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-pwm-controls-servo-position" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔹 How PWM Controls Servo Position
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#connection-wiring-guide-raspberry-pi-pico-to-sg90-servo" class="md-nav__link">
+  <a href="#connection-wiring-guide-arduino-nano-to-servo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧷 Connection / Wiring Guide (Raspberry Pi Pico to SG90 Servo)
+        🧷 Connection / Wiring Guide (Arduino Nano to Servo)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧷 Connection / Wiring Guide (Raspberry Pi Pico to SG90 Servo)">
+    <nav class="md-nav" aria-label="🧷 Connection / Wiring Guide (Arduino Nano to Servo)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pin-mapping-table" class="md-nav__link">
+  <a href="#arduino-nano-to-servo-pin-mapping" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔥 Pin Mapping Table
+        🔥 Arduino Nano to Servo Pin Mapping
       
     </span>
   </a>
@@ -1080,22 +1063,16 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Code">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#code-explanation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Code Explanation
+        🧠 Code Explanation
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1115,17 +1092,6 @@
     <span class="md-ellipsis">
       
         🛑 Troubleshooting (Common Issues &amp; Fixes)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏁 Conclusion
       
     </span>
   </a>
@@ -1160,6 +1126,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#project-extensions-next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏗️ Project Extensions / Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1179,22 +1167,18 @@
 
 
 
-  <h1>How to Control a Servo Motor with Raspberry Pi Pico using MicroPython: Complete Guide</h1>
+  <h1>Interfacing Servo Motor with Arduino Nano – Complete Guide with Code</h1>
 
 <div><div class="md-typeset">
     <div class="blogging-tags-grid">
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico" class="blogging-tag"><code>#raspberry pi pico</code></a>
+        <a href="https://tech.arunkumarn.in/tags#arduino%20nano" class="blogging-tag"><code>#arduino nano</code></a>
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202" class="blogging-tag"><code>#raspberry pi pico 2</code></a>
+        <a href="https://tech.arunkumarn.in/tags#arduino" class="blogging-tag"><code>#arduino</code></a>
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%20w" class="blogging-tag"><code>#raspberry pi pico w</code></a>
+        <a href="https://tech.arunkumarn.in/tags#cpp" class="blogging-tag"><code>#cpp</code></a>
 
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202W" class="blogging-tag"><code>#raspberry pi pico 2W</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#micro%20python" class="blogging-tag"><code>#micro python</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#guide" class="blogging-tag"><code>#guide</code></a>
+        <a href="https://tech.arunkumarn.in/tags#c" class="blogging-tag"><code>#c</code></a>
 
         <a href="https://tech.arunkumarn.in/tags#servo%20motor" class="blogging-tag"><code>#servo motor</code></a>
 
@@ -1225,7 +1209,7 @@
         border-radius: 5px;
     }
 </style>
-<p><img alt="Neopixel LED" src="../../../assets/blogs/raspberrypipico/servo_motor.png"></p>
+<p><img alt="Servo motor interface" src="../../../assets/blogs/arduino-nano/servo_motor.png"></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
@@ -1233,38 +1217,30 @@
 <li><a href="#abstract">Abstract</a></li>
 <li><a href="#pre-request">Pre-Request</a></li>
 <li><a href="#hardware-required">Hardware Required</a></li>
-<li><a href="#understanding-servo-motors-pwm-control">⚡ Understanding Servo Motors &amp; PWM Control</a><ul>
-<li><a href="#how-pwm-controls-servo-position">🔹 How PWM Controls Servo Position</a></li>
+<li><a href="#understanding-servo-motors-pwm-control">⚡ Understanding Servo Motors (PWM Control)</a></li>
+<li><a href="#connection-wiring-guide-arduino-nano-to-servo">🧷 Connection / Wiring Guide (Arduino Nano to Servo)</a><ul>
+<li><a href="#arduino-nano-to-servo-pin-mapping">🔥 Arduino Nano to Servo Pin Mapping</a></li>
 </ul>
 </li>
-<li><a href="#connection-wiring-guide-raspberry-pi-pico-to-sg90-servo">🧷 Connection / Wiring Guide (Raspberry Pi Pico to SG90 Servo)</a><ul>
-<li><a href="#pin-mapping-table">🔥 Pin Mapping Table</a></li>
-</ul>
-</li>
-<li><a href="#code">Code</a><ul>
-<li><a href="#code-explanation">Code Explanation</a></li>
-</ul>
-</li>
+<li><a href="#code">Code</a></li>
+<li><a href="#code-explanation">🧠 Code Explanation</a></li>
 <li><a href="#simulation">Simulation</a></li>
 <li><a href="#troubleshooting-common-issues-fixes">🛑 Troubleshooting (Common Issues &amp; Fixes)</a></li>
-<li><a href="#conclusion">🏁 Conclusion</a></li>
 <li><a href="#extras">Extras</a><ul>
 <li><a href="#components-details">Components details</a></li>
 </ul>
 </li>
+<li><a href="#project-extensions-next-steps">🏗️ Project Extensions / Next Steps</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
 </ul>
 </div>
 </details>
 <h2 id="abstract">Abstract</h2>
-<p>Servo motors are essential components in robotics, automation, and DIY electronics projects due to their precise angular control and compact size. In this tutorial, you will learn how to interface a standard SG90 servo motor with a Raspberry Pi Pico microcontroller using MicroPython. By the end, you will be able to control servo position from 0° to 180°, understand PWM signal fundamentals, and integrate servo control into your own embedded projects.</p>
+<p>Servo motors are precise, compact actuators widely used in robotics, automation, and DIY electronics projects. In this tutorial, you will learn how to interface a standard SG90/MG996R servo motor with an Arduino Nano using the Arduino IDE and the built-in <code>Servo.h</code> library. By the end, you will be able to control servo angle programmatically, create smooth motion sequences, and integrate servos into your own embedded projects.</p>
 <h2 id="pre-request"><img alt="🧭" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f9ed.svg" title=":compass:"> Pre-Request</h2>
 <ul>
 <li>OS : Windows / Linux / Mac / Chrome</li>
-<li>Thonny IDE.</li>
-<li>MicroPython firmware in Raspberry Pi Pico / Pico 2 / Pico W / Pico 2W. <ul>
-<li>For step by step procedure <a href="../installing-micropython/" target="_blank">click here</a> . </li>
-</ul>
-</li>
+<li>Arduino IDE </li>
 </ul>
 <h2 id="hardware-required">Hardware Required</h2>
 <!-- Advertisement -->
@@ -1283,10 +1259,10 @@
 
   <div style="flex:1 1 220px;">
     <strong>Get the right hardware kit</strong><br>
-    Raspberry Pi Pico, Arduino, sensors, and IoT maker essential Kits—perfectly matched for your learning.
+    Arduino boards, sensors, and maker essential Kits—perfectly matched for your learning.
   </div>
 
-  <a href="https://www.skilldisk.com/category/pico-disk" target="_blank" style="
+  <a href="https://www.skilldisk.com/category/arduino" target="_blank" style="
        padding:12px 18px;
        border-radius:10px;
        background:var(--md-accent-fg-color);
@@ -1301,12 +1277,12 @@
 </div>
 
 <ul>
-<li>Raspberry Pi Pico / Pico 2 / Pico W / Pico 2W. </li>
-<li>Servo Motor (SG90 or MG90).</li>
+<li>Arduino Nano. </li>
+<li>Servo Motor (SG90)</li>
 <li>BreadBoard.</li>
-<li>Micro USB Cable.</li>
+<li>Mini USB Cable.</li>
 <li>Connecting wires.</li>
-<li>5V DC power supply (optional)</li>
+<li>5V DC power supply (Optional)</li>
 </ul>
 <table>
 <thead>
@@ -1317,24 +1293,16 @@
 </thead>
 <tbody>
 <tr>
-<td>Raspberry Pi Pico</td>
-<td><a href="https://amzn.to/3JNpv7v">link</a></td>
-</tr>
-<tr>
-<td>Raspberry Pi Pico 2</td>
+<td>Arduino Nano</td>
 <td><a href="https://www.skilldisk.com/product-page/pico-iot-spark-kit">link</a></td>
 </tr>
 <tr>
-<td>Raspberry Pi Pico W</td>
-<td><a href="https://amzn.to/3KeWamg">link</a></td>
-</tr>
-<tr>
-<td>Raspberry Pi Pico 2W</td>
+<td>Servo Motor (SG90)</td>
 <td><a href="https://www.skilldisk.com/product-page/pico-iot-spark-kit">link</a></td>
 </tr>
 <tr>
-<td>Servo Motor</td>
-<td><a href="https://www.skilldisk.com/product-page/pico-iot-spark-kit">SG90</a> : <a href="https://www.skilldisk.com/product-page/pico-iot-spark-kit">MG90</a></td>
+<td>Mini USB Cable</td>
+<td><a href="https://www.skilldisk.com/product-page/pico-iot-spark-kit">link</a></td>
 </tr>
 <tr>
 <td>BreadBoard</td>
@@ -1345,107 +1313,117 @@
 <td><a href="https://amzn.to/4pepr0H">link</a></td>
 </tr>
 <tr>
-<td>Micro USB Cable</td>
-<td><a href="https://amzn.to/4gfMgNa">link</a></td>
+<td>5V DC Adaptor</td>
+<td><a href="https://amzn.to/4m82t8D">link</a></td>
 </tr>
 </tbody>
 </table>
 <div class="admonition tip">
 <p class="admonition-title">Don't own a hardware <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f622.svg" title=":cry:"></p>
 <p>No worries,</p>
-<p>Still you can learn using simulation.
-check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f603.svg" title=":smiley:">.</p>
+<p>💡Still you can learn using simulation. check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f603.svg" title=":smiley:">.</p>
+<p>💡Power your mission with reliable Arduino Kits. <a href="https://www.skilldisk.com/category/arduino" target="_blank">Explore <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"></path></svg></span> Hardware →</a></p>
 </div>
-<hr>
-<h2 id="understanding-servo-motors-pwm-control">⚡ Understanding Servo Motors &amp; PWM Control</h2>
-<p>The <strong>SG90</strong> is a popular hobby servo motor controlled via <strong>Pulse Width Modulation (PWM)</strong>. Unlike standard DC motors, servos rotate to precise angular positions (typically 0°–180°) based on the width of an incoming PWM pulse.</p>
-<h3 id="how-pwm-controls-servo-position">🔹 How PWM Controls Servo Position</h3>
+<!-- Nano Craft Advertisement -->
+<div class="grid cards">
+<ul>
+<li>
+<p><a href="https://www.skilldisk.com/product-page/nano-craft-spark-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_spark_ads.png"></a></p>
+</li>
+<li>
+<p><a href="https://www.skilldisk.com/product-page/nano-craft-explorer-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_explorer_ads.png"></a></p>
+</li>
+</ul>
+</div>
+<h2 id="understanding-servo-motors-pwm-control">⚡ Understanding Servo Motors (PWM Control)</h2>
+<p>A <strong>servo motor</strong> is a closed-loop actuator that uses <strong>PWM (Pulse Width Modulation)</strong> signals to control angular position precisely between 0° to 180° (standard servos) or 0° to 270° (continuous rotation variants).</p>
+<p>📌 <strong>Why Use Servo with Arduino Nano?</strong></p>
+<ul>
+<li>Precise angular control 🎯</li>
+<li>Simple 3-wire interface 🔌</li>
+<li>Built-in Arduino <code>Servo.h</code> library support 📚</li>
+<li>Ideal for robotic arms, camera gimbals, valve control 🤖</li>
+<li>Low cost and beginner friendly 💡</li>
+</ul>
+<p>📌 <strong>How PWM Controls Servo Angle:</strong></p>
 <table>
 <thead>
 <tr>
 <th>Pulse Width</th>
-<th>Servo Angle</th>
-<th>Duty Cycle (50Hz)</th>
-<th>RP2040 <code>duty_u16</code> Value</th>
+<th>Approximate Angle</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>~0.5 ms</td>
+<td>1000 µs</td>
 <td>0°</td>
-<td>~2.5%</td>
-<td>~1638</td>
 </tr>
 <tr>
-<td>~1.45 ms</td>
-<td>90°</td>
-<td>~7.25%</td>
-<td>~4751</td>
+<td>1500 µs</td>
+<td>90° (Neutral)</td>
 </tr>
 <tr>
-<td>~2.4 ms</td>
+<td>2000 µs</td>
 <td>180°</td>
-<td>~12%</td>
-<td>~7864</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition note">
-<p class="admonition-title">PWM Frequency</p>
-<p>Servo motors require a <strong>50Hz PWM signal</strong> (20ms period). The Raspberry Pi Pico's hardware PWM peripheral can generate this signal reliably on any GPIO pin.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Power Considerations</p>
-<p>Small servos like the SG90 can be powered from the Pico's <code>5V</code> (VBUS) pin. However, for multiple servos or high-torque models, use an <strong>external 5V supply</strong> and connect its GND to the Pico's GND to avoid brownouts or regulator damage.</p>
-</div>
+<p>Arduino's <code>Servo</code> library abstracts PWM timing, letting you control angle directly with <code>servo.write(angle)</code>.</p>
 <hr>
-<h2 id="connection-wiring-guide-raspberry-pi-pico-to-sg90-servo">🧷 Connection / Wiring Guide (Raspberry Pi Pico to SG90 Servo)</h2>
-<h3 id="pin-mapping-table">🔥 Pin Mapping Table</h3>
+<h2 id="connection-wiring-guide-arduino-nano-to-servo">🧷 Connection / Wiring Guide (Arduino Nano to Servo)</h2>
+<p>Servo motors have 3 wires:</p>
+<ul>
+<li>🔴 <strong>Red</strong> → VCC (5V)</li>
+<li>🟤 <strong>Brown/Black</strong> → GND</li>
+<li>🟡 <strong>Orange/Yellow</strong> → Signal (PWM Pin)</li>
+</ul>
+<h3 id="arduino-nano-to-servo-pin-mapping">🔥 Arduino Nano to Servo Pin Mapping</h3>
 <table>
 <thead>
 <tr>
 <th>Servo Wire</th>
-<th>Color</th>
-<th>Raspberry Pi Pico Pin</th>
+<th>Arduino Nano Pin</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>GND</strong></td>
-<td>Brown</td>
-<td><code>GND</code></td>
-<td>Common ground</td>
-</tr>
-<tr>
-<td><strong>VCC</strong></td>
-<td>Red</td>
-<td><code>5V</code> (VBUS, Pin 40) <em>or</em> External <code>5V</code> Power Supply</td>
+<td>Red (VCC)</td>
+<td>5V (or External 5V)</td>
 <td>Power supply</td>
 </tr>
 <tr>
-<td><strong>Signal</strong></td>
-<td>Orange/Yellow</td>
-<td><code>GP16</code> <em>or any PWM-capable GPIO</em></td>
-<td>PWM control signal</td>
+<td>Brown (GND)</td>
+<td>GND</td>
+<td>Common ground</td>
+</tr>
+<tr>
+<td>Orange (Signal)</td>
+<td>D3, D5, D6, D9, D10, D11</td>
+<td>PWM-capable digital pin</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition tip">
-<p class="admonition-title">PWM-Capable Pins</p>
-<p><strong>All GPIO pins</strong> on the Raspberry Pi Pico support hardware PWM output. You can use any pin — just update the pin number in your code accordingly.</p>
+<div class="admonition warning">
+<p class="admonition-title">Power Consideration</p>
+<p>Arduino Nano's 5V pin can supply ~500mA max. SG90 draws ~100-250mA (safe). MG996R can draw &gt;1A under load — <strong>use external 5V supply</strong> and connect GNDs together.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Use PWM-capable pins (~) for servo signal. Arduino Nano PWM pins: <strong>D3, D5, D6, D9, D10, D11</strong>. Pin <strong>D9</strong> is  used in this example.</p>
 </div>
 <figure>
-<p><img alt="Circuit Diagram" src="images/servo_motor_circuit.png"></p>
+<p><img alt="Circuit Diagram" src="images/circuit.png"></p>
 <figcaption>
 <p>fig-Connection Diagram</p>
 </figcaption>
 </figure>
 <h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4c2.svg" title=":open_file_folder:"> Code</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">main.py</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Install Servo Library from Arduino Library Manager.</p>
+</div>
+<div class="language-arduino highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
@@ -1478,105 +1456,182 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <span class="normal"><a href="#__codelineno-0-31">31</a></span>
 <span class="normal"><a href="#__codelineno-0-32">32</a></span>
 <span class="normal"><a href="#__codelineno-0-33">33</a></span>
-<span class="normal"><a href="#__codelineno-0-34">34</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">PWM</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">time</span><span class="w"> </span><span class="kn">import</span> <span class="n">sleep</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Initialize PWM on GPIO 16</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="n">servo_pin</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="n">servo</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">servo_pin</span><span class="p">)</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="c1">########## NOTE #################</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="c1"># Pulse range varies with manufacturer.</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="c1"># Check data sheet for the same</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="c1"># PWM Configuration for SG90 Servo</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="n">FREQUENCY</span> <span class="o">=</span> <span class="mi">50</span>  <span class="c1"># 50Hz standard for servos</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="n">MIN_DUTY</span> <span class="o">=</span> <span class="mi">1638</span>  <span class="c1"># ~0.5ms pulse → 0°</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="n">MAX_DUTY</span> <span class="o">=</span> <span class="mi">7864</span>  <span class="c1"># ~2.4ms pulse → 180°</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="n">servo</span><span class="o">.</span><span class="n">freq</span><span class="p">(</span><span class="n">FREQUENCY</span><span class="p">)</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="k">def</span><span class="w"> </span><span class="nf">servo_angle</span><span class="p">(</span><span class="n">angle</span><span class="p">):</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">    </span><span class="sd">"""Map angle (0-180) to duty cycle (1638-7864)"""</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a>    <span class="n">angle</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="mi">180</span><span class="p">,</span> <span class="n">angle</span><span class="p">))</span>  <span class="c1"># Clamp to valid range</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a>    <span class="n">duty</span> <span class="o">=</span> <span class="n">MIN_DUTY</span> <span class="o">+</span> <span class="p">(</span><span class="n">angle</span> <span class="o">/</span> <span class="mi">180</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">MAX_DUTY</span> <span class="o">-</span> <span class="n">MIN_DUTY</span><span class="p">)</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a>    <span class="n">servo</span><span class="o">.</span><span class="n">duty_u16</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">duty</span><span class="p">))</span>
+<span class="normal"><a href="#__codelineno-0-34">34</a></span>
+<span class="normal"><a href="#__codelineno-0-35">35</a></span>
+<span class="normal"><a href="#__codelineno-0-36">36</a></span>
+<span class="normal"><a href="#__codelineno-0-37">37</a></span>
+<span class="normal"><a href="#__codelineno-0-38">38</a></span>
+<span class="normal"><a href="#__codelineno-0-39">39</a></span>
+<span class="normal"><a href="#__codelineno-0-40">40</a></span>
+<span class="normal"><a href="#__codelineno-0-41">41</a></span>
+<span class="normal"><a href="#__codelineno-0-42">42</a></span>
+<span class="normal"><a href="#__codelineno-0-43">43</a></span>
+<span class="normal"><a href="#__codelineno-0-44">44</a></span>
+<span class="normal"><a href="#__codelineno-0-45">45</a></span>
+<span class="normal"><a href="#__codelineno-0-46">46</a></span>
+<span class="normal"><a href="#__codelineno-0-47">47</a></span>
+<span class="normal"><a href="#__codelineno-0-48">48</a></span>
+<span class="normal"><a href="#__codelineno-0-49">49</a></span>
+<span class="normal"><a href="#__codelineno-0-50">50</a></span>
+<span class="normal"><a href="#__codelineno-0-51">51</a></span>
+<span class="normal"><a href="#__codelineno-0-52">52</a></span>
+<span class="normal"><a href="#__codelineno-0-53">53</a></span>
+<span class="normal"><a href="#__codelineno-0-54">54</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Servo.h&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1">// --- Configuration ---</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="cp">#define SERVO_PIN     9           </span><span class="c1">// PWM pin connected to servo signal wire</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="cp">#define MIN_ANGLE     0           </span><span class="c1">// Minimum servo angle (degrees)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="cp">#define MAX_ANGLE     180         </span><span class="c1">// Maximum servo angle (degrees)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="cp">#define STEP_DELAY    500        </span><span class="c1">// Delay between angle changes (milliseconds)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="cp">#define STEP_ANGLE    10         </span><span class="c1">// Step Angle change (degrees)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="c1">// Create servo object</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="nf">Servo</span><span class="w"> </span><span class="n">myServo</span><span class="p">;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="c1">// ============================================</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="c1">// Setup Function - Runs once at startup</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="c1">// ============================================</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="kr">void</span><span class="w"> </span><span class="nb">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">  </span><span class="c1">// Initialize serial communication for debugging</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">  </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">  </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">"=== Servo Motor Control Started ==="</span><span class="p">);</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">  </span><span class="c1">// Attach servo to the defined PWM pin</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">  </span><span class="n">myServo</span><span class="p">.</span><span class="nf">attach</span><span class="p">(</span><span class="n">SERVO_PIN</span><span class="p">);</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">  </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">"Servo attached to pin "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="kr">String</span><span class="p">(</span><span class="n">SERVO_PIN</span><span class="p">));</span>
 </span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="k">try</span><span class="p">:</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27"></a>        <span class="c1"># Sweep: 0° → 90° → 180° → 90° → 0°</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a>        <span class="k">for</span> <span class="n">angle</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">]:</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29"></a>            <span class="n">servo_angle</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a>            <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31"></a>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Stopping servo..."</span><span class="p">)</span>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34"></a>    <span class="n">servo</span><span class="o">.</span><span class="n">deinit</span><span class="p">()</span>  <span class="c1"># Disable PWM output</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">  </span><span class="c1">// Move servo to initial neutral position (90°)</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">  </span><span class="n">myServo</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="w">  </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">"Servo moved to neutral position (90°)"</span><span class="p">);</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="w">  </span><span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">  </span><span class="c1">// Allow servo time to reach position</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="p">}</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="c1">// ============================================</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="c1">// Main Loop Function - Runs repeatedly</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="c1">// ============================================</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="kr">void</span><span class="w"> </span><span class="nb">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="w">  </span><span class="c1">// === Sweep Forward: MIN_ANGLE → MAX_ANGLE ===</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="w">  </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">--- Sweeping Forward ---"</span><span class="p">);</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kr">int</span><span class="w"> </span><span class="n">angle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MIN_ANGLE</span><span class="p">;</span><span class="w"> </span><span class="n">angle</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">MAX_ANGLE</span><span class="p">;</span><span class="w"> </span><span class="n">angle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">angle</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">STEP_ANGLE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="w">    </span><span class="n">myServo</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="n">angle</span><span class="p">);</span><span class="w">                    </span><span class="c1">// Set servo angle</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="w">    </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">"Angle: "</span><span class="p">);</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="w">    </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">angle</span><span class="p">);</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="w">    </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">"°"</span><span class="p">);</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="w">    </span><span class="nf">delay</span><span class="p">(</span><span class="n">STEP_DELAY</span><span class="p">);</span><span class="w">                       </span><span class="c1">// Wait for servo to reach position</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44"></a>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="w">  </span><span class="c1">// === Sweep Backward: MAX_ANGLE → MIN_ANGLE ===</span>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="w">  </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">--- Sweeping Backward ---"</span><span class="p">);</span>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47"></a><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kr">int</span><span class="w"> </span><span class="n">angle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MAX_ANGLE</span><span class="p">;</span><span class="w"> </span><span class="n">angle</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">MIN_ANGLE</span><span class="p">;</span><span class="w"> </span><span class="n">angle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">angle</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">STEP_ANGLE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48"></a><span class="w">    </span><span class="n">myServo</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="n">angle</span><span class="p">);</span><span class="w">                    </span><span class="c1">// Set servo angle</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49"></a><span class="w">    </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">"Angle: "</span><span class="p">);</span>
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50"></a><span class="w">    </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">angle</span><span class="p">);</span>
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51"></a><span class="w">    </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">"°"</span><span class="p">);</span>
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52"></a><span class="w">    </span><span class="nf">delay</span><span class="p">(</span><span class="n">STEP_DELAY</span><span class="p">);</span><span class="w">                       </span><span class="c1">// Wait for servo to reach position</span>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
+<h2 id="code-explanation">🧠 Code Explanation</h2>
+<p>Let's break down the code section by section.</p>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Include Servo Library</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Servo.h&gt;</span>
+</span></code></pre></div>
+<ul>
+<li>Imports Arduino's built-in <code>Servo</code> library for PWM-based servo control.</li>
+<li>Handles timing and pulse generation automatically.</li>
+</ul>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Configuration Macros</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#define SERVO_PIN     9</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="cp">#define MIN_ANGLE     0</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="cp">#define MAX_ANGLE     180</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="cp">#define STEP_DELAY    1000</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="cp">#define STEP_ANGLE    10        </span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Macro</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SERVO_PIN</code></td>
+<td>Digital PWM pin connected to servo signal wire</td>
+</tr>
+<tr>
+<td><code>MIN_ANGLE</code> / <code>MAX_ANGLE</code></td>
+<td>Defines servo rotation range</td>
+</tr>
+<tr>
+<td><code>STEP_DELAY</code></td>
+<td>Controls sweep speed (higher = slower motion)</td>
+</tr>
+<tr>
+<td><code>STEP_ANGLE</code></td>
+<td>Defines sweep angle</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Servo Object Declaration</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">Servo</span><span class="w"> </span><span class="n">myServo</span><span class="p">;</span>
+</span></code></pre></div>
+<ul>
+<li>Creates an instance of the <code>Servo</code> class named <code>myServo</code>.</li>
+<li>This object provides methods like <code>.attach()</code>, <code>.write()</code>, <code>.detach()</code>.</li>
+</ul>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Setup Function</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="n">myServo</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="n">SERVO_PIN</span><span class="p">);</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="n">myServo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Serial.begin(9600)</code></td>
+<td>Initializes serial communication for debugging output</td>
+</tr>
+<tr>
+<td><code>myServo.attach(pin)</code></td>
+<td>Binds servo object to hardware PWM pin</td>
+</tr>
+<tr>
+<td><code>myServo.write(90)</code></td>
+<td>Moves servo to neutral (90°) position at startup</td>
+</tr>
+<tr>
+<td><code>delay(500)</code></td>
+<td>Allows mechanical settling time</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Loop Function - Angle Sweeping</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">angle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MIN_ANGLE</span><span class="p">;</span><span class="w"> </span><span class="n">angle</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">MAX_ANGLE</span><span class="p">;</span><span class="w"> </span><span class="n">angle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">angle</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">STEP_ANGLE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="n">myServo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">angle</span><span class="p">);</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"Angle: "</span><span class="p">);</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">angle</span><span class="p">);</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="n">STEP_DELAY</span><span class="p">);</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<ul>
+<li>Iterates angle from 0° → 180° (forward sweep with STEP_ANGLE)</li>
+<li><code>myServo.write(angle)</code>: Sends appropriate PWM signal for target angle</li>
+<li><code>Serial.println()</code>: Outputs current angle to Serial Monitor</li>
+<li><code>delay()</code>: Controls motion smoothness and speed</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Rapid angle changes or mechanical obstruction can cause servo jitter, gear stripping, or overheating. Always test with conservative delays first.</p>
 </div>
-</div>
-</div>
-<h3 id="code-explanation">Code Explanation</h3>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Imports</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">PWM</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">time</span><span class="w"> </span><span class="kn">import</span> <span class="n">sleep</span>
-</span></code></pre></div></td></tr></table></div>
-<ul>
-<li><code>time</code> module for creating delay.</li>
-</ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Initialize Servo Motor.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-5">5</a></span>
-<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="n">servo_pin</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span> <span class="c1"># Any gpio pin with PWM feature can be used.</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="n">servo</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">servo_pin</span><span class="p">)</span>
-</span></code></pre></div></td></tr></table></div>
-<ul>
-<li>GPIO <code>16</code> is connected to <code>Signal</code> of Servo Motor.</li>
-</ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> PWM Configuration.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-13">13</a></span>
-<span class="normal"><a href="#__codelineno-3-14">14</a></span>
-<span class="normal"><a href="#__codelineno-3-15">15</a></span>
-<span class="normal"><a href="#__codelineno-3-16">16</a></span>
-<span class="normal"><a href="#__codelineno-3-17">17</a></span>
-<span class="normal"><a href="#__codelineno-3-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="c1"># PWM Configuration for SG90 Servo</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="n">FREQUENCY</span> <span class="o">=</span> <span class="mi">50</span>  <span class="c1"># 50Hz standard for servos</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="n">MIN_DUTY</span> <span class="o">=</span> <span class="mi">1638</span>  <span class="c1"># ~0.5ms pulse → 0°</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="n">MAX_DUTY</span> <span class="o">=</span> <span class="mi">7864</span>  <span class="c1"># ~2.4ms pulse → 180°</span>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17"></a>
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="n">servo</span><span class="o">.</span><span class="n">freq</span><span class="p">(</span><span class="n">FREQUENCY</span><span class="p">)</span>
-</span></code></pre></div></td></tr></table></div>
-<ul>
-<li>Sets <code>50Hz</code> frequency (20ms period), standard for hobby servos</li>
-<li>Pico has 16-bit PWM resolution (0–65535)</li>
-<li>Values 1638 and 7864 correspond to ~0.5ms and ~2.4ms pulse widths respectively.</li>
-</ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Setting the color.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-19">19</a></span>
-<span class="normal"><a href="#__codelineno-4-20">20</a></span>
-<span class="normal"><a href="#__codelineno-4-21">21</a></span>
-<span class="normal"><a href="#__codelineno-4-22">22</a></span>
-<span class="normal"><a href="#__codelineno-4-23">23</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19"></a><span class="k">def</span><span class="w"> </span><span class="nf">servo_angle</span><span class="p">(</span><span class="n">angle</span><span class="p">):</span>
-</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20"></a><span class="w">    </span><span class="sd">"""Map angle (0-180) to duty cycle (1638-7864)"""</span>
-</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21"></a>    <span class="n">angle</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="mi">180</span><span class="p">,</span> <span class="n">angle</span><span class="p">))</span>  <span class="c1"># Clamp to valid range</span>
-</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22"></a>    <span class="n">duty</span> <span class="o">=</span> <span class="n">MIN_DUTY</span> <span class="o">+</span> <span class="p">(</span><span class="n">angle</span> <span class="o">/</span> <span class="mi">180</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">MAX_DUTY</span> <span class="o">-</span> <span class="n">MIN_DUTY</span><span class="p">)</span>
-</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23"></a>    <span class="n">servo</span><span class="o">.</span><span class="n">duty_u16</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">duty</span><span class="p">))</span>
-</span></code></pre></div></td></tr></table></div>
-<ul>
-<li>Function to calculate duty_u16 value for the specified angle between 0 to 180 deg</li>
-</ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Sweep through the angle.</p>
-<p></p><div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-26">26</a></span>
-<span class="normal"><a href="#__codelineno-5-27">27</a></span>
-<span class="normal"><a href="#__codelineno-5-28">28</a></span>
-<span class="normal"><a href="#__codelineno-5-29">29</a></span>
-<span class="normal"><a href="#__codelineno-5-30">30</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27"></a>        <span class="c1"># Sweep: 0° → 90° → 180° → 90° → 0°</span>
-</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28"></a>        <span class="k">for</span> <span class="n">angle</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">]:</span>
-</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29"></a>            <span class="n">servo_angle</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
-</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30"></a>            <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span></code></pre></div></td></tr></table></div>
-Continuously sweep through the set angle as per the list. ([0, 90, 180, 90, 0])
 <hr>
 <h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"></path></svg></span> Simulation</h2>
 <div class="admonition danger">
@@ -1586,9 +1641,8 @@ Continuously sweep through the set angle as per the list. ([0, 90, 180, 90, 0])
 <li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm72 416h80c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24"></path></svg></span> Mobile : Use Landscape Mode and reload the page</li>
 </ul>
 </div>
-<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/457997236483934209" frameborder="2px" width="100%" height="700px"></iframe>
+<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/458007618904872961" frameborder="2px" width="100%" height="700px"></iframe>
 
-<hr>
 <!-- Advertisement -->
 <div style="
   display:flex;
@@ -1605,10 +1659,10 @@ Continuously sweep through the set angle as per the list. ([0, 90, 180, 90, 0])
 
   <div style="flex:1 1 220px;">
     <strong>Get the right hardware kit</strong><br>
-    Raspberry Pi Pico, Arduino, sensors, and IoT maker essential Kits—perfectly matched for your learning.
+    Arduino boards, sensors, and maker essential Kits—perfectly matched for your learning.
   </div>
 
-  <a href="https://www.skilldisk.com/category/pico-disk" target="_blank" style="
+  <a href="https://www.skilldisk.com/category/arduino" target="_blank" style="
        padding:12px 18px;
        border-radius:10px;
        background:var(--md-accent-fg-color);
@@ -1625,71 +1679,84 @@ Continuously sweep through the set angle as per the list. ([0, 90, 180, 90, 0])
 <div class="grid cards">
 <ul>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/pico-iot-spark-kit" target="_blank"><img alt="Pico Iot Spark Kit" src="/assets/ads/pico_spark_ads.png"></a></p>
+<p><a href="https://www.skilldisk.com/product-page/nano-craft-spark-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_spark_ads.png"></a></p>
 </li>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/pico-iot-explorer-kit" target="_blank"><img alt="Pico Iot Explorer Kit" src="/assets/ads/pico_explorer_ads.png"></a></p>
+<p><a href="https://www.skilldisk.com/product-page/nano-craft-explorer-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_explorer_ads.png"></a></p>
 </li>
 </ul>
 </div>
 <hr>
 <h2 id="troubleshooting-common-issues-fixes">🛑 Troubleshooting (Common Issues &amp; Fixes)</h2>
-<p>❌ <strong>Issue 1: Servo doesn't move or jitters</strong></p>
-<p>✅ <strong>Causes:</strong>
-- Incorrect PWM frequency (must be 50Hz)
-- Weak power supply causing voltage drops
-- Signal wire connected to non-PWM pin (rare on Pico)</p>
-<p>✅ <strong>Fix:</strong>
-</p><div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">servo</span><span class="o">.</span><span class="n">freq</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># Ensure 50Hz</span>
+<p>❌ <strong>Issue 1: Servo Jitters or Doesn't Move</strong></p>
+<p>✅ <strong>Possible Causes:</strong>
+- Insufficient power supply from Arduino 5V pin
+- Loose or disconnected signal wire
+- Using non-PWM pin for servo signal</p>
+<p>✅ <strong>Solutions:</strong>
+- Use external 5V/2A power supply for high-torque servos
+- Ensure GND is common between Arduino and external power supply
+- Verify signal wire connects to PWM-capable pin: <strong>D3, D5, D6, D9, D10, D11</strong></p>
+<p>❌ <strong>Issue 2: Servo Moves Erratically or Arduino Resets</strong></p>
+<p>✅ <strong>Possible Causes:</strong>
+- Voltage drop under servo load causing brownout
+- Electrical noise coupling into signal line</p>
+<p>✅ <strong>Solutions:</strong>
+- Add 100µF–470µF electrolytic capacitor across servo VCC-GND
+- Use separate regulated 5V supply with common ground
+- Keep servo wires short and routed away from high-current paths
+- Add ferrite bead on servo power line if noise persists</p>
+<p>❌ <strong>Issue 3: Angle Range Incorrect (e.g., only moves 0-90°)</strong></p>
+<p>✅ <strong>Possible Causes:</strong>
+- Servo mechanical stop variation between units
+- Library default pulse width doesn't match servo specifications</p>
+<p>✅ <strong>Solutions:</strong>
+- Calibrate using <code>attach(pin, min, max)</code> with custom pulse widths:
+</p><div class="language-cpp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">myServo</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="mi">500</span><span class="p">,</span><span class="w"> </span><span class="mi">2500</span><span class="p">);</span><span class="w">  </span><span class="c1">// Adjust min/max pulse in microseconds</span>
 </span></code></pre></div>
-- Use a <strong>stable 5V supply</strong> for servos drawing &gt;200mA.
-- Add a <strong>100µF capacitor</strong> between servo VCC and GND near the motor.
-<hr>
-<p>❌ <strong>Issue 2: Servo buzzes at 0° or 180°</strong></p>
-<p>✅ <strong>Cause:</strong>
-- Pulse width values outside servo's mechanical range.</p>
-<p>✅ <strong>Fix:</strong>
-</p><div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Adjust these values incrementally</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">MIN_DUTY</span> <span class="o">=</span> <span class="mi">1600</span>  <span class="c1"># Was 1638</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">MAX_DUTY</span> <span class="o">=</span> <span class="mi">7900</span>  <span class="c1"># Was 7864</span>
-</span></code></pre></div>
-- Test with smaller angle ranges first (e.g., 10°–170°).
-<hr>
-<p>❌ <strong>Issue 3: Raspberry Pi Pico resets during servo motion</strong></p>
-<p>✅ <strong>Cause:</strong>
-- Servo current spike exceeds Pico's regulator capacity (~300mA).</p>
-<p>✅ <strong>Fix:</strong>
-- Power servo from <strong>external 5V supply</strong>.
-- Connect external supply GND to Pico GND (common ground).
-- Keep signal wire connection intact.</p>
-<hr>
-<h2 id="conclusion">🏁 Conclusion</h2>
-<p>You have successfully interfaced an <strong>SG90 servo motor</strong> with a <strong>Raspberry Pi Pico</strong> using <strong>MicroPython</strong> 🎉. You now understand:</p>
-<ul>
-<li>How PWM signals control servo angular position</li>
-<li>How to calculate duty cycle values for precise motion</li>
-<li>Best practices for power management and troubleshooting</li>
-</ul>
-<p>With this foundation, you can build interactive projects like:
-- 🤖 Robotic arm controllers
-- 🚗 RC car steering systems
-- 📡 Pan-tilt camera mounts
-- 🎮 Game controller feedback mechanisms</p>
-<div class="admonition tip">
-<p class="admonition-title">Next Steps</p>
-<p>Combine servo control with sensors (ultrasonic, potentiometer) or communication modules (WiFi, Bluetooth) to create smart, responsive embedded systems. Explore the <a href="https://docs.micropython.org/en/latest/rp2/quickref.html">Raspberry Pi Pico MicroPython documentation</a> for advanced PWM features.</p>
-</div>
+- Test extreme values with <code>writeMicroseconds()</code> to find actual servo limits
 <hr>
 <h2 id="extras"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2 0 .37-.03.73-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85-.32.63-.67 1.24-1.07 1.81-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56M23 18v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"></path></svg></span> Extras</h2>
 <h3 id="components-details">Components details</h3>
 <ul>
-<li>Servo Motor : <a href="#">Data Sheet</a></li>
-<li>Raspberry Pi Pico / Pico 2 : <a href="../pico2-pico2-w-key-features-pin-config/" target="_blank">Pin Diagram</a></li>
-<li>Raspberry Pi Pico : <a href="https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf" target="_blank">Data Sheet</a></li>
-<li>Raspberry Pi Pico 2 : <a href="https://datasheets.raspberrypi.com/pico/pico-2-datasheet.pdf" target="_blank">Data Sheet</a></li>
-<li>Raspberry Pi Pico W : <a href="https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf" target="_blank">Data Sheet</a></li>
-<li>Raspberry Pi Pico 2 W : <a href="https://datasheets.raspberrypi.com/picow/pico-2-w-datasheet.pdf" target="_blank">Data Sheet</a></li>
-</ul></div>
+<li>Arduino Nano <a href="../blink-an-led-on-arduino-nano/files/nano-datasheet.pdf" target="_blank">Data Sheet</a></li>
+<li><a href="https://www.arduino.cc/reference/en/libraries/servo/">Arduino Servo Library Reference</a></li>
+<li><a href="https://cdn.sparkfun.com/datasheets/Robotics/SG90_Datasheet.pdf">SG90 Micro Servo Datasheet</a></li>
+</ul>
+<hr>
+<h2 id="project-extensions-next-steps">🏗️ Project Extensions / Next Steps</h2>
+<p>🔧 <strong>Ideas to Expand This Project:</strong></p>
+<ol>
+<li>
+<p><strong>Potentiometer-Controlled Servo</strong><br>
+   Map analog input (0-1023) to servo angle (0-180°) for manual positioning interface.</p>
+</li>
+<li>
+<p><strong>Ultrasonic Radar Scanner</strong><br>
+   Mount HC-SR04 ultrasonic sensor on servo to create a 180° distance-mapping radar display.</p>
+</li>
+<li>
+<p><strong>Bluetooth Servo Control</strong><br>
+   Integrate HC-05/HC-06 Bluetooth module to control servo angle via smartphone app.</p>
+</li>
+<li>
+<p><strong>Multi-Servo Robotic Arm</strong><br>
+   Combine 3-4 servos with basic inverse kinematics for pick-and-place automation.</p>
+</li>
+<li>
+<p><strong>Web-Controlled Servo via ESP-01</strong><br>
+   Bridge Arduino Nano with ESP8266 for IoT-based remote servo actuation over WiFi.</p>
+</li>
+<li>
+<p><strong>Joystick Dual-Axis Control</strong><br>
+   Use analog joystick to control two servos simultaneously for pan-tilt camera mount.</p>
+</li>
+</ol>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>Interfacing a servo motor with Arduino Nano is a foundational skill for robotics, automation, and interactive electronics projects. By leveraging Arduino's built-in <code>Servo.h</code> library, you can achieve precise angular control with minimal code and hardware complexity.</p>
+<p>Using Wokwi simulation, students and developers can test designs before building physical circuits, making this project perfect for learning and prototyping.</p>
+<p>🚀 <strong>Next Step</strong>: Combine this servo control with sensor input (potentiometer, ultrasonic, IMU, or Bluetooth) to create interactive, real-world embedded projects!</p></div>
 
 
 
