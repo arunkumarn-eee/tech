@@ -1338,27 +1338,16 @@
   <h1>How to Connect a Joystick to Raspberry Pi Pico using MicroPython</h1>
 
 <div><div class="md-typeset">
-    <div class="blogging-tags-grid">
-
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico" class="blogging-tag"><code>#raspberry pi pico</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202" class="blogging-tag"><code>#raspberry pi pico 2</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%20w" class="blogging-tag"><code>#raspberry pi pico w</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202W" class="blogging-tag"><code>#raspberry pi pico 2W</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#micro%20python" class="blogging-tag"><code>#micro python</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#guide" class="blogging-tag"><code>#guide</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#joystick" class="blogging-tag"><code>#joystick</code></a>
-
-    </div>
-
-
+<div class="blogging-tags-grid">
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico"><code>#raspberry pi pico</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202"><code>#raspberry pi pico 2</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%20w"><code>#raspberry pi pico w</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202W"><code>#raspberry pi pico 2W</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#micro%20python"><code>#micro python</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#guide"><code>#guide</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#joystick"><code>#joystick</code></a>
 </div>
-
+</div>
 <style>
     .md-typeset .blogging-tags-grid {
         display: flex;
@@ -1379,7 +1368,7 @@
         border-radius: 5px;
     }
 </style>
-<p><img alt="JoyStick" src="../../../assets/blogs/raspberrypipico/joystick.png"></p>
+<p><img alt="JoyStick" src="../../../assets/blogs/raspberrypipico/joystick.png"/></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
@@ -1431,7 +1420,7 @@
 </details>
 <h2 id="abstract">Abstract</h2>
 <p>Analog joystick modules are versatile input devices widely used in robotics, gaming controllers, and interactive embedded projects. In this comprehensive tutorial, you will learn how to interface a standard KY-023 dual-axis joystick module with a Raspberry Pi Pico microcontroller using MicroPython. By the end, you will be able to read analog X/Y axis values, detect button presses, implement debouncing logic, and integrate joystick input into your own embedded applications such as robot controllers, menu navigators, or pan-tilt camera systems.</p>
-<hr>
+<hr/>
 <h2 id="pre-request">Pre-Request</h2>
 <ul>
 <li><strong>OS</strong>: Windows / Linux / Mac / ChromeOS</li>
@@ -1439,7 +1428,7 @@
 <li><strong>Firmware</strong>: MicroPython firmware flashed on Raspberry Pi Pico / Pico 2 / Pico W / Pico 2W</li>
 <li>For step-by-step firmware installation, <a href="https://tech.arunkumarn.in/blogs/raspberry-pi-pico/installing-micropython/">click here</a></li>
 </ul>
-<hr>
+<hr/>
 <h2 id="hardware-required">Hardware Required</h2>
 <!-- Advertisement -->
 <div style="
@@ -1453,14 +1442,12 @@
   background:var(--md-default-bg-color);
   box-shadow:0 6px 18px rgba(0,0,0,0.08);
 ">
-  <div style="font-size:36px;">🛠️</div>
-
-  <div style="flex:1 1 220px;">
-    <strong>Get the right hardware kit</strong><br>
+<div style="font-size:36px;">🛠️</div>
+<div style="flex:1 1 220px;">
+<strong>Get the right hardware kit</strong><br/>
     Raspberry Pi Pico, Arduino, sensors, and IoT maker essential Kits—perfectly matched for your learning.
   </div>
-
-  <a href="https://www.skilldisk.com/category/pico-disk" target="_blank" style="
+<a href="https://www.skilldisk.com/category/pico-disk" style="
        padding:12px 18px;
        border-radius:10px;
        background:var(--md-accent-fg-color);
@@ -1469,11 +1456,10 @@
        text-decoration:none;
        text-align:center;
        flex:1 1 160px;
-     ">
+     " target="_blank">
     Explore Hardware →
   </a>
 </div>
-
 <ul>
 <li>Raspberry Pi Pico / Pico 2 / Pico W / Pico 2W</li>
 <li>Analog Joystick Module (KY-023 or similar)</li>
@@ -1525,12 +1511,12 @@
 </tbody>
 </table>
 <div class="admonition tip">
-<p class="admonition-title">Don't own a hardware <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f622.svg" title=":cry:"></p>
+<p class="admonition-title">Don't own a hardware <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f622.svg" title=":cry:"/></p>
 <p>No worries,</p>
 <p>Still you can learn using simulation.
-check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f603.svg" title=":smiley:">.</p>
+check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f603.svg" title=":smiley:"/>.</p>
 </div>
-<hr>
+<hr/>
 <h2 id="understanding-joystick-modules-adc-reading">⚡ Understanding Joystick Modules &amp; ADC Reading</h2>
 <p>The <strong>KY-023</strong> is a popular analog joystick module featuring two potentiometers (for X and Y axes) and a momentary push-button (activated by pressing the stick down). Unlike digital inputs, the analog axes output variable voltage levels proportional to stick position, which the Raspberry Pi Pico reads using its built-in <strong>Analog-to-Digital Converter (ADC)</strong>.</p>
 <h3 id="how-analog-joystick-works">🔹 How Analog Joystick Works</h3>
@@ -1575,7 +1561,7 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 - <strong>HIGH (3.3V)</strong> when not pressed
 - <strong>LOW (0V)</strong> when pressed (active-low)</p>
 <p>Use a GPIO pin with internal pull-up resistor for reliable button detection.</p>
-<hr>
+<hr/>
 <h2 id="connection-wiring-guide-raspberry-pi-pico-to-joystick-module">🧷 Connection / Wiring Guide (Raspberry Pi Pico to Joystick Module)</h2>
 <h3 id="pin-mapping-table">🔥 Pin Mapping Table</h3>
 <table>
@@ -1621,7 +1607,7 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 </tbody>
 </table>
 <figure>
-<p><img alt="Circuit Diagram" src="images/jystick_circuit.png"></p>
+<p><img alt="Circuit Diagram" src="images/jystick_circuit.png"/></p>
 <figcaption>
 <p>fig-Connection Diagram</p>
 </figcaption>
@@ -1629,92 +1615,92 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <h4 id="adc-capable-pins">ADC-Capable Pins</h4>
 <p>Only <strong>GP26, GP27, GP28, and GP29</strong> support ADC input on Raspberry Pi Pico. Ensure X/Y axis wires connect to these pins. Update code accordingly if using alternative ADC pins.</p>
 <h4 id="wiring-diagram">Wiring Diagram</h4>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Joystick Module          Raspberry Pi Pico
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>─────────────          ───────────────────
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>GND       ───────────► GND (any)
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>VCC       ───────────► 3V3 (Pin 36)
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>VRx (X)   ───────────► GP26 / ADC0 (Pin 31)
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>VRy (Y)   ───────────► GP27 / ADC1 (Pin 32)
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>SW (Btn)  ───────────► GP28 (Pin 34)
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>Joystick Module          Raspberry Pi Pico
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>─────────────          ───────────────────
+</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>GND       ───────────► GND (any)
+</span><span id="__span-0-4"><a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>VCC       ───────────► 3V3 (Pin 36)
+</span><span id="__span-0-5"><a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>VRx (X)   ───────────► GP26 / ADC0 (Pin 31)
+</span><span id="__span-0-6"><a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>VRy (Y)   ───────────► GP27 / ADC1 (Pin 32)
+</span><span id="__span-0-7"><a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a>SW (Btn)  ───────────► GP28 (Pin 34)
 </span></code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Use short, shielded wires for analog signals to minimize noise interference.</p>
 </div>
-<hr>
+<hr/>
 <h2 id="code">Code</h2>
 <h3 id="mainpy">main.py</h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">ADC</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">time</span><span class="w"> </span><span class="kn">import</span> <span class="n">sleep</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Initialize ADC channels for X and Y axes</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">adc_x</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">26</span><span class="p">))</span>  <span class="c1"># GP26 -&gt; ADC0</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">adc_y</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">27</span><span class="p">))</span>  <span class="c1"># GP27 -&gt; ADC1</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="c1"># Initialize button pin with internal pull-up</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">button</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">IN</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">PULL_UP</span><span class="p">)</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1"># ADC reading: returns 16-bit scaled value (0-65535)</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="k">def</span><span class="w"> </span><span class="nf">read_adc</span><span class="p">(</span><span class="n">adc</span><span class="p">):</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="k">return</span> <span class="n">adc</span><span class="o">.</span><span class="n">read_u16</span><span class="p">()</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="c1"># Debounced button read</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="k">def</span><span class="w"> </span><span class="nf">read_button</span><span class="p">():</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="k">return</span> <span class="ow">not</span> <span class="n">button</span><span class="o">.</span><span class="n">value</span><span class="p">()</span>  <span class="c1"># Active-low: pressed = False → return True</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="k">try</span><span class="p">:</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"🎮 Joystick Ready! Press Ctrl+C to exit."</span><span class="p">)</span>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>        <span class="c1"># Read ADC values (16-bit scaled: 0-65535)</span>
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>        <span class="n">x_raw</span> <span class="o">=</span> <span class="n">read_adc</span><span class="p">(</span><span class="n">adc_x</span><span class="p">)</span>
-</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>        <span class="n">y_raw</span> <span class="o">=</span> <span class="n">read_adc</span><span class="p">(</span><span class="n">adc_y</span><span class="p">)</span>
-</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>
-</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>        <span class="c1"># Optional: Map to -100 to +100 range for intuitive control</span>
-</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>        <span class="n">x_norm</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">x_raw</span> <span class="o">-</span> <span class="mi">32768</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">//</span> <span class="mi">32768</span><span class="p">)</span>
-</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>        <span class="n">y_norm</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">y_raw</span> <span class="o">-</span> <span class="mi">32768</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">//</span> <span class="mi">32768</span><span class="p">)</span>
-</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>
-</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>        <span class="c1"># Read button state</span>
-</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>        <span class="n">btn_pressed</span> <span class="o">=</span> <span class="n">read_button</span><span class="p">()</span>
-</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>
-</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>        <span class="c1"># Output to console</span>
-</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"X: </span><span class="si">{</span><span class="n">x_raw</span><span class="si">:</span><span class="s2">5d</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">x_norm</span><span class="si">:</span><span class="s2">+4d</span><span class="si">}</span><span class="s2">) | "</span>
-</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>              <span class="sa">f</span><span class="s2">"Y: </span><span class="si">{</span><span class="n">y_raw</span><span class="si">:</span><span class="s2">5d</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">y_norm</span><span class="si">:</span><span class="s2">+4d</span><span class="si">}</span><span class="s2">) | "</span>
-</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>              <span class="sa">f</span><span class="s2">"Button: </span><span class="si">{</span><span class="s1">'PRESSED'</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">btn_pressed</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">'RELEASED'</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> 
-</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>              <span class="n">end</span><span class="o">=</span><span class="s1">'</span><span class="se">\r</span><span class="s1">'</span><span class="p">)</span>
-</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>
-</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>        <span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>  <span class="c1"># Small delay for stable reading</span>
-</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>
-</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
-</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n\n</span><span class="s2">🛑 Joystick interface stopped."</span><span class="p">)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">ADC</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">time</span><span class="w"> </span><span class="kn">import</span> <span class="n">sleep</span>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="c1"># Initialize ADC channels for X and Y axes</span>
+</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="n">adc_x</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">26</span><span class="p">))</span>  <span class="c1"># GP26 -&gt; ADC0</span>
+</span><span id="__span-1-6"><a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="n">adc_y</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">27</span><span class="p">))</span>  <span class="c1"># GP27 -&gt; ADC1</span>
+</span><span id="__span-1-7"><a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="c1"># Initialize button pin with internal pull-up</span>
+</span><span id="__span-1-9"><a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="n">button</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">IN</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">PULL_UP</span><span class="p">)</span>
+</span><span id="__span-1-10"><a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="c1"># ADC reading: returns 16-bit scaled value (0-65535)</span>
+</span><span id="__span-1-12"><a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="k">def</span><span class="w"> </span><span class="nf">read_adc</span><span class="p">(</span><span class="n">adc</span><span class="p">):</span>
+</span><span id="__span-1-13"><a href="#__codelineno-1-13" id="__codelineno-1-13" name="__codelineno-1-13"></a>    <span class="k">return</span> <span class="n">adc</span><span class="o">.</span><span class="n">read_u16</span><span class="p">()</span>
+</span><span id="__span-1-14"><a href="#__codelineno-1-14" id="__codelineno-1-14" name="__codelineno-1-14"></a>
+</span><span id="__span-1-15"><a href="#__codelineno-1-15" id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="c1"># Debounced button read</span>
+</span><span id="__span-1-16"><a href="#__codelineno-1-16" id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="k">def</span><span class="w"> </span><span class="nf">read_button</span><span class="p">():</span>
+</span><span id="__span-1-17"><a href="#__codelineno-1-17" id="__codelineno-1-17" name="__codelineno-1-17"></a>    <span class="k">return</span> <span class="ow">not</span> <span class="n">button</span><span class="o">.</span><span class="n">value</span><span class="p">()</span>  <span class="c1"># Active-low: pressed = False → return True</span>
+</span><span id="__span-1-18"><a href="#__codelineno-1-18" id="__codelineno-1-18" name="__codelineno-1-18"></a>
+</span><span id="__span-1-19"><a href="#__codelineno-1-19" id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-1-20"><a href="#__codelineno-1-20" id="__codelineno-1-20" name="__codelineno-1-20"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"🎮 Joystick Ready! Press Ctrl+C to exit."</span><span class="p">)</span>
+</span><span id="__span-1-21"><a href="#__codelineno-1-21" id="__codelineno-1-21" name="__codelineno-1-21"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-1-22"><a href="#__codelineno-1-22" id="__codelineno-1-22" name="__codelineno-1-22"></a>        <span class="c1"># Read ADC values (16-bit scaled: 0-65535)</span>
+</span><span id="__span-1-23"><a href="#__codelineno-1-23" id="__codelineno-1-23" name="__codelineno-1-23"></a>        <span class="n">x_raw</span> <span class="o">=</span> <span class="n">read_adc</span><span class="p">(</span><span class="n">adc_x</span><span class="p">)</span>
+</span><span id="__span-1-24"><a href="#__codelineno-1-24" id="__codelineno-1-24" name="__codelineno-1-24"></a>        <span class="n">y_raw</span> <span class="o">=</span> <span class="n">read_adc</span><span class="p">(</span><span class="n">adc_y</span><span class="p">)</span>
+</span><span id="__span-1-25"><a href="#__codelineno-1-25" id="__codelineno-1-25" name="__codelineno-1-25"></a>
+</span><span id="__span-1-26"><a href="#__codelineno-1-26" id="__codelineno-1-26" name="__codelineno-1-26"></a>        <span class="c1"># Optional: Map to -100 to +100 range for intuitive control</span>
+</span><span id="__span-1-27"><a href="#__codelineno-1-27" id="__codelineno-1-27" name="__codelineno-1-27"></a>        <span class="n">x_norm</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">x_raw</span> <span class="o">-</span> <span class="mi">32768</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">//</span> <span class="mi">32768</span><span class="p">)</span>
+</span><span id="__span-1-28"><a href="#__codelineno-1-28" id="__codelineno-1-28" name="__codelineno-1-28"></a>        <span class="n">y_norm</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">y_raw</span> <span class="o">-</span> <span class="mi">32768</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">//</span> <span class="mi">32768</span><span class="p">)</span>
+</span><span id="__span-1-29"><a href="#__codelineno-1-29" id="__codelineno-1-29" name="__codelineno-1-29"></a>
+</span><span id="__span-1-30"><a href="#__codelineno-1-30" id="__codelineno-1-30" name="__codelineno-1-30"></a>        <span class="c1"># Read button state</span>
+</span><span id="__span-1-31"><a href="#__codelineno-1-31" id="__codelineno-1-31" name="__codelineno-1-31"></a>        <span class="n">btn_pressed</span> <span class="o">=</span> <span class="n">read_button</span><span class="p">()</span>
+</span><span id="__span-1-32"><a href="#__codelineno-1-32" id="__codelineno-1-32" name="__codelineno-1-32"></a>
+</span><span id="__span-1-33"><a href="#__codelineno-1-33" id="__codelineno-1-33" name="__codelineno-1-33"></a>        <span class="c1"># Output to console</span>
+</span><span id="__span-1-34"><a href="#__codelineno-1-34" id="__codelineno-1-34" name="__codelineno-1-34"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"X: </span><span class="si">{</span><span class="n">x_raw</span><span class="si">:</span><span class="s2">5d</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">x_norm</span><span class="si">:</span><span class="s2">+4d</span><span class="si">}</span><span class="s2">) | "</span>
+</span><span id="__span-1-35"><a href="#__codelineno-1-35" id="__codelineno-1-35" name="__codelineno-1-35"></a>              <span class="sa">f</span><span class="s2">"Y: </span><span class="si">{</span><span class="n">y_raw</span><span class="si">:</span><span class="s2">5d</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">y_norm</span><span class="si">:</span><span class="s2">+4d</span><span class="si">}</span><span class="s2">) | "</span>
+</span><span id="__span-1-36"><a href="#__codelineno-1-36" id="__codelineno-1-36" name="__codelineno-1-36"></a>              <span class="sa">f</span><span class="s2">"Button: </span><span class="si">{</span><span class="s1">'PRESSED'</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">btn_pressed</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">'RELEASED'</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> 
+</span><span id="__span-1-37"><a href="#__codelineno-1-37" id="__codelineno-1-37" name="__codelineno-1-37"></a>              <span class="n">end</span><span class="o">=</span><span class="s1">'</span><span class="se">\r</span><span class="s1">'</span><span class="p">)</span>
+</span><span id="__span-1-38"><a href="#__codelineno-1-38" id="__codelineno-1-38" name="__codelineno-1-38"></a>
+</span><span id="__span-1-39"><a href="#__codelineno-1-39" id="__codelineno-1-39" name="__codelineno-1-39"></a>        <span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>  <span class="c1"># Small delay for stable reading</span>
+</span><span id="__span-1-40"><a href="#__codelineno-1-40" id="__codelineno-1-40" name="__codelineno-1-40"></a>
+</span><span id="__span-1-41"><a href="#__codelineno-1-41" id="__codelineno-1-41" name="__codelineno-1-41"></a><span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+</span><span id="__span-1-42"><a href="#__codelineno-1-42" id="__codelineno-1-42" name="__codelineno-1-42"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n\n</span><span class="s2">🛑 Joystick interface stopped."</span><span class="p">)</span>
 </span></code></pre></div>
 <h3 id="code-explanation">Code Explanation</h3>
 <h4 id="imports-initialization">Imports &amp; Initialization</h4>
-<p></p><div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">ADC</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">time</span><span class="w"> </span><span class="kn">import</span> <span class="n">sleep</span>
+<p></p><div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">ADC</span>
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">time</span><span class="w"> </span><span class="kn">import</span> <span class="n">sleep</span>
 </span></code></pre></div>
 - <code>machine.ADC</code>: For reading analog voltage from joystick axes
 - <code>machine.Pin</code>: For configuring the button input with pull-up resistor
 - <code>time.sleep</code>: For controlling read interval
 <h4 id="adc-setup">ADC Setup</h4>
-<p></p><div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">adc_x</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">26</span><span class="p">))</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">adc_y</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">27</span><span class="p">))</span>
+<p></p><div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">adc_x</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">26</span><span class="p">))</span>
+</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="n">adc_y</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">27</span><span class="p">))</span>
 </span></code></pre></div>
 - Initializes ADC channels on GPIO 26 and 27 (ADC0 and ADC1)
 - These pins are ADC-exclusive; avoid using them for digital I/O simultaneously
 <h4 id="button-configuration">Button Configuration</h4>
-<p></p><div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">button</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">IN</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">PULL_UP</span><span class="p">)</span>
+<p></p><div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="n">button</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">IN</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">PULL_UP</span><span class="p">)</span>
 </span></code></pre></div>
 - Configures GP28 as input with internal pull-up resistor
 - Joystick button is active-low: reads <code>0</code> when pressed, <code>1</code> when released
 <h4 id="adc-value-reading">ADC Value Reading</h4>
-<p></p><div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">read_adc</span><span class="p">(</span><span class="n">adc</span><span class="p">):</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="k">return</span> <span class="n">adc</span><span class="o">.</span><span class="n">read_u16</span><span class="p">()</span>
+<p></p><div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">read_adc</span><span class="p">(</span><span class="n">adc</span><span class="p">):</span>
+</span><span id="__span-5-2"><a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a>    <span class="k">return</span> <span class="n">adc</span><span class="o">.</span><span class="n">read_u16</span><span class="p">()</span>
 </span></code></pre></div>
 - read_u16() returns a 16-bit scaled value (0–65535) directly
 - No bit-shifting required — use the value as-is for calculations
 - Ensures compatibility with other MicroPython boards that have native 16-bit ADCs
 <h4 id="normalizing-values-optional">Normalizing Values (Optional)</h4>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">x_norm</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">x_raw</span> <span class="o">-</span> <span class="mi">32768</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">//</span> <span class="mi">32768</span><span class="p">)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="n">x_norm</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">x_raw</span> <span class="o">-</span> <span class="mi">32768</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">//</span> <span class="mi">32768</span><span class="p">)</span>
 </span></code></pre></div>
 <ul>
 <li>Centers neutral position at 0 (32768 is mid-point of 0–65535)</li>
@@ -1722,27 +1708,26 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <li>Uses integer division // for efficient MicroPython execution</li>
 </ul>
 <h4 id="main-loop-output">Main Loop &amp; Output</h4>
-<p></p><div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="c1"># ... read values ...</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"X: </span><span class="si">{</span><span class="n">x_raw</span><span class="si">:</span><span class="s2">4d</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">x_norm</span><span class="si">:</span><span class="s2">+4d</span><span class="si">}</span><span class="s2">) | ..."</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">'</span><span class="se">\r</span><span class="s1">'</span><span class="p">)</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+<p></p><div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-7-2"><a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a>    <span class="c1"># ... read values ...</span>
+</span><span id="__span-7-3"><a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"X: </span><span class="si">{</span><span class="n">x_raw</span><span class="si">:</span><span class="s2">4d</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">x_norm</span><span class="si">:</span><span class="s2">+4d</span><span class="si">}</span><span class="s2">) | ..."</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">'</span><span class="se">\r</span><span class="s1">'</span><span class="p">)</span>
+</span><span id="__span-7-4"><a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a>    <span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
 </span></code></pre></div>
 - Continuously reads and prints joystick state
 - <code>end='\r'</code> overwrites the same console line for clean real-time output
 - <code>sleep(0.1)</code> prevents CPU overload and stabilizes readings
-<hr>
-<hr>
-<h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"></path></svg></span> Simulation</h2>
+<hr/>
+<hr/>
+<h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"></path></svg></span> Simulation</h2>
 <div class="admonition danger">
 <p class="admonition-title">Not able to view the simulation</p>
 <ul>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M128 32c-35.3 0-64 28.7-64 64v240h64V96h384v240h64V96c0-35.3-28.7-64-64-64zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480h486.4c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2z"></path></svg></span> Desktop or Laptop : Reload this page ( <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span> )</li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm72 416h80c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24"></path></svg></span> Mobile : Use Landscape Mode and reload the page</li>
+<li><span class="twemoji"><svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M128 32c-35.3 0-64 28.7-64 64v240h64V96h384v240h64V96c0-35.3-28.7-64-64-64zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480h486.4c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2z"></path></svg></span> Desktop or Laptop : Reload this page ( <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span> )</li>
+<li><span class="twemoji"><svg viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm72 416h80c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24"></path></svg></span> Mobile : Use Landscape Mode and reload the page</li>
 </ul>
 </div>
-<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/461807561210490881" frameborder="2px" width="100%" height="700px"></iframe>
-
-<hr>
+<iframe frameborder="2px" height="700px" src="https://wokwi.com/projects/461807561210490881" style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" width="100%"></iframe>
+<hr/>
 <!-- Advertisement -->
 <div style="
   display:flex;
@@ -1755,14 +1740,12 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
   background:var(--md-default-bg-color);
   box-shadow:0 6px 18px rgba(0,0,0,0.08);
 ">
-  <div style="font-size:36px;">🛠️</div>
-
-  <div style="flex:1 1 220px;">
-    <strong>Get the right hardware kit</strong><br>
+<div style="font-size:36px;">🛠️</div>
+<div style="flex:1 1 220px;">
+<strong>Get the right hardware kit</strong><br/>
     Raspberry Pi Pico, Arduino, sensors, and IoT maker essential Kits—perfectly matched for your learning.
   </div>
-
-  <a href="https://www.skilldisk.com/category/pico-disk" target="_blank" style="
+<a href="https://www.skilldisk.com/category/pico-disk" style="
        padding:12px 18px;
        border-radius:10px;
        background:var(--md-accent-fg-color);
@@ -1771,22 +1754,21 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
        text-decoration:none;
        text-align:center;
        flex:1 1 160px;
-     ">
+     " target="_blank">
     Explore Hardware →
   </a>
 </div>
-
 <div class="grid cards">
 <ul>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/pico-iot-spark-kit" target="_blank"><img alt="Pico Iot Spark Kit" src="/assets/ads/pico_spark_ads.png"></a></p>
+<p><a href="https://www.skilldisk.com/product-page/pico-iot-spark-kit" target="_blank"><img alt="Pico Iot Spark Kit" src="/assets/ads/pico_spark_ads.png"/></a></p>
 </li>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/pico-iot-explorer-kit" target="_blank"><img alt="Pico Iot Explorer Kit" src="/assets/ads/pico_explorer_ads.png"></a></p>
+<p><a href="https://www.skilldisk.com/product-page/pico-iot-explorer-kit" target="_blank"><img alt="Pico Iot Explorer Kit" src="/assets/ads/pico_explorer_ads.png"/></a></p>
 </li>
 </ul>
 </div>
-<hr>
+<hr/>
 <h2 id="troubleshooting-common-issues-fixes">🛑 Troubleshooting (Common Issues &amp; Fixes)</h2>
 <p>❌ <strong>Issue 1: ADC readings are noisy or unstable</strong></p>
 <p>✅ <strong>Causes:</strong>
@@ -1794,51 +1776,51 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 - Power supply fluctuations
 - Missing decoupling capacitor</p>
 <p>✅ <strong>Fix:</strong>
-</p><div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Implement simple software averaging</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">read_adc_avg</span><span class="p">(</span><span class="n">adc</span><span class="p">,</span> <span class="n">samples</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">adc</span><span class="o">.</span><span class="n">read_u16</span><span class="p">()</span> <span class="o">&gt;&gt;</span> <span class="mi">4</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">samples</span><span class="p">))</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="k">return</span> <span class="n">total</span> <span class="o">//</span> <span class="n">samples</span>
+</p><div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="c1"># Implement simple software averaging</span>
+</span><span id="__span-8-2"><a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">read_adc_avg</span><span class="p">(</span><span class="n">adc</span><span class="p">,</span> <span class="n">samples</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+</span><span id="__span-8-3"><a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a>    <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">adc</span><span class="o">.</span><span class="n">read_u16</span><span class="p">()</span> <span class="o">&gt;&gt;</span> <span class="mi">4</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">samples</span><span class="p">))</span>
+</span><span id="__span-8-4"><a href="#__codelineno-8-4" id="__codelineno-8-4" name="__codelineno-8-4"></a>    <span class="k">return</span> <span class="n">total</span> <span class="o">//</span> <span class="n">samples</span>
 </span></code></pre></div>
 - Add a <strong>0.1µF capacitor</strong> between ADC pin and GND near the Pico
 - Keep analog wires short and away from PWM/high-current traces
-<hr>
+<hr/>
 <p>❌ <strong>Issue 2: Button registers multiple presses (bounce)</strong></p>
 <p>✅ <strong>Cause:</strong>
 - Mechanical switch bounce causing rapid HIGH/LOW transitions</p>
 <p>✅ <strong>Fix:</strong>
-</p><div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">read_button_debounced</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="n">debounce_ms</span><span class="o">=</span><span class="mi">50</span><span class="p">):</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    <span class="n">state</span> <span class="o">=</span> <span class="n">pin</span><span class="o">.</span><span class="n">value</span><span class="p">()</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="k">if</span> <span class="n">state</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># Press detected</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>        <span class="n">sleep_ms</span><span class="p">(</span><span class="n">debounce_ms</span><span class="p">)</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>        <span class="k">if</span> <span class="n">pin</span><span class="o">.</span><span class="n">value</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>            <span class="k">return</span> <span class="kc">True</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    <span class="k">return</span> <span class="kc">False</span>
+</p><div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">read_button_debounced</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="n">debounce_ms</span><span class="o">=</span><span class="mi">50</span><span class="p">):</span>
+</span><span id="__span-9-2"><a href="#__codelineno-9-2" id="__codelineno-9-2" name="__codelineno-9-2"></a>    <span class="n">state</span> <span class="o">=</span> <span class="n">pin</span><span class="o">.</span><span class="n">value</span><span class="p">()</span>
+</span><span id="__span-9-3"><a href="#__codelineno-9-3" id="__codelineno-9-3" name="__codelineno-9-3"></a>    <span class="k">if</span> <span class="n">state</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># Press detected</span>
+</span><span id="__span-9-4"><a href="#__codelineno-9-4" id="__codelineno-9-4" name="__codelineno-9-4"></a>        <span class="n">sleep_ms</span><span class="p">(</span><span class="n">debounce_ms</span><span class="p">)</span>
+</span><span id="__span-9-5"><a href="#__codelineno-9-5" id="__codelineno-9-5" name="__codelineno-9-5"></a>        <span class="k">if</span> <span class="n">pin</span><span class="o">.</span><span class="n">value</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-9-6"><a href="#__codelineno-9-6" id="__codelineno-9-6" name="__codelineno-9-6"></a>            <span class="k">return</span> <span class="kc">True</span>
+</span><span id="__span-9-7"><a href="#__codelineno-9-7" id="__codelineno-9-7" name="__codelineno-9-7"></a>    <span class="k">return</span> <span class="kc">False</span>
 </span></code></pre></div>
 - Use hardware debouncing (100nF capacitor across SW and GND) for critical applications
-<hr>
+<hr/>
 <p>❌ <strong>Issue 3: Joystick doesn't return to exact center (drift)</strong></p>
 <p>✅ <strong>Cause:</strong>
 - Potentiometer tolerance variations
 - ADC reference voltage instability</p>
 <p>✅ <strong>Fix:</strong>
-</p><div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Calibrate center values at startup (16-bit range)</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">CENTER_X</span> <span class="o">=</span> <span class="n">read_adc</span><span class="p">(</span><span class="n">adc_x</span><span class="p">)</span>  <span class="c1"># ~32768 at neutral</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">CENTER_Y</span> <span class="o">=</span> <span class="n">read_adc</span><span class="p">(</span><span class="n">adc_y</span><span class="p">)</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="c1"># Use deadzone to ignore minor drift (adjust threshold for 16-bit)</span>
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="n">DEADZONE</span> <span class="o">=</span> <span class="mi">1500</span>  <span class="c1"># ~±2.3% of 65535 range</span>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">x_raw</span> <span class="o">-</span> <span class="n">CENTER_X</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">DEADZONE</span><span class="p">:</span>
-</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>    <span class="n">x_norm</span> <span class="o">=</span> <span class="mi">0</span>
+</p><div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="c1"># Calibrate center values at startup (16-bit range)</span>
+</span><span id="__span-10-2"><a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="n">CENTER_X</span> <span class="o">=</span> <span class="n">read_adc</span><span class="p">(</span><span class="n">adc_x</span><span class="p">)</span>  <span class="c1"># ~32768 at neutral</span>
+</span><span id="__span-10-3"><a href="#__codelineno-10-3" id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="n">CENTER_Y</span> <span class="o">=</span> <span class="n">read_adc</span><span class="p">(</span><span class="n">adc_y</span><span class="p">)</span>
+</span><span id="__span-10-4"><a href="#__codelineno-10-4" id="__codelineno-10-4" name="__codelineno-10-4"></a>
+</span><span id="__span-10-5"><a href="#__codelineno-10-5" id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="c1"># Use deadzone to ignore minor drift (adjust threshold for 16-bit)</span>
+</span><span id="__span-10-6"><a href="#__codelineno-10-6" id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="n">DEADZONE</span> <span class="o">=</span> <span class="mi">1500</span>  <span class="c1"># ~±2.3% of 65535 range</span>
+</span><span id="__span-10-7"><a href="#__codelineno-10-7" id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">x_raw</span> <span class="o">-</span> <span class="n">CENTER_X</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">DEADZONE</span><span class="p">:</span>
+</span><span id="__span-10-8"><a href="#__codelineno-10-8" id="__codelineno-10-8" name="__codelineno-10-8"></a>    <span class="n">x_norm</span> <span class="o">=</span> <span class="mi">0</span>
 </span></code></pre></div>
 - Implement software deadzone to ignore minor fluctuations around neutral
-<hr>
+<hr/>
 <p>❌ <strong>Issue 4: Pico resets when moving joystick vigorously</strong></p>
 <p>✅ <strong>Cause:</strong>
 - Rare: Current spike from module or wiring short</p>
 <p>✅ <strong>Fix:</strong>
 - Double-check wiring: VCC to 3V3 (not 5V), no shorts between pins
 - Add ferrite bead or 10Ω resistor in series with VCC line for extra protection</p>
-<hr>
+<hr/>
 <h2 id="conclusion">🏁 Conclusion</h2>
 <p>You have successfully interfaced a <strong>KY-023 analog joystick</strong> with a <strong>Raspberry Pi Pico</strong> using <strong>MicroPython</strong> 🎉. You now understand:</p>
 <ul>
@@ -1859,7 +1841,7 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <li>Implement <strong>USB HID</strong> to make the Pico act as a PC gamepad</li>
 <li>Explore <strong>interrupt-driven button handling</strong> for responsive UIs</li>
 </ul>
-<hr>
+<hr/>
 <h2 id="extras">Extras</h2>
 <h3 id="components-details">Components details</h3>
 <ul>

@@ -1214,25 +1214,15 @@
   <h1>Interfacing 128x64 Monochrome OLED (SSD1306) with Arduino Nano</h1>
 
 <div><div class="md-typeset">
-    <div class="blogging-tags-grid">
-
-        <a href="https://tech.arunkumarn.in/tags#arduino%20nano" class="blogging-tag"><code>#arduino nano</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#arduino" class="blogging-tag"><code>#arduino</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#cpp" class="blogging-tag"><code>#cpp</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#c" class="blogging-tag"><code>#c</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#guide" class="blogging-tag"><code>#guide</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#OLED" class="blogging-tag"><code>#OLED</code></a>
-
-    </div>
-
-
+<div class="blogging-tags-grid">
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#arduino%20nano"><code>#arduino nano</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#arduino"><code>#arduino</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#cpp"><code>#cpp</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#c"><code>#c</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#guide"><code>#guide</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#OLED"><code>#OLED</code></a>
 </div>
-
+</div>
 <style>
     .md-typeset .blogging-tags-grid {
         display: flex;
@@ -1253,7 +1243,7 @@
         border-radius: 5px;
     }
 </style>
-<p><img alt="16x2 lcd" src="../../../assets/blogs/arduino-nano/oled-display.png"></p>
+<p><img alt="16x2 lcd" src="../../../assets/blogs/arduino-nano/oled-display.png"/></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
@@ -1298,14 +1288,12 @@
   background:var(--md-default-bg-color);
   box-shadow:0 6px 18px rgba(0,0,0,0.08);
 ">
-  <div style="font-size:36px;">🛠️</div>
-
-  <div style="flex:1 1 220px;">
-    <strong>Get the right hardware kit</strong><br>
+<div style="font-size:36px;">🛠️</div>
+<div style="flex:1 1 220px;">
+<strong>Get the right hardware kit</strong><br/>
     Arduino boards, sensors, and maker essential Kits—perfectly matched for your learning.
   </div>
-
-  <a href="https://www.skilldisk.com/category/arduino" target="_blank" style="
+<a href="https://www.skilldisk.com/category/arduino" style="
        padding:12px 18px;
        border-radius:10px;
        background:var(--md-accent-fg-color);
@@ -1314,18 +1302,17 @@
        text-decoration:none;
        text-align:center;
        flex:1 1 160px;
-     ">
+     " target="_blank">
     Explore Hardware →
   </a>
 </div>
-
 <div class="grid cards">
 <ul>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/nano-craft-spark-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_spark_ads.png"></a></p>
+<p><a href="https://www.skilldisk.com/product-page/nano-craft-spark-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_spark_ads.png"/></a></p>
 </li>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/nano-craft-explorer-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_explorer_ads.png"></a></p>
+<p><a href="https://www.skilldisk.com/product-page/nano-craft-explorer-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_explorer_ads.png"/></a></p>
 </li>
 </ul>
 </div>
@@ -1371,7 +1358,7 @@
 </tr>
 </tbody>
 </table>
-<hr>
+<hr/>
 <h2 id="understanding-ssd1306-oled-i2c-communication">⚡ Understanding SSD1306 OLED (I2C Communication)</h2>
 <p>The <strong>SSD1306</strong> is a display controller used in many 0.96-inch OLED modules. It supports both <strong>I2C</strong> and <strong>SPI</strong>, but I2C is more popular because it requires fewer wires.</p>
 <p>📌 <strong>Why Use OLED with Arduino Nano?</strong></p>
@@ -1382,7 +1369,7 @@
 <li>Compact and beginner friendly</li>
 <li>Supports graphics and icons easily</li>
 </ul>
-<hr>
+<hr/>
 <h2 id="connection-wiring-guide-arduino-nano-to-oled">🧷 Connection / Wiring Guide (Arduino Nano to OLED)</h2>
 <p>Arduino Nano uses dedicated I2C pins:</p>
 <ul>
@@ -1431,12 +1418,12 @@ If your OLED module does not have a regulator, power it using <strong>3.3V</stro
 <p>Most SSD1306 modules sold for Arduino support <strong>5V VCC</strong> because they include onboard regulator.</p>
 </div>
 <figure>
-<p><img alt="Circuit Diagram" src="images/ckt_oled_nano.png"></p>
+<p><img alt="Circuit Diagram" src="images/ckt_oled_nano.png"/></p>
 <figcaption>
 <p>fig-Connection Diagram</p>
 </figcaption>
 </figure>
-<hr>
+<hr/>
 <h2 id="step-by-step-setup-in-arduino-ide">🛠️ Step-by-Step Setup in Arduino IDE</h2>
 <p>✅ Step 1: Install Arduino IDE</p>
 <p>✅ Step 2: Select Board and Port</p>
@@ -1464,8 +1451,8 @@ Always install both.</p>
 <li><code>0x3D</code> (rare)</li>
 </ul>
 <p>You can verify using <a href="#optional-i2c-scanner-code">I2C scanner code</a>.</p>
-<hr>
-<h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4c2.svg" title=":open_file_folder:"> Code</h2>
+<hr/>
+<h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4c2.svg" title=":open_file_folder:"/> Code</h2>
 <p>Create a new sketch and paste the following code.</p>
 <div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">  1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">  2</a></span>
@@ -1705,82 +1692,81 @@ Always install both.</p>
 </span><span id="__span-0-118"><a id="__codelineno-0-118" name="__codelineno-0-118"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">3000</span><span class="p">);</span>
 </span><span id="__span-0-119"><a id="__codelineno-0-119" name="__codelineno-0-119"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
-<hr>
+<hr/>
 <h2 id="code-explanation">🧠 Code Explanation</h2>
 <p>Let’s understand how this works.</p>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Required Libraries</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Wire.h&gt;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Adafruit_GFX.h&gt;</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Adafruit_SSD1306.h&gt;</span>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"/> Required Libraries</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Wire.h&gt;</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Adafruit_GFX.h&gt;</span>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Adafruit_SSD1306.h&gt;</span>
 </span></code></pre></div>
 <ul>
 <li><code>Wire.h</code> → Arduino I2C communication library</li>
 <li><code>Adafruit_GFX</code> → provides graphics functions (text, lines, shapes)</li>
 <li><code>Adafruit_SSD1306</code> → SSD1306 OLED driver</li>
 </ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> OLED Configuration</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#define SCREEN_WIDTH 128</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="cp">#define SCREEN_HEIGHT 64</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="cp">#define OLED_RESET -1</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="cp">#define SCREEN_ADDRESS 0x3C</span>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"/> OLED Configuration</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="cp">#define SCREEN_WIDTH 128</span>
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="cp">#define SCREEN_HEIGHT 64</span>
+</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="cp">#define OLED_RESET -1</span>
+</span><span id="__span-2-4"><a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="cp">#define SCREEN_ADDRESS 0x3C</span>
 </span></code></pre></div>
 <ul>
 <li>Sets display resolution</li>
 <li>Reset pin is unused (<code>-1</code>)</li>
 <li>OLED I2C address is set to <code>0x3C</code></li>
 </ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Display Object Creation</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">Adafruit_SSD1306</span><span class="w"> </span><span class="nf">display</span><span class="p">(</span><span class="n">SCREEN_WIDTH</span><span class="p">,</span><span class="w"> </span><span class="n">SCREEN_HEIGHT</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">Wire</span><span class="p">,</span><span class="w"> </span><span class="n">OLED_RESET</span><span class="p">);</span>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"/> Display Object Creation</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">Adafruit_SSD1306</span><span class="w"> </span><span class="nf">display</span><span class="p">(</span><span class="n">SCREEN_WIDTH</span><span class="p">,</span><span class="w"> </span><span class="n">SCREEN_HEIGHT</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">Wire</span><span class="p">,</span><span class="w"> </span><span class="n">OLED_RESET</span><span class="p">);</span>
 </span></code></pre></div>
 <p>This creates a display instance and connects it to the Arduino I2C bus.</p>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> OLED Initialization</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">display</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="n">SSD1306_SWITCHCAPVCC</span><span class="p">,</span><span class="w"> </span><span class="n">SCREEN_ADDRESS</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"OLED allocation failed!"</span><span class="p">);</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">}</span>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"/> OLED Initialization</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">display</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="n">SSD1306_SWITCHCAPVCC</span><span class="p">,</span><span class="w"> </span><span class="n">SCREEN_ADDRESS</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"OLED allocation failed!"</span><span class="p">);</span>
+</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+</span><span id="__span-4-4"><a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="p">}</span>
 </span></code></pre></div>
 <p>This checks if OLED is responding correctly.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>If the OLED does not respond, Arduino will stop running forever inside <code>while(true)</code>.</p>
 </div>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Printing Text on OLED</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">display</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">display</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Arduino Nano"</span><span class="p">);</span>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"/> Printing Text on OLED</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="n">display</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+</span><span id="__span-5-2"><a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="n">display</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Arduino Nano"</span><span class="p">);</span>
 </span></code></pre></div>
 <ul>
 <li><code>setCursor(x,y)</code> sets text start position</li>
 <li><code>println()</code> prints text to buffer</li>
 </ul>
 <p>Then:</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">display</span><span class="p">.</span><span class="n">display</span><span class="p">();</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="n">display</span><span class="p">.</span><span class="n">display</span><span class="p">();</span>
 </span></code></pre></div>
 <p>This pushes the buffer onto the OLED screen.</p>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Drawing Shapes</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">display</span><span class="p">.</span><span class="n">drawRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">128</span><span class="p">,</span><span class="w"> </span><span class="mi">64</span><span class="p">,</span><span class="w"> </span><span class="n">SSD1306_WHITE</span><span class="p">);</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">display</span><span class="p">.</span><span class="n">fillRect</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="n">SSD1306_WHITE</span><span class="p">);</span>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"/> Drawing Shapes</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="n">display</span><span class="p">.</span><span class="n">drawRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">128</span><span class="p">,</span><span class="w"> </span><span class="mi">64</span><span class="p">,</span><span class="w"> </span><span class="n">SSD1306_WHITE</span><span class="p">);</span>
+</span><span id="__span-7-2"><a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="n">display</span><span class="p">.</span><span class="n">fillRect</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="n">SSD1306_WHITE</span><span class="p">);</span>
 </span></code></pre></div>
 <ul>
 <li><code>drawRect()</code> draws outline rectangle</li>
 <li><code>fillRect()</code> draws solid rectangle</li>
 </ul>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Counter Demo Loop</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">count</span><span class="o">++</span><span class="p">;</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"/> Counter Demo Loop</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-8-2"><a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span id="__span-8-3"><a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
 </span></code></pre></div>
 <p><code>static</code> ensures the value remains stored between loop runs.</p>
-<hr>
-<h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"></path></svg></span> Simulation</h2>
+<hr/>
+<h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"></path></svg></span> Simulation</h2>
 <div class="admonition danger">
 <p class="admonition-title">Not able to view the simulation</p>
 <ul>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M128 32c-35.3 0-64 28.7-64 64v240h64V96h384v240h64V96c0-35.3-28.7-64-64-64zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480h486.4c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2z"></path></svg></span> Desktop or Laptop : Reload this page ( <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span> )</li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm72 416h80c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24"></path></svg></span> Mobile : Use Landscape Mode and reload the page</li>
+<li><span class="twemoji"><svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M128 32c-35.3 0-64 28.7-64 64v240h64V96h384v240h64V96c0-35.3-28.7-64-64-64zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480h486.4c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2z"></path></svg></span> Desktop or Laptop : Reload this page ( <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span> )</li>
+<li><span class="twemoji"><svg viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm72 416h80c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24"></path></svg></span> Mobile : Use Landscape Mode and reload the page</li>
 </ul>
 </div>
-<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/453864129051933697" frameborder="2px" width="100%" height="700px"></iframe>
-
+<iframe frameborder="2px" height="700px" src="https://wokwi.com/projects/453864129051933697" style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" width="100%"></iframe>
 <!-- Advertisement -->
 <div style="
   display:flex;
@@ -1793,14 +1779,12 @@ Always install both.</p>
   background:var(--md-default-bg-color);
   box-shadow:0 6px 18px rgba(0,0,0,0.08);
 ">
-  <div style="font-size:36px;">🛠️</div>
-
-  <div style="flex:1 1 220px;">
-    <strong>Get the right hardware kit</strong><br>
+<div style="font-size:36px;">🛠️</div>
+<div style="flex:1 1 220px;">
+<strong>Get the right hardware kit</strong><br/>
     Arduino boards, sensors, and maker essential Kits—perfectly matched for your learning.
   </div>
-
-  <a href="https://www.skilldisk.com/category/arduino" target="_blank" style="
+<a href="https://www.skilldisk.com/category/arduino" style="
        padding:12px 18px;
        border-radius:10px;
        background:var(--md-accent-fg-color);
@@ -1809,22 +1793,21 @@ Always install both.</p>
        text-decoration:none;
        text-align:center;
        flex:1 1 160px;
-     ">
+     " target="_blank">
     Explore Hardware →
   </a>
 </div>
-
 <div class="grid cards">
 <ul>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/nano-craft-spark-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_spark_ads.png"></a></p>
+<p><a href="https://www.skilldisk.com/product-page/nano-craft-spark-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_spark_ads.png"/></a></p>
 </li>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/nano-craft-explorer-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_explorer_ads.png"></a></p>
+<p><a href="https://www.skilldisk.com/product-page/nano-craft-explorer-kit" target="_blank"><img alt="Arduino Nano" src="/assets/ads/nano_explorer_ads.png"/></a></p>
 </li>
 </ul>
 </div>
-<hr>
+<hr/>
 <h2 id="extras-oled-module-notes-documentation">🧩 Extras (OLED Module Notes + Documentation)</h2>
 <p>📌 <strong>OLED Module Types</strong></p>
 <p>Most SSD1306 modules come in:</p>
@@ -1844,7 +1827,7 @@ Supplying 5V may damage them permanently.</p>
 <li>Power OLED using <strong>3.3V</strong> if unsure.</li>
 <li>Arduino Nano I2C logic is 5V, but most OLED modules tolerate it due to onboard resistors/regulator.</li>
 </ul>
-<hr>
+<hr/>
 <h2 id="advanced-tips-alternative-approaches">🚀 Advanced Tips &amp; Alternative Approaches</h2>
 <p>💡 Tip 1: <strong>Display Sensor Readings</strong></p>
 <p>You can extend the same code to show:</p>
@@ -1863,9 +1846,9 @@ Supplying 5V may damage them permanently.</p>
 <p>💡 Tip 3: <strong>Use Custom Bitmaps / Icons</strong></p>
 <p>You can display icons like WiFi, battery, or logos using bitmap arrays.</p>
 <p>Example concept:</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">display</span><span class="p">.</span><span class="n">drawBitmap</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">bitmap_array</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">,</span><span class="w"> </span><span class="n">SSD1306_WHITE</span><span class="p">);</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="n">display</span><span class="p">.</span><span class="n">drawBitmap</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">bitmap_array</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">,</span><span class="w"> </span><span class="n">SSD1306_WHITE</span><span class="p">);</span>
 </span></code></pre></div>
-<hr>
+<hr/>
 <h2 id="troubleshooting-common-issues-fixes">🛑 Troubleshooting (Common Issues &amp; Fixes)</h2>
 <p>❌ Issue 1: <strong>OLED Screen is Blank</strong></p>
 <p>✅ Causes:</p>
@@ -1880,9 +1863,9 @@ Supplying 5V may damage them permanently.</p>
 <li>Run I2C scanner code</li>
 <li>Try switching address:</li>
 </ul>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="cp">#define SCREEN_ADDRESS 0x3D</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="cp">#define SCREEN_ADDRESS 0x3D</span>
 </span></code></pre></div>
-<hr>
+<hr/>
 <p>❌ Issue 2: <strong>Upload Error (avrdude: stk500)</strong></p>
 <p>✅ Cause:</p>
 <ul>
@@ -1891,7 +1874,7 @@ Supplying 5V may damage them permanently.</p>
 <p>✅ Fix:
 Go to:</p>
 <p>📌 Tools → Processor → <strong>ATmega328P (Old Bootloader)</strong></p>
-<hr>
+<hr/>
 <p>❌ Issue 3: <code>SSD1306 allocation failed</code></p>
 <p>✅ Cause:</p>
 <ul>
@@ -1904,7 +1887,7 @@ Go to:</p>
 <li>Use proper VCC voltage</li>
 <li>Ensure GND is common</li>
 </ul>
-<hr>
+<hr/>
 <p>❌ Issue 4: <strong>Random garbage pixels appear</strong></p>
 <p>✅ Cause:</p>
 <ul>
@@ -1916,7 +1899,7 @@ Go to:</p>
 <li>Use stable USB power</li>
 <li>Add 100µF capacitor between VCC and GND (optional)</li>
 </ul>
-<hr>
+<hr/>
 <h2 id="optional-i2c-scanner-code">🧪 Optional: I2C Scanner Code</h2>
 <p>If OLED is not detected, upload this scanner sketch first.</p>
 <div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
@@ -1989,7 +1972,7 @@ Go to:</p>
 <p class="admonition-title">Tip</p>
 <p>Open <strong>Serial Monitor (9600 baud)</strong> and check detected OLED address.</p>
 </div>
-<hr>
+<hr/>
 <h2 id="project-extensions-next-steps">🏗️ Project Extensions / Next Steps</h2>
 <p>After OLED interfacing, try these awesome beginner projects 🚀</p>
 <p>✅ 1. Mini Weather Station 🌦️</p>
@@ -2011,8 +1994,8 @@ Go to:</p>
 <p class="admonition-title">Tip</p>
 <p>These are great student mini-projects for IoT and embedded portfolios.</p>
 </div>
-<hr>
-<h2 id="extras"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2 0 .37-.03.73-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85-.32.63-.67 1.24-1.07 1.81-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56M23 18v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"></path></svg></span> Extras</h2>
+<hr/>
+<h2 id="extras"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2 0 .37-.03.73-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85-.32.63-.67 1.24-1.07 1.81-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56M23 18v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"></path></svg></span> Extras</h2>
 <h3 id="components-details">Components details</h3>
 <ul>
 <li>Arduino Nano <a href="../blink-an-led-on-arduino-nano/files/nano-datasheet.pdf" target="_blank">Data Sheet</a></li>
@@ -2023,7 +2006,7 @@ Go to:</p>
 <li>Adafruit SSD1306 Library: <a href="https://github.com/adafruit/Adafruit_SSD1306">Adafruit SSD1306</a></li>
 <li>Adafruit GFX Library: <a href="https://github.com/adafruit/Adafruit-GFX-Library">Adafruit GFX</a></li>
 </ul>
-<hr>
+<hr/>
 <h2 id="conclusion">🏁 Conclusion</h2>
 <p>You have successfully interfaced a <strong>128x64 SSD1306 OLED display</strong> with an <strong>Arduino Nano</strong> using the <strong>Arduino IDE</strong> 🎉. Now you can build interactive projects like sensor dashboards, mini clocks, counters, and IoT displays. OLED modules are simple to use but add a professional look to any Arduino project.
 pare an <strong>OLED Dashboard UI code</strong> (battery + sensor layout + custom icons) specially designed for Arduino Nano projects 😄</p></div>

@@ -1175,23 +1175,14 @@
   <h1>How to Use Arduino Framework on Raspberry Pi Pico with Arduino IDE (Step-by-Step Guide)</h1>
 
 <div><div class="md-typeset">
-    <div class="blogging-tags-grid">
-
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico" class="blogging-tag"><code>#raspberry pi pico</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%20w" class="blogging-tag"><code>#raspberry pi pico w</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#arduino" class="blogging-tag"><code>#arduino</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#cpp" class="blogging-tag"><code>#cpp</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#guide" class="blogging-tag"><code>#guide</code></a>
-
-    </div>
-
-
+<div class="blogging-tags-grid">
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico"><code>#raspberry pi pico</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%20w"><code>#raspberry pi pico w</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#arduino"><code>#arduino</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#cpp"><code>#cpp</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#guide"><code>#guide</code></a>
 </div>
-
+</div>
 <style>
     .md-typeset .blogging-tags-grid {
         display: flex;
@@ -1212,7 +1203,7 @@
         border-radius: 5px;
     }
 </style>
-<p><img alt="16x2 lcd" src="../../../assets/blogs/raspberrypipico/RPPIco_Arduino.png"></p>
+<p><img alt="16x2 lcd" src="../../../assets/blogs/raspberrypipico/RPPIco_Arduino.png"/></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
@@ -1240,16 +1231,16 @@
 <h2 id="abstract">Abstract</h2>
 <p>The <strong>Raspberry Pi Pico</strong> is a powerful and affordable microcontroller board based on the RP2040 chip. Although it is most commonly used with <strong>MicroPython</strong> or <strong>C/C++ SDK</strong>, the Pico hardware also supports the <strong>Arduino framework</strong>, making it easier for millions of Arduino developers to write code using the familiar Arduino API.</p>
 <p>In this tutorial, we explain how to set up the <strong>Arduino framework for Raspberry Pi Pico</strong> using <strong>Arduino IDE</strong>, explore the benefits, configuration steps, and sample code to help you get started quickly.</p>
-<hr>
+<hr/>
 <h2 id="pre-requisites">Pre-Requisites</h2>
 <p>Before proceeding, ensure you have:</p>
 <ul>
-<li><strong>Arduino IDE (v2.3.1 or later)</strong> installed : download <a href="https://www.arduino.cc/en/software" target="_blank">here</a>  </li>
+<li><strong>Arduino IDE (v2.3.1 or later)</strong> installed : download <a href="https://www.arduino.cc/en/software" target="_blank">here</a> </li>
 <li>Raspberry Pi Pico board with USB cable  </li>
 <li>Basic familiarity with Arduino IDE  </li>
 <li>Micro USB or USB-C cable (depending on your Pico board)</li>
 </ul>
-<hr>
+<hr/>
 <h2 id="what-is-the-arduino-framework-for-raspberry-pi-pico">What is the Arduino Framework for Raspberry Pi Pico?</h2>
 <p>The <strong>Arduino framework on Raspberry Pi Pico</strong> is an adaptation of the Arduino core that allows you to program the Pico using familiar Arduino functions like <code>setup()</code>, <code>loop()</code>, <code>digitalWrite()</code>, <code>analogRead()</code>, etc.</p>
 <p>This enables:</p>
@@ -1260,7 +1251,7 @@
 <li>Rapid prototyping and community support</li>
 </ul>
 <p>The core is supported through the <strong>Arduino Mbed RP2040 core</strong>, maintained officially by Arduino.</p>
-<hr>
+<hr/>
 <h2 id="benefits-of-using-arduino-framework-on-pico">Benefits of Using Arduino Framework on Pico</h2>
 <table>
 <thead>
@@ -1298,43 +1289,43 @@
 </tr>
 </tbody>
 </table>
-<p>✔ Rapid prototyping<br>
-✔ Large library ecosystem<br>
+<p>✔ Rapid prototyping<br/>
+✔ Large library ecosystem<br/>
 ✔ Easy debugging with Serial Monitor</p>
-<hr>
+<hr/>
 <h2 id="setting-up-raspberry-pi-pico-in-arduino-ide">Setting up Raspberry Pi Pico in Arduino IDE</h2>
 <h3 id="step-1-install-arduino-ide">Step 1: Install Arduino IDE</h3>
 <p>Download from:
 - <a href="https://www.arduino.cc/en/software" target="_blank">link</a> 
 - https://www.arduino.cc/en/software</p>
-<hr>
+<hr/>
 <h3 id="step-2-open-boards-manager">Step 2: Open Boards Manager</h3>
 <p>In Arduino IDE:</p>
 <p><code>File → Preferences</code></p>
 <p>Add the following in <strong>Additional Boards Manager URLs</strong>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
 </span></code></pre></div>
-<p><img alt="preference" src="images/preferences.png">
-<img alt="preference" src="images/link_update.png"></p>
-<hr>
+<p><img alt="preference" src="images/preferences.png"/>
+<img alt="preference" src="images/link_update.png"/></p>
+<hr/>
 <h3 id="step-3-install-rp2040-boards">Step 3: Install RP2040 Boards</h3>
 <p>Go to:</p>
 <p><code>Tools → Board → Boards Manager</code></p>
-<p><img alt="Boards Manager" src="images/board_manager_path.png"></p>
+<p><img alt="Boards Manager" src="images/board_manager_path.png"/></p>
 <p>Search for <strong>Pico</strong> and install:</p>
 <blockquote>
 <p>“Raspberry Pi Pico/RP2040/RP2350”</p>
 </blockquote>
-<p><img alt="pico" src="images/search_pico.png"></p>
+<p><img alt="pico" src="images/search_pico.png"/></p>
 <blockquote>
 <p>Time of Installation</p>
 </blockquote>
-<p><img alt="installation" src="images/installation.png"></p>
+<p><img alt="installation" src="images/installation.png"/></p>
 <blockquote>
 <p>After Installation</p>
 </blockquote>
-<p><img alt="after_install" src="images/after_install.png"></p>
-<hr>
+<p><img alt="after_install" src="images/after_install.png"/></p>
+<hr/>
 <h2 id="selecting-raspberry-pi-pico-board">Selecting Raspberry Pi Pico Board</h2>
 <p>After installation:</p>
 <ol>
@@ -1346,8 +1337,8 @@
 <li>Or “Raspberry Pi Pico 2” (if using RP2350 board)</li>
 <li>Or “Raspberry Pi Pico 2W” (if using RP2350 wireless board)</li>
 </ol>
-<p><img alt="preference" src="images/choosing_pico_board.png"></p>
-<hr>
+<p><img alt="preference" src="images/choosing_pico_board.png"/></p>
+<hr/>
 <h2 id="configuring-the-arduino-ide">Configuring the Arduino IDE</h2>
 <p>After selecting the board:</p>
 <table>
@@ -1372,25 +1363,25 @@
 <p class="admonition-title">Info</p>
 <p>Make sure the correct <strong>COM port</strong> is selected before uploading code.</p>
 </div>
-<hr>
+<hr/>
 <h2 id="first-example-blink-led">First Example: Blink LED</h2>
 <div class="admonition tip">
-<p class="admonition-title">Don't own a hardware <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f622.svg" title=":cry:"></p>
+<p class="admonition-title">Don't own a hardware <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f622.svg" title=":cry:"/></p>
 <p>No worries,</p>
 <p>Still you can learn using simulation.
-check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f603.svg" title=":smiley:">.</p>
+check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f603.svg" title=":smiley:"/>.</p>
 </div>
 <p>Create a new sketch and paste:</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">  </span><span class="c1">// Onboard LED</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">}</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">  </span><span class="c1">// Onboard LED</span>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">}</span>
+</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-6"><a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+</span><span id="__span-1-7"><a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+</span><span id="__span-1-8"><a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+</span><span id="__span-1-9"><a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+</span><span id="__span-1-10"><a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="p">}</span>
 </span></code></pre></div>
 <ol>
 <li>Save the sketch</li>
@@ -1401,7 +1392,7 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <p class="admonition-title">Note</p>
 <p>🧪 The onboard LED on Raspberry Pi Pico is connected to <strong>GPIO 25</strong>.</p>
 </div>
-<hr>
+<hr/>
 <h2 id="uploading-without-bootsel-drag-and-drop">Uploading Without BOOTSEL (Drag-and-Drop)</h2>
 <p>If automatic programming fails:</p>
 <ol>
@@ -1410,7 +1401,7 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <li>It appears as mass storage</li>
 <li>Drag the <code>.uf2</code> file from Arduino IDE output into the drive</li>
 </ol>
-<hr>
+<hr/>
 <h2 id="common-issues-troubleshooting">Common Issues &amp; Troubleshooting</h2>
 <table>
 <thead>
@@ -1434,7 +1425,7 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 </tr>
 </tbody>
 </table>
-<hr>
+<hr/>
 <h2 id="arduino-libraries-support-on-pico">Arduino Libraries Support on Pico</h2>
 <p>Most Arduino libraries work on Pico, including:</p>
 <ul>
@@ -1444,7 +1435,7 @@ check out simulation part <img alt="😃" class="twemoji" src="https://cdn.jsdel
 <li>WiFi/LoRa modules (third-party)</li>
 </ul>
 <p>📌 Just install via <strong>Library Manager</strong> and include normally.</p>
-<hr>
+<hr/>
 <h2 id="conclusion">Conclusion</h2>
 <p>Using the <strong>Arduino framework with Raspberry Pi Pico</strong> brings the best of both worlds: the powerful RP2040 / RP2350 hardware and the <strong>simple Arduino programming model</strong>. Whether you are a beginner or advanced developer, this setup accelerates hardware prototyping and learning.</p>
 <p>Now you can:

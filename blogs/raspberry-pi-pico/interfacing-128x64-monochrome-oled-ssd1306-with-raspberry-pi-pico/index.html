@@ -1314,27 +1314,16 @@
   <h1>Interfacing 128x64 Monochrome OLED (SSD1306) with Raspberry Pi Pico (MicroPython)</h1>
 
 <div><div class="md-typeset">
-    <div class="blogging-tags-grid">
-
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico" class="blogging-tag"><code>#raspberry pi pico</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202" class="blogging-tag"><code>#raspberry pi pico 2</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%20w" class="blogging-tag"><code>#raspberry pi pico w</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202W" class="blogging-tag"><code>#raspberry pi pico 2W</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#OLED" class="blogging-tag"><code>#OLED</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#micro%20python" class="blogging-tag"><code>#micro python</code></a>
-
-        <a href="https://tech.arunkumarn.in/tags#guide" class="blogging-tag"><code>#guide</code></a>
-
-    </div>
-
-
+<div class="blogging-tags-grid">
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico"><code>#raspberry pi pico</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202"><code>#raspberry pi pico 2</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%20w"><code>#raspberry pi pico w</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#raspberry%20pi%20pico%202W"><code>#raspberry pi pico 2W</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#OLED"><code>#OLED</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#micro%20python"><code>#micro python</code></a>
+<a class="blogging-tag" href="https://tech.arunkumarn.in/tags#guide"><code>#guide</code></a>
 </div>
-
+</div>
 <style>
     .md-typeset .blogging-tags-grid {
         display: flex;
@@ -1355,7 +1344,7 @@
         border-radius: 5px;
     }
 </style>
-<p><img alt="OLED Display Interface" src="../../../assets/blogs/raspberrypipico/oled-display.png"></p>
+<p><img alt="OLED Display Interface" src="../../../assets/blogs/raspberrypipico/oled-display.png"/></p>
 <details class="abstract" open="open">
 <summary>Table of Contents</summary>
 <div class="toc">
@@ -1399,7 +1388,7 @@
 </details>
 <h2 id="abstract">🧾 Abstract</h2>
 <p>Monochrome OLED displays are widely used in embedded projects because they are compact, sharp, and consume low power. In this guide, you will learn how to interface a <strong>128x64 SSD1306 OLED display</strong> with the <strong>Raspberry Pi Pico variant</strong> using <strong>MicroPython</strong>. By the end, you’ll be able to display text, draw shapes, and build your own mini dashboards.</p>
-<hr>
+<hr/>
 <h2 id="prerequisites">📚 Prerequisites</h2>
 <p>Before starting, you should know:</p>
 <ul>
@@ -1457,7 +1446,7 @@
 <p class="admonition-title">Note</p>
 <p>If you're using Arduino IDE instead of Thonny, you can still follow the wiring section. The code section is written in <strong>MicroPython</strong>.</p>
 </div>
-<hr>
+<hr/>
 <h2 id="hardware-required">🧰 Hardware Required</h2>
 <!-- Advertisement -->
 <div style="
@@ -1471,14 +1460,12 @@
   background:var(--md-default-bg-color);
   box-shadow:0 6px 18px rgba(0,0,0,0.08);
 ">
-  <div style="font-size:36px;">🛠️</div>
-
-  <div style="flex:1 1 220px;">
-    <strong>Get the right hardware kit</strong><br>
+<div style="font-size:36px;">🛠️</div>
+<div style="flex:1 1 220px;">
+<strong>Get the right hardware kit</strong><br/>
     Raspberry Pi Pico, Arduino, sensors, and IoT maker essential Kits—perfectly matched for your learning.
   </div>
-
-  <a href="https://www.skilldisk.com/category/pico-disk" target="_blank" style="
+<a href="https://www.skilldisk.com/category/pico-disk" style="
        padding:12px 18px;
        border-radius:10px;
        background:var(--md-accent-fg-color);
@@ -1487,11 +1474,10 @@
        text-decoration:none;
        text-align:center;
        flex:1 1 160px;
-     ">
+     " target="_blank">
     Explore Hardware →
   </a>
 </div>
-
 <table>
 <thead>
 <tr>
@@ -1534,7 +1520,7 @@
 </tr>
 </tbody>
 </table>
-<hr>
+<hr/>
 <h2 id="understanding-the-oled-display-ssd1306">⚡ Understanding the OLED Display (SSD1306)</h2>
 <p>The <strong>SSD1306</strong> is a popular OLED driver IC used in small 128x64 monochrome displays.</p>
 <h3 id="why-ssd1306-oled-is-popular">Why SSD1306 OLED is Popular? 💡</h3>
@@ -1558,7 +1544,7 @@
 <li>Rectangles</li>
 <li>Icons (bitmaps)</li>
 </ul>
-<hr>
+<hr/>
 <h2 id="connection-wiring-guide-i2c-mode">🧷 Connection / Wiring Guide (I2C Mode)</h2>
 <p>Most SSD1306 OLED modules use <strong>I2C</strong>, which requires only 2 communication pins:</p>
 <ul>
@@ -1614,15 +1600,15 @@ Most SSD1306 OLED displays are designed for <strong>3.3V logic</strong>.</p>
 <li>If you want, you can use other pins like <code>GP4/GP5</code> for I2C0.</li>
 </ul>
 </div>
-<hr>
+<hr/>
 <h2 id="connection-diagram">🧩 Connection Diagram</h2>
 <figure>
-<p><img alt="Circuit Diagram" src="images/ckt_oled_pico.png"></p>
+<p><img alt="Circuit Diagram" src="images/ckt_oled_pico.png"/></p>
 <figcaption>
 <p>fig-Connection Diagram</p>
 </figcaption>
 </figure>
-<hr>
+<hr/>
 <h2 id="step-by-step-setup-instructions">🛠️ Step-by-Step Setup Instructions</h2>
 <p>✅ Step 1: Install MicroPython Firmware on Pico</p>
 <p>✅ Step 2: Upload SSD1306 OLED Driver Library</p>
@@ -1640,9 +1626,9 @@ Most SSD1306 OLED displays are designed for <strong>3.3V logic</strong>.</p>
 <p class="admonition-title">Tip</p>
 <p>Make sure the file is saved inside the Pico filesystem (not your PC).</p>
 </div>
-<hr>
-<h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4c2.svg" title=":open_file_folder:"> Code</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">main.py</label><label for="__tabbed_1_2">ssd1306.py</label></div>
+<hr/>
+<h2 id="code"><img alt="📂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4c2.svg" title=":open_file_folder:"/> Code</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="" id="__tabbed_1_1" name="__tabbed_1" type="radio"/><input id="__tabbed_1_2" name="__tabbed_1" type="radio"/><div class="tabbed-labels"><label for="__tabbed_1_1">main.py</label><label for="__tabbed_1_2">ssd1306.py</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
@@ -1807,181 +1793,181 @@ Most SSD1306 OLED displays are designed for <strong>3.3V logic</strong>.</p>
 </span></code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a># MicroPython SSD1306 OLED driver, I2C and SPI interfaces
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>from micropython import const
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>import framebuf
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a># register definitions
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>SET_CONTRAST = const(0x81)
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>SET_ENTIRE_ON = const(0xA4)
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>SET_NORM_INV = const(0xA6)
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>SET_DISP = const(0xAE)
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>SET_MEM_ADDR = const(0x20)
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>SET_COL_ADDR = const(0x21)
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>SET_PAGE_ADDR = const(0x22)
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>SET_DISP_START_LINE = const(0x40)
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>SET_SEG_REMAP = const(0xA0)
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>SET_MUX_RATIO = const(0xA8)
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>SET_IREF_SELECT = const(0xAD)
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>SET_COM_OUT_DIR = const(0xC0)
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>SET_DISP_OFFSET = const(0xD3)
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>SET_COM_PIN_CFG = const(0xDA)
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>SET_DISP_CLK_DIV = const(0xD5)
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>SET_PRECHARGE = const(0xD9)
-</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>SET_VCOM_DESEL = const(0xDB)
-</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>SET_CHARGE_PUMP = const(0x8D)
-</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>
-</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a># Subclassing FrameBuffer provides support for graphics primitives
-</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a># http://docs.micropython.org/en/latest/pyboard/library/framebuf.html
-</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>class SSD1306(framebuf.FrameBuffer):
-</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>    def __init__(self, width, height, external_vcc):
-</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>        self.width = width
-</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>        self.height = height
-</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>        self.external_vcc = external_vcc
-</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>        self.pages = self.height // 8
-</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>        self.buffer = bytearray(self.pages * self.width)
-</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>        super().__init__(self.buffer, self.width, self.height, framebuf.MONO_VLSB)
-</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>        self.init_display()
-</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>
-</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>    def init_display(self):
-</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>        for cmd in (
-</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>            SET_DISP,  # display off
-</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>            # address setting
-</span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>            SET_MEM_ADDR,
-</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>            0x00,  # horizontal
-</span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>            # resolution and layout
-</span><span id="__span-1-46"><a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a>            SET_DISP_START_LINE,  # start at line 0
-</span><span id="__span-1-47"><a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a>            SET_SEG_REMAP | 0x01,  # column addr 127 mapped to SEG0
-</span><span id="__span-1-48"><a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a>            SET_MUX_RATIO,
-</span><span id="__span-1-49"><a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a>            self.height - 1,
-</span><span id="__span-1-50"><a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a>            SET_COM_OUT_DIR | 0x08,  # scan from COM[N] to COM0
-</span><span id="__span-1-51"><a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a>            SET_DISP_OFFSET,
-</span><span id="__span-1-52"><a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a>            0x00,
-</span><span id="__span-1-53"><a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a>            SET_COM_PIN_CFG,
-</span><span id="__span-1-54"><a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a>            0x02 if self.width &gt; 2 * self.height else 0x12,
-</span><span id="__span-1-55"><a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a>            # timing and driving scheme
-</span><span id="__span-1-56"><a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a>            SET_DISP_CLK_DIV,
-</span><span id="__span-1-57"><a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a>            0x80,
-</span><span id="__span-1-58"><a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a>            SET_PRECHARGE,
-</span><span id="__span-1-59"><a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a>            0x22 if self.external_vcc else 0xF1,
-</span><span id="__span-1-60"><a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a>            SET_VCOM_DESEL,
-</span><span id="__span-1-61"><a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a>            0x30,  # 0.83*Vcc
-</span><span id="__span-1-62"><a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a>            # display
-</span><span id="__span-1-63"><a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a>            SET_CONTRAST,
-</span><span id="__span-1-64"><a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a>            0xFF,  # maximum
-</span><span id="__span-1-65"><a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a>            SET_ENTIRE_ON,  # output follows RAM contents
-</span><span id="__span-1-66"><a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a>            SET_NORM_INV,  # not inverted
-</span><span id="__span-1-67"><a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a>            SET_IREF_SELECT,
-</span><span id="__span-1-68"><a id="__codelineno-1-68" name="__codelineno-1-68" href="#__codelineno-1-68"></a>            0x30,  # enable internal IREF during display on
-</span><span id="__span-1-69"><a id="__codelineno-1-69" name="__codelineno-1-69" href="#__codelineno-1-69"></a>            # charge pump
-</span><span id="__span-1-70"><a id="__codelineno-1-70" name="__codelineno-1-70" href="#__codelineno-1-70"></a>            SET_CHARGE_PUMP,
-</span><span id="__span-1-71"><a id="__codelineno-1-71" name="__codelineno-1-71" href="#__codelineno-1-71"></a>            0x10 if self.external_vcc else 0x14,
-</span><span id="__span-1-72"><a id="__codelineno-1-72" name="__codelineno-1-72" href="#__codelineno-1-72"></a>            SET_DISP | 0x01,  # display on
-</span><span id="__span-1-73"><a id="__codelineno-1-73" name="__codelineno-1-73" href="#__codelineno-1-73"></a>        ):  # on
-</span><span id="__span-1-74"><a id="__codelineno-1-74" name="__codelineno-1-74" href="#__codelineno-1-74"></a>            self.write_cmd(cmd)
-</span><span id="__span-1-75"><a id="__codelineno-1-75" name="__codelineno-1-75" href="#__codelineno-1-75"></a>        self.fill(0)
-</span><span id="__span-1-76"><a id="__codelineno-1-76" name="__codelineno-1-76" href="#__codelineno-1-76"></a>        self.show()
-</span><span id="__span-1-77"><a id="__codelineno-1-77" name="__codelineno-1-77" href="#__codelineno-1-77"></a>
-</span><span id="__span-1-78"><a id="__codelineno-1-78" name="__codelineno-1-78" href="#__codelineno-1-78"></a>    def poweroff(self):
-</span><span id="__span-1-79"><a id="__codelineno-1-79" name="__codelineno-1-79" href="#__codelineno-1-79"></a>        self.write_cmd(SET_DISP)
-</span><span id="__span-1-80"><a id="__codelineno-1-80" name="__codelineno-1-80" href="#__codelineno-1-80"></a>
-</span><span id="__span-1-81"><a id="__codelineno-1-81" name="__codelineno-1-81" href="#__codelineno-1-81"></a>    def poweron(self):
-</span><span id="__span-1-82"><a id="__codelineno-1-82" name="__codelineno-1-82" href="#__codelineno-1-82"></a>        self.write_cmd(SET_DISP | 0x01)
-</span><span id="__span-1-83"><a id="__codelineno-1-83" name="__codelineno-1-83" href="#__codelineno-1-83"></a>
-</span><span id="__span-1-84"><a id="__codelineno-1-84" name="__codelineno-1-84" href="#__codelineno-1-84"></a>    def contrast(self, contrast):
-</span><span id="__span-1-85"><a id="__codelineno-1-85" name="__codelineno-1-85" href="#__codelineno-1-85"></a>        self.write_cmd(SET_CONTRAST)
-</span><span id="__span-1-86"><a id="__codelineno-1-86" name="__codelineno-1-86" href="#__codelineno-1-86"></a>        self.write_cmd(contrast)
-</span><span id="__span-1-87"><a id="__codelineno-1-87" name="__codelineno-1-87" href="#__codelineno-1-87"></a>
-</span><span id="__span-1-88"><a id="__codelineno-1-88" name="__codelineno-1-88" href="#__codelineno-1-88"></a>    def invert(self, invert):
-</span><span id="__span-1-89"><a id="__codelineno-1-89" name="__codelineno-1-89" href="#__codelineno-1-89"></a>        self.write_cmd(SET_NORM_INV | (invert &amp; 1))
-</span><span id="__span-1-90"><a id="__codelineno-1-90" name="__codelineno-1-90" href="#__codelineno-1-90"></a>
-</span><span id="__span-1-91"><a id="__codelineno-1-91" name="__codelineno-1-91" href="#__codelineno-1-91"></a>    def rotate(self, rotate):
-</span><span id="__span-1-92"><a id="__codelineno-1-92" name="__codelineno-1-92" href="#__codelineno-1-92"></a>        self.write_cmd(SET_COM_OUT_DIR | ((rotate &amp; 1) &lt;&lt; 3))
-</span><span id="__span-1-93"><a id="__codelineno-1-93" name="__codelineno-1-93" href="#__codelineno-1-93"></a>        self.write_cmd(SET_SEG_REMAP | (rotate &amp; 1))
-</span><span id="__span-1-94"><a id="__codelineno-1-94" name="__codelineno-1-94" href="#__codelineno-1-94"></a>
-</span><span id="__span-1-95"><a id="__codelineno-1-95" name="__codelineno-1-95" href="#__codelineno-1-95"></a>    def show(self):
-</span><span id="__span-1-96"><a id="__codelineno-1-96" name="__codelineno-1-96" href="#__codelineno-1-96"></a>        x0 = 0
-</span><span id="__span-1-97"><a id="__codelineno-1-97" name="__codelineno-1-97" href="#__codelineno-1-97"></a>        x1 = self.width - 1
-</span><span id="__span-1-98"><a id="__codelineno-1-98" name="__codelineno-1-98" href="#__codelineno-1-98"></a>        if self.width != 128:
-</span><span id="__span-1-99"><a id="__codelineno-1-99" name="__codelineno-1-99" href="#__codelineno-1-99"></a>            # narrow displays use centred columns
-</span><span id="__span-1-100"><a id="__codelineno-1-100" name="__codelineno-1-100" href="#__codelineno-1-100"></a>            col_offset = (128 - self.width) // 2
-</span><span id="__span-1-101"><a id="__codelineno-1-101" name="__codelineno-1-101" href="#__codelineno-1-101"></a>            x0 += col_offset
-</span><span id="__span-1-102"><a id="__codelineno-1-102" name="__codelineno-1-102" href="#__codelineno-1-102"></a>            x1 += col_offset
-</span><span id="__span-1-103"><a id="__codelineno-1-103" name="__codelineno-1-103" href="#__codelineno-1-103"></a>        self.write_cmd(SET_COL_ADDR)
-</span><span id="__span-1-104"><a id="__codelineno-1-104" name="__codelineno-1-104" href="#__codelineno-1-104"></a>        self.write_cmd(x0)
-</span><span id="__span-1-105"><a id="__codelineno-1-105" name="__codelineno-1-105" href="#__codelineno-1-105"></a>        self.write_cmd(x1)
-</span><span id="__span-1-106"><a id="__codelineno-1-106" name="__codelineno-1-106" href="#__codelineno-1-106"></a>        self.write_cmd(SET_PAGE_ADDR)
-</span><span id="__span-1-107"><a id="__codelineno-1-107" name="__codelineno-1-107" href="#__codelineno-1-107"></a>        self.write_cmd(0)
-</span><span id="__span-1-108"><a id="__codelineno-1-108" name="__codelineno-1-108" href="#__codelineno-1-108"></a>        self.write_cmd(self.pages - 1)
-</span><span id="__span-1-109"><a id="__codelineno-1-109" name="__codelineno-1-109" href="#__codelineno-1-109"></a>        self.write_data(self.buffer)
-</span><span id="__span-1-110"><a id="__codelineno-1-110" name="__codelineno-1-110" href="#__codelineno-1-110"></a>
-</span><span id="__span-1-111"><a id="__codelineno-1-111" name="__codelineno-1-111" href="#__codelineno-1-111"></a>
-</span><span id="__span-1-112"><a id="__codelineno-1-112" name="__codelineno-1-112" href="#__codelineno-1-112"></a>class SSD1306_I2C(SSD1306):
-</span><span id="__span-1-113"><a id="__codelineno-1-113" name="__codelineno-1-113" href="#__codelineno-1-113"></a>    def __init__(self, width, height, i2c, addr=0x3C, external_vcc=False):
-</span><span id="__span-1-114"><a id="__codelineno-1-114" name="__codelineno-1-114" href="#__codelineno-1-114"></a>        self.i2c = i2c
-</span><span id="__span-1-115"><a id="__codelineno-1-115" name="__codelineno-1-115" href="#__codelineno-1-115"></a>        self.addr = addr
-</span><span id="__span-1-116"><a id="__codelineno-1-116" name="__codelineno-1-116" href="#__codelineno-1-116"></a>        self.temp = bytearray(2)
-</span><span id="__span-1-117"><a id="__codelineno-1-117" name="__codelineno-1-117" href="#__codelineno-1-117"></a>        self.write_list = [b"\x40", None]  # Co=0, D/C#=1
-</span><span id="__span-1-118"><a id="__codelineno-1-118" name="__codelineno-1-118" href="#__codelineno-1-118"></a>        super().__init__(width, height, external_vcc)
-</span><span id="__span-1-119"><a id="__codelineno-1-119" name="__codelineno-1-119" href="#__codelineno-1-119"></a>
-</span><span id="__span-1-120"><a id="__codelineno-1-120" name="__codelineno-1-120" href="#__codelineno-1-120"></a>    def write_cmd(self, cmd):
-</span><span id="__span-1-121"><a id="__codelineno-1-121" name="__codelineno-1-121" href="#__codelineno-1-121"></a>        self.temp[0] = 0x80  # Co=1, D/C#=0
-</span><span id="__span-1-122"><a id="__codelineno-1-122" name="__codelineno-1-122" href="#__codelineno-1-122"></a>        self.temp[1] = cmd
-</span><span id="__span-1-123"><a id="__codelineno-1-123" name="__codelineno-1-123" href="#__codelineno-1-123"></a>        self.i2c.writeto(self.addr, self.temp)
-</span><span id="__span-1-124"><a id="__codelineno-1-124" name="__codelineno-1-124" href="#__codelineno-1-124"></a>
-</span><span id="__span-1-125"><a id="__codelineno-1-125" name="__codelineno-1-125" href="#__codelineno-1-125"></a>    def write_data(self, buf):
-</span><span id="__span-1-126"><a id="__codelineno-1-126" name="__codelineno-1-126" href="#__codelineno-1-126"></a>        self.write_list[1] = buf
-</span><span id="__span-1-127"><a id="__codelineno-1-127" name="__codelineno-1-127" href="#__codelineno-1-127"></a>        self.i2c.writevto(self.addr, self.write_list)
-</span><span id="__span-1-128"><a id="__codelineno-1-128" name="__codelineno-1-128" href="#__codelineno-1-128"></a>
-</span><span id="__span-1-129"><a id="__codelineno-1-129" name="__codelineno-1-129" href="#__codelineno-1-129"></a>
-</span><span id="__span-1-130"><a id="__codelineno-1-130" name="__codelineno-1-130" href="#__codelineno-1-130"></a>class SSD1306_SPI(SSD1306):
-</span><span id="__span-1-131"><a id="__codelineno-1-131" name="__codelineno-1-131" href="#__codelineno-1-131"></a>    def __init__(self, width, height, spi, dc, res, cs, external_vcc=False):
-</span><span id="__span-1-132"><a id="__codelineno-1-132" name="__codelineno-1-132" href="#__codelineno-1-132"></a>        self.rate = 10 * 1024 * 1024
-</span><span id="__span-1-133"><a id="__codelineno-1-133" name="__codelineno-1-133" href="#__codelineno-1-133"></a>        dc.init(dc.OUT, value=0)
-</span><span id="__span-1-134"><a id="__codelineno-1-134" name="__codelineno-1-134" href="#__codelineno-1-134"></a>        res.init(res.OUT, value=0)
-</span><span id="__span-1-135"><a id="__codelineno-1-135" name="__codelineno-1-135" href="#__codelineno-1-135"></a>        cs.init(cs.OUT, value=1)
-</span><span id="__span-1-136"><a id="__codelineno-1-136" name="__codelineno-1-136" href="#__codelineno-1-136"></a>        self.spi = spi
-</span><span id="__span-1-137"><a id="__codelineno-1-137" name="__codelineno-1-137" href="#__codelineno-1-137"></a>        self.dc = dc
-</span><span id="__span-1-138"><a id="__codelineno-1-138" name="__codelineno-1-138" href="#__codelineno-1-138"></a>        self.res = res
-</span><span id="__span-1-139"><a id="__codelineno-1-139" name="__codelineno-1-139" href="#__codelineno-1-139"></a>        self.cs = cs
-</span><span id="__span-1-140"><a id="__codelineno-1-140" name="__codelineno-1-140" href="#__codelineno-1-140"></a>        import time
-</span><span id="__span-1-141"><a id="__codelineno-1-141" name="__codelineno-1-141" href="#__codelineno-1-141"></a>
-</span><span id="__span-1-142"><a id="__codelineno-1-142" name="__codelineno-1-142" href="#__codelineno-1-142"></a>        self.res(1)
-</span><span id="__span-1-143"><a id="__codelineno-1-143" name="__codelineno-1-143" href="#__codelineno-1-143"></a>        time.sleep_ms(1)
-</span><span id="__span-1-144"><a id="__codelineno-1-144" name="__codelineno-1-144" href="#__codelineno-1-144"></a>        self.res(0)
-</span><span id="__span-1-145"><a id="__codelineno-1-145" name="__codelineno-1-145" href="#__codelineno-1-145"></a>        time.sleep_ms(10)
-</span><span id="__span-1-146"><a id="__codelineno-1-146" name="__codelineno-1-146" href="#__codelineno-1-146"></a>        self.res(1)
-</span><span id="__span-1-147"><a id="__codelineno-1-147" name="__codelineno-1-147" href="#__codelineno-1-147"></a>        super().__init__(width, height, external_vcc)
-</span><span id="__span-1-148"><a id="__codelineno-1-148" name="__codelineno-1-148" href="#__codelineno-1-148"></a>
-</span><span id="__span-1-149"><a id="__codelineno-1-149" name="__codelineno-1-149" href="#__codelineno-1-149"></a>    def write_cmd(self, cmd):
-</span><span id="__span-1-150"><a id="__codelineno-1-150" name="__codelineno-1-150" href="#__codelineno-1-150"></a>        self.spi.init(baudrate=self.rate, polarity=0, phase=0)
-</span><span id="__span-1-151"><a id="__codelineno-1-151" name="__codelineno-1-151" href="#__codelineno-1-151"></a>        self.cs(1)
-</span><span id="__span-1-152"><a id="__codelineno-1-152" name="__codelineno-1-152" href="#__codelineno-1-152"></a>        self.dc(0)
-</span><span id="__span-1-153"><a id="__codelineno-1-153" name="__codelineno-1-153" href="#__codelineno-1-153"></a>        self.cs(0)
-</span><span id="__span-1-154"><a id="__codelineno-1-154" name="__codelineno-1-154" href="#__codelineno-1-154"></a>        self.spi.write(bytearray([cmd]))
-</span><span id="__span-1-155"><a id="__codelineno-1-155" name="__codelineno-1-155" href="#__codelineno-1-155"></a>        self.cs(1)
-</span><span id="__span-1-156"><a id="__codelineno-1-156" name="__codelineno-1-156" href="#__codelineno-1-156"></a>
-</span><span id="__span-1-157"><a id="__codelineno-1-157" name="__codelineno-1-157" href="#__codelineno-1-157"></a>    def write_data(self, buf):
-</span><span id="__span-1-158"><a id="__codelineno-1-158" name="__codelineno-1-158" href="#__codelineno-1-158"></a>        self.spi.init(baudrate=self.rate, polarity=0, phase=0)
-</span><span id="__span-1-159"><a id="__codelineno-1-159" name="__codelineno-1-159" href="#__codelineno-1-159"></a>        self.cs(1)
-</span><span id="__span-1-160"><a id="__codelineno-1-160" name="__codelineno-1-160" href="#__codelineno-1-160"></a>        self.dc(1)
-</span><span id="__span-1-161"><a id="__codelineno-1-161" name="__codelineno-1-161" href="#__codelineno-1-161"></a>        self.cs(0)
-</span><span id="__span-1-162"><a id="__codelineno-1-162" name="__codelineno-1-162" href="#__codelineno-1-162"></a>        self.spi.write(buf)
-</span><span id="__span-1-163"><a id="__codelineno-1-163" name="__codelineno-1-163" href="#__codelineno-1-163"></a>        self.cs(1)
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a># MicroPython SSD1306 OLED driver, I2C and SPI interfaces
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>from micropython import const
+</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>import framebuf
+</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a># register definitions
+</span><span id="__span-1-8"><a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a>SET_CONTRAST = const(0x81)
+</span><span id="__span-1-9"><a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a>SET_ENTIRE_ON = const(0xA4)
+</span><span id="__span-1-10"><a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a>SET_NORM_INV = const(0xA6)
+</span><span id="__span-1-11"><a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a>SET_DISP = const(0xAE)
+</span><span id="__span-1-12"><a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a>SET_MEM_ADDR = const(0x20)
+</span><span id="__span-1-13"><a href="#__codelineno-1-13" id="__codelineno-1-13" name="__codelineno-1-13"></a>SET_COL_ADDR = const(0x21)
+</span><span id="__span-1-14"><a href="#__codelineno-1-14" id="__codelineno-1-14" name="__codelineno-1-14"></a>SET_PAGE_ADDR = const(0x22)
+</span><span id="__span-1-15"><a href="#__codelineno-1-15" id="__codelineno-1-15" name="__codelineno-1-15"></a>SET_DISP_START_LINE = const(0x40)
+</span><span id="__span-1-16"><a href="#__codelineno-1-16" id="__codelineno-1-16" name="__codelineno-1-16"></a>SET_SEG_REMAP = const(0xA0)
+</span><span id="__span-1-17"><a href="#__codelineno-1-17" id="__codelineno-1-17" name="__codelineno-1-17"></a>SET_MUX_RATIO = const(0xA8)
+</span><span id="__span-1-18"><a href="#__codelineno-1-18" id="__codelineno-1-18" name="__codelineno-1-18"></a>SET_IREF_SELECT = const(0xAD)
+</span><span id="__span-1-19"><a href="#__codelineno-1-19" id="__codelineno-1-19" name="__codelineno-1-19"></a>SET_COM_OUT_DIR = const(0xC0)
+</span><span id="__span-1-20"><a href="#__codelineno-1-20" id="__codelineno-1-20" name="__codelineno-1-20"></a>SET_DISP_OFFSET = const(0xD3)
+</span><span id="__span-1-21"><a href="#__codelineno-1-21" id="__codelineno-1-21" name="__codelineno-1-21"></a>SET_COM_PIN_CFG = const(0xDA)
+</span><span id="__span-1-22"><a href="#__codelineno-1-22" id="__codelineno-1-22" name="__codelineno-1-22"></a>SET_DISP_CLK_DIV = const(0xD5)
+</span><span id="__span-1-23"><a href="#__codelineno-1-23" id="__codelineno-1-23" name="__codelineno-1-23"></a>SET_PRECHARGE = const(0xD9)
+</span><span id="__span-1-24"><a href="#__codelineno-1-24" id="__codelineno-1-24" name="__codelineno-1-24"></a>SET_VCOM_DESEL = const(0xDB)
+</span><span id="__span-1-25"><a href="#__codelineno-1-25" id="__codelineno-1-25" name="__codelineno-1-25"></a>SET_CHARGE_PUMP = const(0x8D)
+</span><span id="__span-1-26"><a href="#__codelineno-1-26" id="__codelineno-1-26" name="__codelineno-1-26"></a>
+</span><span id="__span-1-27"><a href="#__codelineno-1-27" id="__codelineno-1-27" name="__codelineno-1-27"></a># Subclassing FrameBuffer provides support for graphics primitives
+</span><span id="__span-1-28"><a href="#__codelineno-1-28" id="__codelineno-1-28" name="__codelineno-1-28"></a># http://docs.micropython.org/en/latest/pyboard/library/framebuf.html
+</span><span id="__span-1-29"><a href="#__codelineno-1-29" id="__codelineno-1-29" name="__codelineno-1-29"></a>class SSD1306(framebuf.FrameBuffer):
+</span><span id="__span-1-30"><a href="#__codelineno-1-30" id="__codelineno-1-30" name="__codelineno-1-30"></a>    def __init__(self, width, height, external_vcc):
+</span><span id="__span-1-31"><a href="#__codelineno-1-31" id="__codelineno-1-31" name="__codelineno-1-31"></a>        self.width = width
+</span><span id="__span-1-32"><a href="#__codelineno-1-32" id="__codelineno-1-32" name="__codelineno-1-32"></a>        self.height = height
+</span><span id="__span-1-33"><a href="#__codelineno-1-33" id="__codelineno-1-33" name="__codelineno-1-33"></a>        self.external_vcc = external_vcc
+</span><span id="__span-1-34"><a href="#__codelineno-1-34" id="__codelineno-1-34" name="__codelineno-1-34"></a>        self.pages = self.height // 8
+</span><span id="__span-1-35"><a href="#__codelineno-1-35" id="__codelineno-1-35" name="__codelineno-1-35"></a>        self.buffer = bytearray(self.pages * self.width)
+</span><span id="__span-1-36"><a href="#__codelineno-1-36" id="__codelineno-1-36" name="__codelineno-1-36"></a>        super().__init__(self.buffer, self.width, self.height, framebuf.MONO_VLSB)
+</span><span id="__span-1-37"><a href="#__codelineno-1-37" id="__codelineno-1-37" name="__codelineno-1-37"></a>        self.init_display()
+</span><span id="__span-1-38"><a href="#__codelineno-1-38" id="__codelineno-1-38" name="__codelineno-1-38"></a>
+</span><span id="__span-1-39"><a href="#__codelineno-1-39" id="__codelineno-1-39" name="__codelineno-1-39"></a>    def init_display(self):
+</span><span id="__span-1-40"><a href="#__codelineno-1-40" id="__codelineno-1-40" name="__codelineno-1-40"></a>        for cmd in (
+</span><span id="__span-1-41"><a href="#__codelineno-1-41" id="__codelineno-1-41" name="__codelineno-1-41"></a>            SET_DISP,  # display off
+</span><span id="__span-1-42"><a href="#__codelineno-1-42" id="__codelineno-1-42" name="__codelineno-1-42"></a>            # address setting
+</span><span id="__span-1-43"><a href="#__codelineno-1-43" id="__codelineno-1-43" name="__codelineno-1-43"></a>            SET_MEM_ADDR,
+</span><span id="__span-1-44"><a href="#__codelineno-1-44" id="__codelineno-1-44" name="__codelineno-1-44"></a>            0x00,  # horizontal
+</span><span id="__span-1-45"><a href="#__codelineno-1-45" id="__codelineno-1-45" name="__codelineno-1-45"></a>            # resolution and layout
+</span><span id="__span-1-46"><a href="#__codelineno-1-46" id="__codelineno-1-46" name="__codelineno-1-46"></a>            SET_DISP_START_LINE,  # start at line 0
+</span><span id="__span-1-47"><a href="#__codelineno-1-47" id="__codelineno-1-47" name="__codelineno-1-47"></a>            SET_SEG_REMAP | 0x01,  # column addr 127 mapped to SEG0
+</span><span id="__span-1-48"><a href="#__codelineno-1-48" id="__codelineno-1-48" name="__codelineno-1-48"></a>            SET_MUX_RATIO,
+</span><span id="__span-1-49"><a href="#__codelineno-1-49" id="__codelineno-1-49" name="__codelineno-1-49"></a>            self.height - 1,
+</span><span id="__span-1-50"><a href="#__codelineno-1-50" id="__codelineno-1-50" name="__codelineno-1-50"></a>            SET_COM_OUT_DIR | 0x08,  # scan from COM[N] to COM0
+</span><span id="__span-1-51"><a href="#__codelineno-1-51" id="__codelineno-1-51" name="__codelineno-1-51"></a>            SET_DISP_OFFSET,
+</span><span id="__span-1-52"><a href="#__codelineno-1-52" id="__codelineno-1-52" name="__codelineno-1-52"></a>            0x00,
+</span><span id="__span-1-53"><a href="#__codelineno-1-53" id="__codelineno-1-53" name="__codelineno-1-53"></a>            SET_COM_PIN_CFG,
+</span><span id="__span-1-54"><a href="#__codelineno-1-54" id="__codelineno-1-54" name="__codelineno-1-54"></a>            0x02 if self.width &gt; 2 * self.height else 0x12,
+</span><span id="__span-1-55"><a href="#__codelineno-1-55" id="__codelineno-1-55" name="__codelineno-1-55"></a>            # timing and driving scheme
+</span><span id="__span-1-56"><a href="#__codelineno-1-56" id="__codelineno-1-56" name="__codelineno-1-56"></a>            SET_DISP_CLK_DIV,
+</span><span id="__span-1-57"><a href="#__codelineno-1-57" id="__codelineno-1-57" name="__codelineno-1-57"></a>            0x80,
+</span><span id="__span-1-58"><a href="#__codelineno-1-58" id="__codelineno-1-58" name="__codelineno-1-58"></a>            SET_PRECHARGE,
+</span><span id="__span-1-59"><a href="#__codelineno-1-59" id="__codelineno-1-59" name="__codelineno-1-59"></a>            0x22 if self.external_vcc else 0xF1,
+</span><span id="__span-1-60"><a href="#__codelineno-1-60" id="__codelineno-1-60" name="__codelineno-1-60"></a>            SET_VCOM_DESEL,
+</span><span id="__span-1-61"><a href="#__codelineno-1-61" id="__codelineno-1-61" name="__codelineno-1-61"></a>            0x30,  # 0.83*Vcc
+</span><span id="__span-1-62"><a href="#__codelineno-1-62" id="__codelineno-1-62" name="__codelineno-1-62"></a>            # display
+</span><span id="__span-1-63"><a href="#__codelineno-1-63" id="__codelineno-1-63" name="__codelineno-1-63"></a>            SET_CONTRAST,
+</span><span id="__span-1-64"><a href="#__codelineno-1-64" id="__codelineno-1-64" name="__codelineno-1-64"></a>            0xFF,  # maximum
+</span><span id="__span-1-65"><a href="#__codelineno-1-65" id="__codelineno-1-65" name="__codelineno-1-65"></a>            SET_ENTIRE_ON,  # output follows RAM contents
+</span><span id="__span-1-66"><a href="#__codelineno-1-66" id="__codelineno-1-66" name="__codelineno-1-66"></a>            SET_NORM_INV,  # not inverted
+</span><span id="__span-1-67"><a href="#__codelineno-1-67" id="__codelineno-1-67" name="__codelineno-1-67"></a>            SET_IREF_SELECT,
+</span><span id="__span-1-68"><a href="#__codelineno-1-68" id="__codelineno-1-68" name="__codelineno-1-68"></a>            0x30,  # enable internal IREF during display on
+</span><span id="__span-1-69"><a href="#__codelineno-1-69" id="__codelineno-1-69" name="__codelineno-1-69"></a>            # charge pump
+</span><span id="__span-1-70"><a href="#__codelineno-1-70" id="__codelineno-1-70" name="__codelineno-1-70"></a>            SET_CHARGE_PUMP,
+</span><span id="__span-1-71"><a href="#__codelineno-1-71" id="__codelineno-1-71" name="__codelineno-1-71"></a>            0x10 if self.external_vcc else 0x14,
+</span><span id="__span-1-72"><a href="#__codelineno-1-72" id="__codelineno-1-72" name="__codelineno-1-72"></a>            SET_DISP | 0x01,  # display on
+</span><span id="__span-1-73"><a href="#__codelineno-1-73" id="__codelineno-1-73" name="__codelineno-1-73"></a>        ):  # on
+</span><span id="__span-1-74"><a href="#__codelineno-1-74" id="__codelineno-1-74" name="__codelineno-1-74"></a>            self.write_cmd(cmd)
+</span><span id="__span-1-75"><a href="#__codelineno-1-75" id="__codelineno-1-75" name="__codelineno-1-75"></a>        self.fill(0)
+</span><span id="__span-1-76"><a href="#__codelineno-1-76" id="__codelineno-1-76" name="__codelineno-1-76"></a>        self.show()
+</span><span id="__span-1-77"><a href="#__codelineno-1-77" id="__codelineno-1-77" name="__codelineno-1-77"></a>
+</span><span id="__span-1-78"><a href="#__codelineno-1-78" id="__codelineno-1-78" name="__codelineno-1-78"></a>    def poweroff(self):
+</span><span id="__span-1-79"><a href="#__codelineno-1-79" id="__codelineno-1-79" name="__codelineno-1-79"></a>        self.write_cmd(SET_DISP)
+</span><span id="__span-1-80"><a href="#__codelineno-1-80" id="__codelineno-1-80" name="__codelineno-1-80"></a>
+</span><span id="__span-1-81"><a href="#__codelineno-1-81" id="__codelineno-1-81" name="__codelineno-1-81"></a>    def poweron(self):
+</span><span id="__span-1-82"><a href="#__codelineno-1-82" id="__codelineno-1-82" name="__codelineno-1-82"></a>        self.write_cmd(SET_DISP | 0x01)
+</span><span id="__span-1-83"><a href="#__codelineno-1-83" id="__codelineno-1-83" name="__codelineno-1-83"></a>
+</span><span id="__span-1-84"><a href="#__codelineno-1-84" id="__codelineno-1-84" name="__codelineno-1-84"></a>    def contrast(self, contrast):
+</span><span id="__span-1-85"><a href="#__codelineno-1-85" id="__codelineno-1-85" name="__codelineno-1-85"></a>        self.write_cmd(SET_CONTRAST)
+</span><span id="__span-1-86"><a href="#__codelineno-1-86" id="__codelineno-1-86" name="__codelineno-1-86"></a>        self.write_cmd(contrast)
+</span><span id="__span-1-87"><a href="#__codelineno-1-87" id="__codelineno-1-87" name="__codelineno-1-87"></a>
+</span><span id="__span-1-88"><a href="#__codelineno-1-88" id="__codelineno-1-88" name="__codelineno-1-88"></a>    def invert(self, invert):
+</span><span id="__span-1-89"><a href="#__codelineno-1-89" id="__codelineno-1-89" name="__codelineno-1-89"></a>        self.write_cmd(SET_NORM_INV | (invert &amp; 1))
+</span><span id="__span-1-90"><a href="#__codelineno-1-90" id="__codelineno-1-90" name="__codelineno-1-90"></a>
+</span><span id="__span-1-91"><a href="#__codelineno-1-91" id="__codelineno-1-91" name="__codelineno-1-91"></a>    def rotate(self, rotate):
+</span><span id="__span-1-92"><a href="#__codelineno-1-92" id="__codelineno-1-92" name="__codelineno-1-92"></a>        self.write_cmd(SET_COM_OUT_DIR | ((rotate &amp; 1) &lt;&lt; 3))
+</span><span id="__span-1-93"><a href="#__codelineno-1-93" id="__codelineno-1-93" name="__codelineno-1-93"></a>        self.write_cmd(SET_SEG_REMAP | (rotate &amp; 1))
+</span><span id="__span-1-94"><a href="#__codelineno-1-94" id="__codelineno-1-94" name="__codelineno-1-94"></a>
+</span><span id="__span-1-95"><a href="#__codelineno-1-95" id="__codelineno-1-95" name="__codelineno-1-95"></a>    def show(self):
+</span><span id="__span-1-96"><a href="#__codelineno-1-96" id="__codelineno-1-96" name="__codelineno-1-96"></a>        x0 = 0
+</span><span id="__span-1-97"><a href="#__codelineno-1-97" id="__codelineno-1-97" name="__codelineno-1-97"></a>        x1 = self.width - 1
+</span><span id="__span-1-98"><a href="#__codelineno-1-98" id="__codelineno-1-98" name="__codelineno-1-98"></a>        if self.width != 128:
+</span><span id="__span-1-99"><a href="#__codelineno-1-99" id="__codelineno-1-99" name="__codelineno-1-99"></a>            # narrow displays use centred columns
+</span><span id="__span-1-100"><a href="#__codelineno-1-100" id="__codelineno-1-100" name="__codelineno-1-100"></a>            col_offset = (128 - self.width) // 2
+</span><span id="__span-1-101"><a href="#__codelineno-1-101" id="__codelineno-1-101" name="__codelineno-1-101"></a>            x0 += col_offset
+</span><span id="__span-1-102"><a href="#__codelineno-1-102" id="__codelineno-1-102" name="__codelineno-1-102"></a>            x1 += col_offset
+</span><span id="__span-1-103"><a href="#__codelineno-1-103" id="__codelineno-1-103" name="__codelineno-1-103"></a>        self.write_cmd(SET_COL_ADDR)
+</span><span id="__span-1-104"><a href="#__codelineno-1-104" id="__codelineno-1-104" name="__codelineno-1-104"></a>        self.write_cmd(x0)
+</span><span id="__span-1-105"><a href="#__codelineno-1-105" id="__codelineno-1-105" name="__codelineno-1-105"></a>        self.write_cmd(x1)
+</span><span id="__span-1-106"><a href="#__codelineno-1-106" id="__codelineno-1-106" name="__codelineno-1-106"></a>        self.write_cmd(SET_PAGE_ADDR)
+</span><span id="__span-1-107"><a href="#__codelineno-1-107" id="__codelineno-1-107" name="__codelineno-1-107"></a>        self.write_cmd(0)
+</span><span id="__span-1-108"><a href="#__codelineno-1-108" id="__codelineno-1-108" name="__codelineno-1-108"></a>        self.write_cmd(self.pages - 1)
+</span><span id="__span-1-109"><a href="#__codelineno-1-109" id="__codelineno-1-109" name="__codelineno-1-109"></a>        self.write_data(self.buffer)
+</span><span id="__span-1-110"><a href="#__codelineno-1-110" id="__codelineno-1-110" name="__codelineno-1-110"></a>
+</span><span id="__span-1-111"><a href="#__codelineno-1-111" id="__codelineno-1-111" name="__codelineno-1-111"></a>
+</span><span id="__span-1-112"><a href="#__codelineno-1-112" id="__codelineno-1-112" name="__codelineno-1-112"></a>class SSD1306_I2C(SSD1306):
+</span><span id="__span-1-113"><a href="#__codelineno-1-113" id="__codelineno-1-113" name="__codelineno-1-113"></a>    def __init__(self, width, height, i2c, addr=0x3C, external_vcc=False):
+</span><span id="__span-1-114"><a href="#__codelineno-1-114" id="__codelineno-1-114" name="__codelineno-1-114"></a>        self.i2c = i2c
+</span><span id="__span-1-115"><a href="#__codelineno-1-115" id="__codelineno-1-115" name="__codelineno-1-115"></a>        self.addr = addr
+</span><span id="__span-1-116"><a href="#__codelineno-1-116" id="__codelineno-1-116" name="__codelineno-1-116"></a>        self.temp = bytearray(2)
+</span><span id="__span-1-117"><a href="#__codelineno-1-117" id="__codelineno-1-117" name="__codelineno-1-117"></a>        self.write_list = [b"\x40", None]  # Co=0, D/C#=1
+</span><span id="__span-1-118"><a href="#__codelineno-1-118" id="__codelineno-1-118" name="__codelineno-1-118"></a>        super().__init__(width, height, external_vcc)
+</span><span id="__span-1-119"><a href="#__codelineno-1-119" id="__codelineno-1-119" name="__codelineno-1-119"></a>
+</span><span id="__span-1-120"><a href="#__codelineno-1-120" id="__codelineno-1-120" name="__codelineno-1-120"></a>    def write_cmd(self, cmd):
+</span><span id="__span-1-121"><a href="#__codelineno-1-121" id="__codelineno-1-121" name="__codelineno-1-121"></a>        self.temp[0] = 0x80  # Co=1, D/C#=0
+</span><span id="__span-1-122"><a href="#__codelineno-1-122" id="__codelineno-1-122" name="__codelineno-1-122"></a>        self.temp[1] = cmd
+</span><span id="__span-1-123"><a href="#__codelineno-1-123" id="__codelineno-1-123" name="__codelineno-1-123"></a>        self.i2c.writeto(self.addr, self.temp)
+</span><span id="__span-1-124"><a href="#__codelineno-1-124" id="__codelineno-1-124" name="__codelineno-1-124"></a>
+</span><span id="__span-1-125"><a href="#__codelineno-1-125" id="__codelineno-1-125" name="__codelineno-1-125"></a>    def write_data(self, buf):
+</span><span id="__span-1-126"><a href="#__codelineno-1-126" id="__codelineno-1-126" name="__codelineno-1-126"></a>        self.write_list[1] = buf
+</span><span id="__span-1-127"><a href="#__codelineno-1-127" id="__codelineno-1-127" name="__codelineno-1-127"></a>        self.i2c.writevto(self.addr, self.write_list)
+</span><span id="__span-1-128"><a href="#__codelineno-1-128" id="__codelineno-1-128" name="__codelineno-1-128"></a>
+</span><span id="__span-1-129"><a href="#__codelineno-1-129" id="__codelineno-1-129" name="__codelineno-1-129"></a>
+</span><span id="__span-1-130"><a href="#__codelineno-1-130" id="__codelineno-1-130" name="__codelineno-1-130"></a>class SSD1306_SPI(SSD1306):
+</span><span id="__span-1-131"><a href="#__codelineno-1-131" id="__codelineno-1-131" name="__codelineno-1-131"></a>    def __init__(self, width, height, spi, dc, res, cs, external_vcc=False):
+</span><span id="__span-1-132"><a href="#__codelineno-1-132" id="__codelineno-1-132" name="__codelineno-1-132"></a>        self.rate = 10 * 1024 * 1024
+</span><span id="__span-1-133"><a href="#__codelineno-1-133" id="__codelineno-1-133" name="__codelineno-1-133"></a>        dc.init(dc.OUT, value=0)
+</span><span id="__span-1-134"><a href="#__codelineno-1-134" id="__codelineno-1-134" name="__codelineno-1-134"></a>        res.init(res.OUT, value=0)
+</span><span id="__span-1-135"><a href="#__codelineno-1-135" id="__codelineno-1-135" name="__codelineno-1-135"></a>        cs.init(cs.OUT, value=1)
+</span><span id="__span-1-136"><a href="#__codelineno-1-136" id="__codelineno-1-136" name="__codelineno-1-136"></a>        self.spi = spi
+</span><span id="__span-1-137"><a href="#__codelineno-1-137" id="__codelineno-1-137" name="__codelineno-1-137"></a>        self.dc = dc
+</span><span id="__span-1-138"><a href="#__codelineno-1-138" id="__codelineno-1-138" name="__codelineno-1-138"></a>        self.res = res
+</span><span id="__span-1-139"><a href="#__codelineno-1-139" id="__codelineno-1-139" name="__codelineno-1-139"></a>        self.cs = cs
+</span><span id="__span-1-140"><a href="#__codelineno-1-140" id="__codelineno-1-140" name="__codelineno-1-140"></a>        import time
+</span><span id="__span-1-141"><a href="#__codelineno-1-141" id="__codelineno-1-141" name="__codelineno-1-141"></a>
+</span><span id="__span-1-142"><a href="#__codelineno-1-142" id="__codelineno-1-142" name="__codelineno-1-142"></a>        self.res(1)
+</span><span id="__span-1-143"><a href="#__codelineno-1-143" id="__codelineno-1-143" name="__codelineno-1-143"></a>        time.sleep_ms(1)
+</span><span id="__span-1-144"><a href="#__codelineno-1-144" id="__codelineno-1-144" name="__codelineno-1-144"></a>        self.res(0)
+</span><span id="__span-1-145"><a href="#__codelineno-1-145" id="__codelineno-1-145" name="__codelineno-1-145"></a>        time.sleep_ms(10)
+</span><span id="__span-1-146"><a href="#__codelineno-1-146" id="__codelineno-1-146" name="__codelineno-1-146"></a>        self.res(1)
+</span><span id="__span-1-147"><a href="#__codelineno-1-147" id="__codelineno-1-147" name="__codelineno-1-147"></a>        super().__init__(width, height, external_vcc)
+</span><span id="__span-1-148"><a href="#__codelineno-1-148" id="__codelineno-1-148" name="__codelineno-1-148"></a>
+</span><span id="__span-1-149"><a href="#__codelineno-1-149" id="__codelineno-1-149" name="__codelineno-1-149"></a>    def write_cmd(self, cmd):
+</span><span id="__span-1-150"><a href="#__codelineno-1-150" id="__codelineno-1-150" name="__codelineno-1-150"></a>        self.spi.init(baudrate=self.rate, polarity=0, phase=0)
+</span><span id="__span-1-151"><a href="#__codelineno-1-151" id="__codelineno-1-151" name="__codelineno-1-151"></a>        self.cs(1)
+</span><span id="__span-1-152"><a href="#__codelineno-1-152" id="__codelineno-1-152" name="__codelineno-1-152"></a>        self.dc(0)
+</span><span id="__span-1-153"><a href="#__codelineno-1-153" id="__codelineno-1-153" name="__codelineno-1-153"></a>        self.cs(0)
+</span><span id="__span-1-154"><a href="#__codelineno-1-154" id="__codelineno-1-154" name="__codelineno-1-154"></a>        self.spi.write(bytearray([cmd]))
+</span><span id="__span-1-155"><a href="#__codelineno-1-155" id="__codelineno-1-155" name="__codelineno-1-155"></a>        self.cs(1)
+</span><span id="__span-1-156"><a href="#__codelineno-1-156" id="__codelineno-1-156" name="__codelineno-1-156"></a>
+</span><span id="__span-1-157"><a href="#__codelineno-1-157" id="__codelineno-1-157" name="__codelineno-1-157"></a>    def write_data(self, buf):
+</span><span id="__span-1-158"><a href="#__codelineno-1-158" id="__codelineno-1-158" name="__codelineno-1-158"></a>        self.spi.init(baudrate=self.rate, polarity=0, phase=0)
+</span><span id="__span-1-159"><a href="#__codelineno-1-159" id="__codelineno-1-159" name="__codelineno-1-159"></a>        self.cs(1)
+</span><span id="__span-1-160"><a href="#__codelineno-1-160" id="__codelineno-1-160" name="__codelineno-1-160"></a>        self.dc(1)
+</span><span id="__span-1-161"><a href="#__codelineno-1-161" id="__codelineno-1-161" name="__codelineno-1-161"></a>        self.cs(0)
+</span><span id="__span-1-162"><a href="#__codelineno-1-162" id="__codelineno-1-162" name="__codelineno-1-162"></a>        self.spi.write(buf)
+</span><span id="__span-1-163"><a href="#__codelineno-1-163" id="__codelineno-1-163" name="__codelineno-1-163"></a>        self.cs(1)
 </span></code></pre></div>
 </div>
 </div>
 </div>
-<hr>
+<hr/>
 <h2 id="code-explanation">🧠 Code Explanation</h2>
 <p>Let’s break down what the code does.</p>
-<hr>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Import Required Libraries</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">I2C</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">ssd1306</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<hr/>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"/> Import Required Libraries</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">I2C</span>
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">ssd1306</span>
+</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
 </span></code></pre></div>
 <ul>
 <li><code>Pin</code>: controls GPIO pins</li>
@@ -1989,9 +1975,9 @@ Most SSD1306 OLED displays are designed for <strong>3.3V logic</strong>.</p>
 <li><code>ssd1306</code>: OLED driver library</li>
 <li><code>time</code>: for delay</li>
 </ul>
-<hr>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Initializing I2C</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">i2c</span> <span class="o">=</span> <span class="n">I2C</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">scl</span><span class="o">=</span><span class="n">Pin</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">sda</span><span class="o">=</span><span class="n">Pin</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">freq</span><span class="o">=</span><span class="mi">400000</span><span class="p">)</span>
+<hr/>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"/> Initializing I2C</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">i2c</span> <span class="o">=</span> <span class="n">I2C</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">scl</span><span class="o">=</span><span class="n">Pin</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">sda</span><span class="o">=</span><span class="n">Pin</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">freq</span><span class="o">=</span><span class="mi">400000</span><span class="p">)</span>
 </span></code></pre></div>
 <p>This creates an I2C bus:</p>
 <ul>
@@ -2005,19 +1991,19 @@ Most SSD1306 OLED displays are designed for <strong>3.3V logic</strong>.</p>
 <p>I2C speed is typically <strong>100kHz</strong> or <strong>400kHz</strong>.
 SSD1306 works well with 400kHz for faster screen refresh.</p>
 </div>
-<hr>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> OLED Initialization</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">oled</span> <span class="o">=</span> <span class="n">ssd1306</span><span class="o">.</span><span class="n">SSD1306_I2C</span><span class="p">(</span><span class="n">oled_width</span><span class="p">,</span> <span class="n">oled_height</span><span class="p">,</span> <span class="n">i2c</span><span class="p">)</span>
+<hr/>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"/> OLED Initialization</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="n">oled</span> <span class="o">=</span> <span class="n">ssd1306</span><span class="o">.</span><span class="n">SSD1306_I2C</span><span class="p">(</span><span class="n">oled_width</span><span class="p">,</span> <span class="n">oled_height</span><span class="p">,</span> <span class="n">i2c</span><span class="p">)</span>
 </span></code></pre></div>
 <p>This tells MicroPython:</p>
 <ul>
 <li>The OLED resolution is <code>128x64</code></li>
 <li>Communication uses I2C</li>
 </ul>
-<hr>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Clearing the Screen</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">oled</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<hr/>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"/> Clearing the Screen</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="n">oled</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-5-2"><a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></code></pre></div>
 <ul>
 <li><code>fill(0)</code> clears the buffer</li>
@@ -2027,21 +2013,21 @@ SSD1306 works well with 400kHz for faster screen refresh.</p>
 <p class="admonition-title">Tip</p>
 <p>OLED updates only after <code>oled.show()</code> is called.        </p>
 </div>
-<hr>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Displaying Text</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">oled</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s1">'Welcome to'</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<hr/>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"/> Displaying Text</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="n">oled</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s1">'Welcome to'</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
 </span></code></pre></div>
 <ul>
 <li>First parameter: text string</li>
 <li>Second: X coordinate</li>
 <li>Third: Y coordinate</li>
 </ul>
-<hr>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Drawing Shapes</p>
+<hr/>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"/> Drawing Shapes</p>
 <ul>
 <li>Rectangle Border</li>
 </ul>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">oled</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="n">oled</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </span></code></pre></div>
 <ul>
 <li>
@@ -2051,7 +2037,7 @@ SSD1306 works well with 400kHz for faster screen refresh.</p>
 <p>Filled Rectangle</p>
 </li>
 </ul>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">oled</span><span class="o">.</span><span class="n">fill_rect</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="n">oled</span><span class="o">.</span><span class="n">fill_rect</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </span></code></pre></div>
 <ul>
 <li>
@@ -2061,33 +2047,32 @@ SSD1306 works well with 400kHz for faster screen refresh.</p>
 <p>Lines</p>
 </li>
 </ul>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">oled</span><span class="o">.</span><span class="n">hline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">oled</span><span class="o">.</span><span class="n">vline</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="n">oled</span><span class="o">.</span><span class="n">hline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-9-2"><a href="#__codelineno-9-2" id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="n">oled</span><span class="o">.</span><span class="n">vline</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </span></code></pre></div>
 <p>Used for UI design and separators.</p>
-<hr>
-<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"> Counter Demo (Infinite Loop)</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="o">...</span>
+<hr/>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:"/> Counter Demo (Infinite Loop)</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-10-2"><a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a>    <span class="o">...</span>
 </span></code></pre></div>
 <p>The display updates every second with a new number.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Since this loop never ends, it will run until the Pico is reset or unplugged.</p>
 </div>
-<hr>
-<h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"></path></svg></span> Simulation</h2>
+<hr/>
+<h2 id="simulation"><span class="twemoji" style="color:#ffaa00"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"></path></svg></span> Simulation</h2>
 <div class="admonition danger">
 <p class="admonition-title">Not able to view the simulation</p>
 <ul>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M128 32c-35.3 0-64 28.7-64 64v240h64V96h384v240h64V96c0-35.3-28.7-64-64-64zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480h486.4c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2z"></path></svg></span> Desktop or Laptop : Reload this page ( <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span> )</li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm72 416h80c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24"></path></svg></span> Mobile : Use Landscape Mode and reload the page</li>
+<li><span class="twemoji"><svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M128 32c-35.3 0-64 28.7-64 64v240h64V96h384v240h64V96c0-35.3-28.7-64-64-64zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480h486.4c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2z"></path></svg></span> Desktop or Laptop : Reload this page ( <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-r">R</kbd></span> )</li>
+<li><span class="twemoji"><svg viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M80 0C44.7 0 16 28.7 16 64v384c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm72 416h80c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24"></path></svg></span> Mobile : Use Landscape Mode and reload the page</li>
 </ul>
 </div>
-<iframe style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" src="https://wokwi.com/projects/456350845011331073" frameborder="2px" width="100%" height="700px"></iframe>
-
+<iframe frameborder="2px" height="700px" src="https://wokwi.com/projects/456350845011331073" style="height:calc(100vh - 200px); border-color:#00aaff;border-radius:1rem;min-height:400px" width="100%"></iframe>
 <p>You can simulate Raspberry Pi Pico + OLED using Wokwi.</p>
-<hr>
+<hr/>
 <!-- Advertisement -->
 <div style="
   display:flex;
@@ -2100,14 +2085,12 @@ SSD1306 works well with 400kHz for faster screen refresh.</p>
   background:var(--md-default-bg-color);
   box-shadow:0 6px 18px rgba(0,0,0,0.08);
 ">
-  <div style="font-size:36px;">🛠️</div>
-
-  <div style="flex:1 1 220px;">
-    <strong>Get the right hardware kit</strong><br>
+<div style="font-size:36px;">🛠️</div>
+<div style="flex:1 1 220px;">
+<strong>Get the right hardware kit</strong><br/>
     Raspberry Pi Pico, Arduino, sensors, and IoT maker essential Kits—perfectly matched for your learning.
   </div>
-
-  <a href="https://www.skilldisk.com/category/pico-disk" target="_blank" style="
+<a href="https://www.skilldisk.com/category/pico-disk" style="
        padding:12px 18px;
        border-radius:10px;
        background:var(--md-accent-fg-color);
@@ -2116,22 +2099,21 @@ SSD1306 works well with 400kHz for faster screen refresh.</p>
        text-decoration:none;
        text-align:center;
        flex:1 1 160px;
-     ">
+     " target="_blank">
     Explore Hardware →
   </a>
 </div>
-
 <div class="grid cards">
 <ul>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/pico-iot-spark-kit" target="_blank"><img alt="Pico Iot Spark Kit" src="/assets/ads/pico_spark_ads.png"></a></p>
+<p><a href="https://www.skilldisk.com/product-page/pico-iot-spark-kit" target="_blank"><img alt="Pico Iot Spark Kit" src="/assets/ads/pico_spark_ads.png"/></a></p>
 </li>
 <li>
-<p><a href="https://www.skilldisk.com/product-page/pico-iot-explorer-kit" target="_blank"><img alt="Pico Iot Explorer Kit" src="/assets/ads/pico_explorer_ads.png"></a></p>
+<p><a href="https://www.skilldisk.com/product-page/pico-iot-explorer-kit" target="_blank"><img alt="Pico Iot Explorer Kit" src="/assets/ads/pico_explorer_ads.png"/></a></p>
 </li>
 </ul>
 </div>
-<hr>
+<hr/>
 <h2 id="extras-oled-module-details-documentation">🧩 Extras (OLED Module Details &amp; Documentation)</h2>
 <p><strong>SSD1306 OLED Pinout Reference</strong></p>
 <table>
@@ -2165,7 +2147,7 @@ SSD1306 works well with 400kHz for faster screen refresh.</p>
 <p>Some OLED boards include onboard voltage regulators, but logic may still be 3.3V.
 Always check module datasheet.</p>
 </div>
-<hr>
+<hr/>
 <h2 id="advanced-tips-alternative-approaches">🚀 Advanced Tips &amp; Alternative Approaches</h2>
 <ol>
 <li>💡 Use I2C0 Instead of I2C1: You can use different GPIO pins</li>
@@ -2188,7 +2170,7 @@ Always check module datasheet.</p>
 </ul>
 </li>
 </ol>
-<hr>
+<hr/>
 <h2 id="troubleshooting-common-issues-fixes">🛑 Troubleshooting (Common Issues &amp; Fixes)</h2>
 <h3 id="issue-1-oled-screen-is-blank">❌ Issue 1: OLED Screen is Blank</h3>
 <p>✅ Possible causes:</p>
@@ -2207,7 +2189,7 @@ Always check module datasheet.</p>
 <p class="admonition-title">Warning</p>
 <p>If you connect VCC incorrectly, OLED may not work or may get damaged.</p>
 </div>
-<hr>
+<hr/>
 <h3 id="issue-2-importerror-no-module-named-ssd1306">❌ Issue 2: <code>ImportError: no module named 'ssd1306'</code></h3>
 <p>✅ Cause:</p>
 <ul>
@@ -2217,7 +2199,7 @@ Always check module datasheet.</p>
 <ul>
 <li>Upload <code>ssd1306.py</code> into Pico root directory using Thonny</li>
 </ul>
-<hr>
+<hr/>
 <h3 id="issue-3-oserror-errno-5-eio">❌ Issue 3: <code>OSError: [Errno 5] EIO</code></h3>
 <p>✅ Cause:</p>
 <ul>
@@ -2229,9 +2211,9 @@ Always check module datasheet.</p>
 <li>Check loose jumper wires</li>
 <li>Try lowering I2C frequency:</li>
 </ul>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">i2c</span> <span class="o">=</span> <span class="n">I2C</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">scl</span><span class="o">=</span><span class="n">Pin</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">sda</span><span class="o">=</span><span class="n">Pin</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="n">freq</span><span class="o">=</span><span class="mi">100000</span><span class="p">)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="n">i2c</span> <span class="o">=</span> <span class="n">I2C</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">scl</span><span class="o">=</span><span class="n">Pin</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">sda</span><span class="o">=</span><span class="n">Pin</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="n">freq</span><span class="o">=</span><span class="mi">100000</span><span class="p">)</span>
 </span></code></pre></div>
-<hr>
+<hr/>
 <h3 id="issue-4-text-is-cut-off-not-visible">❌ Issue 4: Text is Cut Off / Not Visible</h3>
 <p>✅ Cause:</p>
 <ul>
@@ -2241,7 +2223,7 @@ Always check module datasheet.</p>
 <ul>
 <li>Ensure you set correct resolution:</li>
 </ul>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">oled</span> <span class="o">=</span> <span class="n">ssd1306</span><span class="o">.</span><span class="n">SSD1306_I2C</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">i2c</span><span class="p">)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="n">oled</span> <span class="o">=</span> <span class="n">ssd1306</span><span class="o">.</span><span class="n">SSD1306_I2C</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">i2c</span><span class="p">)</span>
 </span></code></pre></div>
 <h2 id="testing-i2c-address-recommended">🧪 Testing I2C Address (Recommended)</h2>
 <p>Most SSD1306 OLED modules use address:</p>
@@ -2272,7 +2254,7 @@ Always check module datasheet.</p>
 <p class="admonition-title">Tip</p>
 <p>If you see <code>0x3c</code>, your OLED is detected correctly 🎉</p>
 </div>
-<hr>
+<hr/>
 <h2 id="project-extensions-next-steps">🏗️ Project Extensions / Next Steps</h2>
 <p>Once your OLED is working, try these mini projects 🚀:</p>
 <p>✅ 1. OLED Temperature Monitor 🌡️</p>
@@ -2294,7 +2276,7 @@ Always check module datasheet.</p>
 <p class="admonition-title">Tip</p>
 <p>These projects make excellent portfolio demos for students and IoT beginners.</p>
 </div>
-<hr>
+<hr/>
 <h2 id="references-official-useful-links">📌 References (Official &amp; Useful Links)</h2>
 <ul>
 <li>Raspberry Pi Pico / Pico 2 : <a href="../pico2-pico2-w-key-features-pin-config/" target="_blank">Pin Diagram</a></li>
@@ -2309,7 +2291,7 @@ Always check module datasheet.</p>
 <li>SSD1306 Datasheet: <a href="https://www.adafruit.com/datasheets/SSD1306.pdf">Datasheet</a></li>
 <li>MicroPython SSD1306 Driver (Official): <a href="https://github.com/stlehmann/micropython-ssd1306/blob/master/ssd1306.py">GitHub Driver</a></li>
 </ul>
-<hr>
+<hr/>
 <h2 id="conclusion">🏁 Conclusion</h2>
 <p>You have successfully interfaced a <strong>128x64 SSD1306 OLED display</strong> with the <strong>Raspberry Pi Pico</strong> using <strong>MicroPython</strong> 🎉. Now you can display text, create UI dashboards, and visualize sensor data in your embedded projects. OLED displays are a powerful upgrade for IoT and maker builds—small but incredibly useful!</p></div>
 
