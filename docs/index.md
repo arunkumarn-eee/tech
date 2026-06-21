@@ -18,7 +18,8 @@ We’re more than just a site — we’re building a community. If you have idea
 
 ### YouTube :simple-youtube:
 - Tech Related: [Aavishkarah ](https://www.youtube.com/@aavishkarah?sub_confirmation=1){.md-color-green-link}
-- Hardware (Microcontrollers, Raspberry Pi etc..) : Coming soon..
+- STEM / STEAM Based: [Atto Disk ](https://www.youtube.com/@AttoDisk?sub_confirmation=1){.md-color-green-link}
+- Hardware (Microcontrollers, Raspberry Pi etc..) : [RLC-EEE](https://youtube.com/@rlc-eee??sub_confirmation=1){.md-color-green-link}
 
 ### Groups & Channels
 
@@ -28,6 +29,7 @@ We’re more than just a site — we’re building a community. If you have idea
     ---
 
     - [Aavishkarah](https://instagram.com/aavishkarah)
+    - [RLC-EEE](https://www.instagram.com/rlc.eee/)
     - [Python](https://instagram.com/python.sd)
 
 - :simple-facebook: Facebook  
@@ -36,6 +38,7 @@ We’re more than just a site — we’re building a community. If you have idea
 
     - [Aavishkarah](https://facebook.com/people/Aavishkarah/61573021117727)
     - [Skill Disk](https://www.facebook.com/skilldisk)
+    - [RLC-EEE](https://www.facebook.com/RLC.eee)
 
 - :simple-whatsapp: WhatsApp  
 
@@ -51,6 +54,7 @@ We’re more than just a site — we’re building a community. If you have idea
 
     - [Python Learning](https://t.me/SDpython)
     - [Skill Disk](https://t.me/skilldisk)
+    - [RLC-EEE](https://t.me/rlc_eee)
 </div>
 
 ### Resources
@@ -70,3 +74,7 @@ We’re more than just a site — we’re building a community. If you have idea
     - [Tech Aavishkarah](https://tech.arunkumarn.in)
     - [Skill Disk](https://skilldisk.com) 
 </div>
+
+---
+
+{!social_media_links.mm.md!}
