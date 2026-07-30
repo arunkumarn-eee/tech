@@ -13,7 +13,7 @@ dependencies = [
     "mkdocs-markmap>=2.5.2",
 ]
 readme = "README.md"
-requires-python = ">= 3.8"
+requires-python = ">= 3.9"
 
 [tool.rye]
 managed = true
