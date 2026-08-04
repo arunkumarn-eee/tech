@@ -7,6 +7,8 @@ nav:
   - Python:
       - course: python/syllabus.md
       - Built-ins: python/builtin_methods/index.md
+  - Rust:
+      - Topics: rust/topics.md
   - Blog:
       - Topics : blogs.md
       - Technology: blogs/tech.md
