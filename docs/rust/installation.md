@@ -28,6 +28,12 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ```
 
+<video controls autoplay loop>
+  <source src="../static/rust_install.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
 - Verify the install.
 `rustc --version`
 
@@ -80,3 +86,20 @@ rustup update stable
   <source src="../static/update_rust.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+
+## Uninstall Rust and rustup
+
+Run the following commands on your shell or terminal
+
+```sh
+rustup self uninstall 
+  
+```
+
+
+<video controls autoplay loop>
+  <source src="../static/rust_uninstall.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+

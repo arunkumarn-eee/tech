@@ -9,6 +9,7 @@ nav:
       - Built-ins: python/builtin_methods/index.md
   - Rust:
       - Topics: rust/topics.md
+      - Embedded System: rust/embedded-system/embedded.md
   - Blog:
       - Topics : blogs.md
       - Technology: blogs/tech.md
